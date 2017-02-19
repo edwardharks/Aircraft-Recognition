@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.filter.FilterActivity">
+
+    <com.edwardharker.aircraftrecognition.ui.ExtendedFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        app:maxWidth="600dp">
+
+        <com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
+            android:id="@+id/aircraft_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@color/colorPrimaryLight"
+            android:scaleType="fitXY"
+            android:transitionName="@string/transition_aircraft_image" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/aircraft_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    tools:text="Boeing 737" />
+
+                <TextView
+                    android:id="@+id/aircraft_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="12dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    tools:text="@string/large_text" />
+
+                <LinearLayout
+                    android:id="@+id/aircraft_meta_data_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.edwardharker.aircraftrecognition.ui.ExtendedFrameLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+</FrameLayout>

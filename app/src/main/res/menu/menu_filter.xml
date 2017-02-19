@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.filter.FilterActivity">
+    <item
+        android:id="@+id/action_toggle_bottom_sheet"
+        android:icon="@drawable/ic_expand_more_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/action_expand"
+        app:showAsAction="always" />
+</menu>

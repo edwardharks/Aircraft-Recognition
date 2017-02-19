@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'realm-android'
+
+def versionMajor = 1
+def versionMinor = 0
+def versionPatch = 0
+def versionBuild = 3
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "com.edwardharker.aircraftrecognition"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        debug.java.srcDirs += 'src/debug/kotlin'
+        release.java.srcDirs += 'src/release/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+}
+
+dependencies {
+    compile project(':recognition')
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:percent:25.1.0'
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    compile 'com.google.firebase:firebase-crash:10.0.1'
+
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxkotlin:0.60.0'
+
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    debugCompile 'com.facebook.stetho:stetho:1.4.1'
+    debugCompile 'com.uphyca:stetho_realm:2.0.0'
+
+    testCompile project(':testcommon')
+    testCompile 'junit:junit:4.12'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo'
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'

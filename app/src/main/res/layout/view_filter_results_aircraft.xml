@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?selectableItemBackground"
+    android:padding="2dp">
+
+    <com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
+        android:id="@+id/aircraft_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/aircraft_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/aircraft_image"
+        android:background="@color/colorPrimary"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:text="Boeing 737" />
+</RelativeLayout>

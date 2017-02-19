@@ -1,0 +1,3 @@
+<resources>
+    <integer name="filter_results_column_count">4</integer>
+</resources>
