@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".ui.filter.FilterActivity">
 
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:transitionName="@string/transition_aircraft_detail_background" />
+
     <com.edwardharker.aircraftrecognition.ui.ExtendedFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -38,14 +45,16 @@
                 <TextView
                     android:id="@+id/aircraft_name"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="wrap_content"
                     android:background="@color/colorPrimary"
                     android:ellipsize="end"
                     android:gravity="center_vertical"
                     android:lines="1"
-                    android:paddingLeft="@dimen/activity_horizontal_margin"
-                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:minHeight="48dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:transitionName="@string/transition_aircraft_name"
                     tools:text="Boeing 737" />
 
                 <TextView

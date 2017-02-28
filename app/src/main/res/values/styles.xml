@@ -17,11 +17,15 @@
     </style>
 
     <style name="AppTheme.NoActionBar.AircraftDetail">
-        <item name="android:windowEnterTransition">@transition/aircraft_detail_enter</item>
-        <item name="android:windowReturnTransition">@transition/aircraft_detail_return</item>
-        <item name="android:windowSharedElementEnterTransition">
-            @transition/aircraft_detail_shared_element_enter
-        </item>
+        <item name="android:windowSharedElementEnterTransition">@transition/aircraft_detail_shared_element_enter</item>
+        <item name="android:windowSharedElementsUseOverlay">true</item>
+        <item name="android:windowBackground">@color/scrim</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

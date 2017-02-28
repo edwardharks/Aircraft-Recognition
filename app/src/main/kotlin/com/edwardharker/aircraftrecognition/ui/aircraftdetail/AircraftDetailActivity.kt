@@ -1,5 +1,7 @@
 package com.edwardharker.aircraftrecognition.ui.aircraftdetail
 
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.app.Activity
 import android.app.ActivityOptions
 import android.content.Intent
@@ -8,16 +10,21 @@ import android.graphics.Typeface.BOLD
 import android.net.Uri
 import android.os.Bundle
 import android.support.v4.content.ContextCompat.getColor
+import android.support.v4.view.animation.LinearOutSlowInInterpolator
 import android.support.v4.widget.NestedScrollView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.text.SpannableString
 import android.text.style.StyleSpan
 import android.transition.Transition
+import android.util.Pair
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.ALPHA
+import android.view.View.TRANSLATION_Y
 import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
+import android.view.ViewTreeObserver
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.edwardharker.aircraftrecognition.R
@@ -40,14 +47,15 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     companion object {
         private val aircraftIdExtra = "aircraftId"
 
-        fun startActivity(activity: Activity, aircraftId: String, aircraftImage: View) {
+        fun startActivity(activity: Activity, aircraftId: String, aircraftImage: View, background: View, aircraftName: View) {
             val intent = Intent(activity, AircraftDetailActivity::class.java)
             intent.putExtra(aircraftIdExtra, aircraftId)
             activity.startActivity(intent,
                     ActivityOptions.makeSceneTransitionAnimation(
                             activity,
-                            aircraftImage,
-                            activity.getString(R.string.transition_aircraft_image)
+                            Pair(aircraftImage, activity.getString(R.string.transition_aircraft_image)),
+                            Pair(background, activity.getString(R.string.transition_aircraft_detail_background)),
+                            Pair(aircraftName, activity.getString(R.string.transition_aircraft_name))
                     ).toBundle())
         }
     }
@@ -58,13 +66,15 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         title = ""
-        toolbar.setNavigationOnClickListener { supportFinishAfterTransition() }
+        toolbar.setNavigationOnClickListener { onBackPressed() }
 
         supportPostponeEnterTransition()
 
         if (savedInstanceState == null) {
             toolbar.alpha = 0.0f
-            window.enterTransition.addListener(EnterTransitionListener())
+            aircraftDescription.alpha = 0.0f
+            aircraftMetaDataContainer.alpha = 0.0f
+            window.sharedElementEnterTransition.addListener(EnterTransitionListener())
         }
 
         scrollView.setOnScrollChangeListener {
@@ -91,8 +101,23 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         presenter.stopPresenting()
     }
 
+    override fun onBackPressed() {
+        if (scrollView.scrollY > 0) {
+            finish()
+        } else {
+            supportFinishAfterTransition()
+        }
+    }
+
     override fun showAircraft(aircraft: Aircraft) {
-        aircraftImage.loadAircraftImage(aircraft) { supportStartPostponedEnterTransition() }
+        aircraftImage.loadAircraftImage(aircraft) {
+            aircraftImage.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
+                override fun onGlobalLayout() {
+                    supportStartPostponedEnterTransition()
+                    aircraftImage.viewTreeObserver.removeOnGlobalLayoutListener(this)
+                }
+            })
+        }
         val formatAircraftName = String.format("%s %s", aircraft.manufacturer, aircraft.name)
         aircraftName.text = formatAircraftName
         title = formatAircraftName
@@ -137,9 +162,30 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     }
 
     private inner class EnterTransitionListener : TransitionListenerAdapter() {
+
+        val slideDistance = pixelsToDp(400).toFloat()
+
+        override fun onTransitionStart(transition: Transition?) {
+            super.onTransitionStart(transition)
+            aircraftDescription.translationY = slideDistance
+            aircraftMetaDataContainer.translationY = slideDistance
+            aircraftDescription.alpha = 0.0f
+            aircraftMetaDataContainer.alpha = 0.0f
+        }
+
         override fun onTransitionEnd(transition: Transition?) {
             super.onTransitionEnd(transition)
             toolbar.animate().alpha(1.0f).start()
+            val slideUp = AnimatorSet()
+            slideUp.interpolator = LinearOutSlowInInterpolator()
+            slideUp.duration = 160
+            slideUp.playTogether(
+                    ObjectAnimator.ofFloat(aircraftDescription, TRANSLATION_Y, 0.0f),
+                    ObjectAnimator.ofFloat(aircraftMetaDataContainer, TRANSLATION_Y, 0.0f),
+                    ObjectAnimator.ofFloat(aircraftDescription, ALPHA, 1.0f),
+                    ObjectAnimator.ofFloat(aircraftMetaDataContainer, ALPHA, 1.0f)
+            )
+            slideUp.start()
         }
     }
 }

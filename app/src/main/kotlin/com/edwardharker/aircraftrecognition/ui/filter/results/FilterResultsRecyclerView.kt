@@ -140,11 +140,12 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
         var aircraft: Aircraft? = null
         val aircraftImage by lazy { view.findViewById(R.id.aircraft_image) as AspectRatioImageView }
         val aircraftName by lazy { view.findViewById(R.id.aircraft_name) as TextView }
+        val background: View by lazy { view.findViewById(R.id.background) }
 
         init {
             view.setOnClickListener {
                 aircraft?.let {
-                    AircraftDetailActivity.startActivity(view.context as Activity, it.id, aircraftImage)
+                    AircraftDetailActivity.startActivity(view.context as Activity, it.id, aircraftImage, background, aircraftName)
                 }
             }
         }
