@@ -19,7 +19,7 @@
     <style name="AppTheme.NoActionBar.AircraftDetail">
         <item name="android:windowSharedElementEnterTransition">@transition/aircraft_detail_shared_element_enter</item>
         <item name="android:windowSharedElementsUseOverlay">true</item>
-        <item name="android:windowBackground">@color/scrim</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowIsFloating">false</item>

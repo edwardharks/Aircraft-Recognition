@@ -6,5 +6,4 @@
     <color name="colorAccent">#00B8D4</color>
     <color name="windowBackground">#000000</color>
     <color name="selected_background">@color/colorPrimaryLight</color>
-    <color name="scrim">#99323232</color>
 </resources>
