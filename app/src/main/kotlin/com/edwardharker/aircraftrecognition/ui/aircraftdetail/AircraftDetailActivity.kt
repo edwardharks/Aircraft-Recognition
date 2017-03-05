@@ -2,7 +2,6 @@ package com.edwardharker.aircraftrecognition.ui.aircraftdetail
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
-import android.app.Activity
 import android.app.ActivityOptions
 import android.content.Intent
 import android.graphics.Color.*
@@ -33,6 +32,21 @@ import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.ui.*
 import java.lang.Math.min
 
+private val aircraftIdExtra = "aircraftId"
+
+fun ActivityLauncher.launchAircraftDetailActivity(aircraftId: String, aircraftImage: View, background: View, aircraftName: View) {
+    val intent = Intent(activity, AircraftDetailActivity::class.java).apply {
+        putExtra(aircraftIdExtra, aircraftId)
+    }
+    activity.startActivity(intent,
+            ActivityOptions.makeSceneTransitionAnimation(
+                    activity,
+                    Pair(aircraftImage, activity.getString(R.string.transition_aircraft_image)),
+                    Pair(background, activity.getString(R.string.transition_aircraft_detail_background)),
+                    Pair(aircraftName, activity.getString(R.string.transition_aircraft_name))
+            ).toBundle())
+}
+
 class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     private val aircraftImage by lazy { findViewById(R.id.aircraft_image) as AspectRatioImageView }
@@ -43,22 +57,6 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val scrollView by lazy { findViewById(R.id.scroll_view) as NestedScrollView }
 
     private val presenter = aircraftDetailPresenter()
-
-    companion object {
-        private val aircraftIdExtra = "aircraftId"
-
-        fun startActivity(activity: Activity, aircraftId: String, aircraftImage: View, background: View, aircraftName: View) {
-            val intent = Intent(activity, AircraftDetailActivity::class.java)
-            intent.putExtra(aircraftIdExtra, aircraftId)
-            activity.startActivity(intent,
-                    ActivityOptions.makeSceneTransitionAnimation(
-                            activity,
-                            Pair(aircraftImage, activity.getString(R.string.transition_aircraft_image)),
-                            Pair(background, activity.getString(R.string.transition_aircraft_detail_background)),
-                            Pair(aircraftName, activity.getString(R.string.transition_aircraft_name))
-                    ).toBundle())
-        }
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

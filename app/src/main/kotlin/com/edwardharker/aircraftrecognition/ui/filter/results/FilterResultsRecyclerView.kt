@@ -15,7 +15,8 @@ import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.filter.results.FilterResultsView
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
-import com.edwardharker.aircraftrecognition.ui.aircraftdetail.AircraftDetailActivity
+import com.edwardharker.aircraftrecognition.ui.activityLauncher
+import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDetailActivity
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 import java.util.*
 
@@ -145,7 +146,8 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
         init {
             view.setOnClickListener {
                 aircraft?.let {
-                    AircraftDetailActivity.startActivity(view.context as Activity, it.id, aircraftImage, background, aircraftName)
+                    val activity = view.context as Activity
+                    activity.activityLauncher().launchAircraftDetailActivity(it.id, aircraftImage, background, aircraftName)
                 }
             }
         }
