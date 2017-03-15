@@ -12,6 +12,8 @@ interface AircraftRepository {
 
     fun filteredAircraft(filters: Map<String, String>): Observable<List<Aircraft>>
 
+    fun filteredAircraftCount(filters: Map<String, String>): Long
+
     fun deleteAllAircraft(): Completable
 
     fun findAircraftById(id: String): Observable<Aircraft>

@@ -1,5 +1,6 @@
 package com.edwardharker.aircraftrecognition.filter
 
+import com.edwardharker.aircraftrecognition.model.SelectedFilterOptionsMap
 import rx.Observable
 
 interface SelectedFilterOptions {
@@ -10,5 +11,5 @@ interface SelectedFilterOptions {
 
     fun deselect(name: String)
 
-    fun asObservable(): Observable<Map<String, String>>
+    fun asObservable(): Observable<SelectedFilterOptionsMap>
 }

@@ -1,5 +1,6 @@
 package com.edwardharker.aircraftrecognition.filter
 
+import com.edwardharker.aircraftrecognition.model.SelectedFilterOptionsMap
 import rx.Observable
 import rx.lang.kotlin.BehaviorSubject
 import java.util.*
@@ -22,5 +23,5 @@ class InMemorySelectedFilterOptions : SelectedFilterOptions {
         subject.onNext(HashMap<String, String>(selections))
     }
 
-    override fun asObservable(): Observable<Map<String, String>> = subject
+    override fun asObservable(): Observable<SelectedFilterOptionsMap> = subject
 }

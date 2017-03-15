@@ -16,7 +16,6 @@ class FilterPickerPresenterTest {
 
         val presenter = FilterPickerPresenter(
                 immediate(),
-                immediate(),
                 { Observable.just(filters) })
 
         presenter.startPresenting(mockedView)

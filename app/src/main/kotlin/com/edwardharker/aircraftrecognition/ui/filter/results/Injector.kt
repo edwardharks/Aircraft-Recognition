@@ -10,7 +10,8 @@ import rx.android.schedulers.AndroidSchedulers.mainThread
 fun filterResultsPresenter(): FilterResultsPresenter =
         FilterResultsPresenter(
                 mainThread(),
-                { filterResultsUseCase().filteredAircraft() })
+                filterResultsUseCase()::filteredAircraft
+        )
 
 private fun filterResultsUseCase(): FilterResultsUseCase =
         RepositoryFilterResultsUseCase(selectedFilterOptions(), aircraftRepository())

@@ -4,5 +4,5 @@ import android.app.Activity
 
 class ActivityLauncher(val activity: Activity)
 
-fun Activity.activityLauncher(): ActivityLauncher = ActivityLauncher(this)
+fun Activity.activityLauncher() = ActivityLauncher(this)
 
