@@ -15,7 +15,8 @@ class RepositoryFilterPickerUseCaseTest {
         val useCase = RepositoryFilterPickerUseCase(
                 FakeFilterRepository().thatEmits(filters),
                 fakeSelectedFilterOptions,
-                { filter, selectedFilterOptionsMap -> filter }
+                { filter, _ -> filter },
+                { filtersToSort -> filtersToSort}
         )
         val testSubscriber = TestSubscriber.create<List<Filter>>()
         useCase.filters().subscribe(testSubscriber)
