@@ -52,7 +52,14 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
     }
 
     override fun showFilters(filters: List<Filter>) {
+        val firstVisibleItemPosition = linearLayoutManager.findFirstVisibleItemPosition()
+        val currentFilter = if (firstVisibleItemPosition >= 0) adapter.filters[firstVisibleItemPosition] else null
+
         adapter.update(filters)
+        val newPosition = adapter.filters.indexOf(currentFilter)
+        if (newPosition >= 0) {
+            scrollToPosition(newPosition)
+        }
     }
 
     private fun snap() {
