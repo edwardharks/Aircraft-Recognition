@@ -648,7 +648,7 @@
       "National origin": "United Kingdom",
       "First flight date": "1981",
       "Airline service entry": "1983",
-      "Engines": "Two",
+      "Engines": "Four",
       "Body": "Narrow",
       "End of production": "2001"
     },
@@ -660,7 +660,7 @@
       }
     ],
     "filterOptions": {
-      "engines": "TWO",
+      "engines": "FOUR",
       "decks": "ONE",
       "engine-position": "WING",
       "wing-position": "ABOVE"
