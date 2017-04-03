@@ -11,14 +11,13 @@ import rx.Observable.combineLatest
 class RepositoryFilterPickerUseCase(
         private val filterRepository: FilterRepository,
         private val selectedFilterOptions: SelectedFilterOptions,
-        private val filterOptionsRemover: (Filter, SelectedFilterOptionsMap) -> Filter,
-        private val filterSorter: (List<Filter>) -> List<Filter>) : FilterPickerUseCase {
+        private val filterOptionsRemover: (Filter, SelectedFilterOptionsMap) -> Filter) : FilterPickerUseCase {
 
     override fun filters(): Observable<List<Filter>> =
             combineLatest(filterRepository.filters(), selectedFilterOptions.asObservable(), ::AircraftFilterHolder)
                     .map { (filters, selectedFilterOptionsMap) ->
                         filters.map { filterOptionsRemover.invoke(it, selectedFilterOptionsMap) }
-                    }.map(filterSorter)
+                    }
 
 }
 

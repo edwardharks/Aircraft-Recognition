@@ -12,8 +12,7 @@ private fun filterPickerUseCase(): FilterPickerUseCase =
         RepositoryFilterPickerUseCase(
                 filterRepository(),
                 selectedFilterOptions(),
-                filterOptionsRemover()::removeRedundantFilterOptions,
-                ::sortFiltersByFilterOptions
+                filterOptionsRemover()::removeRedundantFilterOptions
         )
 
 fun filterPickerPresenter(): FilterPickerPresenter =
