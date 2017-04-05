@@ -28,6 +28,11 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 
+    <style name="AppTheme.NoActionBar.PhotoCarousel">
+        <item name="android:windowSharedElementEnterTransition">@transition/aircraft_detail_shared_element_enter</item>
+        <item name="android:windowSharedElementsUseOverlay">true</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

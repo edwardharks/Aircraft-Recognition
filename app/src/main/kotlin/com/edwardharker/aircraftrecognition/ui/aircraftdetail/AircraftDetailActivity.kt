@@ -87,6 +87,10 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
             onAircraftImagePreDraw()
             return@addOnPreDrawListener true
         }
+
+        aircraftName.setOnClickListener {
+            activityLauncher().launchPhotoCarouselActivity(intent.getStringExtra(aircraftIdExtra), aircraftImage)
+        }
     }
 
     override fun onStart() {

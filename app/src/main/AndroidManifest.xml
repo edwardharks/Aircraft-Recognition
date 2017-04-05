@@ -28,6 +28,11 @@
             android:label="@string/title_activity_aircraft_detail"
             android:theme="@style/AppTheme.NoActionBar.AircraftDetail" />
 
+        <activity
+            android:name="com.edwardharker.aircraftrecognition.ui.aircraftdetail.PhotoCarouselActivity"
+            android:label="@string/title_activity_photo_carousel"
+            android:theme="@style/AppTheme.NoActionBar.PhotoCarousel" />
+
         <meta-data
             android:name="com.edwardharker.aircraftrecognition.ui.GlideConfiguration"
             android:value="GlideModule" />
