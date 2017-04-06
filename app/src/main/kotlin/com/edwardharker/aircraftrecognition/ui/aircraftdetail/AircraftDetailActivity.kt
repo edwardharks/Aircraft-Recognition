@@ -55,6 +55,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val aircraftMetaDataContainer by lazy { findViewById(R.id.aircraft_meta_data_container) as ViewGroup }
     private val toolbar by lazy { findViewById(R.id.toolbar) as Toolbar }
     private val scrollView by lazy { findViewById(R.id.scroll_view) as NestedScrollView }
+    private val photoCarouselButton by lazy { findViewById(R.id.photo_carousel_button) }
 
     private val presenter = aircraftDetailPresenter()
 
@@ -65,6 +66,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         title = ""
         toolbar.setNavigationOnClickListener { onBackPressed() }
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp)
 
         supportPostponeEnterTransition()
 
@@ -83,14 +85,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         scrollView.scrollTo(0, 0)
         onScrollChanged(0)
 
-        aircraftImage.viewTreeObserver.addOnPreDrawListener {
-            onAircraftImagePreDraw()
-            return@addOnPreDrawListener true
-        }
-
-        aircraftName.setOnClickListener {
-            activityLauncher().launchPhotoCarouselActivity(intent.getStringExtra(aircraftIdExtra), aircraftImage)
-        }
+        aircraftImage.setOnClickListener(this::navigateToPhotoCarousel)
+        photoCarouselButton.setOnClickListener(this::navigateToPhotoCarousel)
     }
 
     override fun onStart() {
@@ -145,8 +141,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     }
 
     private fun onScrollChanged(scrollY: Int) {
-        aircraftImage.translationY = -(scrollY / 4).toFloat()
-        val toolbarAlphaScale = min(scrollY, scrollView.paddingTop) / scrollView.paddingTop.toFloat()
+        aircraftImage.translationY = (scrollY / 4).toFloat()
+        val toolbarAlphaScale = min(scrollY, aircraftImage.height) / aircraftImage.height.toFloat()
         val primaryColour = getColor(this, R.color.colorPrimary)
         toolbar.setBackgroundColor(argb((255 * toolbarAlphaScale).toInt(),
                 red(primaryColour), green(primaryColour), blue(primaryColour)))
@@ -155,12 +151,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         toolbar.elevation = min(scrollY, scrollView.paddingTop).toFloat() / toolbarMaxElevation.toFloat()
     }
 
-    private fun onAircraftImagePreDraw() {
-        scrollView.paddingTop2 = if (aircraftImage.height > screenHeight()) {
-            screenHeight() - screenHeight() / 4
-        } else {
-            aircraftImage.height
-        }
+    private fun navigateToPhotoCarousel(view: View) {
+        activityLauncher().launchPhotoCarouselActivity(intent.getStringExtra(aircraftIdExtra), aircraftImage)
     }
 
     private inner class EnterTransitionListener : TransitionListenerAdapter() {
