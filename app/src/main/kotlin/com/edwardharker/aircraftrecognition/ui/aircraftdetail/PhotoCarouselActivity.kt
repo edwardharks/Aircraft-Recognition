@@ -19,6 +19,7 @@ import com.edwardharker.aircraftrecognition.ui.ActivityLauncher
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
+import com.pixelcan.inkpageindicator.InkPageIndicator
 
 private val aircraftIdExtra = "aircraftId"
 
@@ -39,6 +40,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
 
     private val toolbar by lazy { findViewById(R.id.toolbar) as Toolbar }
     private val viewPager by lazy { findViewById(R.id.view_pager) as ViewPager }
+    private val indicator by lazy { findViewById(R.id.indicator) as InkPageIndicator }
     private val presenter = photoCarouselPresenter()
 
     private var images: List<Image> = emptyList()
@@ -90,6 +92,10 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
         this.images = images
         viewPager.adapter.notifyDataSetChanged()
         viewPager.currentItem = page
+        if (images.isNotEmpty()) {
+            // InkPageIndicator crashes for a view pager with 0 items :/
+            indicator.setViewPager(viewPager)
+        }
     }
 
     private inner class CarouselAdapter : PagerAdapter() {
