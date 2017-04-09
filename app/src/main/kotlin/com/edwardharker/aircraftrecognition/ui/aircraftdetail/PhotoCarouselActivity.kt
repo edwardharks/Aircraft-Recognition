@@ -91,7 +91,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
     override fun showImages(images: List<Image>) {
         this.images = images
         viewPager.adapter.notifyDataSetChanged()
-        viewPager.currentItem = page
+        viewPager.setCurrentItem(page, false)
         if (images.isNotEmpty()) {
             // InkPageIndicator crashes for a view pager with 0 items :/
             indicator.setViewPager(viewPager)
