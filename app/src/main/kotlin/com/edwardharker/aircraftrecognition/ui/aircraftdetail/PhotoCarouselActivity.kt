@@ -113,6 +113,10 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
             return layout
         }
 
+        override fun destroyItem(container: ViewGroup, position: Int, obj: Any) {
+            container.removeView(obj as View)
+        }
+
         override fun isViewFromObject(view: View?, obj: Any?): Boolean = view == obj
 
         override fun getCount(): Int = images.size
