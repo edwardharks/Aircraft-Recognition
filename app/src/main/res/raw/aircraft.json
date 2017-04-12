@@ -27,6 +27,16 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Airbus_A300B4-605R%2C_Lufthansa_AN0481981.jpg/1024px-Airbus_A300B4-605R%2C_Lufthansa_AN0481981.jpg",
         "width": 1024,
         "height": 661
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Airbus_A300B4-605R%2C_American_Airlines_AN0269187.jpg",
+        "width": 1024,
+        "height": 672
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Air_France_Airbus_A300B2_1974_Fitzgerald.jpg",
+        "width": 1024,
+        "height": 683
       }
     ],
     "filterOptions": {
@@ -40,7 +50,7 @@
     "id": "Airbus A310",
     "name": "A310",
     "manufacturer": "Airbus",
-    "longDescription": "The Airbus A310 is a medium- to long-range twin-engined wide-body jet airliner that was developed and manufactured by Airbus. Released in 1983, it was the second aircraft to enter production by Airbus Industrie,Note 1 the consortium of European aerospace companies now a subsidiary of Airbus Group. The A310 is a derivative of the Airbus A300, the first twin-engined widebody airliner.",
+    "longDescription": "The Airbus A310 is a medium to long-range twin-engined wide-body jet airliner that was developed and manufactured by Airbus. Released in 1983, it was the second aircraft to enter production by Airbus Industrie,Note 1 the consortium of European aerospace companies now a subsidiary of Airbus Group. The A310 is a derivative of the Airbus A300, the first twin-engined widebody airliner.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A310",
     "metaData": {
@@ -59,6 +69,21 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Airbus_A310-304%2C_Air_Transat_AN1571009.jpg/640px-Airbus_A310-304%2C_Air_Transat_AN1571009.jpg",
         "width": 640,
         "height": 427
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/FedEx_Airbus_A310-200_Monty.jpg/1024px-FedEx_Airbus_A310-200_Monty.jpg",
+        "width": 1024,
+        "height": 716
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Airbus_A310-300_Air_Transat_%28TSC%29_C-GLAT_-_MSN_588_%289510329329%29.jpg/1024px-Airbus_A310-300_Air_Transat_%28TSC%29_C-GLAT_-_MSN_588_%289510329329%29.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Hapagfly_A310_D-AHLA_STR.jpg/1024px-Hapagfly_A310_D-AHLA_STR.jpg",
+        "width": 1024,
+        "height": 683
       }
     ],
     "filterOptions": {
@@ -90,6 +115,21 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Airfrance.a318-100.f-guga.arp.jpg/640px-Airfrance.a318-100.f-guga.arp.jpg",
         "width": 640,
         "height": 416
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/British_Airways_%28G-EUNA%29_Airbus_A318_at_London_City_Airport.jpg/1024px-British_Airways_%28G-EUNA%29_Airbus_A318_at_London_City_Airport.jpg",
+        "width": 1024,
+        "height": 684
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Avianca_Airbus_A318_Ramirez.jpg",
+        "width": 1024,
+        "height": 684
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Saudi_Red_Crescent_Authority_Airbus_A318CJ_Arroyo.jpg",
+        "width": 1024,
+        "height": 681
       }
     ],
     "filterOptions": {
@@ -121,6 +161,21 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Lufthansa.a319-100.d-aili.arp.jpg/640px-Lufthansa.a319-100.d-aili.arp.jpg",
         "width": 640,
         "height": 401
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/US_Airways_A319-132_LAS_N838AW.jpg/1024px-US_Airways_A319-132_LAS_N838AW.jpg",
+        "width": 1024,
+        "height": 596
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/G-EZBW_Airbus_A319-111_A319_EZY_%28neue_Bemalung%29_%2816000999414%29.jpg/1024px-G-EZBW_Airbus_A319-111_A319_EZY_%28neue_Bemalung%29_%2816000999414%29.jpg",
+        "width": 1024,
+        "height": 684
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Airbus_A319-133LR_Qatar_Airways_A7-CJA.jpg",
+        "width": 1024,
+        "height": 683
       }
     ],
     "filterOptions": {
@@ -134,7 +189,7 @@
     "id": "airbus-a321",
     "name": "A321",
     "manufacturer": "Airbus",
-    "longDescription": "The Airbus A321 is a member of the Airbus A320 family of short- to medium-range, narrow-body, commercial passenger twin-engine jet airliners manufactured by Airbus. It was the first derivative of the baseline Airbus A320 aircraft, and carries up to 236 passengers with a maximum range of 3,200 nmi (5,900 km; 3,700 mi). Final assembly of the aircraft takes place in Hamburg, Germany or Mobile, Alabama in the US.",
+    "longDescription": "The Airbus A321 is a member of the Airbus A320 family of short to medium-range, narrow-body, commercial passenger twin-engine jet airliners manufactured by Airbus. It was the first derivative of the baseline Airbus A320 aircraft, and carries up to 236 passengers with a maximum range of 3,200 nmi (5,900 km; 3,700 mi). Final assembly of the aircraft takes place in Hamburg, Germany or Mobile, Alabama in the US.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A321",
     "metaData": {
@@ -153,6 +208,11 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/D-AIAF_%2819552328044%29.jpg/640px-D-AIAF_%2819552328044%29.jpg",
         "width": 640,
         "height": 425
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Airbus_A321_-_myAustrian_%281%29.jpg/1024px-Airbus_A321_-_myAustrian_%281%29.jpg",
+        "width": 1024,
+        "height": 683
       }
     ],
     "filterOptions": {
@@ -185,6 +245,21 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Turkish_Airlines%2C_Airbus_A330-300_TC-JNL_NRT_%2823708073592%29.jpg/640px-Turkish_Airlines%2C_Airbus_A330-300_TC-JNL_NRT_%2823708073592%29.jpg",
         "width": 640,
         "height": 427
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Airbus_A330-301%2C_Air_Inter_AN0198153.jpg",
+        "width": 1024,
+        "height": 668
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OD-MEE_28052016LHR_%2827289920776%29.jpg/1024px-OD-MEE_28052016LHR_%2827289920776%29.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Air_Caraibes_A330_F-OFDF.jpg",
+        "width": 800,
+        "height": 533
       }
     ],
     "filterOptions": {
@@ -217,6 +292,26 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Airbus_A340-311%2C_Lufthansa_AN1936774.jpg/640px-Airbus_A340-311%2C_Lufthansa_AN1936774.jpg",
         "width": 640,
         "height": 427
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/A340FAMILYv1.0.png/900px-A340FAMILYv1.0.png",
+        "width": 900,
+        "height": 1024
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Airbus_A340-211%2C_Airbus_Industrie_AN0726637.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Airbus_A340-200_Arm%C3%A9e_de_lAir_%28CTM%29_F-RAJB_-_MSN_081_%283261249156%29.jpg/1024px-Airbus_A340-200_Arm%C3%A9e_de_lAir_%28CTM%29_F-RAJB_-_MSN_081_%283261249156%29.jpg",
+        "width": 1024,
+        "height": 685
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Airbus_A340-600_at_the_2006_Farnborough_Airshow.jpg/1021px-Airbus_A340-600_at_the_2006_Farnborough_Airshow.jpg",
+        "width": 1021,
+        "height": 768
       }
     ],
     "filterOptions": {
@@ -249,6 +344,26 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/A7-ALA_%2819397355348%29.jpg/640px-A7-ALA_%2819397355348%29.jpg",
         "width": 640,
         "height": 425
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/A350XWB-941_ETIHAD_AIRWAYS.png/1024px-A350XWB-941_ETIHAD_AIRWAYS.png",
+        "width": 1024,
+        "height": 454
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/QTR_A350_A7-ALA_23dec14_LFBO-2.jpg/1024px-QTR_A350_A7-ALA_23dec14_LFBO-2.jpg",
+        "width": 1024,
+        "height": 610
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/FIN_A350_OH-LWA_7oct15_LFBO-2.jpg/1024px-FIN_A350_OH-LWA_7oct15_LFBO-2.jpg",
+        "width": 1024,
+        "height": 633
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/AIB_A350_F-WMIL_29nov16_LFBO.jpg/1024px-AIB_A350_F-WMIL_29nov16_LFBO.jpg",
+        "width": 1024,
+        "height": 684
       }
     ],
     "filterOptions": {
@@ -281,6 +396,21 @@
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Air_France_Airbus_A380-800_F-HPJB.jpg/640px-Air_France_Airbus_A380-800_F-HPJB.jpg",
         "width": 640,
         "height": 360
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Etihad_Airways_-_Airbus_A380-861.jpg/1024px-Etihad_Airways_-_Airbus_A380-861.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/A380_Emirates_A6-EDC.jpg/1024px-A380_Emirates_A6-EDC.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Singapore_Airlines_Airbus_A380_Wallner.jpg",
+        "width": 1024,
+        "height": 681
       }
     ],
     "filterOptions": {
