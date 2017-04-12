@@ -74,6 +74,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
             toolbar.alpha = 0.0f
             aircraftDescription.alpha = 0.0f
             aircraftMetaDataContainer.alpha = 0.0f
+            photoCarouselButton.alpha = 0.0f
             window.sharedElementEnterTransition.addListener(EnterTransitionListener())
         }
 
@@ -170,6 +171,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         override fun onTransitionEnd(transition: Transition?) {
             super.onTransitionEnd(transition)
             toolbar.animate().alpha(1.0f).start()
+            photoCarouselButton.animate().alpha(1.0f).start()
             val slideUp = AnimatorSet()
             slideUp.interpolator = LinearOutSlowInInterpolator()
             slideUp.duration = 160
