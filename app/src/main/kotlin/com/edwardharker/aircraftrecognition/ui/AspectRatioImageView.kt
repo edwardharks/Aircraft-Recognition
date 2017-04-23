@@ -1,13 +1,16 @@
 package com.edwardharker.aircraftrecognition.ui
 
 import android.content.Context
+import android.graphics.Canvas
+import android.graphics.Paint
 import android.util.AttributeSet
-import android.widget.ImageView
+import com.edwardharker.aircraftrecognition.R
+import com.github.chrisbanes.photoview.PhotoView
 
-
-class AspectRatioImageView : ImageView {
+class AspectRatioImageView : PhotoView {
 
     var aspectRatio: Float = 2f
+    var fixedAspectRatio = true
 
     constructor(context: Context) : super(context)
 
@@ -15,9 +18,17 @@ class AspectRatioImageView : ImageView {
 
     constructor(context: Context, attrs: AttributeSet, defStyle: Int) : super(context, attrs, defStyle)
 
+    init {
+        setZoomable(false)
+    }
+
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
-        val width = MeasureSpec.getSize(widthMeasureSpec)
-        val height = width / aspectRatio
-        setMeasuredDimension(width, height.toInt())
+        if (fixedAspectRatio) {
+            val width = MeasureSpec.getSize(widthMeasureSpec)
+            val height = width / aspectRatio
+            setMeasuredDimension(width, height.toInt())
+        } else {
+            super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+        }
     }
 }

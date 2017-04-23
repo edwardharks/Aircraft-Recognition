@@ -101,7 +101,10 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
             val layout = LayoutInflater.from(container.context)
                     .inflate(R.layout.view_photo_carousel_image, container, false)
             val imageView = layout.findViewById(R.id.aircraft_image) as AspectRatioImageView
+            imageView.setZoomable(true)
+            imageView.fixedAspectRatio = true
             imageView.loadAircraftImage(images[position]) {
+                imageView.fixedAspectRatio = false
                 if (position == 0) {
                     startPostponedTransitionFor(imageView)
                 }
