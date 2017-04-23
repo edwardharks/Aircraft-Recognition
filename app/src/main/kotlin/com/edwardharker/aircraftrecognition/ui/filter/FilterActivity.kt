@@ -6,14 +6,15 @@ import android.support.v7.widget.Toolbar
 import android.support.v7.widget.Toolbar.OnMenuItemClickListener
 import android.view.MenuItem
 import com.edwardharker.aircraftrecognition.R
+import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.filter.picker.FilterPickerRecyclerView
 import com.edwardharker.aircraftrecognition.ui.filter.results.FilterResultsRecyclerView
 
 class FilterActivity : AppCompatActivity(), OnMenuItemClickListener, FilterResultsRecyclerView.HiddenListener {
 
-    val toolbar: Toolbar by lazy { findViewById(R.id.toolbar) as Toolbar }
-    val bottomSheetView: FilterResultsRecyclerView by lazy { findViewById(R.id.content_filter) as FilterResultsRecyclerView }
-    val filterPicker: FilterPickerRecyclerView by lazy { findViewById(R.id.filter_picker) as FilterPickerRecyclerView }
+    private val toolbar by bind<Toolbar>(R.id.toolbar)
+    private val bottomSheetView by bind<FilterResultsRecyclerView>(R.id.content_filter)
+    private val filterPicker by bind<FilterPickerRecyclerView>(R.id.filter_picker)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

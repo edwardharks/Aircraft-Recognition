@@ -22,9 +22,9 @@ import java.util.*
 
 class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
 
-    private val bottomSheetBehaviour: BottomSheetBehavior<FilterResultsRecyclerView> by lazy { BottomSheetBehavior.from(this) }
+    private val bottomSheetBehaviour by lazy { BottomSheetBehavior.from(this) }
 
-    private val pickerHeight = resources.getDimensionPixelSize(R.dimen.filter_picker_height)
+    private val pickerHeight by lazy { resources.getDimensionPixelSize(R.dimen.filter_picker_height) }
 
     private val adapter = Adapter()
     private val presenter = filterResultsPresenter()

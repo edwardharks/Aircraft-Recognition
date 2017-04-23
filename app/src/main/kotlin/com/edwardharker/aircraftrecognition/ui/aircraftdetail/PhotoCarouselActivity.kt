@@ -15,10 +15,7 @@ import android.view.ViewTreeObserver
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.aircraftdetail.PhotoCarouselView
 import com.edwardharker.aircraftrecognition.model.Image
-import com.edwardharker.aircraftrecognition.ui.ActivityLauncher
-import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
-import com.edwardharker.aircraftrecognition.ui.dpToPixels
-import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
+import com.edwardharker.aircraftrecognition.ui.*
 import com.pixelcan.inkpageindicator.InkPageIndicator
 
 private val aircraftIdExtra = "aircraftId"
@@ -38,9 +35,9 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
 
     private val currentImagePositionKey = "currentImagePosition"
 
-    private val toolbar by lazy { findViewById(R.id.toolbar) as Toolbar }
-    private val viewPager by lazy { findViewById(R.id.view_pager) as ViewPager }
-    private val indicator by lazy { findViewById(R.id.indicator) as InkPageIndicator }
+    private val toolbar by bind<Toolbar>(R.id.toolbar)
+    private val viewPager by bind<ViewPager>(R.id.view_pager)
+    private val indicator by bind<InkPageIndicator>(R.id.indicator)
     private val presenter = photoCarouselPresenter()
 
     private var images: List<Image> = emptyList()

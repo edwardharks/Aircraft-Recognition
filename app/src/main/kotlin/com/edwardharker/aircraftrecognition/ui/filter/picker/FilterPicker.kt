@@ -13,13 +13,14 @@ import android.widget.TextView
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.model.Filter
 import com.edwardharker.aircraftrecognition.model.FilterOption
+import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.filter.selectedFilterOptions
 
 
 internal class FilterPicker : LinearLayout {
 
-    private val filterText by lazy { findViewById(R.id.filter_text) as TextView }
-    private val filterOptionsRecyclerView by lazy { findViewById(R.id.filter_options_recycler_view) as RecyclerView }
+    private val filterText by bind<TextView>(R.id.filter_text)
+    private val filterOptionsRecyclerView by bind<RecyclerView>(R.id.filter_options_recycler_view)
 
     private val selectedFilterOptions = selectedFilterOptions()
 

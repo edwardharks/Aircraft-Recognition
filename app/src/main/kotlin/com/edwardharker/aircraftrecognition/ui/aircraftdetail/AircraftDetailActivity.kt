@@ -49,13 +49,13 @@ fun ActivityLauncher.launchAircraftDetailActivity(aircraftId: String, aircraftIm
 
 class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
-    private val aircraftImage by lazy { findViewById(R.id.aircraft_image) as AspectRatioImageView }
-    private val aircraftName by lazy { findViewById(R.id.aircraft_name) as TextView }
-    private val aircraftDescription by lazy { findViewById(R.id.aircraft_description) as TextView }
-    private val aircraftMetaDataContainer by lazy { findViewById(R.id.aircraft_meta_data_container) as ViewGroup }
-    private val toolbar by lazy { findViewById(R.id.toolbar) as Toolbar }
-    private val scrollView by lazy { findViewById(R.id.scroll_view) as NestedScrollView }
-    private val photoCarouselButton by lazy { findViewById(R.id.photo_carousel_button) }
+    private val aircraftImage by bind<AspectRatioImageView>(R.id.aircraft_image)
+    private val aircraftName by bind<TextView>(R.id.aircraft_name)
+    private val aircraftDescription by bind<TextView>(R.id.aircraft_description)
+    private val aircraftMetaDataContainer by bind<ViewGroup>(R.id.aircraft_meta_data_container)
+    private val toolbar by bind<Toolbar>(R.id.toolbar)
+    private val scrollView by bind<NestedScrollView>(R.id.scroll_view)
+    private val photoCarouselButton by bind<View>(R.id.photo_carousel_button)
 
     private val presenter = aircraftDetailPresenter()
 
