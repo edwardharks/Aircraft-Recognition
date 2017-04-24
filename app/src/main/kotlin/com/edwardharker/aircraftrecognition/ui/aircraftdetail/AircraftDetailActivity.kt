@@ -50,6 +50,7 @@ fun ActivityLauncher.launchAircraftDetailActivity(aircraftId: String, aircraftIm
 class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     private val aircraftImage by bind<AspectRatioImageView>(R.id.aircraft_image)
+    private val aircraftImageContainer by bind<View>(R.id.aircraft_image_container)
     private val aircraftName by bind<TextView>(R.id.aircraft_name)
     private val aircraftDescription by bind<TextView>(R.id.aircraft_description)
     private val aircraftMetaDataContainer by bind<ViewGroup>(R.id.aircraft_meta_data_container)
@@ -65,8 +66,10 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         title = ""
-        toolbar.setNavigationOnClickListener { onBackPressed() }
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp)
+        toolbar.apply {
+            setNavigationOnClickListener { onBackPressed() }
+            setNavigationIcon(R.drawable.ic_arrow_back_white_24dp)
+        }
 
         supportPostponeEnterTransition()
 
@@ -86,8 +89,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         scrollView.scrollTo(0, 0)
         onScrollChanged(0)
 
-        aircraftImage.setOnClickListener(this::navigateToPhotoCarousel)
-        photoCarouselButton.setOnClickListener(this::navigateToPhotoCarousel)
+        aircraftImageContainer.setOnClickListener(this::navigateToPhotoCarousel)
     }
 
     override fun onStart() {

@@ -32,8 +32,10 @@
                 android:orientation="vertical">
 
                 <FrameLayout
+                    android:id="@+id/aircraft_image_container"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:foreground="?selectableItemBackground">
 
                     <com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
                         android:id="@+id/aircraft_image"
@@ -50,9 +52,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
                         android:layout_margin="12dp"
-                        android:clickable="true"
                         android:contentDescription="@string/more_photos"
-                        android:foreground="?selectableItemBackgroundBorderless"
                         android:src="@drawable/ic_photo_library_white_24dp" />
                 </FrameLayout>
 
