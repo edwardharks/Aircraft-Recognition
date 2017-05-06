@@ -28,6 +28,8 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.aircraftdetail.AircraftDetailView
+import com.edwardharker.aircraftrecognition.analytics.aircraftDetailEvent
+import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.ui.*
 import java.lang.Math.min
@@ -94,7 +96,9 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     override fun onStart() {
         super.onStart()
-        presenter.startPresenting(this, intent.getStringExtra(aircraftIdExtra))
+        val aircraftId = intent.getStringExtra(aircraftIdExtra)
+        presenter.startPresenting(this, aircraftId)
+        eventAnalytics().logEvent(aircraftDetailEvent(aircraftId))
     }
 
     override fun onStop() {

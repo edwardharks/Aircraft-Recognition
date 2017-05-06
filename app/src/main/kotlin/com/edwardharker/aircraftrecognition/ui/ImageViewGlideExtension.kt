@@ -10,6 +10,8 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.edwardharker.aircraftrecognition.R
+import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
+import com.edwardharker.aircraftrecognition.analytics.imageErrorEvent
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.Image
 
@@ -42,8 +44,9 @@ fun ImageView.loadImage(image: Image, @ColorInt placeholderColour: Int = R.color
 }
 
 private class Listener(val imageLoadedListener: (() -> Unit)?) : RequestListener<String, Bitmap> {
-    override fun onException(e: Exception?, model: String?, target: Target<Bitmap>?, isFirstResource: Boolean): Boolean {
+    override fun onException(error: Exception, model: String, target: Target<Bitmap>?, isFirstResource: Boolean): Boolean {
         imageLoadedListener?.invoke()
+        eventAnalytics().logEvent(imageErrorEvent(model, error.message))
         return false
     }
 
