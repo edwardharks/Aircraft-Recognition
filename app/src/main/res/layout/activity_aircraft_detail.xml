@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipChildren="false"
     tools:context=".ui.filter.FilterActivity">
 
     <View
@@ -17,25 +18,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        app:maxWidth="600dp">
+        android:clipChildren="false"
+        app:maxWidth="800dp">
 
         <android.support.v4.widget.NestedScrollView
             android:id="@+id/scroll_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:clipChildren="false"
             android:clipToPadding="false">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:clipChildren="false"
                 android:orientation="vertical">
 
-                <FrameLayout
+                <com.edwardharker.aircraftrecognition.ui.ExtendedFrameLayout
                     android:id="@+id/aircraft_image_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:foreground="?selectableItemBackground">
+                    android:layout_gravity="center_horizontal"
+                    android:foreground="?selectableItemBackground"
+                    app:maxWidth="600dp">
 
                     <com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
                         android:id="@+id/aircraft_image"
@@ -54,20 +60,22 @@
                         android:layout_margin="12dp"
                         android:contentDescription="@string/more_photos"
                         android:src="@drawable/ic_photo_library_white_24dp" />
-                </FrameLayout>
+                </com.edwardharker.aircraftrecognition.ui.ExtendedFrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark"
                     android:elevation="12dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:outlineProvider="bounds">
 
                     <TextView
                         android:id="@+id/aircraft_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/colorPrimary"
+                        android:elevation="4dp"
                         android:ellipsize="end"
                         android:gravity="center_vertical"
                         android:lines="1"
@@ -78,25 +86,8 @@
                         android:transitionName="@string/transition_aircraft_name"
                         tools:text="Boeing 737" />
 
-                    <TextView
-                        android:id="@+id/aircraft_description"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-light"
-                        android:paddingBottom="8dp"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin"
-                        android:paddingTop="12dp"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    <include layout="@layout/view_aircraft_description" />
 
-                    <LinearLayout
-                        android:id="@+id/aircraft_meta_data_container"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:paddingBottom="12dp"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin" />
                 </LinearLayout>
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
