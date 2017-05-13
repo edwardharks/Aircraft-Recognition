@@ -156,7 +156,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         toolbar.setBackgroundColor(argb((255 * toolbarAlphaScale).toInt(),
                 red(primaryColour), green(primaryColour), blue(primaryColour)))
         toolbar.setTitleTextColor(argb((255 * toolbarAlphaScale).toInt(), 255, 255, 255))
-        val toolbarMaxElevation = dpToPixels(8)
+        val toolbarMaxElevation = dpToPixels(4)
         toolbar.elevation = min(scrollY, scrollView.paddingTop).toFloat() / toolbarMaxElevation.toFloat()
     }
 
