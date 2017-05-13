@@ -6,6 +6,8 @@ import android.support.v7.widget.Toolbar
 import android.support.v7.widget.Toolbar.OnMenuItemClickListener
 import android.view.MenuItem
 import com.edwardharker.aircraftrecognition.R
+import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
+import com.edwardharker.aircraftrecognition.analytics.filterScreen
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.filter.picker.FilterPickerRecyclerView
 import com.edwardharker.aircraftrecognition.ui.filter.results.FilterResultsRecyclerView
@@ -24,6 +26,11 @@ class FilterActivity : AppCompatActivity(), OnMenuItemClickListener, FilterResul
         toolbar.setOnMenuItemClickListener(this)
 
         bottomSheetView.hiddenListener = this
+    }
+
+    override fun onStart() {
+        super.onStart()
+        eventAnalytics().logScreenView(filterScreen())
     }
 
     override fun onMenuItemClick(item: MenuItem): Boolean {

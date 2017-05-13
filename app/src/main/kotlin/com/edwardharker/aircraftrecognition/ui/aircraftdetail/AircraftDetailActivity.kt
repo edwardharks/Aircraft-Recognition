@@ -29,6 +29,7 @@ import android.widget.TextView
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.aircraftdetail.AircraftDetailView
 import com.edwardharker.aircraftrecognition.analytics.aircraftDetailEvent
+import com.edwardharker.aircraftrecognition.analytics.aircraftDetailScreen
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.ui.*
@@ -98,6 +99,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         super.onStart()
         val aircraftId = intent.getStringExtra(aircraftIdExtra)
         presenter.startPresenting(this, aircraftId)
+        eventAnalytics().logScreenView(aircraftDetailScreen())
         eventAnalytics().logEvent(aircraftDetailEvent(aircraftId))
     }
 

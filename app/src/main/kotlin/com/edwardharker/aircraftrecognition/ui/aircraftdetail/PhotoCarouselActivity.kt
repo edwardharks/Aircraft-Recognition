@@ -14,6 +14,8 @@ import android.view.ViewGroup
 import android.view.ViewTreeObserver
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.aircraftdetail.PhotoCarouselView
+import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
+import com.edwardharker.aircraftrecognition.analytics.photoCarouselScreen
 import com.edwardharker.aircraftrecognition.model.Image
 import com.edwardharker.aircraftrecognition.ui.*
 import com.pixelcan.inkpageindicator.InkPageIndicator
@@ -64,6 +66,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
     override fun onStart() {
         super.onStart()
         presenter.startPresenting(this, intent.getStringExtra(aircraftIdExtra))
+        eventAnalytics().logScreenView(photoCarouselScreen())
     }
 
     override fun onStop() {
