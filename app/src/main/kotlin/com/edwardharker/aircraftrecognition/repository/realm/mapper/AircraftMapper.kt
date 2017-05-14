@@ -15,7 +15,8 @@ fun aircraftToRealmAircraft(aircraft: Aircraft): RealmAircraft =
                 aircraft.attributionUrl,
                 aircraft.metaData.mapToRealmList(::metaDataPairToRealmPair),
                 aircraft.filterOptions.mapToRealmList(::mapPairToRealmAircraftFilterOptions),
-                aircraft.images.mapToRealmList(::imageToRealmImage)
+                aircraft.images.mapToRealmList(::imageToRealmImage),
+                aircraft.youtubeVideos.mapToRealmList(::youtubeVideoToRealmYoutubeVideo)
         )
 
 fun realmAircraftToAircraft(realmAircraft: RealmAircraft): Aircraft =
@@ -28,7 +29,8 @@ fun realmAircraftToAircraft(realmAircraft: RealmAircraft): Aircraft =
                 realmAircraft.attributionUrl,
                 realmAircraft.metaData.associate(::realmPairToMetaDataPair),
                 realmAircraft.aircraftFilterOptions.associate(::realmAircraftFilterOptionsToPair),
-                realmAircraft.images.map(::realmImageToImage)
+                realmAircraft.images.map(::realmImageToImage),
+                realmAircraft.youtubeVideos.map(::realmYoutubeVideoToYoutubeVideo)
         )
 
 fun metaDataPairToRealmPair(metaData: Pair<String, String>): RealmPair =

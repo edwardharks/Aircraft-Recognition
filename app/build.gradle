@@ -6,16 +6,15 @@ Properties props = new Properties()
 File propsFile = file('secret.properties')
 if (propsFile.exists()) {
     props.load(propsFile.newDataInputStream())
-} else if (System.env.MY_API_KEY != null) {
-    props.setProperty("gaTrackingId", System.env.GA_TRACKING_ID)
 } else {
     props.setProperty("gaTrackingId", "")
+    props.setProperty("youtubeApiKey", "")
 }
 
 def versionMajor = 1
 def versionMinor = 3
 def versionPatch = 0
-def versionBuild = 7
+def versionBuild = 8
 
 android {
     compileSdkVersion 25
@@ -29,6 +28,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         buildConfigField "String", "GA_TRACKING_ID", "\"${props.getProperty("gaTrackingId")}\""
+        buildConfigField "String", "YOUTUBE_API_KEY", "\"${props.getProperty("youtubeApiKey")}\""
     }
     buildTypes {
         release {
@@ -51,6 +51,7 @@ android {
 
 dependencies {
     compile project(':recognition')
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
 
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
 

@@ -28,11 +28,12 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.aircraftdetail.AircraftDetailView
+import com.edwardharker.aircraftrecognition.aircraftdetail.AircraftDetailViewModel
 import com.edwardharker.aircraftrecognition.analytics.aircraftDetailEvent
 import com.edwardharker.aircraftrecognition.analytics.aircraftDetailScreen
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
-import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.ui.*
+import com.edwardharker.aircraftrecognition.youtube.youtubeStandalonePlayerHelper
 import java.lang.Math.min
 
 private val aircraftIdExtra = "aircraftId"
@@ -116,7 +117,9 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         }
     }
 
-    override fun showAircraft(aircraft: Aircraft) {
+    override fun showAircraft(aircraftDetailViewModel: AircraftDetailViewModel) {
+        val aircraft = aircraftDetailViewModel.aircraft
+
         aircraftImage.loadAircraftImage(aircraft) {
             aircraftImage.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
                 override fun onGlobalLayout() {
@@ -125,27 +128,43 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
                 }
             })
         }
+
         val formatAircraftName = String.format("%s %s", aircraft.manufacturer, aircraft.name)
         aircraftName.text = formatAircraftName
         title = formatAircraftName
         aircraftDescription.text = aircraft.longDescription
+
         aircraftMetaDataContainer.removeAllViews()
+        aircraftDetailViewModel.featuredVideoId?.let { addWatchOnYoutubeItem(it) }
         aircraft.metaData.forEach { addAircraftMetaDataItem(it.key, it.value) }
         addAircraftMetaDataItem(getString(R.string.attribution), aircraft.attribution) {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(aircraft.attributionUrl)))
         }
     }
 
-    private fun addAircraftMetaDataItem(label: String, value: String, onClick: (() -> Unit)? = null) {
+    private fun addAircraftMetaDataItem(label: String,
+                                        value: String,
+                                        onClick: (() -> Unit)? = null) {
         val metaDataView = LayoutInflater.from(this).inflate(R.layout.view_meta_data_item, aircraftMetaDataContainer, false) as TextView
         val spannable = SpannableString(getString(R.string.meta_data_item, label, value))
         spannable.setSpan(StyleSpan(BOLD), spannable.length - value.length, spannable.length, 0)
         metaDataView.text = spannable
         onClick?.let { metaDataView.setOnClickListener { onClick.invoke() } }
+        aircraftMetaDataContainer.addView(metaDataView)
+        addDivider()
+    }
+
+    private fun addWatchOnYoutubeItem(videoId: String) {
+        val videoView = LayoutInflater.from(this).inflate(R.layout.view_aircraft_featured_video, aircraftMetaDataContainer, false)
+        videoView.setOnClickListener { youtubeStandalonePlayerHelper().launchYoutubeStandalonePlayer(this, videoId) }
+        aircraftMetaDataContainer.addView(videoView)
+        addDivider()
+    }
+
+    private fun addDivider() {
         val divider = View(this)
         divider.layoutParams = LinearLayout.LayoutParams(MATCH_PARENT, 1)
         divider.setBackgroundColor(getColor(this, R.color.colorPrimaryLight))
-        aircraftMetaDataContainer.addView(metaDataView)
         aircraftMetaDataContainer.addView(divider)
     }
 

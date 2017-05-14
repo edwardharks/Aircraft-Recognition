@@ -30,6 +30,7 @@ class AircraftMapperTest {
             attributionUrl,
             mapOf(Pair(metaDataName, metaDataValue)),
             emptyMap(),
+            emptyList(),
             emptyList())
 
     val realmAircraft = RealmAircraft(
@@ -41,6 +42,7 @@ class AircraftMapperTest {
             attribution,
             attributionUrl,
             RealmList(RealmPair(metaDataName, metaDataValue)),
+            RealmList(),
             RealmList(),
             RealmList())
 

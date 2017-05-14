@@ -16,5 +16,6 @@ open class RealmAircraft(
         open var attributionUrl: String = "",
         open var metaData: RealmList<RealmPair> = RealmList(),
         open var aircraftFilterOptions: RealmList<RealmAircraftFilterOption> = RealmList(),
-        open var images: RealmList<RealmImage> = RealmList()
+        open var images: RealmList<RealmImage> = RealmList(),
+        open var youtubeVideos: RealmList<RealmYoutubeVideo> = RealmList()
 ) : RealmObject()
