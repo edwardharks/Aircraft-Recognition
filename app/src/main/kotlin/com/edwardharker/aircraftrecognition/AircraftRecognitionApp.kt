@@ -16,8 +16,6 @@ class AircraftRecognitionApp : Application() {
 
         initialiseStetho(this)
 
-        Realm.init(this)
-
         // TODO refactor this and unit test
         staticAircraftRepository()
                 .allAircraft()
