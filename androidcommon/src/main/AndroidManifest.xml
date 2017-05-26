@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edwardharker.aircraftrecognition.androidcommon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+
+        <service android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <meta-data
+            android:name="com.edwardharker.aircraftrecognition.ui.GlideConfiguration"
+            android:value="GlideModule" />
+    </application>
+</manifest>

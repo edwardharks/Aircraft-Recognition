@@ -12,5 +12,4 @@
     android:outlineProvider="background"
     android:padding="2dp"
     app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
-    tools:context=".ui.aircraftdetail.AircraftDetailActivity"
     tools:showIn="@layout/activity_filter" />

@@ -1,0 +1,8 @@
+<resources>
+    <string name="title_activity_aircraft_detail">Aircraft Details</string>
+    <string name="title_activity_photo_carousel">Aircraft Photos</string>
+    <string name="meta_data_item">%1$s: %2$s</string>
+    <string name="attribution">Attribution</string>
+    <string name="more_photos">More photos</string>
+    <string name="watch_videos">Watch videos</string>
+</resources>

@@ -2,10 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.edwardharker.aircraftrecognition">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
-        android:name=".AircraftRecognitionApp"
+        android:name="com.edwardharker.aircraftrecognition.AircraftRecognitionApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,23 +20,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name="com.edwardharker.aircraftrecognition.ui.aircraftdetail.AircraftDetailActivity"
-            android:label="@string/title_activity_aircraft_detail"
-            android:theme="@style/AppTheme.NoActionBar.AircraftDetail" />
-
-        <activity
-            android:name="com.edwardharker.aircraftrecognition.ui.aircraftdetail.PhotoCarouselActivity"
-            android:label="@string/title_activity_photo_carousel"
-            android:theme="@style/AppTheme.NoActionBar.PhotoCarousel" />
-
-        <service android:name="com.google.android.gms.analytics.AnalyticsService"
-            android:enabled="true"
-            android:exported="false"/>
-
-        <meta-data
-            android:name="com.edwardharker.aircraftrecognition.ui.GlideConfiguration"
-            android:value="GlideModule" />
     </application>
 </manifest>

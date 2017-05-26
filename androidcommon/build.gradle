@@ -1,0 +1,67 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'realm-android'
+
+Properties props = new Properties()
+File propsFile = file('secret.properties')
+if (propsFile.exists()) {
+    props.load(propsFile.newDataInputStream())
+} else {
+    props.setProperty("gaTrackingId", "")
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 25
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "GA_TRACKING_ID", "\"${props.getProperty("gaTrackingId")}\""
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        debug.java.srcDirs += 'src/debug/kotlin'
+        release.java.srcDirs += 'src/release/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+}
+
+dependencies {
+    compile project(':recognition')
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+
+    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
+    compile "com.android.support:design:$supportLibraryVersion"
+    compile "com.android.support:percent:$supportLibraryVersion"
+    compile "com.google.firebase:firebase-core:$playServicesVersion"
+    releaseCompile "com.google.firebase:firebase-crash:$playServicesVersion"
+    compile "com.google.android.gms:play-services-analytics:$playServicesVersion"
+
+    compile 'io.reactivex:rxandroid:1.2.1'
+
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    compile 'com.github.chrisbanes:PhotoView:2.0.0'
+
+    debugCompile 'com.facebook.stetho:stetho:1.4.1'
+    debugCompile 'com.uphyca:stetho_realm:2.0.0'
+
+    testCompile project(':testcommon')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo'
+    }
+}
+

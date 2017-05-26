@@ -1,1 +1,1 @@
-include ':app', ':recognition', ':testcommon'
+include ':app', ':recognition', ':testcommon', ':aircraftdetail', ':androidcommon'

@@ -1,21 +1,12 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'realm-android'
-
-Properties props = new Properties()
-File propsFile = file('secret.properties')
-if (propsFile.exists()) {
-    props.load(propsFile.newDataInputStream())
-} else {
-    props.setProperty("gaTrackingId", "")
-    props.setProperty("youtubeApiKey", "")
-}
 
 def versionMajor = 1
 def versionMinor = 3
 def versionPatch = 1
 def versionBuild = 3
 
+// TODO extract android versions into variables to share between modules
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.1"
@@ -26,9 +17,6 @@ android {
         versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
         versionName "${versionMajor}.${versionMinor}.${versionPatch}"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
-        buildConfigField "String", "GA_TRACKING_ID", "\"${props.getProperty("gaTrackingId")}\""
-        buildConfigField "String", "YOUTUBE_API_KEY", "\"${props.getProperty("youtubeApiKey")}\""
     }
     buildTypes {
         release {
@@ -45,38 +33,12 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
         debug.java.srcDirs += 'src/debug/kotlin'
         release.java.srcDirs += 'src/release/kotlin'
-        test.java.srcDirs += 'src/test/kotlin'
     }
 }
 
 dependencies {
-    compile project(':recognition')
-    compile files('libs/YouTubeAndroidPlayerApi.jar')
-
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
-
-    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
-    compile "com.android.support:design:$supportLibraryVersion"
-    compile "com.android.support:percent:$supportLibraryVersion"
-    compile "com.google.firebase:firebase-core:$playServicesVersion"
-    releaseCompile "com.google.firebase:firebase-crash:$playServicesVersion"
-    compile "com.google.android.gms:play-services-analytics:$playServicesVersion"
-
-    compile 'io.reactivex:rxandroid:1.2.1'
-
-    compile 'com.google.code.gson:gson:2.8.0'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-
-    compile 'com.pacioianu.david:ink-page-indicator:1.2.0'
-    compile 'com.github.chrisbanes:PhotoView:2.0.0'
-
-    debugCompile 'com.facebook.stetho:stetho:1.4.1'
-    debugCompile 'com.uphyca:stetho_realm:2.0.0'
-
-    testCompile project(':testcommon')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    compile project(':androidcommon')
+    compile project(':aircraftdetail')
 }
 
 repositories {
