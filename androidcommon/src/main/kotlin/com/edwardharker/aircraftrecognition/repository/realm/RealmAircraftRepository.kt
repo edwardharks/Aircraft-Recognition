@@ -49,10 +49,10 @@ class RealmAircraftRepository(private val realm: Observable<Realm>) : AircraftRe
             }
 
     override fun filteredAircraftCount(filters: Map<String, String>): Long =
-         realm.toBlocking().first()
-                .where(RealmAircraft::class.java)
-                .withFilters(filters)
-                .count()
+            realm.toBlocking().first()
+                    .where(RealmAircraft::class.java)
+                    .withFilters(filters)
+                    .count()
 
 
     private fun RealmQuery<RealmAircraft>.withFilters(filters: Map<String, String>): RealmQuery<RealmAircraft> {
@@ -78,6 +78,8 @@ class RealmAircraftRepository(private val realm: Observable<Realm>) : AircraftRe
                         .asObservable()
             }.filter {
                 it.isLoaded
+            }.filter {
+                it.isNotEmpty()
             }.map(RealmResults<RealmAircraft>::first)
                     .map(::realmAircraftToAircraft)
 }

@@ -36,10 +36,12 @@ import com.edwardharker.aircraftrecognition.youtube.youtubeStandalonePlayerHelpe
 import java.lang.Math.min
 
 private val aircraftIdExtra = "aircraftId"
+private val startedWithTransitionExtra = "startedWithTransition"
 
 fun ActivityLauncher.launchAircraftDetailActivity(aircraftId: String, aircraftImage: View, background: View, aircraftName: View) {
     val intent = Intent(activity, AircraftDetailActivity::class.java).apply {
         putExtra(aircraftIdExtra, aircraftId)
+        putExtra(startedWithTransitionExtra, true)
     }
     activity.startActivity(intent,
             ActivityOptions.makeSceneTransitionAnimation(
@@ -61,22 +63,36 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val scrollView by bind<NestedScrollView>(R.id.scroll_view)
     private val photoCarouselButton by bind<View>(R.id.photo_carousel_button)
 
+    private val aircraftId by lazy {
+        if (intent.hasExtra(aircraftIdExtra)) {
+            intent.getStringExtra(aircraftIdExtra)
+        } else {
+            intent.data.lastPathSegment
+        }
+    }
+
+    private val startedWithTransition by lazy { intent.getBooleanExtra(startedWithTransitionExtra, false) }
+
+    private val isFromDeepLink by lazy { intent.data != null }
+
     private val presenter = aircraftDetailPresenter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_aircraft_detail)
         setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(!isFromDeepLink)
         title = ""
         toolbar.apply {
             setNavigationOnClickListener { onBackPressed() }
-            setNavigationIcon(R.drawable.ic_arrow_back_white_24dp)
+            if (!isFromDeepLink) {
+                setNavigationIcon(R.drawable.ic_arrow_back_white_24dp)
+            }
         }
 
         supportPostponeEnterTransition()
 
-        if (savedInstanceState == null) {
+        if (savedInstanceState == null && startedWithTransition) {
             toolbar.alpha = 0.0f
             aircraftDescription.alpha = 0.0f
             aircraftMetaDataContainer.alpha = 0.0f
@@ -97,7 +113,6 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     override fun onStart() {
         super.onStart()
-        val aircraftId = intent.getStringExtra(aircraftIdExtra)
         presenter.startPresenting(this, aircraftId)
         eventAnalytics().logScreenView(aircraftDetailScreen())
         eventAnalytics().logEvent(aircraftDetailEvent(aircraftId))
@@ -179,7 +194,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     }
 
     private fun navigateToPhotoCarousel(view: View) {
-        activityLauncher().launchPhotoCarouselActivity(intent.getStringExtra(aircraftIdExtra), aircraftImage)
+        activityLauncher().launchPhotoCarouselActivity(aircraftId, aircraftImage)
     }
 
     private inner class EnterTransitionListener : TransitionListenerAdapter() {
