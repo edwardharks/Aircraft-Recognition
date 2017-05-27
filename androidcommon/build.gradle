@@ -38,8 +38,10 @@ dependencies {
     compile "com.android.support:appcompat-v7:$supportLibraryVersion"
     compile "com.android.support:design:$supportLibraryVersion"
     compile "com.android.support:percent:$supportLibraryVersion"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile "com.google.firebase:firebase-core:$playServicesVersion"
     releaseCompile "com.google.firebase:firebase-crash:$playServicesVersion"
+    releaseCompile "com.google.firebase:firebase-perf:$playServicesVersion"
     compile "com.google.android.gms:play-services-analytics:$playServicesVersion"
 
     compile 'io.reactivex:rxandroid:1.2.1'
