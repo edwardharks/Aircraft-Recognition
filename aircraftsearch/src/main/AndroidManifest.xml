@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edwardharker.aircraftsearch">
+
+    <application>
+
+        <activity
+            android:name="com.edwardharker.aircraftrecognition.ui.search.SearchActivity"
+            android:exported="false"
+            android:label="@string/search"
+            android:theme="@style/AppTheme.NoActionBar.Search" />
+    </application>
+
+</manifest>

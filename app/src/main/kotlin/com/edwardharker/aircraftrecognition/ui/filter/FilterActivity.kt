@@ -8,9 +8,11 @@ import android.view.MenuItem
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.filterScreen
+import com.edwardharker.aircraftrecognition.ui.activityLauncher
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.filter.picker.FilterPickerRecyclerView
 import com.edwardharker.aircraftrecognition.ui.filter.results.FilterResultsRecyclerView
+import com.edwardharker.aircraftrecognition.ui.search.launchSearchActivity
 
 class FilterActivity : AppCompatActivity(), OnMenuItemClickListener, FilterResultsRecyclerView.HiddenListener {
 
@@ -37,6 +39,8 @@ class FilterActivity : AppCompatActivity(), OnMenuItemClickListener, FilterResul
         if (item.itemId == R.id.action_toggle_bottom_sheet) {
             toggleBottomSheetHidden()
             return true
+        } else if (item.itemId == R.id.action_search) {
+            activityLauncher().launchSearchActivity()
         }
         return false
     }

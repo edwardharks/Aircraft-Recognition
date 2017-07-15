@@ -4,7 +4,6 @@ import android.app.Application
 import com.edwardharker.aircraftrecognition.repository.aircraftRepository
 import com.edwardharker.aircraftrecognition.repository.staticAircraftRepository
 import com.edwardharker.aircraftrecognition.stetho.initialiseStetho
-import io.realm.Realm
 import rx.android.schedulers.AndroidSchedulers.mainThread
 import rx.schedulers.Schedulers.io
 

@@ -2,7 +2,7 @@ package com.edwardharker.aircraftrecognition.ui
 
 import android.graphics.Bitmap
 import android.graphics.drawable.ColorDrawable
-import android.support.annotation.ColorInt
+import android.support.annotation.ColorRes
 import android.support.v4.content.ContextCompat.getColor
 import android.widget.ImageView
 import com.bumptech.glide.Glide
@@ -15,7 +15,7 @@ import com.edwardharker.aircraftrecognition.androidcommon.R
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.Image
 
-fun AspectRatioImageView.loadAircraftImage(aircraft: Aircraft, @ColorInt placeholderColour: Int = R.color.colorPrimaryLight, imageLoadedListener: (() -> Unit)? = null) {
+fun AspectRatioImageView.loadAircraftImage(aircraft: Aircraft, @ColorRes placeholderColour: Int = R.color.colorPrimaryLight, imageLoadedListener: (() -> Unit)? = null) {
     if (aircraft.images.isNotEmpty()) {
         loadAircraftImage(aircraft.images.first(), placeholderColour, imageLoadedListener)
     } else {
@@ -25,12 +25,12 @@ fun AspectRatioImageView.loadAircraftImage(aircraft: Aircraft, @ColorInt placeho
     requestLayout()
 }
 
-fun AspectRatioImageView.loadAircraftImage(image: Image, @ColorInt placeholderColour: Int = R.color.colorPrimaryLight, imageLoadedListener: (() -> Unit)? = null) {
+fun AspectRatioImageView.loadAircraftImage(image: Image, @ColorRes placeholderColour: Int = R.color.colorPrimaryLight, imageLoadedListener: (() -> Unit)? = null) {
     loadImage(image, placeholderColour, imageLoadedListener)
     aspectRatio = image.width.toFloat() / image.height.toFloat()
 }
 
-fun ImageView.loadImage(image: Image, @ColorInt placeholderColour: Int = R.color.colorPrimaryLight, imageLoadedListener: (() -> Unit)? = null) {
+fun ImageView.loadImage(image: Image, @ColorRes placeholderColour: Int = R.color.colorPrimaryLight, imageLoadedListener: (() -> Unit)? = null) {
     Glide.with(context)
             .load(image.url)
             .asBitmap()
