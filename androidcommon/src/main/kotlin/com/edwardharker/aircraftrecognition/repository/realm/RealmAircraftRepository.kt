@@ -82,4 +82,6 @@ class RealmAircraftRepository(private val realm: Observable<Realm>) : AircraftRe
                 it.isNotEmpty()
             }.map(RealmResults<RealmAircraft>::first)
                     .map(::realmAircraftToAircraft)
+
+    override fun searchByAircraftName(name: String): Observable<List<Aircraft>> = allAircraft()
 }

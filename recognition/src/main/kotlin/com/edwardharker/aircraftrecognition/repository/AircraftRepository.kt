@@ -17,4 +17,6 @@ interface AircraftRepository {
     fun deleteAllAircraft(): Completable
 
     fun findAircraftById(id: String): Observable<Aircraft>
+
+    fun searchByAircraftName(name: String): Observable<List<Aircraft>>
 }
