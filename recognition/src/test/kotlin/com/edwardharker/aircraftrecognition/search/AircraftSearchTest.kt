@@ -28,6 +28,16 @@ class AircraftSearchTest {
     }
 
     @Test
+    fun returnsAircraftWithDisplayNameThatStartWithQuery() {
+        val dreamliner = Aircraft(manufacturer = "Boeing", name = "787 Dreamliner")
+        val aircraft = listOf(dreamliner, Aircraft(manufacturer = "Airbus", name = "A380"))
+
+        val expected = listOf(dreamliner)
+        val actual = AircraftSearch.search("Boeing 787", aircraft)
+        assertThat(actual, sameBeanAs(expected))
+    }
+
+    @Test
     fun returnsEmptyListForEmptyQuery() {
         val aircraft = listOf(Aircraft(name = "787 Dreamliner"), Aircraft(name = "A380"))
 
