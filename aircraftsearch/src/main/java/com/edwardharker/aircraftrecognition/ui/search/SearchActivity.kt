@@ -26,6 +26,7 @@ class SearchActivity : AppCompatActivity() {
     private val toolbar by bind<Toolbar>(R.id.toolbar)
     private val searchEditText by bind<EditText>(R.id.search_box)
 
+    private val searchStore = searchStore()
     private val disposables = CompositeSubscription()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,15 +40,21 @@ class SearchActivity : AppCompatActivity() {
             setNavigationOnClickListener { onBackPressed() }
             setNavigationIcon(R.drawable.ic_arrow_back_white_24dp)
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
 
         val events: Observable<SearchAction> = RxTextView.afterTextChangeEvents(searchEditText)
                 .map { QueryChangedAction(searchEditText.text.toString()) }
 
-
-        val searchStore = SearchStore(aircraftRepository(), SearchReducer::reduce)
         disposables.add(searchStore.observe(events).subscribe {
             Log.d("---->", "${it.searchResults}")
         })
+    }
 
+    override fun onStop() {
+        super.onStop()
+        disposables.clear()
     }
 }

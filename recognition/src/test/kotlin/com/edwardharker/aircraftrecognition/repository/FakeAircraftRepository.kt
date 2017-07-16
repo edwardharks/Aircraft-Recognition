@@ -46,4 +46,6 @@ class FakeAircraftRepository : AircraftRepository {
 
     override fun findAircraftById(id: String): Observable<Aircraft> =
             Observable.fromCallable { aircraftByIdMap[id] }
+
+    override fun searchByAircraftName(name: String): Observable<List<Aircraft>> = Observable.empty()
 }
