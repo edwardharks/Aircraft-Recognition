@@ -40,8 +40,4 @@ class AssetsAircraftRepository(private val context: Context, private val gson: G
     override fun findAircraftById(id: String): Observable<Aircraft> {
         throw UnsupportedOperationException("AssetsAircraftRepository does not support finding aircraft")
     }
-
-    override fun searchByAircraftName(name: String): Observable<List<Aircraft>> {
-        throw UnsupportedOperationException("AssetsAircraftRepository does not support searching aircraft")
-    }
 }

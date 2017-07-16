@@ -55,7 +55,7 @@ class SearchActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         val events: Observable<SearchAction> = RxTextView.afterTextChangeEvents(searchEditText)
-                .debounce(400, TimeUnit.MILLISECONDS)
+                .debounce(200, TimeUnit.MILLISECONDS)
                 .filter { it.toString().isNotBlank() }
                 .observeOn(AndroidSchedulers.mainThread())
                 .map { QueryChangedAction(searchEditText.text.toString()) }
