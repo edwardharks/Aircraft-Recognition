@@ -52,6 +52,13 @@ fun ActivityLauncher.launchAircraftDetailActivity(aircraftId: String, aircraftIm
             ).toBundle())
 }
 
+fun ActivityLauncher.launchAircraftDetailActivity(aircraftId: String) {
+    val intent = Intent(activity, AircraftDetailActivity::class.java).apply {
+        putExtra(aircraftIdExtra, aircraftId)
+    }
+    activity.startActivity(intent)
+}
+
 class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     private val aircraftImage by bind<AspectRatioImageView>(R.id.aircraft_image)

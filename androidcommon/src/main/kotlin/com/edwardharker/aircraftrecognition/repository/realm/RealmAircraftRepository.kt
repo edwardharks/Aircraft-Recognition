@@ -83,5 +83,16 @@ class RealmAircraftRepository(private val realm: Observable<Realm>) : AircraftRe
             }.map(RealmResults<RealmAircraft>::first)
                     .map(::realmAircraftToAircraft)
 
-    override fun searchByAircraftName(name: String): Observable<List<Aircraft>> = allAircraft()
+    override fun searchByAircraftName(name: String): Observable<List<Aircraft>> =
+            realm.flatMap {
+                it.where(RealmAircraft::class.java)
+                        .equalTo("name", name)
+                        .findAllSortedAsync(arrayOf("manufacturer", "name"),
+                                arrayOf(Sort.ASCENDING, Sort.ASCENDING))
+                        .asObservable()
+            }.filter {
+                it.isLoaded
+            }.map {
+                it.map(::realmAircraftToAircraft)
+            }
 }

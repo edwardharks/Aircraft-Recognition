@@ -14,6 +14,7 @@ import android.widget.TextView
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.filter.results.FilterResultsView
 import com.edwardharker.aircraftrecognition.model.Aircraft
+import com.edwardharker.aircraftrecognition.model.displayName
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.activityLauncher
 import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDetailActivity
@@ -123,7 +124,7 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
             val aircraft = filterResults[position]
             holder.aircraft = aircraft
 
-            holder.aircraftName.text = String.format("%s %s", aircraft.manufacturer, aircraft.name)
+            holder.aircraftName.text = aircraft.displayName
             holder.aircraftImage.loadAircraftImage(aircraft)
         }
 
