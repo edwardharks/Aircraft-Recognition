@@ -60,7 +60,9 @@ class SearchActivity : AppCompatActivity() {
                 .observeOn(AndroidSchedulers.mainThread())
                 .map { QueryChangedAction(searchEditText.text.toString()) }
 
-        disposables.add(searchStore.observe(events).subscribe {
+        searchStore.dispatch(events)
+
+        disposables.add(searchStore.subscribe().subscribe {
             searchAdapter.bindSearchResults(it.searchResults)
         })
     }
