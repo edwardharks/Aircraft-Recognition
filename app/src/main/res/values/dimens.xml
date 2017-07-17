@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="filter_picker_height">192dp</dimen>
+    <dimen name="filter_picker_height">208dp</dimen>
     <integer name="filter_results_column_count">2</integer>
 </resources>
