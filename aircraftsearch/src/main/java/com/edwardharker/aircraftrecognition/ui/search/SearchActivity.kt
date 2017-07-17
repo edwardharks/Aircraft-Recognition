@@ -14,6 +14,7 @@ import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDeta
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftsearch.R
 import com.jakewharton.rxbinding.widget.RxTextView
+import redux.Action
 import rx.Observable
 import rx.android.schedulers.AndroidSchedulers
 import rx.subscriptions.CompositeSubscription
@@ -54,7 +55,7 @@ class SearchActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        val events: Observable<SearchAction> = RxTextView.afterTextChangeEvents(searchEditText)
+        val events: Observable<Action> = RxTextView.afterTextChangeEvents(searchEditText)
                 .debounce(200, TimeUnit.MILLISECONDS)
                 .filter { it.toString().isNotBlank() }
                 .observeOn(AndroidSchedulers.mainThread())
@@ -63,7 +64,9 @@ class SearchActivity : AppCompatActivity() {
         searchStore.dispatch(events)
 
         disposables.add(searchStore.subscribe().subscribe {
-            searchAdapter.bindSearchResults(it.searchResults)
+            if (it is SearchState) {
+                searchAdapter.bindSearchResults(it.searchResults)
+            }
         })
     }
 

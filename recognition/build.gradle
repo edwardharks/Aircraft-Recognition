@@ -3,6 +3,7 @@ apply plugin: 'kotlin'
 
 dependencies {
     testCompile project(':testcommon')
+    compile project(':redux')
 
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
 

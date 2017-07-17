@@ -12,16 +12,16 @@ interface Reducer {
     fun reduce(oldState: State, action: Action): State
 }
 
-class Store(reducer: Reducer, actions: Observable<Action>) {
+class Store(reducer: Reducer, actions: (Observable<Action>) -> Observable<Action>) {
 
-    private val actions = PublishSubject.create<Action>()
+    private val actionsSubject = PublishSubject.create<Action>()
 
-    private val states = actions
+    private val states = actionsSubject
             .compose {
-                actions.publish { actions }
+                actionsSubject.publish(actions)
             }.scan(State(), reducer::reduce)
 
-    fun dispatch(action: Action) = actions.onNext(action)
+    fun dispatch(action: Action) = actionsSubject.onNext(action)
 
     fun dispatch(actions: Observable<Action>): Subscription = actions.subscribe { dispatch(it) }
 
