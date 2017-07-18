@@ -64,9 +64,7 @@ class SearchActivity : AppCompatActivity() {
         searchStore.dispatch(events)
 
         disposables.add(searchStore.subscribe().subscribe {
-            if (it is SearchState) {
-                searchAdapter.bindSearchResults(it.searchResults)
-            }
+            searchAdapter.bindSearchResults(it.searchResults)
         })
     }
 
