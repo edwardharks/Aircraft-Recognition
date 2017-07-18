@@ -8,22 +8,32 @@ open class Action
 
 open class State
 
-interface Reducer {
-    fun reduce(oldState: State, action: Action): State
+interface Reducer<S : State> {
+    fun reduce(oldState: S, action: Action): S
 }
 
-class Store(reducer: Reducer, actions: (Observable<Action>) -> Observable<Action>) {
+interface ActionTransformer {
+    fun transform(actions: Observable<Action>): Observable<Action>
+}
 
-    private val actionsSubject = PublishSubject.create<Action>()
+object NoOpActionTransformer : ActionTransformer {
+    override fun transform(actions: Observable<Action>): Observable<Action> = actions
+}
 
-    private val states = actionsSubject
-            .compose {
-                actionsSubject.publish(actions)
-            }.scan(State(), reducer::reduce)
+class Store<S : State>(initialValue: S,
+                       reducer: Reducer<S>,
+                       actionTransformer: ActionTransformer = NoOpActionTransformer) {
+
+    private val actionsSubject: PublishSubject<Action> = PublishSubject.create<Action>()
+
+    private val states: Observable<S> = actionsSubject
+            .compose { actionsSubject.publish(actionTransformer::transform) }
+            .scan(initialValue, reducer::reduce)
+            .distinctUntilChanged()
 
     fun dispatch(action: Action) = actionsSubject.onNext(action)
 
     fun dispatch(actions: Observable<Action>): Subscription = actions.subscribe { dispatch(it) }
 
-    fun subscribe(): Observable<State> = states
+    fun subscribe(): Observable<S> = states
 }
