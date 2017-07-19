@@ -59,7 +59,8 @@ class SearchActivity : AppCompatActivity() {
                 .debounce(200, TimeUnit.MILLISECONDS)
                 .filter { it.toString().isNotBlank() }
                 .observeOn(AndroidSchedulers.mainThread())
-                .map { QueryChangedAction(searchEditText.text.toString()) }
+                .map { searchEditText.text.toString() }
+                .compose(searchUseCase()::searchAircraftByName)
 
         searchStore.dispatch(events)
 

@@ -35,4 +35,3 @@ class SearchAdapter(private val clickListener: (Aircraft) -> Unit) : RecyclerVie
         val label = view as TextView
     }
 }
-
