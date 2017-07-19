@@ -6,7 +6,7 @@ import android.support.design.widget.TextInputLayout
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
+import android.widget.TextView
 import com.jakewharton.rxbinding.view.RxView
 import com.jakewharton.rxbinding.widget.RxTextView
 import redux.Action
@@ -22,7 +22,9 @@ class LoginActivity : AppCompatActivity() {
     val passwordField by bind<EditText>(R.id.password)
     val passwordFieldContainer by bind<TextInputLayout>(R.id.password_container)
     val progressView by bind<View>(R.id.login_progress)
+    val loginForm by bind<View>(R.id.login_form)
     val loginButton by bind<Button>(R.id.email_sign_in_button)
+    val resultMessage by bind<TextView>(R.id.result_message)
 
     private lateinit var store: Store<LoginState>
     private val disposables = CompositeSubscription()
@@ -31,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        store = Store(LoginState(), LoginReducer, LoginActionsTransformer)
+        store = Store(LoginState(), LoginReducer)
     }
 
     override fun onStart() {
@@ -40,13 +42,16 @@ class LoginActivity : AppCompatActivity() {
         val emailChangedEvents = RxTextView.afterTextChangeEvents(emailField)
                 .observeOn(AndroidSchedulers.mainThread())
                 .map { EmailChangedAction(emailField.text.toString()) }
+                .compose(LoginUseCase::validateEmail)
 
         val passwordChangedEvents = RxTextView.afterTextChangeEvents(passwordField)
                 .observeOn(AndroidSchedulers.mainThread())
                 .map { PasswordChangedAction(passwordField.text.toString()) }
+                .compose(LoginUseCase::validatePassword)
 
         val loginClickedEvents = RxView.clicks(loginButton)
                 .map { PerformLoginAction(emailField.text.toString(), passwordField.text.toString()) }
+                .compose(LoginUseCase::login)
 
         val events: Observable<Action> = Observable.merge(emailChangedEvents, passwordChangedEvents, loginClickedEvents)
 
@@ -54,12 +59,10 @@ class LoginActivity : AppCompatActivity() {
 
         disposables.add(store.subscribe()
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe { (isLoggedIn, enableLoginButton, invalidEmail, invalidPassword, isLoading) ->
+                .subscribe { (isLoggedIn, enableLoginButton, invalidEmail, invalidPassword, isLoading, loginFormVisible) ->
                     progressView.visibility = if (isLoading) View.VISIBLE else View.GONE
-
-                    if (isLoggedIn) {
-                        Toast.makeText(this, "Logged in", Toast.LENGTH_LONG).show()
-                    }
+                    loginForm.visibility = if (loginFormVisible) View.VISIBLE else View.GONE
+                    resultMessage.visibility = if (isLoggedIn) View.VISIBLE else View.GONE
 
                     loginButton.isEnabled = enableLoginButton
 
