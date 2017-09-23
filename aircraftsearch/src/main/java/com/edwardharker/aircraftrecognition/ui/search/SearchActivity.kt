@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
 import android.widget.EditText
-import com.edwardharker.aircraftrecognition.search.*
 import com.edwardharker.aircraftrecognition.ui.ActivityLauncher
 import com.edwardharker.aircraftrecognition.ui.activityLauncher
 import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDetailActivity
@@ -15,6 +14,8 @@ import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftsearch.R
 import com.jakewharton.rxbinding.widget.RxTextView
 import redux.Action
+import redux.asObservable
+import redux.dispatch
 import rx.Observable
 import rx.android.schedulers.AndroidSchedulers
 import rx.subscriptions.CompositeSubscription
@@ -64,7 +65,7 @@ class SearchActivity : AppCompatActivity() {
 
         searchStore.dispatch(events)
 
-        disposables.add(searchStore.subscribe().subscribe {
+        disposables.add(searchStore.asObservable().subscribe {
             searchAdapter.bindSearchResults(it.searchResults)
         })
     }

@@ -6,4 +6,4 @@ import redux.Store
 
 fun searchUseCase(): SearchUseCase = SearchUseCase(aircraftRepository(), AircraftSearch::search)
 
-fun searchStore(): Store<SearchState> = Store(SearchState(), SearchReducer)
+fun searchStore(): Store<SearchState> = Store(SearchReducer::reduce, SearchState())

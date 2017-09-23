@@ -1,29 +1,61 @@
 package redux
 
+import rx.Emitter
 import rx.Observable
 import rx.Subscription
-import rx.subjects.PublishSubject
+import java.util.HashSet
 
-open class Action
+interface Action
 
-open class State
+typealias Unsubscriber = () -> Unit
 
-interface Reducer<S : State> {
-    fun reduce(oldState: S, action: Action): S
+class Store<S>(private val reducer: (S, Action) -> S, initialState: S) {
+
+    var state: S = initialState
+        private set
+    private val listeners = HashSet<(S) -> Unit>()
+    private var isDispatching = false
+    private val lock = Object()
+
+    fun dispatch(action: Action) {
+        synchronized(lock) {
+            if (isDispatching) {
+                throw IllegalStateException("Reducers may not dispatch actions.")
+            }
+
+            try {
+                isDispatching = true
+                state = reducer(state, action)
+            } finally {
+                isDispatching = false
+            }
+        }
+
+        for (listener in listeners) {
+            listener(state)
+        }
+    }
+
+
+    fun subscribe(listener: (S) -> Unit): Unsubscriber {
+        listeners.add(listener)
+        listener(state)
+
+        val unsubscriber = fun() {
+            listeners.remove(listener)
+        }
+
+        return unsubscriber
+    }
+
+    companion object {
+        fun <S> create(reducer: (S, Action) -> S, initialState: S): Store<S> = Store(reducer, initialState)
+    }
 }
 
-class Store<S : State>(initialValue: S,
-                       reducer: Reducer<S>) {
+fun <S> Store<S>.dispatch(actions: Observable<out Action>): Subscription = actions.subscribe { dispatch(it) }
 
-    private val actionsSubject: PublishSubject<Action> = PublishSubject.create<Action>()
-
-    private val states: Observable<S> = actionsSubject
-            .scan(initialValue, reducer::reduce)
-            .distinctUntilChanged()
-
-    fun dispatch(action: Action) = actionsSubject.onNext(action)
-
-    fun dispatch(actions: Observable<Action>): Subscription = actions.subscribe { dispatch(it) }
-
-    fun subscribe(): Observable<S> = states
-}
+fun <S> Store<S>.asObservable(): Observable<out S> = Observable.fromEmitter({ emitter ->
+    val unsubscriber = subscribe { emitter.onNext(it) }
+    emitter.setCancellation(unsubscriber)
+}, Emitter.BackpressureMode.DROP)

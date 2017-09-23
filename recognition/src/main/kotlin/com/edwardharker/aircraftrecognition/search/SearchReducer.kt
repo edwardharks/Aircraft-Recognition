@@ -1,11 +1,10 @@
 package com.edwardharker.aircraftrecognition.search
 
 import redux.Action
-import redux.Reducer
 
-object SearchReducer : Reducer<SearchState> {
+object SearchReducer {
 
-    override fun reduce(oldState: SearchState, action: Action): SearchState {
+    fun reduce(oldState: SearchState, action: Action): SearchState {
         when (action) {
             is SearchResultsAction -> return SearchState.success(action.aircraft)
             else -> return oldState
