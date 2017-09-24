@@ -3,7 +3,7 @@
     "id": "airbus-a300",
     "name": "A300",
     "manufacturer": "Airbus",
-    "longDescription": "The Airbus A300 is a short- to medium-range wide-body twin-engine jet airliner that was developed and manufactured by Airbus. Formally announced in 1969 and first flying in October 1972, it holds the distinction of being the world's first twin-engined widebody airliner; it was also the first product of Airbus Industrie, a consortium of European aerospace manufacturers, now a subsidiary of Airbus Group. The A300 can typically seat 266 passengers in a two-class layout, with a maximum range of 4,070 nautical miles (7,540 km) when fully loaded, depending on model.",
+    "longDescription": "The Airbus A300 is a short- to medium-range wide-body twin-engine jet airliner that was developed and manufactured by Airbus. Formally announced in 1969 and first flying in October 1972, it holds the distinction of being the world\u0027s first twin-engined widebody airliner; it was also the first product of Airbus Industrie, a consortium of European aerospace manufacturers, now a subsidiary of Airbus Group. The A300 can typically seat 266 passengers in a two-class layout, with a maximum range of 4,070 nautical miles (7,540 km) when fully loaded, depending on model.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A300",
     "metaData": {
@@ -16,6 +16,13 @@
       "Engines": "Two jet engines",
       "Body": "Wide",
       "End of production": "2007"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -39,12 +46,6 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    },
     "youtubeVideos": [
       {
         "videoId": "aThImsucx8k"
@@ -69,6 +70,13 @@
       "Body": "Wide",
       "End of production": "1998"
     },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Airbus_A310-304%2C_Air_Transat_AN1571009.jpg/640px-Airbus_A310-304%2C_Air_Transat_AN1571009.jpg",
@@ -91,12 +99,6 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    },
     "youtubeVideos": [
       {
         "videoId": "m8K8CfPdODc"
@@ -120,6 +122,13 @@
       "Body": "Narrow",
       "End of production": "In production"
     },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Airfrance.a318-100.f-guga.arp.jpg/640px-Airfrance.a318-100.f-guga.arp.jpg",
@@ -142,12 +151,6 @@
         "height": 681
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    },
     "youtubeVideos": [
       {
         "videoId": "SrHA71Sgskw"
@@ -171,6 +174,13 @@
       "Body": "Narrow",
       "End of production": "In production"
     },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Lufthansa.a319-100.d-aili.arp.jpg/640px-Lufthansa.a319-100.d-aili.arp.jpg",
@@ -193,12 +203,6 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    },
     "youtubeVideos": [
       {
         "videoId": "7Vzk1HXV1IE"
@@ -223,6 +227,13 @@
       "Body": "Narrow",
       "End of production": "In production"
     },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/D-AIAF_%2819552328044%29.jpg/640px-D-AIAF_%2819552328044%29.jpg",
@@ -235,12 +246,6 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    },
     "youtubeVideos": [
       {
         "videoId": "aZQd0fIXua8"
@@ -265,6 +270,13 @@
       "Body": "Wide",
       "End of production": "In production"
     },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Turkish_Airlines%2C_Airbus_A330-300_TC-JNL_NRT_%2823708073592%29.jpg/640px-Turkish_Airlines%2C_Airbus_A330-300_TC-JNL_NRT_%2823708073592%29.jpg",
@@ -287,12 +299,6 @@
         "height": 533
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    },
     "youtubeVideos": [
       {
         "videoId": "2Xs5geC370s"
@@ -317,6 +323,13 @@
       "Body": "Wide",
       "End of production": "2011"
     },
+    "filterOptions": {
+      "engines": "FOUR",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Airbus_A340-311%2C_Lufthansa_AN1936774.jpg/640px-Airbus_A340-311%2C_Lufthansa_AN1936774.jpg",
@@ -339,12 +352,6 @@
         "height": 768
       }
     ],
-    "filterOptions": {
-      "engines": "FOUR",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    },
     "youtubeVideos": [
       {
         "videoId": "-DVF3sKgO3g"
@@ -368,6 +375,13 @@
       "Engines": "Two",
       "Body": "Wide",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -396,12 +410,6 @@
         "height": 684
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    },
     "youtubeVideos": [
       {
         "videoId": "yWQ-t0zxAlg"
@@ -412,7 +420,7 @@
     "id": "airbus-a380",
     "name": "A380",
     "manufacturer": "Airbus",
-    "longDescription": "The Airbus A380 is a double-deck, wide-body, four-engine jet airliner manufactured by European Union manufacturer Airbus. It is the world's largest passenger airliner, and the airports at which it operates have upgraded facilities to accommodate it. It was initially named Airbus A3XX and designed to challenge Boeing's monopoly in the large-aircraft market. The A380 made its first flight on 27 April 2005 and entered commercial service in 25 October 2007 with Singapore Airlines.",
+    "longDescription": "The Airbus A380 is a double-deck, wide-body, four-engine jet airliner manufactured by European Union manufacturer Airbus. It is the world\u0027s largest passenger airliner, and the airports at which it operates have upgraded facilities to accommodate it. It was initially named Airbus A3XX and designed to challenge Boeing\u0027s monopoly in the large-aircraft market. The A380 made its first flight on 27 April 2005 and entered commercial service in 25 October 2007 with Singapore Airlines.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A380",
     "metaData": {
@@ -425,6 +433,13 @@
       "Engines": "Four",
       "Body": "Wide",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "FOUR",
+      "decks": "TWO",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -448,12 +463,6 @@
         "height": 681
       }
     ],
-    "filterOptions": {
-      "engines": "FOUR",
-      "decks": "TWO",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    },
     "youtubeVideos": [
       {
         "videoId": "gF9n7ShkOJ0"
@@ -464,7 +473,7 @@
     "id": "antonov-an-148",
     "name": "An-148",
     "manufacturer": "Antonov",
-    "longDescription": "The Antonov An-148 (Ukrainian: Антонов Ан-148) is a regional jet airliner designed by the Ukrainian Antonov company and produced by Antonov itself and also on outsource by Russia's Voronezh Aircraft Production Association. Development of the aircraft was started in the 1990s, and the maiden flight took place on 17 December 2004. The aircraft completed its certification programme on 26 February 2007. The An-148 has a maximum range of 2,100–4,400 km (1,100–2,400 nmi; 1,300–2,700 mi) and is able to carry 68–85 passengers, depending on the configuration.",
+    "longDescription": "The Antonov An-148 (Ukrainian: \u0026#1040;\u0026#1085;\u0026#1090;\u0026#1086;\u0026#1085;\u0026#1086;\u0026#1074; \u0026#1040;\u0026#1085;-148) is a regional jet airliner designed by the Ukrainian Antonov company and produced by Antonov itself and also on outsource by Russia\u0027s Voronezh Aircraft Production Association. Development of the aircraft was started in the 1990s, and the maiden flight took place on 17 December 2004. The aircraft completed its certification programme on 26 February 2007. The An-148 has a maximum range of 2,100?4,400 km (1,100?2,400 nmi; 1,300?2,700 mi) and is able to carry 68?85 passengers, depending on the configuration.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Antonov_An-148",
     "metaData": {
@@ -477,6 +486,13 @@
       "Engines": "Two jet engines",
       "Body": "Narrow",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "ABOVE",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -500,12 +516,7 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "ABOVE"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "boeing-717",
@@ -524,6 +535,13 @@
       "Body": "Narrow",
       "End of production": "2006"
     },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Delta_Air_Lines_Boeing_717-2BD_N966AT.jpg/640px-Delta_Air_Lines_Boeing_717-2BD_N966AT.jpg",
@@ -541,18 +559,13 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "boeing-737",
     "name": "737",
     "manufacturer": "Boeing",
-    "longDescription": "The Boeing 737 is an American short- to medium-range twinjet narrow-body airliner. Originally developed as a shorter, lower-cost twin-engine airliner derived from Boeing's 707 and 727, the 737 has developed into a family of ten passenger models with capacities from 85 to 215 passengers. The 737 is Boeing's only narrow-body airliner in production, with the 737 Next Generation (-700, -800, and -900ER) variants currently being built. Production has also begun on the re-engined and redesigned 737 MAX, which is set to enter service in 2017.",
+    "longDescription": "The Boeing 737 is an American short- to medium-range twinjet narrow-body airliner. Originally developed as a shorter, lower-cost twin-engine airliner derived from Boeing\u0027s 707 and 727, the 737 has developed into a family of ten passenger models with capacities from 85 to 215 passengers. The 737 is Boeing\u0027s only narrow-body airliner in production, with the 737 Next Generation (-700, -800, and -900ER) variants currently being built. Production has also begun on the re-engined and redesigned 737 MAX, which is set to enter service in 2017.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_737",
     "metaData": {
@@ -564,6 +577,13 @@
       "Engines": "Two jet engines",
       "Body": "Narrow",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -587,18 +607,13 @@
         "height": 670
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "boeing-747",
     "name": "747",
     "manufacturer": "Boeing",
-    "longDescription": "The Boeing 747 is an American wide-body commercial jet airliner and cargo aircraft, often referred to by its original nickname, Jumbo Jet, or Queen of the Skies. Its distinctive \"hump\" upper deck along the forward part of the aircraft makes it among the world's most recognizable aircraft, and it was the first wide-body produced. Manufactured by Boeing's Commercial Airplane unit in the United States, the original version of the 747 was envisioned to have 150 percent greater capacity than the Boeing 707, one of the common large commercial aircraft of the 1960s. First flown commercially in 1970, the 747 held the passenger capacity record for 37 years.",
+    "longDescription": "The Boeing 747 is an American wide-body commercial jet airliner and cargo aircraft, often referred to by its original nickname, Jumbo Jet, or Queen of the Skies. Its distinctive \"hump\" upper deck along the forward part of the aircraft makes it among the world\u0027s most recognizable aircraft, and it was the first wide-body produced. Manufactured by Boeing\u0027s Commercial Airplane unit in the United States, the original version of the 747 was envisioned to have 150 percent greater capacity than the Boeing 707, one of the common large commercial aircraft of the 1960s. First flown commercially in 1970, the 747 held the passenger capacity record for 37 years.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_747",
     "metaData": {
@@ -611,6 +626,13 @@
       "Engines": "4 jet engines",
       "Body": "Wide",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "FOUR",
+      "decks": "TWO",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -629,18 +651,13 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "FOUR",
-      "decks": "TWO",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "boeing-757",
     "name": "757",
     "manufacturer": "Boeing",
-    "longDescription": "The Boeing 757 is a mid-size, narrow-body twin-engine jet airliner that was designed and built by Boeing Commercial Airplanes. It is the manufacturer's largest single-aisle passenger aircraft and was produced from 1981 to 2004. The twinjet has a two-crew member glass cockpit, turbofan engines of sufficient power to allow takeoffs from relatively short runways and higher altitudes, a conventional tail and, for reduced aerodynamic drag, a supercritical wing design. Intended to replace the smaller three-engine 727 on short and medium routes, the 757 can carry 200 to 295 passengers for a maximum of 3,150 to 4,100 nautical miles (5,830 to 7,590 km), depending on variant. The 757 was designed concurrently with a wide-body twinjet, the 767, and owing to shared features pilots can obtain a common type rating that allows them to operate both aircraft.",
+    "longDescription": "The Boeing 757 is a mid-size, narrow-body twin-engine jet airliner that was designed and built by Boeing Commercial Airplanes. It is the manufacturer\u0027s largest single-aisle passenger aircraft and was produced from 1981 to 2004. The twinjet has a two-crew member glass cockpit, turbofan engines of sufficient power to allow takeoffs from relatively short runways and higher altitudes, a conventional tail and, for reduced aerodynamic drag, a supercritical wing design. Intended to replace the smaller three-engine 727 on short and medium routes, the 757 can carry 200 to 295 passengers for a maximum of 3,150 to 4,100 nautical miles (5,830 to 7,590 km), depending on variant. The 757 was designed concurrently with a wide-body twinjet, the 767, and owing to shared features pilots can obtain a common type rating that allows them to operate both aircraft.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_757",
     "metaData": {
@@ -653,6 +670,13 @@
       "Engines": "Two jet engines",
       "Body": "Narrow",
       "End of production": "2004"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -676,18 +700,13 @@
         "height": 644
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "boeing-767",
     "name": "767",
     "manufacturer": "Boeing",
-    "longDescription": "The Boeing 767 is a mid- to large-size, long-range, wide-body twin-engine jet airliner built by Boeing Commercial Airplanes. It was Boeing's first wide-body twinjet and its first airliner with a two-crew glass cockpit. The aircraft has two turbofan engines, a conventional tail, and, for reduced aerodynamic drag, a supercritical wing design. Designed as a smaller wide-body airliner than earlier aircraft such as the 747, the 767 has seating capacity for 181 to 375 people, and a design range of 3,850 to 6,385 nautical miles (7,130 to 11,825 km), depending on variant. Development of the 767 occurred in tandem with a narrow-body twinjet, the 757, resulting in shared design features which allow pilots to obtain a common type rating to operate both aircraft.",
+    "longDescription": "The Boeing 767 is a mid- to large-size, long-range, wide-body twin-engine jet airliner built by Boeing Commercial Airplanes. It was Boeing\u0027s first wide-body twinjet and its first airliner with a two-crew glass cockpit. The aircraft has two turbofan engines, a conventional tail, and, for reduced aerodynamic drag, a supercritical wing design. Designed as a smaller wide-body airliner than earlier aircraft such as the 747, the 767 has seating capacity for 181 to 375 people, and a design range of 3,850 to 6,385 nautical miles (7,130 to 11,825 km), depending on variant. Development of the 767 occurred in tandem with a narrow-body twinjet, the 757, resulting in shared design features which allow pilots to obtain a common type rating to operate both aircraft.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_767",
     "metaData": {
@@ -700,6 +719,13 @@
       "Engines": "Two jet engines",
       "Body": "Wide",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -723,18 +749,13 @@
         "height": 658
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "boeing-777",
     "name": "777",
     "manufacturer": "Boeing",
-    "longDescription": "The Boeing 777 is a family of long-range wide-body twin-engine jet airliners developed and manufactured by Boeing Commercial Airplanes. It is the world's largest twinjet and has a typical seating capacity of 314 to 396 passengers, with a range of 5,240 to 8,555 nautical miles (9,704 to 15,844 km). Commonly referred to as the \"Triple Seven\", its distinguishing features include the largest-diameter turbofan engines of any aircraft, six wheels on each main landing gear, fully circular fuselage cross-section, and a blade-shaped tail cone. Developed in consultation with eight major airlines, the 777 was designed to replace older wide-body airliners and bridge the capacity difference between Boeing's 767 and 747. As Boeing's first fly-by-wire airliner, it has computer-mediated controls. It was also the first commercial aircraft to be designed entirely with computer-aided design.",
+    "longDescription": "The Boeing 777 is a family of long-range wide-body twin-engine jet airliners developed and manufactured by Boeing Commercial Airplanes. It is the world\u0027s largest twinjet and has a typical seating capacity of 314 to 396 passengers, with a range of 5,240 to 8,555 nautical miles (9,704 to 15,844 km). Commonly referred to as the \"Triple Seven\", its distinguishing features include the largest-diameter turbofan engines of any aircraft, six wheels on each main landing gear, fully circular fuselage cross-section, and a blade-shaped tail cone. Developed in consultation with eight major airlines, the 777 was designed to replace older wide-body airliners and bridge the capacity difference between Boeing\u0027s 767 and 747. As Boeing\u0027s first fly-by-wire airliner, it has computer-mediated controls. It was also the first commercial aircraft to be designed entirely with computer-aided design.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_777",
     "metaData": {
@@ -747,6 +768,13 @@
       "Engines": "Two jet engines",
       "Body": "Wide",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -775,18 +803,13 @@
         "height": 608
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "boeing-787-dreamliner",
     "name": "787 Dreamliner",
     "manufacturer": "Boeing",
-    "longDescription": "The Boeing 787 Dreamliner is an American long-haul, mid-size widebody, twin-engine jet airliner made by Boeing Commercial Airplanes. Its variants seat 242 to 335 passengers in typical three-class seating configurations. It is Boeing's most fuel-efficient airliner and is a pioneering airliner with the use of composite materials as the primary material in the construction of its airframe. The 787 was designed to be 20% more fuel efficient than the Boeing 767, which it was intended to replace. The 787 Dreamliner's distinguishing features include mostly electrical flight systems, raked wingtips, and noise-reducing chevrons on its engine nacelles. It shares a common type rating with the larger Boeing 777 to allow qualified pilots to operate both models.",
+    "longDescription": "The Boeing 787 Dreamliner is an American long-haul, mid-size widebody, twin-engine jet airliner made by Boeing Commercial Airplanes. Its variants seat 242 to 335 passengers in typical three-class seating configurations. It is Boeing\u0027s most fuel-efficient airliner and is a pioneering airliner with the use of composite materials as the primary material in the construction of its airframe. The 787 was designed to be 20% more fuel efficient than the Boeing 767, which it was intended to replace. The 787 Dreamliner\u0027s distinguishing features include mostly electrical flight systems, raked wingtips, and noise-reducing chevrons on its engine nacelles. It shares a common type rating with the larger Boeing 777 to allow qualified pilots to operate both models.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_787_Dreamliner",
     "metaData": {
@@ -799,6 +822,13 @@
       "Engines": "Two jet engines",
       "Body": "Wide",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -827,12 +857,7 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "bombardier-crj200",
@@ -850,6 +875,13 @@
       "Airline service entry": "1992",
       "Engines": "Two jet engines",
       "Body": "Narrow"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -873,18 +905,13 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "bombardier-crj700",
     "name": "CRJ700",
     "manufacturer": "Bombardier",
-    "longDescription": "The Bombardier CRJ700, CRJ900, and CRJ1000 are regional airliners manufactured by Bombardier and based on the CRJ200. Final assembly of the aircraft is at Montréal-Mirabel International Airport in Mirabel, Quebec, outside Montreal, Quebec, Canada.",
+    "longDescription": "The Bombardier CRJ700, CRJ900, and CRJ1000 are regional airliners manufactured by Bombardier and based on the CRJ200. Final assembly of the aircraft is at Montr?l-Mirabel International Airport in Mirabel, Quebec, outside Montreal, Quebec, Canada.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Bombardier_CRJ700_series",
     "metaData": {
@@ -897,6 +924,13 @@
       "Engines": "Two",
       "Body": "Narrow",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -930,12 +964,7 @@
         "height": 682
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "bombardier-cseries",
@@ -954,6 +983,13 @@
       "Engines": "Two",
       "Body": "Narrow",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -977,12 +1013,7 @@
         "height": 534
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "british-aerospace-146",
@@ -1001,6 +1032,13 @@
       "Engines": "Four",
       "Body": "Narrow",
       "End of production": "2001"
+    },
+    "filterOptions": {
+      "engines": "FOUR",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "ABOVE",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1029,18 +1067,13 @@
         "height": 640
       }
     ],
-    "filterOptions": {
-      "engines": "FOUR",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "ABOVE"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "comac-arj21",
     "name": "ARJ21",
     "manufacturer": "Comac",
-    "longDescription": "The Comac ARJ21 Xiangfeng (Chinese: 翔凤; pinyin: xiángfèng; literally: \"Flying Phoenix\") is a twin-engined regional jet, manufactured by Chinese aerospace company Comac.",
+    "longDescription": "The Comac ARJ21 Xiangfeng (Chinese: \u0026#32724;\u0026#20964;; pinyin: xi?gf?g; literally: \"Flying Phoenix\") is a twin-engined regional jet, manufactured by Chinese aerospace company Comac.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Comac_ARJ21",
     "metaData": {
@@ -1052,6 +1085,13 @@
       "Engines": "Two",
       "Body": "Narrow",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1065,18 +1105,13 @@
         "height": 682
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "douglas-dc-8",
     "name": "DC-8",
     "manufacturer": "Douglas",
-    "longDescription": "The Douglas DC-8 (also known as the McDonnell Douglas DC-8) is a four-engine long-range narrow-body jet airliner built from 1958 to 1972 by the Douglas Aircraft Company. Launched after the competing Boeing 707, the DC-8 nevertheless kept Douglas in a strong position in the airliner market, and remained in production until 1972 when it began to be superseded by larger wide-body designs, including the Boeing 747, McDonnell Douglas DC-10 and Lockheed L-1011 TriStar. The DC-8's design allowed it a slightly larger cargo capacity than the 707 and some re-engined DC-8s are still in use as freighters.",
+    "longDescription": "The Douglas DC-8 (also known as the McDonnell Douglas DC-8) is a four-engine long-range narrow-body jet airliner built from 1958 to 1972 by the Douglas Aircraft Company. Launched after the competing Boeing 707, the DC-8 nevertheless kept Douglas in a strong position in the airliner market, and remained in production until 1972 when it began to be superseded by larger wide-body designs, including the Boeing 747, McDonnell Douglas DC-10 and Lockheed L-1011 TriStar. The DC-8\u0027s design allowed it a slightly larger cargo capacity than the 707 and some re-engined DC-8s are still in use as freighters.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Douglas_DC-8",
     "metaData": {
@@ -1089,6 +1124,13 @@
       "Engines": "Four jet engines",
       "Body": "Narrow",
       "End of production": "1972"
+    },
+    "filterOptions": {
+      "engines": "FOUR",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1117,18 +1159,13 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "FOUR",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "embraer-erj-145",
     "name": "ERJ 145",
     "manufacturer": "Embraer",
-    "longDescription": "The Embraer ERJ 145 family is a series of twin-engine regional jets produced by Embraer, a Brazilian aerospace company. Family members include the ERJ 135 (37 passengers), ERJ 140 (44 passengers), and ERJ 145 (50 passengers), as well as the Legacy business jet and the R-99 family of military aircraft. The ERJ 145 is the largest of the group. Each jet in the series is powered by two turbofan engines. The family's primary competition comes from the Bombardier CRJ regional jets.",
+    "longDescription": "The Embraer ERJ 145 family is a series of twin-engine regional jets produced by Embraer, a Brazilian aerospace company. Family members include the ERJ 135 (37 passengers), ERJ 140 (44 passengers), and ERJ 145 (50 passengers), as well as the Legacy business jet and the R-99 family of military aircraft. The ERJ 145 is the largest of the group. Each jet in the series is powered by two turbofan engines. The family\u0027s primary competition comes from the Bombardier CRJ regional jets.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Embraer_ERJ_145_family",
     "metaData": {
@@ -1141,6 +1178,13 @@
       "Engines": "Two",
       "Body": "Narrow",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1164,12 +1208,7 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "embraer-e-Jet",
@@ -1188,6 +1227,13 @@
       "Engines": "Two",
       "Body": "Narrow",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1216,12 +1262,7 @@
         "height": 696
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "fairchild-dornier-328jet",
@@ -1239,6 +1280,13 @@
       "Engines": "Two jet engines",
       "Body": "Narrow",
       "End of production": "2002"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "ABOVE",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1262,12 +1310,7 @@
         "height": 514
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "ABOVE"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "fokker-f28-fellowship",
@@ -1286,6 +1329,13 @@
       "Engines": "Two",
       "Body": "Narrow",
       "End of production": "1987"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1309,12 +1359,7 @@
         "height": 691
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "fokker-70",
@@ -1333,6 +1378,13 @@
       "Body": "Narrow",
       "End of production": "1997"
     },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Fokker_70_KLM_Cityhopper_%28KLC%29_PH-KZM_-_MSN_11561_%287106998789%29.jpg/1024px-Fokker_70_KLM_Cityhopper_%28KLC%29_PH-KZM_-_MSN_11561_%287106998789%29.jpg",
@@ -1345,12 +1397,7 @@
         "height": 680
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "fokker-100",
@@ -1368,6 +1415,13 @@
       "Engines": "Two",
       "Body": "Narrow",
       "End of production": "1997"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1391,18 +1445,13 @@
         "height": 680
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "ilyushin-il-96",
     "name": "Il-96",
     "manufacturer": "Ilyushin",
-    "longDescription": "The Ilyushin Il-96 (Russian: Илью́шин Ил-96) is a Russian four-engined long-haul wide-body airliner designed by Ilyushin in the former Soviet Union and manufactured by the Voronezh Aircraft Production Association in Voronezh, Russia. It is powered by four Aviadvigatel PS-90 two-shaft turbofan engines.",
+    "longDescription": "The Ilyushin Il-96 (Russian: \u0026#1048;\u0026#1083;\u0026#1100;\u0026#1102;\u0026#769;\u0026#1096;\u0026#1080;\u0026#1085; \u0026#1048;\u0026#1083;-96) is a Russian four-engined long-haul wide-body airliner designed by Ilyushin in the former Soviet Union and manufactured by the Voronezh Aircraft Production Association in Voronezh, Russia. It is powered by four Aviadvigatel PS-90 two-shaft turbofan engines.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Ilyushin_Il-96",
     "metaData": {
@@ -1416,6 +1465,13 @@
       "Body": "Wide",
       "End of production": "In production"
     },
+    "filterOptions": {
+      "engines": "FOUR",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cubana%2C_CU-T1250%2C_Ilyushin_Il-96-300_%2831268448486%29.jpg/1024px-Cubana%2C_CU-T1250%2C_Ilyushin_Il-96-300_%2831268448486%29.jpg",
@@ -1428,12 +1484,7 @@
         "height": 480
       }
     ],
-    "filterOptions": {
-      "engines": "FOUR",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "lockheed-l-1011-tristar",
@@ -1453,6 +1504,13 @@
       "Body": "Wide",
       "End of production": "1984"
     },
+    "filterOptions": {
+      "engines": "THREE",
+      "decks": "ONE",
+      "engine-position": "BOTH",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Gulf_Air_Lockheed_L-1011-385-1-15_TriStar_200_Fitzgerald.jpg",
@@ -1470,12 +1528,7 @@
         "height": 669
       }
     ],
-    "filterOptions": {
-      "engines": "THREE",
-      "decks": "ONE",
-      "engine-position": "BOTH",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "mcdonnell-douglas-dc-9",
@@ -1494,6 +1547,13 @@
       "Engines": "Two jet engines",
       "Body": "Narrow",
       "End of production": "1982"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1517,12 +1577,7 @@
         "height": 692
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "mcdonnell-douglas-md-80",
@@ -1541,6 +1596,13 @@
       "Engines": "Two",
       "Body": "Narrow",
       "End of production": "1999"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1564,18 +1626,13 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "mcdonnell-douglas-dc-10",
     "name": "DC-10",
     "manufacturer": "McDonnell Douglas",
-    "longDescription": "The McDonnell Douglas DC-10 is a three-engine wide-body jet airliner manufactured by McDonnell Douglas. The DC-10 has range for medium- to long-haul flights, capable of carrying a maximum of 380 passengers. Its most distinguishing feature is the two turbofan engines mounted on underwing pylons and a third engine at the base of the vertical stabilizer. The model was a successor to McDonnell Douglas's DC-8 for long-range operations, and competed in the same markets as the Lockheed L-1011 TriStar, which has a similar layout. In its early years the DC-10 had a poor safety record; however, this has greatly improved over time.",
+    "longDescription": "The McDonnell Douglas DC-10 is a three-engine wide-body jet airliner manufactured by McDonnell Douglas. The DC-10 has range for medium- to long-haul flights, capable of carrying a maximum of 380 passengers. Its most distinguishing feature is the two turbofan engines mounted on underwing pylons and a third engine at the base of the vertical stabilizer. The model was a successor to McDonnell Douglas\u0027s DC-8 for long-range operations, and competed in the same markets as the Lockheed L-1011 TriStar, which has a similar layout. In its early years the DC-10 had a poor safety record; however, this has greatly improved over time.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_DC-10",
     "metaData": {
@@ -1587,6 +1644,13 @@
       "Engines": "Three",
       "Body": "Wide",
       "End of production": "1988"
+    },
+    "filterOptions": {
+      "engines": "THREE",
+      "decks": "ONE",
+      "engine-position": "BOTH",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1610,12 +1674,7 @@
         "height": 683
       }
     ],
-    "filterOptions": {
-      "engines": "THREE",
-      "decks": "ONE",
-      "engine-position": "BOTH",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "mcdonnell-douglas-md-11",
@@ -1633,6 +1692,13 @@
       "Engines": "Three jet engines",
       "Body": "Wide",
       "End of production": "2000"
+    },
+    "filterOptions": {
+      "engines": "THREE",
+      "decks": "ONE",
+      "engine-position": "BOTH",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1661,12 +1727,7 @@
         "height": 684
       }
     ],
-    "filterOptions": {
-      "engines": "THREE",
-      "decks": "ONE",
-      "engine-position": "BOTH",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "mcdonnell-douglas-md-90",
@@ -1686,6 +1747,13 @@
       "Body": "Narrow",
       "End of production": "2000"
     },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Britishjet.md-90-30.hb-jib.arp.jpg/1024px-Britishjet.md-90-30.hb-jib.arp.jpg",
@@ -1703,18 +1771,13 @@
         "height": 682
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "sukhoi-superjet-100",
     "name": "Superjet 100",
     "manufacturer": "Sukhoi",
-    "longDescription": "The Sukhoi Superjet 100 (Russian: Сухой Суперджет 100) is a modern fly-by-wire twin-engine regional jet with 8 (VIP) to 108 (all economy) passenger seats. With development initiated in 2000, the airliner was designed and spearheaded by Sukhoi, a division of the Russian civil aerospace company (UAC), in co-operation with several foreign partners. Its maiden flight was conducted on 19 May 2008. On 21 April 2011, the Superjet 100 undertook its first commercial passenger flight, on the Armavia route from Yerevan to Moscow.",
+    "longDescription": "The Sukhoi Superjet 100 (Russian: \u0026#1057;\u0026#1091;\u0026#1093;\u0026#1086;\u0026#1081; \u0026#1057;\u0026#1091;\u0026#1087;\u0026#1077;\u0026#1088;\u0026#1076;\u0026#1078;\u0026#1077;\u0026#1090; 100) is a modern fly-by-wire twin-engine regional jet with 8 (VIP) to 108 (all economy) passenger seats. With development initiated in 2000, the airliner was designed and spearheaded by Sukhoi, a division of the Russian civil aerospace company (UAC), in co-operation with several foreign partners. Its maiden flight was conducted on 19 May 2008. On 21 April 2011, the Superjet 100 undertook its first commercial passenger flight, on the Armavia route from Yerevan to Moscow.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Sukhoi_Superjet_100",
     "metaData": {
@@ -1726,6 +1789,13 @@
       "Engines": "Two jet engines",
       "Body": "Narrow",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1744,12 +1814,7 @@
         "height": 688
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "tupolev-tu-134",
@@ -1768,6 +1833,13 @@
       "Engines": "Two jet engines",
       "Body": "Narrow",
       "End of production": "1989"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1791,18 +1863,13 @@
         "height": 326
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "tupolev-tu-154",
     "name": "Tu-154",
     "manufacturer": "Tupolev",
-    "longDescription": "The Tupolev Tu-154 (Russian: Tyполев Ту-154; NATO reporting name: Careless) is a three-engine medium-range narrow-body airliner designed in the mid-1960s and manufactured by Tupolev. A workhorse of Soviet and (subsequently) Russian airlines for several decades, it carried half of all passengers flown by Aeroflot and its subsidiaries (137.5 million/year or 243.8 billion passenger km in 1990), remaining the standard domestic-route airliner of Russia and former Soviet states until the mid-2000s. It was exported to 17 non-Russian airlines and used as head-of-state transport by the air forces of several countries.",
+    "longDescription": "The Tupolev Tu-154 (Russian: Ty\u0026#1087;\u0026#1086;\u0026#1083;\u0026#1077;\u0026#1074; \u0026#1058;\u0026#1091;-154; NATO reporting name: Careless) is a three-engine medium-range narrow-body airliner designed in the mid-1960s and manufactured by Tupolev. A workhorse of Soviet and (subsequently) Russian airlines for several decades, it carried half of all passengers flown by Aeroflot and its subsidiaries (137.5 million/year or 243.8 billion passenger km in 1990), remaining the standard domestic-route airliner of Russia and former Soviet states until the mid-2000s. It was exported to 17 non-Russian airlines and used as head-of-state transport by the air forces of several countries.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-154",
     "metaData": {
@@ -1815,6 +1882,13 @@
       "Engines": "Three",
       "Body": "Narrow",
       "End of production": "2013"
+    },
+    "filterOptions": {
+      "engines": "THREE",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1843,12 +1917,7 @@
         "height": 1023
       }
     ],
-    "filterOptions": {
-      "engines": "THREE",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "tupolev-tu-204",
@@ -1867,6 +1936,13 @@
       "Engines": "Two",
       "Body": "Narrow",
       "End of production": "In production"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1890,18 +1966,13 @@
         "height": 485
       }
     ],
-    "filterOptions": {
-      "engines": "TWO",
-      "decks": "ONE",
-      "engine-position": "WING",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "yakovlev-yak-40",
     "name": "Yak-40",
     "manufacturer": "Yakovlev",
-    "longDescription": "The Yakovlev Yak-40 (Russian: Як-40), NATO reporting name: Codling) is a small, three-engined airliner. It is the world's first commuter trijet. Maiden flight was made in 1966, and production took place from 1967 to 1981. Introduced in September 1968, the Yak-40 was exported since 1970.",
+    "longDescription": "The Yakovlev Yak-40 (Russian: \u0026#1071;\u0026#1082;-40), NATO reporting name: Codling) is a small, three-engined airliner. It is the world\u0027s first commuter trijet. Maiden flight was made in 1966, and production took place from 1967 to 1981. Introduced in September 1968, the Yak-40 was exported since 1970.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Yakovlev_Yak-40",
     "metaData": {
@@ -1914,6 +1985,13 @@
       "Engines": "Three jet engines",
       "Body": "Narrow",
       "End of production": "1981"
+    },
+    "filterOptions": {
+      "engines": "THRE",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
     },
     "images": [
       {
@@ -1942,12 +2020,7 @@
         "height": 1024
       }
     ],
-    "filterOptions": {
-      "engines": "THRE",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   },
   {
     "id": "yakovlev-yak-42",
@@ -1967,6 +2040,13 @@
       "Body": "Narrow",
       "End of production": "2003"
     },
+    "filterOptions": {
+      "engines": "THREE",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
     "images": [
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Centre-Avia_Yakovlev_Yak-42_42385_Misko.jpg/1024px-Centre-Avia_Yakovlev_Yak-42_42385_Misko.jpg",
@@ -1984,11 +2064,6 @@
         "height": 703
       }
     ],
-    "filterOptions": {
-      "engines": "THREE",
-      "decks": "ONE",
-      "engine-position": "TAIL",
-      "wing-position": "BELOW"
-    }
+    "youtubeVideos": []
   }
 ]

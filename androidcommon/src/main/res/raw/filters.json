@@ -1,70 +1,84 @@
 [
-    {
-        "name": "engines",
-        "filterText": "How many engines?",
-        "filterOptions": [
-            {
-                "value": "ONE",
-                "label": "One"
-            },
-            {
-                "value": "TWO",
-                "label": "Two"
-            },
-            {
-                "value": "THREE",
-                "label": "Three"
-            },
-            {
-                "value": "FOUR",
-                "label": "Four"
-            }
-        ]
-    },
-    {
-        "name": "engine-position",
-        "filterText": "Where are the engines?",
-        "filterOptions": [
-            {
-                "value": "WING",
-                "label": "Under the wings"
-            },
-            {
-                "value": "TAIL",
-                "label": "On the tail"
-            },
-            {
-                "value": "BOTH",
-                "label": "Tail and wings"
-            }
-        ]
-    },
-    {
-        "name": "wing-position",
-        "filterText": "Are the wings",
-        "filterOptions": [
-            {
-                "value": "ABOVE",
-                "label": "Above the fuselage"
-            },
-            {
-                "value": "BELOW",
-                "label": "Below the fuselage"
-            }
-        ]
-    },
-    {
-        "name": "decks",
-        "filterText": "How many decks?",
-        "filterOptions": [
-            {
-                "value": "ONE",
-                "label": "One"
-            },
-            {
-                "value": "TWO",
-                "label": "Two"
-            }
-        ]
-    }
+  {
+    "name": "engine-type",
+    "filterText": "What type of engines?",
+    "filterOptions": [
+      {
+        "value": "JET",
+        "label": "Jet"
+      },
+      {
+        "value": "PROPELLER",
+        "label": "Propeller"
+      }
+    ]
+  },
+  {
+    "name": "engines",
+    "filterText": "How many engines?",
+    "filterOptions": [
+      {
+        "value": "ONE",
+        "label": "One"
+      },
+      {
+        "value": "TWO",
+        "label": "Two"
+      },
+      {
+        "value": "THREE",
+        "label": "Three"
+      },
+      {
+        "value": "FOUR",
+        "label": "Four"
+      }
+    ]
+  },
+  {
+    "name": "engine-position",
+    "filterText": "Where are the engines?",
+    "filterOptions": [
+      {
+        "value": "WING",
+        "label": "Under the wings"
+      },
+      {
+        "value": "TAIL",
+        "label": "On the tail"
+      },
+      {
+        "value": "BOTH",
+        "label": "Tail and wings"
+      }
+    ]
+  },
+  {
+    "name": "wing-position",
+    "filterText": "Are the wings",
+    "filterOptions": [
+      {
+        "value": "ABOVE",
+        "label": "Above the fuselage"
+      },
+      {
+        "value": "BELOW",
+        "label": "Below the fuselage"
+      }
+    ]
+  },
+  {
+    "name": "decks",
+    "filterText": "How many decks?",
+    "filterOptions": [
+      {
+        "value": "ONE",
+        "label": "One"
+      },
+      {
+        "value": "TWO",
+        "label": "Two"
+      }
+    ]
+  }
 ]
