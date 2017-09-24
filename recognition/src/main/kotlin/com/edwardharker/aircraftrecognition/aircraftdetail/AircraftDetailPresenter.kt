@@ -16,7 +16,7 @@ class AircraftDetailPresenter(private val mainScheduler: Scheduler,
                     .subscribeOn(mainScheduler)
                     .observeOn(mainScheduler)
                     .subscribe {
-                        val featuredVideoId = if (it.youtubeVideos.isNotEmpty() && isYoutubeAvailable.invoke()) {
+                        val featuredVideoId = if (it.youtubeVideos.isNotEmpty() && isYoutubeAvailable()) {
                             it.youtubeVideos.first().videoId
                         } else {
                             null

@@ -44,7 +44,12 @@
       "decks": "ONE",
       "engine-position": "WING",
       "wing-position": "BELOW"
-    }
+    },
+    "youtubeVideos": [
+      {
+        "videoId": "aThImsucx8k"
+      }
+    ]
   },
   {
     "id": "Airbus A310",
@@ -91,7 +96,12 @@
       "decks": "ONE",
       "engine-position": "WING",
       "wing-position": "BELOW"
-    }
+    },
+    "youtubeVideos": [
+      {
+        "videoId": "m8K8CfPdODc"
+      }
+    ]
   },
   {
     "id": "airbus-a318",
@@ -137,7 +147,12 @@
       "decks": "ONE",
       "engine-position": "WING",
       "wing-position": "BELOW"
-    }
+    },
+    "youtubeVideos": [
+      {
+        "videoId": "SrHA71Sgskw"
+      }
+    ]
   },
   {
     "id": "airbus-a319",
@@ -183,7 +198,12 @@
       "decks": "ONE",
       "engine-position": "WING",
       "wing-position": "BELOW"
-    }
+    },
+    "youtubeVideos": [
+      {
+        "videoId": "7Vzk1HXV1IE"
+      }
+    ]
   },
   {
     "id": "airbus-a321",
@@ -220,7 +240,12 @@
       "decks": "ONE",
       "engine-position": "WING",
       "wing-position": "BELOW"
-    }
+    },
+    "youtubeVideos": [
+      {
+        "videoId": "aZQd0fIXua8"
+      }
+    ]
   },
   {
     "id": "airbus-a330",
@@ -267,7 +292,12 @@
       "decks": "ONE",
       "engine-position": "WING",
       "wing-position": "BELOW"
-    }
+    },
+    "youtubeVideos": [
+      {
+        "videoId": "2Xs5geC370s"
+      }
+    ]
   },
   {
     "id": "airbus-a340",
@@ -314,7 +344,12 @@
       "decks": "ONE",
       "engine-position": "WING",
       "wing-position": "BELOW"
-    }
+    },
+    "youtubeVideos": [
+      {
+        "videoId": "-DVF3sKgO3g"
+      }
+    ]
   },
   {
     "id": "airbus-a350",
@@ -366,7 +401,12 @@
       "decks": "ONE",
       "engine-position": "WING",
       "wing-position": "BELOW"
-    }
+    },
+    "youtubeVideos": [
+      {
+        "videoId": "yWQ-t0zxAlg"
+      }
+    ]
   },
   {
     "id": "airbus-a380",
@@ -413,7 +453,12 @@
       "decks": "TWO",
       "engine-position": "WING",
       "wing-position": "BELOW"
-    }
+    },
+    "youtubeVideos": [
+      {
+        "videoId": "gF9n7ShkOJ0"
+      }
+    ]
   },
   {
     "id": "antonov-an-148",

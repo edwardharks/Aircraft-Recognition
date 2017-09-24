@@ -15,7 +15,7 @@ fun aircraftDetailPresenter(): AircraftDetailPresenter =
         AircraftDetailPresenter(
                 mainThread(),
                 { aircraftDetailUseCase().aircraft(it) },
-                { youtubeAvailabilityChecker().isYoutubeAvailable() }
+                youtubeAvailabilityChecker()::isYoutubeAvailable
         )
 
 fun photoCarouselPresenter(): PhotoCarouselPresenter =
