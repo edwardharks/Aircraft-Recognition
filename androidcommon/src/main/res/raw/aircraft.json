@@ -516,7 +516,11 @@
         "height": 683
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "pYKjT2AO6zI"
+      }
+    ]
   },
   {
     "id": "boeing-717",
@@ -559,7 +563,11 @@
         "height": 683
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "PXs6ylR0Xas"
+      }
+    ]
   },
   {
     "id": "boeing-737",
@@ -607,7 +615,11 @@
         "height": 670
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "r3GoKMjfbL4"
+      }
+    ]
   },
   {
     "id": "boeing-747",
@@ -651,7 +663,11 @@
         "height": 683
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "uBKV1vqHuFc"
+      }
+    ]
   },
   {
     "id": "boeing-757",
@@ -700,7 +716,11 @@
         "height": 644
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "DmNEhT7Asg0"
+      }
+    ]
   },
   {
     "id": "boeing-767",
@@ -749,7 +769,11 @@
         "height": 658
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "IAtzyDuwjSY"
+      }
+    ]
   },
   {
     "id": "boeing-777",
@@ -803,7 +827,11 @@
         "height": 608
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "cbsp598yNik"
+      }
+    ]
   },
   {
     "id": "boeing-787-dreamliner",
@@ -857,7 +885,11 @@
         "height": 683
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "ZsRcpOFLhtc"
+      }
+    ]
   },
   {
     "id": "bombardier-crj200",
