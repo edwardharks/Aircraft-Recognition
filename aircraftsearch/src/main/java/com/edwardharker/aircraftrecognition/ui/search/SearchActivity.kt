@@ -17,6 +17,7 @@ import redux.Action
 import redux.asObservable
 import redux.dispatch
 import rx.Observable
+import rx.Subscription
 import rx.android.schedulers.AndroidSchedulers
 import rx.subscriptions.CompositeSubscription
 import java.util.concurrent.TimeUnit
@@ -38,6 +39,7 @@ class SearchActivity : AppCompatActivity() {
 
     private val searchStore = searchStore()
     private val disposables = CompositeSubscription()
+    private var eventsDisposable: Subscription? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,10 +54,7 @@ class SearchActivity : AppCompatActivity() {
         }
 
         searchResults.adapter = searchAdapter
-    }
 
-    override fun onStart() {
-        super.onStart()
         val events: Observable<Action> = RxTextView.afterTextChangeEvents(searchEditText)
                 .debounce(200, TimeUnit.MILLISECONDS)
                 .filter { it.toString().isNotBlank() }
@@ -63,8 +62,11 @@ class SearchActivity : AppCompatActivity() {
                 .map { searchEditText.text.toString() }
                 .compose(searchUseCase()::searchAircraftByName)
 
-        searchStore.dispatch(events)
+        eventsDisposable = searchStore.dispatch(events)
+    }
 
+    override fun onStart() {
+        super.onStart()
         disposables.add(searchStore.asObservable().subscribe {
             searchAdapter.bindSearchResults(it.searchResults)
         })
@@ -73,5 +75,10 @@ class SearchActivity : AppCompatActivity() {
     override fun onStop() {
         super.onStop()
         disposables.clear()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        eventsDisposable?.unsubscribe()
     }
 }
