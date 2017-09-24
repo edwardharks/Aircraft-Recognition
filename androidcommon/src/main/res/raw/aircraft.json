@@ -2211,7 +2211,7 @@
       "engines": "TWO",
       "decks": "ONE",
       "engine-position": "WING",
-      "wing-position": "BELLOW",
+      "wing-position": "BELOW",
       "engine-type": "PROPELLER"
     },
     "images": [
@@ -2261,7 +2261,7 @@
       "engines": "TWO",
       "decks": "ONE",
       "engine-position": "WING",
-      "wing-position": "BELLOW",
+      "wing-position": "BELOW",
       "engine-type": "PROPELLER"
     },
     "images": [
@@ -2367,7 +2367,7 @@
       "engines": "TWO",
       "decks": "ONE",
       "engine-position": "WING",
-      "wing-position": "BELLOW",
+      "wing-position": "BELOW",
       "engine-type": "PROPELLER"
     },
     "images": [

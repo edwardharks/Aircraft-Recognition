@@ -84,6 +84,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val startedWithTransition by lazy { intent.getBooleanExtra(startedWithTransitionExtra, false) }
 
     private val isFromDeepLink by lazy { intent.data != null }
+    private var animateOnBackPressed = true
 
     private val presenter = aircraftDetailPresenter()
 
@@ -101,6 +102,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         }
 
         supportPostponeEnterTransition()
+        animateOnBackPressed = savedInstanceState == null
 
         if (savedInstanceState == null && startedWithTransition) {
             toolbar.alpha = 0.0f
@@ -134,7 +136,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     }
 
     override fun onBackPressed() {
-        if (scrollView.scrollY > 0) {
+        if (scrollView.scrollY > 0 || !animateOnBackPressed) {
             finish()
         } else {
             supportFinishAfterTransition()
