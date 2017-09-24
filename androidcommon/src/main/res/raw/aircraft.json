@@ -2314,5 +2314,96 @@
         "videoId": "2OWgi17IcRQ"
       }
     ]
+  },
+  {
+    "id": "embraer-emb-110-bandeirante",
+    "name": "EMB 110 Bandeirante",
+    "manufacturer": "Embraer",
+    "longDescription": "The Embraer EMB 110 Bandeirante is a general purpose 15?21 passenger twin-turboprop light transport aircraft suitable for military and civil duties. It was manufactured by the Brazilian corporation Embraer.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Embraer_EMB_110_Bandeirante",
+    "metaData": {
+      "Role": "Regional airliner",
+      "Manufacturer": "Embraer",
+      "National origin": "Brazil",
+      "Produced": "1968-1990",
+      "First flight": "26 October 1968",
+      "Introduction": "16 April 1973",
+      "Number built": "501"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELLOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/SKL_in_flight_cropped_%28105091729%29.jpg/1024px-SKL_in_flight_cropped_%28105091729%29.jpg",
+        "width": 1024,
+        "height": 682
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/TG-TAY_Embraer_Emb.110_TAG_%287475007508%29.jpg/1024px-TG-TAY_Embraer_Emb.110_TAG_%287475007508%29.jpg",
+        "width": 1024,
+        "height": 683
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "R4ahhVpRlT0"
+      }
+    ]
+  },
+  {
+    "id": "let-l-410-turbolet",
+    "name": "L-410 Turbolet",
+    "manufacturer": "Let",
+    "longDescription": "The Let L-410 Turbolet is a twin-engine short-range transport aircraft, manufactured by the Czech aircraft manufacturer LET, often used as an airliner. The aircraft is capable of landing on short and unpaved runways and operating under extreme conditions from +50 °C to -50 °C. In 2016, 1,200 L-410 have been built and over 350 are in service in more than 50 countries.[1]",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Let_L-410_Turbolet",
+    "metaData": {
+      "Role": "Airliner, transport aircraft",
+      "Manufacturer": "Let Kunovice",
+      "Produced": "1971-present",
+      "First flight": "16 April 1969",
+      "Introduction": "1970",
+      "Number built": "1,200"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/L410_UVP-E20.jpg/1024px-L410_UVP-E20.jpg",
+        "width": 1024,
+        "height": 767
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/LET_L-410NG_OK-NGA_ILA_Berlin_2016_09.jpg/1024px-LET_L-410NG_OK-NGA_ILA_Berlin_2016_09.jpg",
+        "width": 1024,
+        "height": 576
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Let_L-410UVP-E20_Turbolet%2C_Central_American_Airways_JP6942766.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Green_Bird_%28F-OIXG%29_%289718636097%29.jpg/1024px-Green_Bird_%28F-OIXG%29_%289718636097%29.jpg",
+        "width": 1024,
+        "height": 720
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "Mx5T0jW5RNI"
+      }
+    ]
   }
 ]

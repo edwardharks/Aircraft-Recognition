@@ -70,11 +70,14 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val scrollView by bind<NestedScrollView>(R.id.scroll_view)
     private val photoCarouselButton by bind<View>(R.id.photo_carousel_button)
 
-    private val aircraftId by lazy {
+    private val aircraftId: String by lazy {
         if (intent.hasExtra(aircraftIdExtra)) {
             intent.getStringExtra(aircraftIdExtra)
-        } else {
+        } else if (intent.data != null) {
             intent.data.lastPathSegment
+        } else {
+            finish()
+            ""
         }
     }
 
