@@ -2065,5 +2065,254 @@
       }
     ],
     "youtubeVideos": []
+  },
+  {
+    "id": "britten-norman_bn-2_islander",
+    "name": "BN-2 Islander",
+    "manufacturer": "Britten-Norman",
+    "longDescription": "The Britten-Norman BN-2 Islander is a 1960s British light utility aircraft, regional airliner and cargo aircraft designed and originally manufactured by Britten-Norman of the United Kingdom. Still in production, the Islander is one of the best-selling commercial aircraft types produced in Europe. Although designed in the 1960s, over 750 are still in service with commercial operators around the world. The aircraft is also used by the British Army and police forces in the United Kingdom and is a light transport with over 30 military aviation operators around the world.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Britten-Norman_BN-2_Islander",
+    "metaData": {
+      "Role": "Utility aircraft/Airliner",
+      "Manufacturer": "Britten-Norman",
+      "Produced": "1965?present",
+      "First flight": "13 June 1965",
+      "Number built": "1,280",
+      "Variants": "Britten-Norman Defender"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Britten-Norman_BN-2A-26_Islander%2C_Winair_-_Windward_Islands_Airways_JP5823246.jpg",
+        "width": 1024,
+        "height": 699
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/BN-2T_Islander_-_RIAT_2014_%2816372337311%29.jpg/1024px-BN-2T_Islander_-_RIAT_2014_%2816372337311%29.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Britten-Norman_BN-2_Islander_with_Mount_Rugby_behind_-_Melaleuca.jpg/1024px-Britten-Norman_BN-2_Islander_with_Mount_Rugby_behind_-_Melaleuca.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Britten_Norman_BN.2_G-ATCT_LEB_19.06.65_edited-2.jpg",
+        "width": 1024,
+        "height": 722
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "Sf3naCzKwPc"
+      }
+    ]
+  },
+  {
+    "id": "dornier-do-228",
+    "name": "Do 228",
+    "manufacturer": "Dornier",
+    "longDescription": "The Dornier Do 228 is a twin-turboprop STOL utility aircraft, manufactured by Dornier GmbH (later DASA Dornier, Fairchild-Dornier) from 1981 until 1998. In 1983, Hindustan Aeronautics (HAL) bought a production licence and manufactured 125 aircraft. In Oberpfaffenhofen, Germany, 245 were built, and 125 in Kanpur, India. In July 2017, 63 aircraft were in airline service.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Dornier_Do_228",
+    "metaData": {
+      "Role": "Airliner",
+      "Manufacturer": "Dornier GmbH RUAG",
+      "First flight": "March 28, 1981",
+      "Introduction": "July 1982"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Vision_Airlines_Dornier_228-202_N402VA_%28cn_8085%29_%22Vision_of_a_Lifetime%22_%287498306072%29.jpg/1024px-Vision_Airlines_Dornier_228-202_N402VA_%28cn_8085%29_%22Vision_of_a_Lifetime%22_%287498306072%29.jpg",
+        "width": 1024,
+        "height": 676
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/EM_N404VA_%282849270452%29.jpg/1024px-EM_N404VA_%282849270452%29.jpg",
+        "width": 1024,
+        "height": 685
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Dornier_Do_228_Kustwacht-vliegtuig.jpg/1024px-Dornier_Do_228_Kustwacht-vliegtuig.jpg",
+        "width": 1024,
+        "height": 683
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "wt4rHx8rVpQ"
+      }
+    ]
+  },
+  {
+    "id": "fairchild-swearingen-metroliner",
+    "name": "Swearingen Metroliner",
+    "manufacturer": "Fairchild",
+    "longDescription": "The Fairchild Swearingen Metroliner (previously the Swearingen Metro and later Fairchild Aerospace Metro) is a 19-seat, pressurized, twin-turboprop airliner first produced by Swearingen Aircraft and later by Fairchild at a plant in San Antonio, Texas, United States.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Fairchild_Swearingen_Metroliner",
+    "metaData": {
+      "Role": "Regional airliner",
+      "Manufacturer": "Fairchild",
+      "Produced": "1968-2001",
+      "First flight": "August 26, 1969",
+      "Introduction": "1972",
+      "Number built": "600+",
+      "Variants": "Fairchild C-26 Metroliner"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELLOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Perimeter_Metroliner_II.jpg/1024px-Perimeter_Metroliner_II.jpg",
+        "width": 1024,
+        "height": 676
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/370AE.jpg/1024px-370AE.jpg",
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Metro_23_Rex_Airline.jpg/1024px-Metro_23_Rex_Airline.jpg",
+        "width": 1024,
+        "height": 594
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Perimeter_Metroliner.JPG/1024px-Perimeter_Metroliner.JPG",
+        "width": 1024,
+        "height": 768
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "XfySMxxxAKg"
+      }
+    ]
+  },
+  {
+    "id": "beechcraft-1900",
+    "name": "1900",
+    "manufacturer": "Beechcraft",
+    "longDescription": "The Beechcraft 1900 is a 19-passenger, pressurized twin-engine turboprop fixed-wing aircraft that was manufactured by Beechcraft. It was designed, and is primarily used, as a regional airliner. It is also used as a freight aircraft and corporate transport, and by several governmental and military organisations. With customers favoring larger regional jets, Raytheon ended production in October 2002.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_1900",
+    "metaData": {
+      "Role": "Regional airliner, cargo, and corporate aircraft",
+      "Manufacturer": "Beech Aircraft Corporation Raytheon Aircraft Company",
+      "Produced": "1982-2002",
+      "First flight": "September 3, 1982",
+      "Introduction": "February 1984",
+      "Number built": "695"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELLOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/ContinentalConnection.jpg/1024px-ContinentalConnection.jpg",
+        "width": 1024,
+        "height": 753
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/1900C_envol.jpg",
+        "width": 800,
+        "height": 527
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Beech_1900_D.JPG/1024px-Beech_1900_D.JPG",
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Beechcraft_1900D_%28code_T-729%29_of_the_Swiss_Air_Force_arrives_Fairford_7Jul2016_arp.jpg/1024px-Beechcraft_1900D_%28code_T-729%29_of_the_Swiss_Air_Force_arrives_Fairford_7Jul2016_arp.jpg",
+        "width": 1024,
+        "height": 695
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "8_6ZS8sJlxw"
+      }
+    ]
+  },
+  {
+    "id": "dhc-6-twin-otter",
+    "name": "DHC-6 Twin Otter",
+    "manufacturer": "de Havilland Canada",
+    "longDescription": "The de Havilland Canada DHC-6 Twin Otter, currently marketed as the Viking Air DHC-6 Twin Otter, is a Canadian 19-passenger STOL (Short Takeoff and Landing) utility aircraft developed by de Havilland Canada and currently produced by Viking Air. The aircraft\u0027s fixed tricycle undercarriage, STOL capabilities, twin turboprop engines and high rate of climb have made it a successful commuter passenger airliner as well as a cargo and Medevac aircraft. In addition, the Twin Otter has been popular with commercial skydiving operations, and is used by the United States Army Parachute Team and the United States Air Force\u0027s 98th Flying Training Squadron.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/De_Havilland_Canada_DHC-6_Twin_Otter",
+    "metaData": {
+      "Role": "Utility aircraft",
+      "Manufacturer": "de Havilland Canada Viking Air",
+      "Produced": "1965-1988 (Series 100-300) 2008-present (Series 400)",
+      "First flight": "20 May 1965",
+      "Introduction": "1966",
+      "Number built": "900+"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/WinAir_De_Havilland_Canada_DHC-6-300_Twin_Otter_Breidenstein.jpg/1024px-WinAir_De_Havilland_Canada_DHC-6-300_Twin_Otter_Breidenstein.jpg",
+        "width": 1024,
+        "height": 700
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/First_Flight_Twin_Otter_Series_400_C-FDHT.jpg/1280px-First_Flight_Twin_Otter_Series_400_C-FDHT.jpg",
+        "width": 1280,
+        "height": 1000
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Twin_Otter_4_1997-08-02.jpg/1024px-Twin_Otter_4_1997-08-02.jpg",
+        "width": 1024,
+        "height": 712
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Plane_arrival_at_Barra_Airport.jpg",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/DHC-300_Twin_Otter_300_Air_Seychelles.jpg",
+        "width": 1024,
+        "height": 768
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "2OWgi17IcRQ"
+      }
+    ]
   }
 ]
