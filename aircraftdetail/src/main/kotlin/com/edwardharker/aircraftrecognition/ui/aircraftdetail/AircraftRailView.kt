@@ -20,11 +20,9 @@ class AircraftRailView @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : RecyclerView(context, attrs, defStyleAttr) {
 
-    var aircraft: List<Aircraft> = emptyList()
-        set(value) {
-            field = value
-            railAdapter.update(value)
-        }
+    var aircraft: List<Aircraft>
+        set(value) = railAdapter.update(value)
+        get() = railAdapter.filterResults
 
     private val railAdapter: RailAdapter
         get() = super.getAdapter() as RailAdapter

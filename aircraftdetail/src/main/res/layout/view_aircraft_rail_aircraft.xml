@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
+    android:layout_margin="8dp"
     android:foreground="?selectableItemBackground">
 
     <View
@@ -38,6 +38,5 @@
             android:paddingRight="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             tools:text="Boeing 737" />
-
     </LinearLayout>
 </FrameLayout>

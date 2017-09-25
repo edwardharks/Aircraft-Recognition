@@ -1,2 +1,42 @@
 package com.edwardharker.aircraftrecognition.ui.aircraftdetail
 
+import android.content.Context
+import android.util.AttributeSet
+import android.widget.LinearLayout
+import android.widget.TextView
+import android.os.Build
+import android.view.ViewGroup.LayoutParams.MATCH_PARENT
+import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
+import com.edwardharker.aircraftrecognition.aircraftdetail.R
+import com.edwardharker.aircraftrecognition.ui.dpToPixels
+import com.edwardharker.aircraftrecognition.ui.pixelsToDp
+
+
+class SimilarAircraftView @JvmOverloads constructor(
+        context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+) : LinearLayout(context, attrs, defStyleAttr) {
+
+    private val railView = AircraftRailView(context)
+
+    init {
+        orientation = VERTICAL
+        val padding = 8.pixelsToDp()
+        setPadding(padding, padding, padding, padding)
+        val titleView = TextView(context).apply {
+            setTextAppearanceCompat(R.style.TextAppearance_AppCompat_Title)
+            text = context.getString(R.string.similar_aircraft)
+            setPadding(16.dpToPixels(), 0, 16.dpToPixels(), 0)
+        }
+
+        addView(titleView, LayoutParams(MATCH_PARENT, WRAP_CONTENT))
+        addView(railView, LayoutParams(MATCH_PARENT, WRAP_CONTENT))
+    }
+}
+
+private fun TextView.setTextAppearanceCompat(textAppearance: Int) {
+    if (Build.VERSION.SDK_INT < 23) {
+        setTextAppearance(context, textAppearance)
+    } else {
+        setTextAppearance(textAppearance)
+    }
+}

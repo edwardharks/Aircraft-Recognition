@@ -69,7 +69,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val toolbar by bind<Toolbar>(R.id.toolbar)
     private val scrollView by bind<NestedScrollView>(R.id.scroll_view)
     private val photoCarouselButton by bind<View>(R.id.photo_carousel_button)
-    private val similarAircraftRail by bind<AircraftRailView>(R.id.similar_aircraft_rail)
+    private val similarAircraftRail by bind<SimilarAircraftView>(R.id.similar_aircraft_rail)
 
     private val aircraftId: String by lazy {
         if (intent.hasExtra(aircraftIdExtra)) {
@@ -146,7 +146,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     override fun showAircraft(aircraftDetailViewModel: AircraftDetailViewModel) {
         val aircraft = aircraftDetailViewModel.aircraft
-        similarAircraftRail.aircraft = listOf(aircraft)
+//        similarAircraftRail.aircraft = listOf(aircraft) // TODO
 
         aircraftImage.loadAircraftImage(aircraft) {
             aircraftImage.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
