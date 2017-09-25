@@ -122,6 +122,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         onScrollChanged(0)
 
         aircraftImageContainer.setOnClickListener(this::navigateToPhotoCarousel)
+
+        similarAircraftRail.aircraftId = aircraftId
     }
 
     override fun onStart() {
@@ -146,7 +148,6 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     override fun showAircraft(aircraftDetailViewModel: AircraftDetailViewModel) {
         val aircraft = aircraftDetailViewModel.aircraft
-//        similarAircraftRail.aircraft = listOf(aircraft) // TODO
 
         aircraftImage.loadAircraftImage(aircraft) {
             aircraftImage.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {

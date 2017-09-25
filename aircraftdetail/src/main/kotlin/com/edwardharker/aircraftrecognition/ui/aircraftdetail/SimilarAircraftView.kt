@@ -8,15 +8,21 @@ import android.os.Build
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import com.edwardharker.aircraftrecognition.aircraftdetail.R
+import com.edwardharker.aircraftrecognition.model.Aircraft
+import com.edwardharker.aircraftrecognition.similaraircraft.SimilarAircraftMvpView
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
 import com.edwardharker.aircraftrecognition.ui.pixelsToDp
 
 
 class SimilarAircraftView @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
-) : LinearLayout(context, attrs, defStyleAttr) {
+) : LinearLayout(context, attrs, defStyleAttr), SimilarAircraftMvpView {
+
+    private val presenter = similarAircraftPresenter()
 
     private val railView = AircraftRailView(context)
+
+    var aircraftId: String? = null
 
     init {
         orientation = VERTICAL
@@ -30,6 +36,24 @@ class SimilarAircraftView @JvmOverloads constructor(
 
         addView(titleView, LayoutParams(MATCH_PARENT, WRAP_CONTENT))
         addView(railView, LayoutParams(MATCH_PARENT, WRAP_CONTENT))
+    }
+
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        aircraftId?.let { id -> presenter.startPresenting(this, id) }
+    }
+
+    override fun onDetachedFromWindow() {
+        super.onDetachedFromWindow()
+        presenter.stopPresenting()
+    }
+
+    override fun showSimilarAircraft(aircraft: List<Aircraft>) {
+        railView.aircraft = aircraft
+    }
+
+    override fun hideView() {
+        visibility = GONE
     }
 }
 

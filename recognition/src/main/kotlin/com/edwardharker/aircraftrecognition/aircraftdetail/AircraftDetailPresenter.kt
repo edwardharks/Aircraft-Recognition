@@ -12,17 +12,18 @@ class AircraftDetailPresenter(private val mainScheduler: Scheduler,
     private val subscriptions = CompositeSubscription()
 
     fun startPresenting(view: AircraftDetailView, aircraftId: String) =
-            subscriptions.add(aircraftDetailUseCase.invoke(aircraftId)
+            subscriptions.add(aircraftDetailUseCase(aircraftId)
                     .subscribeOn(mainScheduler)
                     .observeOn(mainScheduler)
-                    .subscribe {
-                        val featuredVideoId = if (it.youtubeVideos.isNotEmpty() && isYoutubeAvailable()) {
-                            it.youtubeVideos.first().videoId
+                    .subscribe { aircraft ->
+                        val featuredVideoId = if (aircraft.youtubeVideos.isNotEmpty()
+                                && isYoutubeAvailable()) {
+                            aircraft.youtubeVideos.first().videoId
                         } else {
                             null
                         }
                         view.showAircraft(AircraftDetailViewModel(
-                                aircraft = it,
+                                aircraft = aircraft,
                                 featuredVideoId = featuredVideoId
                         ))
                     })
