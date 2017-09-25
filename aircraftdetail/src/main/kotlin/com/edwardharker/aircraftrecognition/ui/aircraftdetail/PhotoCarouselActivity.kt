@@ -57,7 +57,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
         toolbar.setNavigationIcon(R.drawable.ic_close_white_24dp)
 
         viewPager.adapter = CarouselAdapter()
-        viewPager.pageMargin = dpToPixels(24)
+        viewPager.pageMargin = 24.dpToPixels()
 
         page = savedInstanceState?.getInt(currentImagePositionKey) ?: 0
     }

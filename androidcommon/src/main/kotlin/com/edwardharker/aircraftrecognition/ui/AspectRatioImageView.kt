@@ -21,9 +21,15 @@ class AspectRatioImageView : PhotoView {
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         if (fixedAspectRatio) {
-            val width = MeasureSpec.getSize(widthMeasureSpec)
-            val height = width / aspectRatio
-            setMeasuredDimension(width, height.toInt())
+            if (MeasureSpec.getMode(widthMeasureSpec) == MeasureSpec.EXACTLY) {
+                val width = MeasureSpec.getSize(widthMeasureSpec)
+                val height = width / aspectRatio
+                setMeasuredDimension(width, height.toInt())
+            } else {
+                val height = MeasureSpec.getSize(heightMeasureSpec)
+                val width = height * aspectRatio
+                setMeasuredDimension(width.toInt(), height)
+            }
         } else {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec)
         }

@@ -69,6 +69,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val toolbar by bind<Toolbar>(R.id.toolbar)
     private val scrollView by bind<NestedScrollView>(R.id.scroll_view)
     private val photoCarouselButton by bind<View>(R.id.photo_carousel_button)
+    private val similarAircraftRail by bind<AircraftRailView>(R.id.similar_aircraft_rail)
 
     private val aircraftId: String by lazy {
         if (intent.hasExtra(aircraftIdExtra)) {
@@ -145,6 +146,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     override fun showAircraft(aircraftDetailViewModel: AircraftDetailViewModel) {
         val aircraft = aircraftDetailViewModel.aircraft
+        similarAircraftRail.aircraft = listOf(aircraft)
 
         aircraftImage.loadAircraftImage(aircraft) {
             aircraftImage.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
@@ -201,7 +203,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         toolbar.setBackgroundColor(argb((255 * toolbarAlphaScale).toInt(),
                 red(primaryColour), green(primaryColour), blue(primaryColour)))
         toolbar.setTitleTextColor(argb((255 * toolbarAlphaScale).toInt(), 255, 255, 255))
-        val toolbarMaxElevation = dpToPixels(4)
+        val toolbarMaxElevation = 4.dpToPixels()
         toolbar.elevation = min(scrollY, scrollView.paddingTop).toFloat() / toolbarMaxElevation.toFloat()
     }
 
@@ -211,7 +213,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     private inner class EnterTransitionListener : TransitionListenerAdapter() {
 
-        val slideDistance = pixelsToDp(400).toFloat()
+        val slideDistance = 400.pixelsToDp().toFloat()
 
         override fun onTransitionStart(transition: Transition?) {
             super.onTransitionStart(transition)
