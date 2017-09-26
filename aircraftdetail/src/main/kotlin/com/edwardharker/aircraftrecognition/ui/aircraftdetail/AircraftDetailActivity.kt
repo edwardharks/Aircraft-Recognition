@@ -71,6 +71,18 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val photoCarouselButton by bind<View>(R.id.photo_carousel_button)
     private val similarAircraftRail by bind<SimilarAircraftView>(R.id.similar_aircraft_rail)
 
+    private val transitionSlidingViews by lazy {
+        listOf(aircraftDescription,
+                aircraftMetaDataContainer,
+                similarAircraftRail)
+    }
+
+    private val transitionFadingViews by lazy {
+        listOf(aircraftMetaDataContainer,
+                aircraftDescription,
+                aircraftMetaDataContainer)
+    }
+
     private val aircraftId: String by lazy {
         if (intent.hasExtra(aircraftIdExtra)) {
             intent.getStringExtra(aircraftIdExtra)
@@ -113,8 +125,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
             window.sharedElementEnterTransition.addListener(EnterTransitionListener())
         }
 
-        scrollView.setOnScrollChangeListener {
-            nestedScrollView: NestedScrollView?, x: Int, y: Int, oldX: Int, oldY: Int ->
+        scrollView.setOnScrollChangeListener { nestedScrollView: NestedScrollView?, x: Int, y: Int, oldX: Int, oldY: Int ->
             onScrollChanged(y)
         }
 
@@ -218,10 +229,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
         override fun onTransitionStart(transition: Transition?) {
             super.onTransitionStart(transition)
-            aircraftDescription.translationY = slideDistance
-            aircraftMetaDataContainer.translationY = slideDistance
-            aircraftDescription.alpha = 0.0f
-            aircraftMetaDataContainer.alpha = 0.0f
+            transitionSlidingViews.forEach { it.translationY = slideDistance }
+            transitionFadingViews.forEach { it.alpha = 0.0f }
         }
 
         override fun onTransitionEnd(transition: Transition?) {
@@ -231,14 +240,15 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
             val slideUp = AnimatorSet()
             slideUp.interpolator = LinearOutSlowInInterpolator()
             slideUp.duration = 160
-            slideUp.playTogether(
-                    ObjectAnimator.ofFloat(aircraftDescription, TRANSLATION_Y, 0.0f),
-                    ObjectAnimator.ofFloat(aircraftMetaDataContainer, TRANSLATION_Y, 0.0f),
-                    ObjectAnimator.ofFloat(aircraftDescription, ALPHA, 1.0f),
-                    ObjectAnimator.ofFloat(aircraftMetaDataContainer, ALPHA, 1.0f)
-            )
+            val slideAnimators = transitionSlidingViews.map { ObjectAnimator.ofFloat(it, TRANSLATION_Y, 0.0f) }
+            val fadeAnimators = transitionSlidingViews.map { ObjectAnimator.ofFloat(it, ALPHA, 1.0f) }
+            slideUp.playTogether(slideAnimators.append(fadeAnimators))
             slideUp.start()
         }
     }
 }
 
+private fun <T> List<T>.append(list: List<T>): List<T> =
+        this.toMutableList().apply {
+            addAll(list)
+        }

@@ -22,7 +22,6 @@ fun AspectRatioImageView.loadAircraftImage(aircraft: Aircraft, @ColorRes placeho
         Glide.clear(this)
         aspectRatio = 2f
     }
-    requestLayout()
 }
 
 fun AspectRatioImageView.loadAircraftImage(image: Image, @ColorRes placeholderColour: Int = R.color.colorPrimaryLight, imageLoadedListener: (() -> Unit)? = null) {
@@ -40,7 +39,6 @@ fun ImageView.loadImage(image: Image, @ColorRes placeholderColour: Int = R.color
             .listener(Listener(imageLoadedListener))
             .fitCenter()
             .into(this)
-    requestLayout()
 }
 
 private class Listener(val imageLoadedListener: (() -> Unit)?) : RequestListener<String, Bitmap> {

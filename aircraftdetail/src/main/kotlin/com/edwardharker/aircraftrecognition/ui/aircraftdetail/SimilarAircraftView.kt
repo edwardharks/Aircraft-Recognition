@@ -26,8 +26,6 @@ class SimilarAircraftView @JvmOverloads constructor(
 
     init {
         orientation = VERTICAL
-        val padding = 8.pixelsToDp()
-        setPadding(padding, padding, padding, padding)
         val titleView = TextView(context).apply {
             setTextAppearanceCompat(R.style.TextAppearance_AppCompat_Title)
             text = context.getString(R.string.similar_aircraft)

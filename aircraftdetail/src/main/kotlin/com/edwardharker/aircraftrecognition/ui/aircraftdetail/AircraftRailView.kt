@@ -14,6 +14,7 @@ import com.edwardharker.aircraftrecognition.aircraftdetail.R
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.displayName
 import com.edwardharker.aircraftrecognition.ui.*
+import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView.Aspect.HEIGHT
 import java.util.ArrayList
 
 class AircraftRailView @JvmOverloads constructor(
@@ -33,7 +34,7 @@ class AircraftRailView @JvmOverloads constructor(
     }
 
     override fun onMeasure(widthSpec: Int, heightSpec: Int) =
-            super.onMeasure(widthSpec, makeMeasureSpec(240.dpToPixels(), EXACTLY))
+            super.onMeasure(widthSpec, makeMeasureSpec(200.dpToPixels(), EXACTLY))
 
 }
 
@@ -74,6 +75,10 @@ private class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
     val aircraftImage by lazy { view.findViewById(R.id.rail_aircraft_image) as AspectRatioImageView }
     val aircraftName by lazy { view.findViewById(R.id.rail_aircraft_name) as TextView }
     val background: View by lazy { view.findViewById(R.id.rail_background) }
+
+    init {
+        aircraftImage.aspect = HEIGHT
+    }
 
     init {
         view.setOnClickListener {

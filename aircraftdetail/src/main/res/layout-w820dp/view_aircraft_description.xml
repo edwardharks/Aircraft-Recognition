@@ -30,4 +30,8 @@
 
     </LinearLayout>
 
+    <com.edwardharker.aircraftrecognition.ui.aircraftdetail.SimilarAircraftView
+        android:id="@+id/similar_aircraft_rail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </merge>
