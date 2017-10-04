@@ -83,6 +83,14 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
                 aircraftMetaDataContainer)
     }
 
+    private val initialInvisibleViews by lazy {
+        listOf(toolbar,
+                aircraftDescription,
+                aircraftMetaDataContainer,
+                photoCarouselButton,
+                similarAircraftRail)
+    }
+
     private val aircraftId: String by lazy {
         if (intent.hasExtra(aircraftIdExtra)) {
             intent.getStringExtra(aircraftIdExtra)
@@ -118,10 +126,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         animateOnBackPressed = savedInstanceState == null
 
         if (savedInstanceState == null && startedWithTransition) {
-            toolbar.alpha = 0.0f
-            aircraftDescription.alpha = 0.0f
-            aircraftMetaDataContainer.alpha = 0.0f
-            photoCarouselButton.alpha = 0.0f
+            initialInvisibleViews.forEach { it.alpha = 0f }
             window.sharedElementEnterTransition.addListener(EnterTransitionListener())
         }
 
