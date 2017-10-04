@@ -937,7 +937,11 @@
         "height": 683
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "PZykZFmug6Y"
+      }
+    ]
   },
   {
     "id": "bombardier-crj700",
@@ -996,7 +1000,11 @@
         "height": 682
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "1RhnAZGo5Jc"
+      }
+    ]
   },
   {
     "id": "bombardier-cseries",
@@ -1045,7 +1053,11 @@
         "height": 534
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "YkOSe7gZLPI"
+      }
+    ]
   },
   {
     "id": "british-aerospace-146",
@@ -1099,7 +1111,11 @@
         "height": 640
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": "fo6KdTDYUJQ"
+      }
+    ]
   },
   {
     "id": "comac-arj21",
@@ -2435,6 +2451,51 @@
     "youtubeVideos": [
       {
         "videoId": "Mx5T0jW5RNI"
+      }
+    ]
+  },
+  {
+    "id": "casa-c-212-aviocar",
+    "name": "C-212 Aviocar",
+    "manufacturer": "CASA",
+    "longDescription": "The CASA C-212 Aviocar is a turboprop-powered STOL medium transport aircraft designed and built by CASA in Spain for civil and military use. C-212s are also produced under licence in Indonesia by Indonesian Aerospace (IAe), formerly called IPTN. The design was initially marketed under the name of Aviocar, but EADS-CASA no longer uses that name in referring to the C-212.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/CASA_C-212_Aviocar",
+    "metaData": {
+      "Role": "Medium STOL transport aircraft",
+      "Manufacturer": "Construcciones Aeronáuticas SA EADS CASA Indonesian Aerospace",
+      "Produced": "1971-present",
+      "First flight": "26 March 1971",
+      "Introduction": "May 1974",
+      "Number built": "483 + \u003e100 (IPTN)"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/CASA_212-200_%E2%80%98T.12D-74_-_54-11%E2%80%99_%2826795714424%29.jpg/1024px-CASA_212-200_%E2%80%98T.12D-74_-_54-11%E2%80%99_%2826795714424%29.jpg",
+        "width": 1024,
+        "height": 638
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/VHVHA.JPG/1024px-VHVHA.JPG",
+        "width": 1024,
+        "height": 638
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/EC-025.jpg/1024px-EC-025.jpg",
+        "width": 1024,
+        "height": 638
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "mxI5PsA4lx0"
       }
     ]
   }

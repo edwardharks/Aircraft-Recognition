@@ -8,7 +8,9 @@ import android.graphics.Color.*
 import android.graphics.Typeface.BOLD
 import android.net.Uri
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
 import android.support.v4.content.ContextCompat.getColor
+import android.support.v4.content.ContextCompat.getDrawable
 import android.support.v4.view.animation.LinearOutSlowInInterpolator
 import android.support.v4.widget.NestedScrollView
 import android.support.v7.app.AppCompatActivity
@@ -70,6 +72,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val scrollView by bind<NestedScrollView>(R.id.scroll_view)
     private val photoCarouselButton by bind<View>(R.id.photo_carousel_button)
     private val similarAircraftRail by bind<SimilarAircraftView>(R.id.similar_aircraft_rail)
+    private val aircraftDetailsContainer by bind<View>(R.id.aircraft_details_container)
 
     private val transitionSlidingViews by lazy {
         listOf(aircraftDescription,
@@ -240,6 +243,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
         override fun onTransitionEnd(transition: Transition?) {
             super.onTransitionEnd(transition)
+            aircraftDetailsContainer.background =
+                    getDrawable(this@AircraftDetailActivity, R.color.colorPrimaryDark)
             toolbar.animate().alpha(1.0f).start()
             photoCarouselButton.animate().alpha(1.0f).start()
             val slideUp = AnimatorSet()

@@ -62,9 +62,9 @@
                 </com.edwardharker.aircraftrecognition.ui.ExtendedFrameLayout>
 
                 <LinearLayout
+                    android:id="@+id/aircraft_details_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryDark"
                     android:elevation="12dp"
                     android:orientation="vertical"
                     android:outlineProvider="bounds">
