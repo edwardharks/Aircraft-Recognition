@@ -21,7 +21,7 @@
 
                 <data
                     android:host="aircraft-recognition.firebaseapp.com"
-                    android:pathPrefix="/aircraft"
+                    android:pathPrefix="/aircraft/*"
                     android:scheme="http" />
 
                 <data

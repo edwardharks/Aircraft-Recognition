@@ -35,7 +35,6 @@ class AircraftRailView @JvmOverloads constructor(
 
     override fun onMeasure(widthSpec: Int, heightSpec: Int) =
             super.onMeasure(widthSpec, makeMeasureSpec(200.dpToPixels(), EXACTLY))
-
 }
 
 private class RailAdapter : RecyclerView.Adapter<ViewHolder>() {
