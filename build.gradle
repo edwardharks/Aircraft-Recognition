@@ -21,6 +21,10 @@ buildscript {
     }
 }
 
+plugins {
+    id "io.gitlab.arturbosch.detekt" version "1.0.0.RC4-3"
+}
+
 allprojects {
     repositories {
         jcenter()
@@ -35,4 +39,9 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+detekt {
+    profile("main") {
+    }
 }
