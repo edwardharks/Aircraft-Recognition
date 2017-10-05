@@ -1153,7 +1153,11 @@
         "height": 682
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "douglas-dc-8",
@@ -1207,7 +1211,11 @@
         "height": 683
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "embraer-erj-145",
@@ -1256,7 +1264,11 @@
         "height": 683
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "embraer-e-Jet",
@@ -1310,7 +1322,11 @@
         "height": 696
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "fairchild-dornier-328jet",
@@ -1358,7 +1374,11 @@
         "height": 514
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "fokker-f28-fellowship",
@@ -1407,7 +1427,11 @@
         "height": 691
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "fokker-70",
@@ -1445,7 +1469,11 @@
         "height": 680
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "fokker-100",
@@ -1493,7 +1521,11 @@
         "height": 680
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "ilyushin-il-96",
@@ -1532,7 +1564,11 @@
         "height": 480
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "lockheed-l-1011-tristar",
@@ -1576,7 +1612,11 @@
         "height": 669
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "mcdonnell-douglas-dc-9",
@@ -1625,7 +1665,11 @@
         "height": 692
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "mcdonnell-douglas-md-80",
@@ -1674,7 +1718,11 @@
         "height": 683
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "mcdonnell-douglas-dc-10",
@@ -1722,7 +1770,11 @@
         "height": 683
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "mcdonnell-douglas-md-11",
@@ -1775,7 +1827,11 @@
         "height": 684
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "mcdonnell-douglas-md-90",
@@ -1819,7 +1875,11 @@
         "height": 682
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "sukhoi-superjet-100",
@@ -1862,7 +1922,11 @@
         "height": 688
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "tupolev-tu-134",
@@ -1911,7 +1975,11 @@
         "height": 326
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "tupolev-tu-154",
@@ -1965,7 +2033,11 @@
         "height": 1023
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "tupolev-tu-204",
@@ -2014,7 +2086,11 @@
         "height": 485
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "yakovlev-yak-40",
@@ -2068,7 +2144,11 @@
         "height": 1024
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "yakovlev-yak-42",
@@ -2112,7 +2192,11 @@
         "height": 703
       }
     ],
-    "youtubeVideos": []
+    "youtubeVideos": [
+      {
+        "videoId": ""
+      }
+    ]
   },
   {
     "id": "britten-norman_bn-2_islander",
