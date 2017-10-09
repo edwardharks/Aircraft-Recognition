@@ -4,4 +4,8 @@ import com.edwardharker.aircraftrecognition.analytics.firebase.firebaseEventAnal
 import com.edwardharker.aircraftrecognition.analytics.google.googleEventAnalytics
 import com.edwardharker.aircraftrecognition.androidcommon.BuildConfig
 
-fun eventAnalytics(): EventAnalytics = ReleaseOnlyCompositeEventAnalytics(!BuildConfig.DEBUG, firebaseEventAnalytics(), googleEventAnalytics())
+fun eventAnalytics(): EventAnalytics =
+        ReleaseOnlyCompositeEventAnalytics(
+                !BuildConfig.DEBUG,
+                firebaseEventAnalytics(),
+                googleEventAnalytics())

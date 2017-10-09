@@ -41,11 +41,9 @@ class Store<S>(private val reducer: (S, Action) -> S, initialState: S) {
         listeners.add(listener)
         listener(state)
 
-        val unsubscriber = fun() {
+        return fun() {
             listeners.remove(listener)
         }
-
-        return unsubscriber
     }
 
     companion object {
