@@ -10,4 +10,5 @@ fun Event.toGaEvent(): Map<String, String> =
                 .setLabel(this.content)
                 .set("itemId", this.itemId)
                 .set("itemName", this.itemName)
+                .set("origin", this.origin)
                 .build()

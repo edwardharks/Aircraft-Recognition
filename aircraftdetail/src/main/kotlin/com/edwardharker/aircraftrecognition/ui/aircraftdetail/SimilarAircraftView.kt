@@ -8,10 +8,10 @@ import android.os.Build
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import com.edwardharker.aircraftrecognition.aircraftdetail.R
+import com.edwardharker.aircraftrecognition.analytics.similarAircraftClickEvent
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.similaraircraft.SimilarAircraftMvpView
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
-import com.edwardharker.aircraftrecognition.ui.pixelsToDp
 
 
 class SimilarAircraftView @JvmOverloads constructor(
@@ -20,7 +20,9 @@ class SimilarAircraftView @JvmOverloads constructor(
 
     private val presenter = similarAircraftPresenter()
 
-    private val railView = AircraftRailView(context)
+    private val railView = AircraftRailView(context).apply {
+        eventFactory = ::similarAircraftClickEvent
+    }
 
     var aircraftId: String? = null
 
@@ -57,6 +59,7 @@ class SimilarAircraftView @JvmOverloads constructor(
 
 private fun TextView.setTextAppearanceCompat(textAppearance: Int) {
     if (Build.VERSION.SDK_INT < 23) {
+        @Suppress("DEPRECATION")
         setTextAppearance(context, textAppearance)
     } else {
         setTextAppearance(textAppearance)

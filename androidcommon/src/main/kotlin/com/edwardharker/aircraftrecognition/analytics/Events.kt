@@ -14,3 +14,10 @@ fun imageErrorEvent(imageUrl: String, reason: String?) = Event(
         itemName = imageUrl,
         content = reason
 )
+
+fun similarAircraftClickEvent(aircraftId: String) = Event(
+        eventType = SELECT_CONTENT,
+        itemId = aircraftId,
+        content = aircraftId,
+        origin = "similaraircraft"
+)

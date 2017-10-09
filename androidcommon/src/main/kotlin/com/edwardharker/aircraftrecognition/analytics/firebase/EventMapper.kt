@@ -9,6 +9,7 @@ fun Event.toBundle() = Bundle().apply {
     putString(FirebaseAnalytics.Param.ITEM_ID, itemId)
     putString(FirebaseAnalytics.Param.ITEM_NAME, itemName)
     putString(FirebaseAnalytics.Param.CONTENT, content)
+    putString(FirebaseAnalytics.Param.ORIGIN, origin)
 }
 
 fun EventType.toFirebaseEventType() =
