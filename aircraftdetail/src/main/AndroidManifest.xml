@@ -8,7 +8,8 @@
             android:name="com.edwardharker.aircraftrecognition.ui.aircraftdetail.AircraftDetailActivity"
             android:exported="true"
             android:label="@string/title_activity_aircraft_detail"
-            android:theme="@style/AppTheme.NoActionBar.AircraftDetail">
+            android:theme="@style/AppTheme.NoActionBar.AircraftDetail"
+            android:windowSoftInputMode="adjustNothing">
 
             <intent-filter
                 android:autoVerify="true"
