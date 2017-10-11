@@ -9,11 +9,11 @@ import android.graphics.Typeface.BOLD
 import android.net.Uri
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
-import android.support.v4.content.ContextCompat.getColor
-import android.support.v4.content.ContextCompat.getDrawable
+import android.support.v4.content.ContextCompat.*
 import android.support.v4.view.animation.LinearOutSlowInInterpolator
 import android.support.v4.widget.NestedScrollView
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.content.res.AppCompatResources
 import android.support.v7.widget.Toolbar
 import android.text.SpannableString
 import android.text.style.StyleSpan
@@ -95,13 +95,13 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     }
 
     private val aircraftId: String by lazy {
-        if (intent.hasExtra(aircraftIdExtra)) {
-            intent.getStringExtra(aircraftIdExtra)
-        } else if (intent.data != null) {
-            intent.data.lastPathSegment
-        } else {
-            finish()
-            ""
+        when {
+            intent.hasExtra(aircraftIdExtra) -> intent.getStringExtra(aircraftIdExtra)
+            intent.data != null -> intent.data.lastPathSegment
+            else -> {
+                finish()
+                ""
+            }
         }
     }
 
@@ -243,17 +243,17 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
         override fun onTransitionEnd(transition: Transition?) {
             super.onTransitionEnd(transition)
-            aircraftDetailsContainer.background =
-                    getDrawable(this@AircraftDetailActivity, R.color.colorPrimaryDark)
+            aircraftDetailsContainer.setBackgroundColor(getColor(this@AircraftDetailActivity, R.color.windowBackground))
             toolbar.animate().alpha(1.0f).start()
             photoCarouselButton.animate().alpha(1.0f).start()
-            val slideUp = AnimatorSet()
-            slideUp.interpolator = LinearOutSlowInInterpolator()
-            slideUp.duration = 160
             val slideAnimators = transitionSlidingViews.map { ObjectAnimator.ofFloat(it, TRANSLATION_Y, 0.0f) }
             val fadeAnimators = transitionSlidingViews.map { ObjectAnimator.ofFloat(it, ALPHA, 1.0f) }
-            slideUp.playTogether(slideAnimators.append(fadeAnimators))
-            slideUp.start()
+            AnimatorSet().apply {
+                interpolator = LinearOutSlowInInterpolator()
+                duration = 160
+                playTogether(slideAnimators.append(fadeAnimators))
+                start()
+            }
         }
     }
 }

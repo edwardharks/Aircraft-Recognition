@@ -5,6 +5,7 @@
         android:id="@+id/aircraft_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/windowBackground"
         android:fontFamily="sans-serif-light"
         android:paddingBottom="8dp"
         android:paddingLeft="@dimen/activity_horizontal_margin"
