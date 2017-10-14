@@ -212,7 +212,9 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     private fun addWatchOnYoutubeItem(videoId: String) {
         val videoView = LayoutInflater.from(this).inflate(R.layout.view_aircraft_featured_video, aircraftMetaDataContainer, false)
-        videoView.setOnClickListener { youtubeStandalonePlayerHelper().launchYoutubeStandalonePlayer(this, videoId) }
+        videoView.setOnClickListener {
+            youtubeStandalonePlayerHelper().launchYoutubeStandalonePlayer(this, videoId)
+        }
         aircraftMetaDataContainer.addView(videoView)
         addDivider()
     }
