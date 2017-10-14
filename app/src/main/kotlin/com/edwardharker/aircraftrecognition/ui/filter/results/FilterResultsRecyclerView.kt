@@ -140,9 +140,15 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
 
     private class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         var aircraft: Aircraft? = null
-        val aircraftImage by lazy { view.findViewById(R.id.aircraft_image) as AspectRatioImageView }
-        val aircraftName by lazy { view.findViewById(R.id.aircraft_name) as TextView }
-        val background: View by lazy { view.findViewById(R.id.background) }
+        val aircraftImage: AspectRatioImageView by lazy {
+            view.findViewById<AspectRatioImageView>(R.id.aircraft_image)
+        }
+        val aircraftName: TextView by lazy {
+            view.findViewById<TextView>(R.id.aircraft_name)
+        }
+        val background: View by lazy {
+            view.findViewById<View>(R.id.background)
+        }
 
         init {
             view.setOnClickListener {

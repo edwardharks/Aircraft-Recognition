@@ -1,8 +1,11 @@
 buildscript {
     ext {
-        supportLibraryVersion = '25.4.0'
-        playServicesVersion = '11.0.0'
-        kotlinVersion = '1.1.50'
+        androidVersion = 26
+        minSdk = 21
+        toolsVersion = '26.0.2'
+        supportLibraryVersion = '26.1.0'
+        playServicesVersion = '11.4.2'
+        kotlinVersion = '1.1.51'
     }
     repositories {
         jcenter()
@@ -11,11 +14,11 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-alpha6'
+        classpath 'com.android.tools.build:gradle:3.0.0-rc1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath "io.realm:realm-gradle-plugin:2.0.2"
         classpath 'com.google.gms:google-services:3.0.0'
-        classpath ('com.google.firebase:firebase-plugins:1.1.0') {
+        classpath('com.google.firebase:firebase-plugins:1.1.0') {
             exclude group: 'com.google.guava', module: 'guava-jdk5'
         }
     }

@@ -102,7 +102,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
         override fun instantiateItem(container: ViewGroup, position: Int): Any {
             val layout = LayoutInflater.from(container.context)
                     .inflate(R.layout.view_photo_carousel_image, container, false)
-            val imageView = layout.findViewById(R.id.aircraft_image) as AspectRatioImageView
+            val imageView = layout.findViewById<AspectRatioImageView>(R.id.aircraft_image)
             imageView.setZoomable(true)
             imageView.fixedAspectRatio = true
             imageView.loadAircraftImage(images[position]) {

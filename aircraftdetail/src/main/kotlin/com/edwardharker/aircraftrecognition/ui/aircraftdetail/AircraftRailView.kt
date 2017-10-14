@@ -84,14 +84,14 @@ private class RailAdapter : RecyclerView.Adapter<ViewHolder>() {
 private class ViewHolder(val view: View, eventFactory: (aircraftId: String) -> Event?) : RecyclerView.ViewHolder(view) {
     var aircraft: Aircraft? = null
 
-    val aircraftImage by lazy {
-        view.findViewById(R.id.rail_aircraft_image) as AspectRatioImageView
+    val aircraftImage: AspectRatioImageView by lazy {
+        view.findViewById<AspectRatioImageView>(R.id.rail_aircraft_image)
     }
-    val aircraftName by lazy {
-        view.findViewById(R.id.rail_aircraft_name) as TextView
+    val aircraftName: TextView by lazy {
+        view.findViewById<TextView>(R.id.rail_aircraft_name)
     }
     val background: View by lazy {
-        view.findViewById(R.id.rail_background)
+        view.findViewById<View>(R.id.rail_background)
     }
 
     init {

@@ -7,17 +7,19 @@ if (propsFile.exists()) {
     props.load(propsFile.newDataInputStream())
 } else {
     props.setProperty("youtubeApiKey", "")
+    props.setProperty("websiteUrl", "")
 }
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion androidVersion
+    buildToolsVersion toolsVersion
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 25
+        minSdkVersion minSdk
+        targetSdkVersion androidVersion
 
         buildConfigField "String", "YOUTUBE_API_KEY", "\"${props.getProperty("youtubeApiKey")}\""
+        resValue "string", "website_url", "\"${props.getProperty("websiteUrl")}\""
     }
     buildTypes {
         release {

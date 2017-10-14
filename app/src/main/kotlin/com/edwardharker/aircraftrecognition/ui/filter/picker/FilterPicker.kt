@@ -74,7 +74,7 @@ internal class FilterPicker : LinearLayout {
 
 
         private inner class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
-            val label: TextView by lazy { view.findViewById(R.id.filter_label) as TextView }
+            val label: TextView by lazy { view.findViewById<TextView>(R.id.filter_label) }
 
             init {
                 view.setOnClickListener {
