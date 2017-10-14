@@ -5,9 +5,11 @@ import rx.Observable
 import rx.Scheduler
 import rx.subscriptions.CompositeSubscription
 
-class AircraftDetailPresenter(private val mainScheduler: Scheduler,
-                              private val aircraftDetailUseCase: (String) -> Observable<Aircraft>,
-                              private val isYoutubeAvailable: () -> Boolean) {
+class AircraftDetailPresenter(
+        private val mainScheduler: Scheduler,
+        private val aircraftDetailUseCase: (String) -> Observable<Aircraft>,
+        private val isYoutubeAvailable: () -> Boolean
+) {
 
     private val subscriptions = CompositeSubscription()
 
@@ -16,12 +18,11 @@ class AircraftDetailPresenter(private val mainScheduler: Scheduler,
                     .subscribeOn(mainScheduler)
                     .observeOn(mainScheduler)
                     .subscribe { aircraft ->
-                        val featuredVideoId = if (aircraft.youtubeVideos.isNotEmpty()
-                                && isYoutubeAvailable()) {
-                            aircraft.youtubeVideos.first().videoId
-                        } else {
-                            null
-                        }
+                        val featuredVideoId =
+                                if (aircraft.youtubeVideos.isNotEmpty() && isYoutubeAvailable()) {
+                                    aircraft.youtubeVideos.first().videoId
+                                } else null
+
                         view.showAircraft(AircraftDetailViewModel(
                                 aircraft = aircraft,
                                 featuredVideoId = featuredVideoId

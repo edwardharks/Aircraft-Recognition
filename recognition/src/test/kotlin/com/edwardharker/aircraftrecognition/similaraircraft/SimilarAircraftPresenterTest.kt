@@ -2,7 +2,8 @@ package com.edwardharker.aircraftrecognition.similaraircraft
 
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import org.junit.Test
-import org.mockito.Mockito.*
+import org.mockito.Mockito.mock
+import org.mockito.Mockito.verify
 import rx.Observable
 import rx.schedulers.Schedulers
 

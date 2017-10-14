@@ -2,7 +2,9 @@ package com.edwardharker.aircraftrecognition.ui
 
 import android.content.Context
 import android.util.AttributeSet
-import android.view.View.MeasureSpec.*
+import android.view.View.MeasureSpec.getMode
+import android.view.View.MeasureSpec.getSize
+import android.view.View.MeasureSpec.makeMeasureSpec
 import android.widget.FrameLayout
 import com.edwardharker.aircraftrecognition.androidcommon.R
 import java.lang.Integer.MAX_VALUE

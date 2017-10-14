@@ -3,7 +3,10 @@ package com.edwardharker.aircraftrecognition.ui.filter.results
 import android.app.Activity
 import android.content.Context
 import android.support.design.widget.BottomSheetBehavior
-import android.support.design.widget.BottomSheetBehavior.*
+import android.support.design.widget.BottomSheetBehavior.STATE_COLLAPSED
+import android.support.design.widget.BottomSheetBehavior.STATE_DRAGGING
+import android.support.design.widget.BottomSheetBehavior.STATE_HIDDEN
+import android.support.design.widget.BottomSheetBehavior.STATE_SETTLING
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.StaggeredGridLayoutManager
 import android.util.AttributeSet
@@ -19,7 +22,6 @@ import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.activityLauncher
 import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDetailActivity
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
-import java.util.*
 
 class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
 

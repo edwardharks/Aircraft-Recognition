@@ -4,16 +4,17 @@ import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.app.ActivityOptions
 import android.content.Intent
-import android.graphics.Color.*
+import android.graphics.Color.argb
+import android.graphics.Color.blue
+import android.graphics.Color.green
+import android.graphics.Color.red
 import android.graphics.Typeface.BOLD
 import android.net.Uri
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v4.content.ContextCompat.*
+import android.support.v4.content.ContextCompat.getColor
 import android.support.v4.view.animation.LinearOutSlowInInterpolator
 import android.support.v4.widget.NestedScrollView
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.content.res.AppCompatResources
 import android.support.v7.widget.Toolbar
 import android.text.SpannableString
 import android.text.style.StyleSpan
@@ -33,7 +34,14 @@ import com.edwardharker.aircraftrecognition.aircraftdetail.R
 import com.edwardharker.aircraftrecognition.analytics.aircraftDetailEvent
 import com.edwardharker.aircraftrecognition.analytics.aircraftDetailScreen
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
-import com.edwardharker.aircraftrecognition.ui.*
+import com.edwardharker.aircraftrecognition.ui.ActivityLauncher
+import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
+import com.edwardharker.aircraftrecognition.ui.TransitionListenerAdapter
+import com.edwardharker.aircraftrecognition.ui.activityLauncher
+import com.edwardharker.aircraftrecognition.ui.bind
+import com.edwardharker.aircraftrecognition.ui.dpToPixels
+import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
+import com.edwardharker.aircraftrecognition.ui.pixelsToDp
 import com.edwardharker.aircraftrecognition.youtube.youtubeStandalonePlayerHelper
 import java.lang.Math.min
 

@@ -1,6 +1,9 @@
 package com.edwardharker.aircraftrecognition.ui.filter.picker
 
-import com.edwardharker.aircraftrecognition.filter.picker.*
+import com.edwardharker.aircraftrecognition.filter.picker.FilterOptionsRemover
+import com.edwardharker.aircraftrecognition.filter.picker.FilterPickerPresenter
+import com.edwardharker.aircraftrecognition.filter.picker.FilterPickerUseCase
+import com.edwardharker.aircraftrecognition.filter.picker.RepositoryFilterPickerUseCase
 import com.edwardharker.aircraftrecognition.repository.aircraftRepository
 import com.edwardharker.aircraftrecognition.repository.filterRepository
 import com.edwardharker.aircraftrecognition.ui.filter.selectedFilterOptions

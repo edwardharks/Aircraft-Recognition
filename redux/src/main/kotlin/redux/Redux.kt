@@ -3,7 +3,6 @@ package redux
 import rx.Emitter
 import rx.Observable
 import rx.Subscription
-import java.util.HashSet
 
 interface Action
 

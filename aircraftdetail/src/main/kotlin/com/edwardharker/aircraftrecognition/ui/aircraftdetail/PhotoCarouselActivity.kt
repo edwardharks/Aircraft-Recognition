@@ -16,7 +16,11 @@ import com.edwardharker.aircraftrecognition.aircraftdetail.R
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.photoCarouselScreen
 import com.edwardharker.aircraftrecognition.model.Image
-import com.edwardharker.aircraftrecognition.ui.*
+import com.edwardharker.aircraftrecognition.ui.ActivityLauncher
+import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
+import com.edwardharker.aircraftrecognition.ui.bind
+import com.edwardharker.aircraftrecognition.ui.dpToPixels
+import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 import com.pixelcan.inkpageindicator.InkPageIndicator
 
 private val aircraftIdExtra = "aircraftId"

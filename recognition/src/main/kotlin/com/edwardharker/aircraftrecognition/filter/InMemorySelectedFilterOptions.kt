@@ -3,7 +3,6 @@ package com.edwardharker.aircraftrecognition.filter
 import com.edwardharker.aircraftrecognition.model.SelectedFilterOptionsMap
 import rx.Observable
 import rx.lang.kotlin.BehaviorSubject
-import java.util.*
 
 class InMemorySelectedFilterOptions : SelectedFilterOptions {
 

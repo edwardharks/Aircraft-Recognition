@@ -26,12 +26,10 @@ class PhotoViewViewPager : ViewPager {
 
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
 
-    override fun onInterceptTouchEvent(ev: MotionEvent): Boolean {
-        try {
-            return super.onInterceptTouchEvent(ev)
-        } catch (e: IllegalArgumentException) {
-            return false
-        }
-
-    }
+    override fun onInterceptTouchEvent(ev: MotionEvent): Boolean =
+            try {
+                super.onInterceptTouchEvent(ev)
+            } catch (e: IllegalArgumentException) {
+                false
+            }
 }

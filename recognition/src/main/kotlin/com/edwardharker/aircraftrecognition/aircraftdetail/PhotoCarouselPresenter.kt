@@ -5,8 +5,10 @@ import rx.Observable
 import rx.Scheduler
 import rx.subscriptions.CompositeSubscription
 
-class PhotoCarouselPresenter(private val mainScheduler: Scheduler,
-                             private val aircraftDetailUseCase: (String) -> Observable<Aircraft>) {
+class PhotoCarouselPresenter(
+        private val mainScheduler: Scheduler,
+        private val aircraftDetailUseCase: (String) -> Observable<Aircraft>
+) {
 
     private val subscriptions = CompositeSubscription()
 

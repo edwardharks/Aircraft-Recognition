@@ -1,6 +1,6 @@
 package com.edwardharker.aircraftrecognition.analytics.google
 
-import com.edwardharker.aircraftrecognition.androidcommon.BuildConfig.*
+import com.edwardharker.aircraftrecognition.androidcommon.BuildConfig.GA_TRACKING_ID
 import com.edwardharker.aircraftrecognition.applicationContext
 import com.google.android.gms.analytics.GoogleAnalytics
 

@@ -7,7 +7,8 @@ import android.support.v7.widget.RecyclerView
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.MeasureSpec.*
+import android.view.View.MeasureSpec.EXACTLY
+import android.view.View.MeasureSpec.makeMeasureSpec
 import android.view.ViewGroup
 import android.widget.TextView
 import com.edwardharker.aircraftrecognition.aircraftdetail.R
@@ -15,9 +16,12 @@ import com.edwardharker.aircraftrecognition.analytics.Event
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.displayName
-import com.edwardharker.aircraftrecognition.ui.*
+import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView.Aspect.HEIGHT
-import java.util.ArrayList
+import com.edwardharker.aircraftrecognition.ui.activityLauncher
+import com.edwardharker.aircraftrecognition.ui.dpToPixels
+import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
+import java.util.*
 
 class AircraftRailView @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
