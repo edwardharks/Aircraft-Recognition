@@ -113,9 +113,15 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         }
     }
 
-    private val startedWithTransition by lazy { intent.getBooleanExtra(startedWithTransitionExtra, false) }
-
-    private val isFromDeepLink by lazy { intent.data != null }
+    private val startedWithTransition by lazy {
+        intent.getBooleanExtra(startedWithTransitionExtra, false)
+    }
+    private val isFromDeepLink by lazy {
+        intent.data != null
+    }
+    private val detailsBackgroundColour by lazy {
+        getColor(this@AircraftDetailActivity, R.color.windowBackground)
+    }
     private var animateOnBackPressed = true
 
     private val presenter = aircraftDetailPresenter()
@@ -138,6 +144,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
         if (savedInstanceState == null && startedWithTransition) {
             initialInvisibleViews.forEach { it.alpha = 0f }
+            aircraftDetailsContainer.background = null
             window.sharedElementEnterTransition.addListener(EnterTransitionListener())
         }
 
@@ -253,7 +260,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
         override fun onTransitionEnd(transition: Transition?) {
             super.onTransitionEnd(transition)
-            aircraftDetailsContainer.setBackgroundColor(getColor(this@AircraftDetailActivity, R.color.windowBackground))
+            aircraftDetailsContainer.setBackgroundColor(detailsBackgroundColour)
             toolbar.animate().alpha(1.0f).start()
             photoCarouselButton.animate().alpha(1.0f).start()
             val slideAnimators = transitionSlidingViews.map { ObjectAnimator.ofFloat(it, TRANSLATION_Y, 0.0f) }
