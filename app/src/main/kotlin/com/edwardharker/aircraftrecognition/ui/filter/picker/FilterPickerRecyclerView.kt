@@ -16,11 +16,17 @@ import java.util.*
 
 class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
 
-    private val pickerHeight = resources.getDimensionPixelSize(R.dimen.filter_picker_height)
+    private val pickerHeight by lazy {
+        resources.getDimensionPixelSize(R.dimen.filter_picker_height)
+    }
 
     private val adapter = Adapter()
-    private val linearLayoutManager: LinearLayoutManager by lazy { SlowScrollingLinearLayoutManager(context) }
-    private val presenter = filterPickerPresenter()
+    private val linearLayoutManager: LinearLayoutManager by lazy {
+        SlowScrollingLinearLayoutManager(context)
+    }
+    private val presenter by lazy {
+        filterPickerPresenter()
+    }
     var scrollOnSelection = true
 
     constructor(context: Context) : super(context)

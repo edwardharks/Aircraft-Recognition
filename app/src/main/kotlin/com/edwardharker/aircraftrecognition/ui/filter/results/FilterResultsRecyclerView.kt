@@ -25,12 +25,18 @@ import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 
 class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
 
-    private val bottomSheetBehaviour by lazy { BottomSheetBehavior.from(this) }
+    private val bottomSheetBehaviour by lazy {
+        BottomSheetBehavior.from(this)
+    }
 
-    private val pickerHeight by lazy { resources.getDimensionPixelSize(R.dimen.filter_picker_height) }
+    private val pickerHeight by lazy {
+        resources.getDimensionPixelSize(R.dimen.filter_picker_height)
+    }
 
     private val adapter = Adapter()
-    private val presenter = filterResultsPresenter()
+    private val presenter by lazy {
+        filterResultsPresenter()
+    }
 
     var hiddenListener: HiddenListener? = null
 

@@ -50,6 +50,10 @@
       {
         "value": "BOTH",
         "label": "Tail and wings"
+      },
+      {
+        "value": "NOSE",
+        "label": "Nose"
       }
     ]
   },
