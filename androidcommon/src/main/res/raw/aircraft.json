@@ -2492,7 +2492,7 @@
     "id": "let-l-410-turbolet",
     "name": "L-410 Turbolet",
     "manufacturer": "Let",
-    "longDescription": "The Let L-410 Turbolet is a twin-engine short-range transport aircraft, manufactured by the Czech aircraft manufacturer LET, often used as an airliner. The aircraft is capable of landing on short and unpaved runways and operating under extreme conditions from +50 °C to -50 °C. In 2016, 1,200 L-410 have been built and over 350 are in service in more than 50 countries.[1]",
+    "longDescription": "The Let L-410 Turbolet is a twin-engine short-range transport aircraft, manufactured by the Czech aircraft manufacturer LET, often used as an airliner. The aircraft is capable of landing on short and unpaved runways and operating under extreme conditions from +50 °C to -50 °C. In 2016, 1,200 L-410 have been built and over 350 are in service in more than 50 countries.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Let_L-410_Turbolet",
     "metaData": {
@@ -2587,7 +2587,7 @@
     "id": "beechcraft-bonanza",
     "name": "Bonanza",
     "manufacturer": "Beechcraft",
-    "longDescription": "The Beechcraft Bonanza is an American general aviation aircraft introduced in 1947 by Beech Aircraft Corporation of Wichita, Kansas. The six-seater, single-engined aircraft is still being produced by Beechcraft and has been in continuous production longer than any other airplane in history.[3][4] More than 17,000 Bonanzas of all variants have been built,[5][6] produced in both distinctive V-tail and conventional tail configurations.",
+    "longDescription": "The Beechcraft Bonanza is an American general aviation aircraft introduced in 1947 by Beech Aircraft Corporation of Wichita, Kansas. The six-seater, single-engined aircraft is still being produced by Beechcraft and has been in continuous production longer than any other airplane in history. More than 17,000 Bonanzas of all variants have been built, produced in both distinctive V-tail and conventional tail configurations.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Bonanza",
     "metaData": {
@@ -2644,7 +2644,7 @@
     "id": "cessna-162-skycatcher",
     "name": "162 Skycatcher",
     "manufacturer": "Cessna",
-    "longDescription": "The Cessna 162 Skycatcher is an American side-by-side two-seat, high-wing, strut-braced, tricycle gear light-sport aircraft (LSA) that was designed and produced by Cessna between December 2009 and December 2013. It is the most recently introduced aircraft in the company\u0027s general aviation product line and the most recently canceled; its intended market was flight training and personal use.[5][6]",
+    "longDescription": "The Cessna 162 Skycatcher is an American side-by-side two-seat, high-wing, strut-braced, tricycle gear light-sport aircraft (LSA) that was designed and produced by Cessna between December 2009 and December 2013. It is the most recently introduced aircraft in the company\u0027s general aviation product line and the most recently canceled; its intended market was flight training and personal use.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_162_Skycatcher",
     "metaData": {
@@ -2688,7 +2688,7 @@
     "id": "cessna-172",
     "name": "172",
     "manufacturer": "Cessna",
-    "longDescription": "The Cessna 172 Skyhawk is an American four-seat, single-engine, high wing, fixed-wing aircraft made by the Cessna Aircraft Company.[5] First flown in 1955,[5] more 172s have been built than any other aircraft.[6]",
+    "longDescription": "The Cessna 172 Skyhawk is an American four-seat, single-engine, high wing, fixed-wing aircraft made by the Cessna Aircraft Company. First flown in 1955, more 172s have been built than any other aircraft.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_172",
     "metaData": {
@@ -2832,6 +2832,190 @@
     "youtubeVideos": [
       {
         "videoId": "GudFFcTMR64"
+      }
+    ]
+  },
+  {
+    "id": "cessna-350-corvalis",
+    "name": "350 Corvalis",
+    "manufacturer": "Cessna",
+    "longDescription": "The Cessna 350 Corvalis is a composite construction, single-engine, normally aspirated, fixed-gear, low-wing general aviation aircraft that was built by Cessna Aircraft until the end of 2010.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_350_Corvalis",
+    "metaData": {
+      "Role": "Personal aircraft",
+      "Manufacturer": "Cessna",
+      "Produced": "2000-2010",
+      "Variants": "Cessna 400"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Cessna_350_Corvalis_photo_D_Ramey_Logan.jpg/1024px-Cessna_350_Corvalis_photo_D_Ramey_Logan.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Cessna350N2546W02.jpg",
+        "width": 750,
+        "height": 563
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Cessna350N2546W01.jpg/1024px-Cessna350N2546W01.jpg",
+        "width": 1024,
+        "height": 768
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "VVr0QBfEsHE"
+      }
+    ]
+  },
+  {
+    "id": "cessna-400",
+    "name": "400",
+    "manufacturer": "Cessna",
+    "longDescription": "The Cessna 400, now marketed as the Cessna TTx, is a single-engine, fixed-gear, low-wing general aviation aircraft built from composite materials by Cessna Aircraft. The Cessna 400 was originally built by Columbia Aircraft as the Columbia 400. From 2013, the aircraft was built as the Cessna TTx Model T240.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_400",
+    "metaData": {
+      "Role": "Civil personal transportation aircraft",
+      "Manufacturer": "Cessna",
+      "Produced": "2004?present",
+      "Introduction": "2004"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cessna_Corvalis_TT_Airfield_Bonn_Hangelar.jpg/1024px-Cessna_Corvalis_TT_Airfield_Bonn_Hangelar.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lancair.columbia.400.n79hr.arp.jpg/1024px-Lancair.columbia.400.n79hr.arp.jp",
+        "width": 1024,
+        "height": 708
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/CorvalisTTx_Cockpit_mockup.jpg/1024px-CorvalisTTx_Cockpit_mockup.jpg",
+        "width": 1024,
+        "height": 681
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "DVxSI9sjhI4"
+      }
+    ]
+  },
+  {
+    "id": "cirrus-sr20",
+    "name": "SR20",
+    "manufacturer": "Cirrus",
+    "longDescription": "The Cirrus SR20 is an American piston-engine, four-or-five-seat, composite monoplane built by Cirrus Aircraft of Duluth, Minnesota.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Cirrus_SR20",
+    "metaData": {
+      "Role": "Civil utility aircraft",
+      "Manufacturer": "Cirrus Aircraft",
+      "Produced": "1999-Present",
+      "First flight": "21 March 1995",
+      "Number built": "1,332 (through 2016)"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/CIRRUS_DESIGN_CORP_SR20_N345BS_%282059%29_%285056614400%29.jpg/1024px-CIRRUS_DESIGN_CORP_SR20_N345BS_%282059%29_%285056614400%29.jpg",
+        "width": 1024,
+        "height": 702
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Cirrus_SR20_Private%2C_GRQ_Groningen_%28Eelde%29%2C_Netherlands_PP1119199051.jpg",
+        "width": 1024,
+        "height": 755
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/CirrusSR20Landing.jpg",
+        "width": 1024,
+        "height": 616
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Cirrus_SR20_REFON.jpg/1024px-Cirrus_SR20_REFON.jpg",
+        "width": 1024,
+        "height": 682
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "197rYoq4UXE"
+      }
+    ]
+  },
+  {
+    "id": "cirrus-sr22",
+    "name": "SR22",
+    "manufacturer": "Cirrus",
+    "longDescription": "The Cirrus SR22 is a single-engine four- or five-seat composite aircraft built from 2001 by Cirrus Aircraft of Duluth, Minnesota.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Cirrus_SR22",
+    "metaData": {
+      "Role": "Civil utility aircraft",
+      "Manufacturer": "Cirrus Aircraft",
+      "National origin": "United States",
+      "Produced": "2001-present",
+      "Number built": "5,194 through 2016"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Cirrus_SR-22_G3_GTS_AN1594917.jpg",
+        "width": 1024,
+        "height": 734
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cirrus_SR-22GTS_G3.jpg/1024px-Cirrus_SR-22GTS_G3.jpg",
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/SR22-G5.jpg",
+        "width": 1026,
+        "height": 763
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Cirrus.sr22.n147vc.arp.jpg/1024px-Cirrus.sr22.n147vc.arp.jpg",
+        "width": 1024,
+        "height": 697
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "_v2s6uK_VrU"
       }
     ]
   }
