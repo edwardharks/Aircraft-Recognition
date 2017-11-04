@@ -4,6 +4,7 @@ import com.edwardharker.aircraftrecognition.model.Aircraft
 import rx.Completable
 import rx.Observable
 import java.util.*
+import java.util.Collections.emptyList
 
 class FakeAircraftRepository : AircraftRepository {
 
