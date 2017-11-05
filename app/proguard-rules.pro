@@ -12,6 +12,12 @@
 }
 -dontnote rx.internal.util.PlatformDependent
 
+# Retrofit
+-dontnote retrofit2.Platform
+-dontwarn retrofit2.Platform$Java8
+-keepattributes Signature
+-keepattributes Exceptions
+
 # Realm
 -keep class io.realm.annotations.RealmModule
 -keep @io.realm.annotations.RealmModule class *

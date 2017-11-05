@@ -38,13 +38,13 @@ class FilterActivity : AppCompatActivity(), OnMenuItemClickListener, FilterResul
 
         bottomSheetView.viewTreeObserver.addOnPreDrawListener {
             resultsHandleContainer.translationY = bottomSheetView.y - resultsHandleView.height
-            true
+            return@addOnPreDrawListener true
         }
 
         resultsHandleContainer.setOnClickListener { toggleBottomSheetHidden() }
         resultsHandleContainer.setOnTouchListener { _, event ->
             bottomSheetView.onTouchEvent(event)
-            false
+            return@setOnTouchListener false
         }
     }
 

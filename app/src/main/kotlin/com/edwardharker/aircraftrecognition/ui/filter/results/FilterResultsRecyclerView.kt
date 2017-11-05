@@ -161,8 +161,8 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
         init {
             view.setOnClickListener {
                 aircraft?.let {
-                    val activity = view.context as Activity
-                    activity.activityLauncher().launchAircraftDetailActivity(it.id, aircraftImage, background, aircraftName)
+                    val activity = view.context as? Activity
+                    activity?.activityLauncher()?.launchAircraftDetailActivity(it.id, aircraftImage, background, aircraftName)
                 }
             }
         }
