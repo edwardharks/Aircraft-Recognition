@@ -15,6 +15,7 @@ private fun filterPickerUseCase(): FilterPickerUseCase =
         RepositoryFilterPickerUseCase(
                 filterRepository(),
                 selectedFilterOptions(),
+                aircraftRepository(),
                 filterOptionsRemover()::removeRedundantFilterOptions
         )
 

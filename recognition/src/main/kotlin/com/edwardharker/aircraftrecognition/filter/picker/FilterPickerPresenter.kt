@@ -14,7 +14,9 @@ class FilterPickerPresenter(private val mainScheduler: Scheduler,
         subscriptions.add(filterPickerUseCase.invoke()
                 .subscribeOn(mainScheduler)
                 .observeOn(mainScheduler)
-                .subscribe { view.showFilters(it) })
+                .subscribe { filters ->
+                    view.showFilters(filters)
+                })
     }
 
     fun stopPresenting() = subscriptions.unsubscribe()
