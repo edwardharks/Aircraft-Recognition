@@ -23,6 +23,10 @@ class RetrofitAircraftRepository(
                         }
                     }
 
+    override fun allAircraftCount(): Observable<Long> {
+        throw UnsupportedOperationException()
+    }
+
     override fun filteredAircraft(filters: Map<String, String>): Observable<List<Aircraft>> {
         throw UnsupportedOperationException()
     }

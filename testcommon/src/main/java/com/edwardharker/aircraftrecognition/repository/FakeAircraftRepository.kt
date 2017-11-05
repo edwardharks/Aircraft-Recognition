@@ -7,7 +7,6 @@ import java.util.*
 import java.util.Collections.emptyList
 
 class FakeAircraftRepository : AircraftRepository {
-
     private var aircraft: List<Aircraft> = emptyList()
 
     private var filterMap: MutableMap<Map<String, String>, List<Aircraft>> = HashMap()
@@ -37,6 +36,8 @@ class FakeAircraftRepository : AircraftRepository {
     override fun saveAircraft(aircraft: List<Aircraft>) = Unit
 
     override fun allAircraft(): Observable<List<Aircraft>> = Observable.fromCallable { aircraft }
+
+    override fun allAircraftCount(): Observable<Long> = Observable.just(0)
 
     override fun filteredAircraft(filters: Map<String, String>): Observable<List<Aircraft>> =
             Observable.fromCallable { filterMap[filters] }

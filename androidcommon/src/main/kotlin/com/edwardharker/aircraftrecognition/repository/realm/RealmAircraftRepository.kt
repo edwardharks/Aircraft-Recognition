@@ -35,6 +35,14 @@ class RealmAircraftRepository(private val realm: Observable<Realm>) : AircraftRe
                 it.map(::realmAircraftToAircraft)
             }
 
+    override fun allAircraftCount(): Observable<Long> =
+            realm.flatMap { realm ->
+                Observable.fromCallable {
+                    realm.where(RealmAircraft::class.java)
+                            .count()
+                }
+            }
+
     override fun filteredAircraft(filters: Map<String, String>): Observable<List<Aircraft>> =
             realm.flatMap {
                 it.where(RealmAircraft::class.java)

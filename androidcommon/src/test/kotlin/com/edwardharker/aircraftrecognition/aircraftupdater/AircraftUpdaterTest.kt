@@ -6,7 +6,6 @@ import com.edwardharker.aircraftrecognition.repository.FakeAircraftRepository
 import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 import org.junit.Test
-import org.mockito.Mockito
 import org.mockito.Mockito.*
 import rx.Observable
 import rx.schedulers.Schedulers
@@ -18,7 +17,7 @@ class AircraftUpdaterTest {
     @Test
     fun `saves aircaft from static repository in aircraft repository when aircraft repository is empty`() {
         val mockRepository = mock<AircraftRepository> {
-            on { allAircraft() } doReturn Observable.just(listOf())
+            on { allAircraftCount() } doReturn Observable.just(0L)
         }
         val aircraftUpdater = AircraftUpdater(
                 ioScheduler = Schedulers.trampoline(),
@@ -30,13 +29,13 @@ class AircraftUpdaterTest {
 
         aircraftUpdater.update()
 
-        Mockito.verify(mockRepository).saveAircraft(aircraft)
+        verify(mockRepository).saveAircraft(aircraft)
     }
 
     @Test
     fun `doesn not saves aircaft from static repository in aircraft repository when aircraft repository is not empty`() {
         val mockRepository = mock<AircraftRepository> {
-            on { allAircraft() } doReturn Observable.just(aircraft)
+            on { allAircraftCount() } doReturn Observable.just(1L)
         }
         val aircraftUpdater = AircraftUpdater(
                 ioScheduler = Schedulers.trampoline(),
@@ -48,14 +47,14 @@ class AircraftUpdaterTest {
 
         aircraftUpdater.update()
 
-        Mockito.verify(mockRepository, never()).saveAircraft(aircraft)
+        verify(mockRepository, never()).saveAircraft(aircraft)
     }
 
 
     @Test
     fun `saves aircaft from remote repository in aircraft repository`() {
         val mockRepository = mock<AircraftRepository> {
-            on { allAircraft() } doReturn Observable.never()
+            on { allAircraftCount() } doReturn Observable.never()
         }
         val aircraftUpdater = AircraftUpdater(
                 ioScheduler = Schedulers.trampoline(),
@@ -67,6 +66,6 @@ class AircraftUpdaterTest {
 
         aircraftUpdater.update()
 
-        Mockito.verify(mockRepository).saveAircraft(aircraft)
+        verify(mockRepository).saveAircraft(aircraft)
     }
 }

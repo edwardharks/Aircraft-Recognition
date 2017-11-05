@@ -10,6 +10,10 @@ import rx.Completable
 import rx.Observable
 
 class AssetsAircraftRepository(private val context: Context, private val gson: Gson) : AircraftRepository {
+    override fun allAircraftCount(): Observable<Long> {
+        throw UnsupportedOperationException("AssetsAircraftRepository does not support aircraft count")
+    }
+
     override fun saveAircraft(aircraft: List<Aircraft>) {
         throw UnsupportedOperationException("AssetsAircraftRepository does not support saving aircraft")
     }

@@ -14,8 +14,8 @@ class AircraftUpdater(
 
     fun update() {
         val staticRepositoryAircraftObservable =
-                aircraftRepository.allAircraft()
-                        .filter { it.isEmpty() }
+                aircraftRepository.allAircraftCount()
+                        .filter { it == 0L }
                         .flatMap {
                             staticAircraftRepository
                                     .allAircraft()
