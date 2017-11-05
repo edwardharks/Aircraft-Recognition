@@ -1,4 +1,4 @@
-package com.edwardharker.aircraftrecognition.updater
+package com.edwardharker.aircraftrecognition.aircraftupdater
 
 import com.edwardharker.aircraftrecognition.repository.AircraftRepository
 import rx.Observable

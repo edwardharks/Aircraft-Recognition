@@ -1,6 +1,7 @@
 package com.edwardharker.aircraftrecognition.repository.realm
 
 import com.edwardharker.aircraftrecognition.applicationContext
+import com.edwardharker.aircraftrecognition.android.appUpdate
 import io.realm.Realm
 import io.realm.RealmConfiguration
 import rx.Observable
@@ -13,7 +14,9 @@ private object RealmInstance {
 
     init {
         Realm.init(applicationContext())
-        Realm.deleteRealm(RealmConfiguration.Builder().build())
+        if (appUpdate().hasUpdated()) {
+            Realm.deleteRealm(RealmConfiguration.Builder().build())
+        }
         realm = Realm.getDefaultInstance().asObservable()
     }
 }
