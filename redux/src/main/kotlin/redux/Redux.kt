@@ -52,7 +52,8 @@ class Store<S>(private val reducer: (S, Action) -> S, initialState: S) {
 
 fun <S> Store<S>.dispatch(actions: Observable<out Action>): Subscription = actions.subscribe { dispatch(it) }
 
-fun <S> Store<S>.asObservable(): Observable<out S> = Observable.fromEmitter({ emitter ->
-    val unsubscriber = subscribe { emitter.onNext(it) }
-    emitter.setCancellation(unsubscriber)
-}, Emitter.BackpressureMode.DROP)
+fun <S> Store<S>.observe(): Observable<out S> =
+        Observable.create({ emitter ->
+            val unsubscriber = subscribe { emitter.onNext(it) }
+            emitter.setCancellation(unsubscriber)
+        }, Emitter.BackpressureMode.DROP)

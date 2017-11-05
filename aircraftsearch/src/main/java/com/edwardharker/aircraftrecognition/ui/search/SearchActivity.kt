@@ -14,7 +14,7 @@ import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftsearch.R
 import com.jakewharton.rxbinding.widget.RxTextView
 import redux.Action
-import redux.asObservable
+import redux.observe
 import redux.dispatch
 import rx.Observable
 import rx.Subscription
@@ -67,7 +67,7 @@ class SearchActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        disposables.add(searchStore.asObservable().subscribe {
+        disposables.add(searchStore.observe().subscribe {
             searchAdapter.bindSearchResults(it.searchResults)
         })
     }

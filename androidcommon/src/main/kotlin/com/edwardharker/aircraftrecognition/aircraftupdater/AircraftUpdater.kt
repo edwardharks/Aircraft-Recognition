@@ -22,9 +22,13 @@ class AircraftUpdater(
                                     .subscribeOn(ioScheduler)
                         }
 
+        val remoteRepositoryAircraftObservable =
+                remoteAircraftRepository.allAircraft()
+                        .subscribeOn(ioScheduler)
+
         Observable.merge(
                 staticRepositoryAircraftObservable,
-                remoteAircraftRepository.allAircraft())
+                remoteRepositoryAircraftObservable)
                 .subscribeOn(mainScheduler)
                 .observeOn(mainScheduler)
                 .subscribe { aircraft ->
