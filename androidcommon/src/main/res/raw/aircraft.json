@@ -3018,5 +3018,296 @@
         "videoId": "_v2s6uK_VrU"
       }
     ]
+  },
+  {
+    "id": "diamond-da20",
+    "name": "DA20",
+    "manufacturer": "Diamond",
+    "longDescription": "The Diamond DV20/DA20 Katana is an Austrian-designed two-seat tricycle gear general aviation light aircraft. Developed and manufactured by Austrian aircraft manufacturer Diamond Aircraft, it was originally produced in Austria as the DV20.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Diamond_DA20",
+    "metaData": {
+      "Role": "Two-seat light aircraft",
+      "Manufacturer": "Diamond Aircraft",
+      "National origin": "Austria (DV20) Canada (DA20)",
+      "Produced": "1994-present",
+      "First flight": "1991",
+      "Introduction": "1992",
+      "Number built": "1,000+"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flying_Colors_Precision_Flight_Team.jpg",
+        "width": 1051,
+        "height": 684
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Diamond_DA20_on_the_Ramp.jpg",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/G-BXPC-Katana-2.jpg",
+        "width": 972,
+        "height": 547
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "wNjhD0eYwPM"
+      }
+    ]
+  },
+  {
+    "id": "diamond-da40",
+    "name": "DA40",
+    "manufacturer": "Diamond",
+    "longDescription": "The Diamond DA40 Star is an Austrian four-seat, single engine, light aircraft constructed from composite materials. Built in both Austria and Canada, it was developed as a four-seat version of the earlier DA20 by Diamond Aircraft Industries.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Diamond_DA40",
+    "metaData": {
+      "Role": "Light aircraft",
+      "Manufacturer": "Diamond Aircraft Industries",
+      "Produced": "1997-present",
+      "First flight": "5 November 1997"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Diamond_DA40_%288736184864%29.jpg/1024px-Diamond_DA40_%288736184864%29.jpg",
+        "width": 1024,
+        "height": 686
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Diamond.da40-tdi.diamondstar.g-jkmf.arp.jpg/1024px-Diamond.da40-tdi.diamondstar.g-jkmf.arp.jpg",
+        "width": 1024,
+        "height": 676
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/DiamondDA40FPN218DS.jpg",
+        "width": 750,
+        "height": 563
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/N681BA_RIAT_Bthebest.JPG/1024px-N681BA_RIAT_Bthebest.JPG",
+        "width": 1024,
+        "height": 672
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "oLe9QfrYRgM"
+      }
+    ]
+  },
+  {
+    "id": "maule-m-7",
+    "name": "M-7",
+    "manufacturer": "Maule",
+    "longDescription": "The Maule M-7 is a family of single-engine light aircraft that has been manufactured in the United States since the mid-1980s.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Maule_M-7",
+    "metaData": {
+      "Role": "Utility aircraft",
+      "Manufacturer": "Maule Air",
+      "National origin": "United States",
+      "First flight": "1984",
+      "Number built": "ca. 500 by 1995"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Maule.m7-235b.arp.jpg/1024px-Maule.m7-235b.arp.jpg",
+        "width": 1024,
+        "height": 740
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Maule.mx-7-235.superrocket.g-iton.arp.jpg/1024px-Maule.mx-7-235.superrocket.g-iton.arp.jpg",
+        "width": 1024,
+        "height": 725
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Maule_M-7-235C_%28N1936P%29.jpg/1024px-Maule_M-7-235C_%28N1936P%29.jpg",
+        "width": 1024,
+        "height": 682
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Maule_M-7-235C_Orion_C-FSRA_04.JPG/1024px-Maule_M-7-235C_Orion_C-FSRA_04.JP",
+        "width": 1024,
+        "height": 768
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "B-CV6WSkd1g"
+      }
+    ]
+  },
+  {
+    "id": "mooney-m20",
+    "name": "M20",
+    "manufacturer": "Mooney",
+    "longDescription": "The Mooney M20 is a family of piston-powered, propeller-driven, general aviation aircraft, all featuring low wings and tricycle gear, manufactured by the Mooney International Corporation.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Mooney_M20",
+    "metaData": {
+      "Role": "Personal use civil aircraft",
+      "Manufacturer": "Mooney International Corporation",
+      "Produced": "1955-1971, 1974-2008, 2014-present",
+      "First flight": "1953",
+      "Introduction": "1955",
+      "Number built": ">11,000"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mooney.m20j.g-muni.arp.jpg/1024px-Mooney.m20j.g-muni.arp.jpg",
+        "width": 1024,
+        "height": 691
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/M20L_D-EEFX.JPG",
+        "width": 1600,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/MooneyM20TPredatorN20XT.jpg",
+        "width": 750,
+        "height": 563
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mooney_Acclaim_Ultra.jpg/1024px-Mooney_Acclaim_Ultra.jpg",
+        "width": 1024,
+        "height": 609
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "GlgVakxQmLY"
+      }
+    ]
+  },
+  {
+    "id": "piper-pa-28-cherokee",
+    "name": "PA-28 Cherokee",
+    "manufacturer": "Piper",
+    "longDescription": "The Piper PA-28 Cherokee is a family of light aircraft built by Piper Aircraft and designed for flight training, air taxi, and personal use. The PA-28 family of aircraft are all-metal, unpressurized, single-engine, piston-powered airplanes with low-mounted wings and tricycle landing gear. They have a single door on the copilot side, which is entered by stepping on the wing.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-28_Cherokee",
+    "metaData": {
+      "Role": "Civil utility aircraft",
+      "Manufacturer": "Piper Aircraft",
+      "Produced": "1961-present",
+      "First flight": "14 January 1960",
+      "Introduction": "1960",
+      "Number built": "32,778+"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Polly_in_flight_riat2008_arp.jpg/1024px-Polly_in_flight_riat2008_arp.jp",
+        "width": 1024,
+        "height": 693
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Piper_warrior.jpg",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/PiperPA-28R-200CherokeeArrow.jpg",
+        "width": 749,
+        "height": 562
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/PiperPA-28RT-201ArrowIVC-GTJG.JPG",
+        "width": 750,
+        "height": 563
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "XMFNFrwWoI8"
+      }
+    ]
+  },
+  {
+    "id": "piper-pa-46",
+    "name": "PA-46",
+    "manufacturer": "Piper Aircraft",
+    "longDescription": "The Piper PA-46 Malibu and Matrix are a family of American light aircraft manufactured by Piper Aircraft of Vero Beach, Florida. The aircraft is powered by a single engine and has the capacity for one pilot and five passengers. Early Malibus were all piston-engined, but a turboprop version, the Malibu Meridian, is also available.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-46",
+    "metaData": {
+      "Role": "Light aircraft",
+      "Manufacturer": "Piper Aircraft",
+      "National origin": "United States",
+      "First flight": "30 November 1979"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Piper_PA-46-500TP_Malibu_Meridian_AN1805813.jpg",
+        "width": 1024,
+        "height": 729
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/HS-POT_%2811286250504%29.jpg/1024px-HS-POT_%2811286250504%29.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Piper_PA-46-500TP_Malibu_Meridian_AN1672197.jpg",
+        "width": 1024,
+        "height": 716
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Piper_PA.46R-350T_Matrix_Deurne_%28cropped%29.JPG/1024px-Piper_PA.46R-350T_Matrix_Deurne_%28cropped%29.JPG",
+        "width": 1024,
+        "height": 684
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "ExtS9r1pSiY"
+      }
+    ]
   }
 ]
