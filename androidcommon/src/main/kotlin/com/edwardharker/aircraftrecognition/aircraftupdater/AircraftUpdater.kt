@@ -31,6 +31,7 @@ class AircraftUpdater(
                 remoteRepositoryAircraftObservable)
                 .subscribeOn(mainScheduler)
                 .observeOn(mainScheduler)
+                .filter { it.isNotEmpty() }
                 .subscribe { aircraft ->
                     aircraftRepository.deleteAllAircraft()
                     aircraftRepository.saveAircraft(aircraft)

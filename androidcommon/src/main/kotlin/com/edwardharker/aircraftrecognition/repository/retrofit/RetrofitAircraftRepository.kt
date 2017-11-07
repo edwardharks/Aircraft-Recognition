@@ -1,5 +1,6 @@
 package com.edwardharker.aircraftrecognition.repository.retrofit
 
+import android.util.Log
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.repository.AircraftRepository
 import rx.Completable
@@ -22,6 +23,8 @@ class RetrofitAircraftRepository(
                             Observable.never<List<Aircraft>>()
                         }
                     }
+                    .doOnError { Log.w("AircraftRepository", it.message, it) }
+                    .onErrorReturn { listOf() }
 
     override fun allAircraftCount(): Observable<Long> {
         throw UnsupportedOperationException()

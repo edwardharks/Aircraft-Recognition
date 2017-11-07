@@ -68,4 +68,22 @@ class AircraftUpdaterTest {
 
         verify(mockRepository).saveAircraft(aircraft)
     }
+
+    @Test
+    fun `does not saves aircaft when aircraft repository emits empty list`() {
+        val mockRepository = mock<AircraftRepository> {
+            on { allAircraftCount() } doReturn Observable.never()
+        }
+        val aircraftUpdater = AircraftUpdater(
+                ioScheduler = Schedulers.trampoline(),
+                mainScheduler = Schedulers.trampoline(),
+                staticAircraftRepository = FakeAircraftRepository(),
+                remoteAircraftRepository = FakeAircraftRepository().thatEmits(listOf()),
+                aircraftRepository = mockRepository
+        )
+
+        aircraftUpdater.update()
+
+        verify(mockRepository, never()).saveAircraft(com.nhaarman.mockito_kotlin.any())
+    }
 }
