@@ -3,6 +3,7 @@ package com.edwardharker.aircraftrecognition.ui.aircraftdetail
 import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.support.v4.view.PagerAdapter
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
@@ -15,6 +16,7 @@ import com.edwardharker.aircraftrecognition.aircraftdetail.PhotoCarouselView
 import com.edwardharker.aircraftrecognition.aircraftdetail.R
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.photoCarouselScreen
+import com.edwardharker.aircraftrecognition.extension.postDelayed
 import com.edwardharker.aircraftrecognition.model.Image
 import com.edwardharker.aircraftrecognition.ui.ActivityLauncher
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
@@ -53,6 +55,9 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
         setContentView(R.layout.activity_photo_carousel)
 
         supportPostponeEnterTransition()
+        Handler().postDelayed(TRANSITION_TIMEOUT) {
+            supportStartPostponedEnterTransition()
+        }
 
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -136,5 +141,9 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
                 }
             })
         }
+    }
+
+    companion object {
+        private const val TRANSITION_TIMEOUT = 500L
     }
 }

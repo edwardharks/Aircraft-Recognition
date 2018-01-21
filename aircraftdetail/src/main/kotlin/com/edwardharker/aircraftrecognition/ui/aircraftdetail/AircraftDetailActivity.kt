@@ -11,6 +11,7 @@ import android.graphics.Color.red
 import android.graphics.Typeface.BOLD
 import android.net.Uri
 import android.os.Bundle
+import android.os.Handler
 import android.support.v4.content.ContextCompat.getColor
 import android.support.v4.view.animation.LinearOutSlowInInterpolator
 import android.support.v4.widget.NestedScrollView
@@ -34,6 +35,7 @@ import com.edwardharker.aircraftrecognition.aircraftdetail.R
 import com.edwardharker.aircraftrecognition.analytics.aircraftDetailEvent
 import com.edwardharker.aircraftrecognition.analytics.aircraftDetailScreen
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
+import com.edwardharker.aircraftrecognition.extension.postDelayed
 import com.edwardharker.aircraftrecognition.ui.ActivityLauncher
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.TransitionListenerAdapter
@@ -140,6 +142,9 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         }
 
         supportPostponeEnterTransition()
+        Handler().postDelayed(TRANSITION_TIMEOUT) {
+            supportStartPostponedEnterTransition()
+        }
         animateOnBackPressed = savedInstanceState == null
 
         if (savedInstanceState == null && startedWithTransition) {
@@ -272,6 +277,10 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
                 start()
             }
         }
+    }
+
+    companion object {
+        private const val TRANSITION_TIMEOUT = 500L
     }
 }
 
