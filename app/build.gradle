@@ -60,7 +60,6 @@ dependencies {
     compile project(':androidcommon')
     compile project(':aircraftdetail')
     compile project(':aircraftsearch')
-    compile project(':feedback')
 }
 
 repositories {

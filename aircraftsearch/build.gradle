@@ -20,4 +20,5 @@ android {
 dependencies {
     compile project(':androidcommon')
     compile project(':aircraftdetail')
+    compile project(':feedback')
 }

@@ -11,6 +11,7 @@ import com.edwardharker.aircraftrecognition.ui.Navigator
 import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDetailActivity
 import com.edwardharker.aircraftrecognition.ui.bind
+import com.edwardharker.aircraftrecognition.ui.feedback.launchFeedbackDialog
 import com.edwardharker.aircraftsearch.R
 import com.jakewharton.rxbinding.widget.RxTextView
 import redux.Action
@@ -24,18 +25,25 @@ import java.util.concurrent.TimeUnit
 
 fun Navigator.launchSearchActivity() {
     val intent = Intent(activity, SearchActivity::class.java)
-    activity.startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(activity).toBundle())
+    activity.startActivity(
+        intent,
+        ActivityOptions.makeSceneTransitionAnimation(activity).toBundle()
+    )
 }
 
 class SearchActivity : AppCompatActivity() {
-
     private val toolbar by bind<Toolbar>(R.id.toolbar)
     private val searchEditText by bind<EditText>(R.id.search_box)
     private val searchResults by bind<RecyclerView>(R.id.search_results)
 
-    private val searchAdapter = SearchAdapter {
-        navigator().launchAircraftDetailActivity(it.id)
-    }
+    private val searchAdapter = SearchAdapter(
+        aircraftClickListener = {
+            navigator().launchAircraftDetailActivity(it.id)
+        },
+        feedbackClickListener = {
+            navigator().launchFeedbackDialog()
+        }
+    )
 
     private val searchStore = searchStore()
     private val disposables = CompositeSubscription()
@@ -56,11 +64,11 @@ class SearchActivity : AppCompatActivity() {
         searchResults.adapter = searchAdapter
 
         val events: Observable<Action> = RxTextView.afterTextChangeEvents(searchEditText)
-                .debounce(200, TimeUnit.MILLISECONDS)
-                .filter { it.toString().isNotBlank() }
-                .observeOn(AndroidSchedulers.mainThread())
-                .map { searchEditText.text.toString() }
-                .compose(searchUseCase()::searchAircraftByName)
+            .debounce(200, TimeUnit.MILLISECONDS)
+            .filter { it.toString().isNotBlank() }
+            .observeOn(AndroidSchedulers.mainThread())
+            .map { searchEditText.text.toString() }
+            .compose(searchUseCase()::searchAircraftByName)
 
         eventsDisposable = searchStore.dispatch(events)
     }

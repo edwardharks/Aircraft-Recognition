@@ -9,8 +9,10 @@ import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.displayName
 import com.edwardharker.aircraftsearch.R
 
-class SearchAdapter(private val clickListener: (Aircraft) -> Unit) : RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
-
+class SearchAdapter(
+    private val aircraftClickListener: (Aircraft) -> Unit,
+    private val feedbackClickListener: () -> Unit
+) : RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
     private var searchResults: MutableList<Aircraft> = ArrayList()
 
     fun bindSearchResults(searchResults: List<Aircraft>) {
@@ -20,16 +22,34 @@ class SearchAdapter(private val clickListener: (Aircraft) -> Unit) : RecyclerVie
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        if (position < searchResults.size) {
+            bindAircraft(position, holder)
+        } else {
+            bindFeedback(holder)
+        }
+    }
+
+    private fun bindFeedback(holder: ViewHolder) {
+        holder.label.text = holder.itemView.context.getString(R.string.suggest_aircraft)
+        holder.itemView.setOnClickListener { feedbackClickListener() }
+    }
+
+    private fun bindAircraft(
+        position: Int,
+        holder: ViewHolder
+    ) {
         val aircraft = searchResults[position]
         holder.label.text = aircraft.displayName
-        holder.itemView.setOnClickListener { clickListener(aircraft) }
+        holder.itemView.setOnClickListener { aircraftClickListener(aircraft) }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
-            ViewHolder(LayoutInflater.from(parent.context)
-                    .inflate(R.layout.view_search_result, parent, false))
+        ViewHolder(
+            LayoutInflater.from(parent.context)
+                .inflate(R.layout.view_search_result, parent, false)
+        )
 
-    override fun getItemCount(): Int = searchResults.size
+    override fun getItemCount(): Int = searchResults.size + 1
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val label = view as TextView
