@@ -1,7 +1,7 @@
 package com.edwardharker.aircraftrecognition.ui.aircraftdetail
 
-import android.app.Activity
 import android.content.Context
+import android.support.v4.app.FragmentActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.AttributeSet
@@ -18,13 +18,13 @@ import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.displayName
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView.Aspect.HEIGHT
-import com.edwardharker.aircraftrecognition.ui.activityLauncher
+import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 import java.util.*
 
 class AircraftRailView @JvmOverloads constructor(
-        context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : RecyclerView(context, attrs, defStyleAttr) {
 
     var aircraft: List<Aircraft>
@@ -46,7 +46,7 @@ class AircraftRailView @JvmOverloads constructor(
     }
 
     override fun onMeasure(widthSpec: Int, heightSpec: Int) =
-            super.onMeasure(widthSpec, makeMeasureSpec(200.dpToPixels(), EXACTLY))
+        super.onMeasure(widthSpec, makeMeasureSpec(200.dpToPixels(), EXACTLY))
 }
 
 private class RailAdapter : RecyclerView.Adapter<ViewHolder>() {
@@ -73,11 +73,14 @@ private class RailAdapter : RecyclerView.Adapter<ViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
-            ViewHolder(view = LayoutInflater.from(parent.context).inflate(
-                    R.layout.view_aircraft_rail_aircraft,
-                    parent,
-                    false),
-                    eventFactory = eventFactory)
+        ViewHolder(
+            view = LayoutInflater.from(parent.context).inflate(
+                R.layout.view_aircraft_rail_aircraft,
+                parent,
+                false
+            ),
+            eventFactory = eventFactory
+        )
 
     override fun getItemCount(): Int = filterResults.size
 
@@ -85,7 +88,8 @@ private class RailAdapter : RecyclerView.Adapter<ViewHolder>() {
 
 }
 
-private class ViewHolder(val view: View, eventFactory: (aircraftId: String) -> Event?) : RecyclerView.ViewHolder(view) {
+private class ViewHolder(val view: View, eventFactory: (aircraftId: String) -> Event?) :
+    RecyclerView.ViewHolder(view) {
     var aircraft: Aircraft? = null
 
     val aircraftImage: AspectRatioImageView by lazy {
@@ -105,13 +109,14 @@ private class ViewHolder(val view: View, eventFactory: (aircraftId: String) -> E
     init {
         view.setOnClickListener {
             aircraft?.let { aircraft ->
-                val activity = view.context as Activity
-                activity.activityLauncher()
-                        .launchAircraftDetailActivity(
-                                aircraft.id,
-                                aircraftImage,
-                                background,
-                                aircraftName)
+                val activity = view.context as FragmentActivity
+                activity.navigator()
+                    .launchAircraftDetailActivity(
+                        aircraft.id,
+                        aircraftImage,
+                        background,
+                        aircraftName
+                    )
                 eventFactory.invoke(aircraft.id)?.let { event ->
                     eventAnalytics().logEvent(event)
                 }

@@ -7,8 +7,8 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
 import android.widget.EditText
-import com.edwardharker.aircraftrecognition.ui.ActivityLauncher
-import com.edwardharker.aircraftrecognition.ui.activityLauncher
+import com.edwardharker.aircraftrecognition.ui.Navigator
+import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDetailActivity
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftsearch.R
@@ -22,7 +22,7 @@ import rx.android.schedulers.AndroidSchedulers
 import rx.subscriptions.CompositeSubscription
 import java.util.concurrent.TimeUnit
 
-fun ActivityLauncher.launchSearchActivity() {
+fun Navigator.launchSearchActivity() {
     val intent = Intent(activity, SearchActivity::class.java)
     activity.startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(activity).toBundle())
 }
@@ -34,7 +34,7 @@ class SearchActivity : AppCompatActivity() {
     private val searchResults by bind<RecyclerView>(R.id.search_results)
 
     private val searchAdapter = SearchAdapter {
-        activityLauncher().launchAircraftDetailActivity(it.id)
+        navigator().launchAircraftDetailActivity(it.id)
     }
 
     private val searchStore = searchStore()

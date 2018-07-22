@@ -1,1 +1,1 @@
-include ':app', ':recognition', ':testcommon', ':aircraftdetail', ':androidcommon', ':aircraftsearch', ':redux'
+include ':app', ':recognition', ':testcommon', ':aircraftdetail', ':androidcommon', ':aircraftsearch', ':redux', ':feedback'

@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion androidVersion
+    buildToolsVersion toolsVersion
+
+    defaultConfig {
+        minSdkVersion minSdk
+        targetSdkVersion androidVersion
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+}
+
+dependencies {
+    compile project(':androidcommon')
+    compile project(':aircraftdetail')
+}

@@ -18,7 +18,7 @@ import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.photoCarouselScreen
 import com.edwardharker.aircraftrecognition.extension.postDelayed
 import com.edwardharker.aircraftrecognition.model.Image
-import com.edwardharker.aircraftrecognition.ui.ActivityLauncher
+import com.edwardharker.aircraftrecognition.ui.Navigator
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
@@ -27,7 +27,7 @@ import com.pixelcan.inkpageindicator.InkPageIndicator
 
 private val aircraftIdExtra = "aircraftId"
 
-fun ActivityLauncher.launchPhotoCarouselActivity(aircraftId: String, aircraftImage: View) {
+fun Navigator.launchPhotoCarouselActivity(aircraftId: String, aircraftImage: View) {
     val intent = Intent(activity, PhotoCarouselActivity::class.java).apply {
         putExtra(aircraftIdExtra, aircraftId)
     }

@@ -1,12 +1,12 @@
 package com.edwardharker.aircraftrecognition.ui.filter.results
 
-import android.app.Activity
 import android.content.Context
 import android.support.design.widget.BottomSheetBehavior
 import android.support.design.widget.BottomSheetBehavior.STATE_COLLAPSED
 import android.support.design.widget.BottomSheetBehavior.STATE_DRAGGING
 import android.support.design.widget.BottomSheetBehavior.STATE_HIDDEN
 import android.support.design.widget.BottomSheetBehavior.STATE_SETTLING
+import android.support.v4.app.FragmentActivity
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.StaggeredGridLayoutManager
 import android.util.AttributeSet
@@ -19,7 +19,7 @@ import com.edwardharker.aircraftrecognition.filter.results.FilterResultsView
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.displayName
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
-import com.edwardharker.aircraftrecognition.ui.activityLauncher
+import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDetailActivity
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 
@@ -50,7 +50,11 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
 
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
 
-    constructor(context: Context, attrs: AttributeSet?, defStyle: Int) : super(context, attrs, defStyle)
+    constructor(context: Context, attrs: AttributeSet?, defStyle: Int) : super(
+        context,
+        attrs,
+        defStyle
+    )
 
     init {
         val spanCount = context.resources.getInteger(R.integer.filter_results_column_count)
@@ -137,8 +141,10 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
-                ViewHolder(LayoutInflater.from(parent.context)
-                        .inflate(R.layout.view_filter_results_aircraft, parent, false))
+            ViewHolder(
+                LayoutInflater.from(parent.context)
+                    .inflate(R.layout.view_filter_results_aircraft, parent, false)
+            )
 
         override fun getItemCount(): Int = filterResults.size
 
@@ -161,8 +167,13 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
         init {
             view.setOnClickListener {
                 aircraft?.let {
-                    val activity = view.context as? Activity
-                    activity?.activityLauncher()?.launchAircraftDetailActivity(it.id, aircraftImage, background, aircraftName)
+                    val activity = view.context as? FragmentActivity
+                    activity?.navigator()?.launchAircraftDetailActivity(
+                        it.id,
+                        aircraftImage,
+                        background,
+                        aircraftName
+                    )
                 }
             }
         }

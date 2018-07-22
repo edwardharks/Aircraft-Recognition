@@ -36,10 +36,10 @@ import com.edwardharker.aircraftrecognition.analytics.aircraftDetailEvent
 import com.edwardharker.aircraftrecognition.analytics.aircraftDetailScreen
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.extension.postDelayed
-import com.edwardharker.aircraftrecognition.ui.ActivityLauncher
+import com.edwardharker.aircraftrecognition.ui.Navigator
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.TransitionListenerAdapter
-import com.edwardharker.aircraftrecognition.ui.activityLauncher
+import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
@@ -50,7 +50,7 @@ import java.lang.Math.min
 private val aircraftIdExtra = "aircraftId"
 private val startedWithTransitionExtra = "startedWithTransition"
 
-fun ActivityLauncher.launchAircraftDetailActivity(aircraftId: String, aircraftImage: View, background: View, aircraftName: View) {
+fun Navigator.launchAircraftDetailActivity(aircraftId: String, aircraftImage: View, background: View, aircraftName: View) {
     val intent = Intent(activity, AircraftDetailActivity::class.java).apply {
         putExtra(aircraftIdExtra, aircraftId)
         putExtra(startedWithTransitionExtra, true)
@@ -64,7 +64,7 @@ fun ActivityLauncher.launchAircraftDetailActivity(aircraftId: String, aircraftIm
             ).toBundle())
 }
 
-fun ActivityLauncher.launchAircraftDetailActivity(aircraftId: String) {
+fun Navigator.launchAircraftDetailActivity(aircraftId: String) {
     val intent = Intent(activity, AircraftDetailActivity::class.java).apply {
         putExtra(aircraftIdExtra, aircraftId)
     }
@@ -250,7 +250,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     }
 
     private fun navigateToPhotoCarousel(view: View) {
-        activityLauncher().launchPhotoCarouselActivity(aircraftId, aircraftImage)
+        navigator().launchPhotoCarouselActivity(aircraftId, aircraftImage)
     }
 
     private inner class EnterTransitionListener : TransitionListenerAdapter() {
