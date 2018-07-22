@@ -523,6 +523,58 @@
     ]
   },
   {
+    "id": "boeing-707",
+    "name": "707",
+    "manufacturer": "Boeing",
+    "longDescription": "The Boeing 707 is a mid-sized, long-range, narrow-body, four-engine jet airliner built by Boeing Commercial Airplanes from 1958 to 1979. Its name is commonly pronounced as \"seven oh seven\". Versions of the aircraft have a capacity from 140 to 219 passengers and a range of 2,500 to 5,750 nautical miles (2,880 to 6,620 mi; 4,630 to 10,650 km).",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_707",
+    "metaData": {
+      "Role": "Narrow-body jet airliner",
+      "Manufacturer": "Boeing",
+      "National origin": "United States",
+      "Produced": "1957-1979",
+      "First flight": "December 20, 1957",
+      "Introduction": "October 1958 with Pan American World Airways",
+      "Number built": "865 (excludes Boeing 720 model)",
+      "Variants": "Boeing 720 Boeing, C-137 Stratoliner"
+    },
+    "filterOptions": {
+      "engines": "FOUR",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Boeing_707-138B_Qantas_Jett_Clipper_Ella_N707JT.jpg/1024px-Boeing_707-138B_Qantas_Jett_Clipper_Ella_N707JT.jpg",
+        "width": 1024,
+        "height": 678
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Pratt-707re-N707HE-071126-03-16.jpg/1024px-Pratt-707re-N707HE-071126-03-16.jpg",
+        "width": 1024,
+        "height": 753
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Boeing_707-121%2C_Pan_Am_JP6888703.jpg",
+        "width": 1024,
+        "height": 682
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/B707_Saha_Airlines_EP-SHV_THR_March_2011.jpg/1024px-B707_Saha_Airlines_EP-SHV_THR_March_2011.jpg",
+        "width": 1024,
+        "height": 684
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "mJ_P1UaBbds"
+      }
+    ]
+  },
+  {
     "id": "boeing-717",
     "name": "717",
     "manufacturer": "Boeing",
@@ -2918,6 +2970,220 @@
     "youtubeVideos": [
       {
         "videoId": "DVxSI9sjhI4"
+      }
+    ]
+  },
+  {
+    "id": "cessna-citation-mustang",
+    "name": "Citation Mustang",
+    "manufacturer": "Cessna",
+    "longDescription": "The Cessna Citation Mustang, Model 510, is a very light jet (VLJ) class business jet built by Cessna Aircraft Company at their Independence, Kansas production facility. The Mustang, in standard configuration, has four passenger seats in the aft cabin, a toilet, and seating for two in the cockpit. Like most other light jets, the Mustang is approved for single-pilot operation.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_Mustang",
+    "metaData": {
+      "Role": "Business jet",
+      "Manufacturer": "Cessna",
+      "National origin": "United States",
+      "Produced": "2006-2017",
+      "First flight": "23 April 2005",
+      "Introduction": "2006",
+      "Number built": "Over 470"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Cessna_Citation_Mustang_N416CM.jpg",
+        "width": 1100,
+        "height": 733
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Cessna_510_Citation_Mustang_AN1991279.jpg/1024px-Cessna_510_Citation_Mustang_AN1991279.jpg",
+        "width": 1024,
+        "height": 706
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "27IMfGxQ1as"
+      }
+    ]
+  },
+  {
+    "id": "cessna-citation-jet-m2",
+    "name": "CitationJet/M2",
+    "manufacturer": "Cessna",
+    "longDescription": "The Cessna CitationJet/M2/CJ series (Model 525) are light business jets part of the Cessna Citation family, built by the Cessna Aircraft Company. Its variants are marketed under the CJ, CJ1, CJ1+, M2, CJ2, CJ2+, CJ3, CJ3+, and CJ4 names. As of June 2017, 2,000 have been delivered with five million hours flown.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_CitationJet/M2",
+    "metaData": {
+      "Role": "Business jet",
+      "Manufacturer": "Cessna",
+      "National origin": "United States",
+      "Produced": "1991-present",
+      "First flight": "29 April 1991",
+      "Number built": "2000 as of June 8, 2017"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/OO-FLN.JPG",
+        "width": 1096,
+        "height": 733
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cessna_CitationJet_CJ1_%288735081113%29.jpg/1024px-Cessna_CitationJet_CJ1_%288735081113%29.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/OE-GTI_Cessna_525C_Citation_CJ4_C25C_%2825224411064%29.jpg/1024px-OE-GTI_Cessna_525C_Citation_CJ4_C25C_%2825224411064%29.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Cessna_525_Citation_M2_at_YSBK.JPG/1024px-Cessna_525_Citation_M2_at_YSBK.JPG",
+        "width": 1024,
+        "height": 685
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "We4vEG2zXUs"
+      }
+    ]
+  },
+  {
+    "id": "cessna-citation-excel",
+    "name": "Citation Excel",
+    "manufacturer": "Cessna",
+    "longDescription": "The Cessna Citation Excel (Model 560XL) is a 2,100 nmi (3,900 km) American business jet built by Cessna, part of the Citation Family. Announced in October 1994, it first flew on February 29, 1996, certification was granted in April 1998 and over 900 have been delivered. The 20,200 lb (9,200 kg) MTOW jet is powered by two 3,650-4,080 lbf (16.2?18.1 kN) PW500 turbofans, has the Citation V (560) cruciform tail and unswept supercritical wing of 370 sq ft (34 m²), and the Citation X stand-up cabin slightly shortened. The XLS 2004 update had upgraded engines and a glass cockpit and the 2008 XLS+ had upgrade engines again and a revised nose.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_Excel",
+    "metaData": {
+      "Role": "Business jet",
+      "Manufacturer": "Cessna",
+      "Produced": "1996-present",
+      "First flight": "29 February 1996",
+      "Number built": "908+"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cessna_560XL_Citation_XLS.jpg/1024px-Cessna_560XL_Citation_XLS.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/ABC_Bedarfsflug_Cessna_560XL_Citation_XLS_taking_off_from_Innsbruck_Airport.jpg/1024px-ABC_Bedarfsflug_Cessna_560XL_Citation_XLS_taking_off_from_Innsbruck_Airport.jpg",
+        "width": 1024,
+        "height": 683
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "3WlaW5DStvQ"
+      }
+    ]
+  },
+  {
+    "id": "cessna-citation-sovereign",
+    "name": "Citation Sovereign",
+    "manufacturer": "Cessna",
+    "longDescription": "The Cessna Citation Sovereign (Model 680) is an American 3,200 nmi (5,900 km) range business jet developed by Cessna, part of the Cessna Citation family. Announced at the 1998 NBAA convention, it made its maiden flight in February 2002, certification was awarded on June 2, 2004, and deliveries began in late September. The improved Sovereign+ was announced at the October 2012 NBAA for a first flight in April 2012 and deliveries in December, with winglets, improved engines and flight deck. The Citation Excel fuselage was stretched and joined with a large, clean-sheet 16.3 °, 516 sq ft (47.9 m2) wing and two 5,900 lbf (26 kN) PW300 engines for a 30,800 lb (14,000 kg) MTOW.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_Sovereign",
+    "metaData": {
+      "Role": "Business jet",
+      "Manufacturer": "Cessna",
+      "Produced": "Since 2004",
+      "First flight": "February 2002",
+      "Number built": "349 (Dec 2013)"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Cessna_Citation_Sovereign_Rafael_Luiz_%2814725958464%29.jpg/1024px-Cessna_Citation_Sovereign_Rafael_Luiz_%2814725958464%29.jpg",
+        "width": 1024,
+        "height": 682
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "jxTFLxeuu9s"
+      }
+    ]
+  },
+  {
+    "id": "cessna-citation-x",
+    "name": "Citation X",
+    "manufacturer": "Cessna",
+    "longDescription": "The Cessna Citation X (Model 750) is an American business jet with 3,460 nmi (6,408 km) of range produced by Cessna and part of the Citation family. Announced at the October 1990 NBAA convention, it made its maiden flight on December 21, 1993, received its type certification on June 3, 1996 and was first delivered in July 1996. The updated Citation X+ was offered from 2012 with a 14 in (360 mm) cabin stretch and upgraded systems. Keeping the Citation III fuselage cross section, it has a new 37° swept wing with an area of 527 ft² (49 m²) for a fast Mach 0.935 MMo and 36,600 lb (16.6 t) MTOW, a T-tail and two 7,034 lbf (31.29 kN) AE3007 turbofans. After 338 deliveries, production should end in 2018.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_X",
+    "metaData": {
+      "Role": "Business Jet",
+      "Manufacturer": "Cessna",
+      "Produced": "1996 - 2018",
+      "First flight": "21 December 1993",
+      "Introduction": "1996",
+      "Number built": "338 by June 2018: 314 X + 24 X+"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/N975QS_2002_Cessna_750_C-N_750-0175_Citation_X_%287039507775%29.jpg/1024px-N975QS_2002_Cessna_750_C-N_750-0175_Citation_X_%287039507775%29.jpg",
+        "width": 1024,
+        "height": 684
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Cessna_750_Citation_X_AN0983363.jpg",
+        "width": 1024,
+        "height": 689
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Cessna_750_Citation_X_AN1886076.jpg",
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Queensland_Nickel_Pty_Ltd_%28VP-CFP%29_Cessna_750_Citation_X_taxiing_at_Wagga_Wagga_Airport_1.jpg/1024px-Queensland_Nickel_Pty_Ltd_%28VP-CFP%29_Cessna_750_Citation_X_taxiing_at_Wagga_Wagga_Airport_1.jpg",
+        "width": 1024,
+        "height": 649
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "niVUowYsu4c"
       }
     ]
   },
