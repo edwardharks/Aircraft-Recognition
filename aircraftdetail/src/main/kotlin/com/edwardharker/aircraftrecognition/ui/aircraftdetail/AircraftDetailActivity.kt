@@ -153,7 +153,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
             window.sharedElementEnterTransition.addListener(EnterTransitionListener())
         }
 
-        scrollView.setOnScrollChangeListener { nestedScrollView: NestedScrollView?, x: Int, y: Int, oldX: Int, oldY: Int ->
+        scrollView.setOnScrollChangeListener { _: NestedScrollView?, _: Int, y: Int, _: Int, _: Int ->
             onScrollChanged(y)
         }
 

@@ -1,14 +1,15 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: 'io.fabric'
 
 def keystorePropertiesFile = rootProject.file("keystore.properties")
 def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 def versionMajor = 1
-def versionMinor = 6
-def versionPatch = 1
+def versionMinor = 7
+def versionPatch = 0
 def versionBuild = 0
 
 android {
@@ -21,6 +22,7 @@ android {
         versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
         versionName "${versionMajor}.${versionMinor}.${versionPatch}"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     signingConfigs {
         release {
@@ -32,6 +34,7 @@ android {
     }
     buildTypes {
         release {
+            multiDexEnabled false
             debuggable false
             minifyEnabled true
             shrinkResources true
