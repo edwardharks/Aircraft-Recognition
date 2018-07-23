@@ -3575,5 +3575,208 @@
         "videoId": "ExtS9r1pSiY"
       }
     ]
+  },
+  {
+    "id": "piper-j-3-cub",
+    "name": "J-3 Cub",
+    "manufacturer": "Piper Aircraft",
+    "longDescription": "The Piper J-3 Cub is an American light aircraft that was built between 1937 and 1947 by Piper Aircraft. The aircraft has a simple, lightweight design which gives it good low-speed handling properties and short-field performance. The Cub is one of the best known light aircraft of all time. Its simplicity, affordability and popularity as well as large production numbers with nearly 20,000 built in the United States invokes comparisons to the Ford Model T automobile.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Piper_J-3_Cub",
+    "metaData": {
+      "Role": "Trainer/light aircraft",
+      "Manufacturer": "Piper Aircraft",
+      "National origin": "United States",
+      "Produced": "1938-1947",
+      "First flight": "1938",
+      "Number built": "19,888 (US built) 150 (Canadian-built) 253 TG-8 gliders",
+      "Variants": "PA-11 Cub Special PA-15 Vagabond PA-16 Clipper PA-18 Super Cub"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Piper_Cub_G%C3%B3raszka_%28cropped%29.jpg/1024px-Piper_Cub_G%C3%B3raszka_%28cropped%29.jpg",
+        "width": 1024,
+        "height": 703
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/PiperJ-3Cub02.jpg",
+        "width": 749,
+        "height": 562
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/N98600_%285879666200%29.jpg/1024px-N98600_%285879666200%29.jpg",
+        "width": 1024,
+        "height": 684
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Piper_J-3_Flitfire.JPG",
+        "width": 1024,
+        "height": 683
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "o8oWTLFGmH8"
+      }
+    ]
+  },
+  {
+    "id": "piper-pa-34-seneca",
+    "name": "PA-34 Seneca",
+    "manufacturer": "Piper Aircraft",
+    "longDescription": "The Piper PA-34 Seneca is an American twin-engined light aircraft, produced by Piper Aircraft since 1971 and that remains in production. The Seneca is primarily used for personal and business flying.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-34_Seneca",
+    "metaData": {
+      "Role": "business and personal aircraft",
+      "Manufacturer": "Piper Aircraft",
+      "Produced": "1971-present",
+      "First flight": "25 April 1967",
+      "Introduction": "1971",
+      "Number built": "5000+",
+      "Variants": "PZL M-20 Mewa"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Piper.seneca.pa34.g-elis.bristol.arp.jpg",
+        "width": 1000,
+        "height": 718
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Piper.seneca.arp.750pix.jpg",
+        "width": 750,
+        "height": 535
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Piper_Seneka_At_Centennial.jpg/1024px-Piper_Seneka_At_Centennial.jpg",
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/en/3/37/SenecaV.jpg",
+        "width": 1024,
+        "height": 400
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "CLGeS2Yy2lE"
+      }
+    ]
+  },
+  {
+    "id": "piper-pa-20-pacer",
+    "name": "PA-20 Pacer",
+    "manufacturer": "Piper Aircraft",
+    "longDescription": "The PA-20 Pacer and PA-22 Tri-Pacer are a family of four-place, strut braced, high-wing light aircraft that were built by Piper Aircraft in the post-World War II period. The Pacer was essentially a four-place version of the two-place PA-17 Vagabond light aircraft. It features a steel tube fuselage and an aluminum frame wing, covered with fabric, much like Piper's most famous aircraft, the Cub and Super Cub. An aircraft prized for its ruggedness, spacious cabin, and, for its time, impressive speed, many Pacers continue to fly today.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-20_Pacer",
+    "metaData": {
+      "Role": "Civil utility aircraft",
+      "Manufacturer": "Piper Aircraft",
+      "Produced": "1950-1954 (PA-20) 1950-1964 (PA-22)",
+      "First flight": "1949 (PA-20) 1950 (PA-22)",
+      "Number built": "1120 (PA-20) 9490 (PA-22)",
+      "Variants": "Javelin V6 STOL"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Piper_PA-22-150TD_Tri-Pacer_Kyabram_Vabre.jpg",
+        "width": 1024,
+        "height": 681
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/PiperPA-20-115Pacer01.jpg",
+        "width": 749,
+        "height": 562
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/PiperPA-22-135TriPacer03.jpg",
+        "width": 749,
+        "height": 562
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/PiperPA22-150.jpg",
+        "width": 1024,
+        "height": 631
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "QzJFHC-AKBQ"
+      }
+    ]
+  },
+  {
+    "id": "piper-pa-25-pawnee",
+    "name": "PA-25 Pawnee",
+    "manufacturer": "Piper Aircraft",
+    "longDescription": "The PA-25 Pawnee was an agricultural aircraft produced by Piper Aircraft between 1959 and 1981. It remains a widely used aircraft in agricultural spraying and is also used as a tow plane, or tug, for launching gliders or for towing banners. In 1988 the design rights and support responsibility were sold to Latino Americana de Aviación of Argentina.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-25_Pawnee",
+    "metaData": {
+      "Role": "Agricultural aircraft",
+      "Manufacturer": "Piper Aircraft",
+      "National origin": "United States",
+      "Produced": "1959-1981",
+      "First flight": "1957",
+      "Introduction": "August 1959",
+      "Number built": "5167"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Remorqueur_Pawnee.jpg",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Piper_pawnee_pa25_glider-towing_at_kemble_arp.jpg/1024px-Piper_pawnee_pa25_glider-towing_at_kemble_arp.jpg",
+        "width": 1024,
+        "height": 660
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Piper-Pawnee-G-BFRY.jpg/1024px-Piper-Pawnee-G-BFRY.jpg",
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Letalisce_Celje_2007-07_002.jpg/1024px-Letalisce_Celje_2007-07_002.jpg",
+        "width": 1024,
+        "height": 675
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "loSHi8Mj-nc"
+      }
+    ]
   }
 ]
