@@ -98,7 +98,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
 
     override fun showImages(images: List<Image>) {
         this.images = images
-        viewPager.adapter.notifyDataSetChanged()
+        viewPager.adapter?.notifyDataSetChanged()
         viewPager.setCurrentItem(page, false)
         if (images.isNotEmpty()) {
             // InkPageIndicator crashes for a view pager with 0 items :/
@@ -128,7 +128,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
             container.removeView(obj as View)
         }
 
-        override fun isViewFromObject(view: View?, obj: Any?): Boolean = view == obj
+        override fun isViewFromObject(view: View, obj: Any): Boolean = view == obj
 
         override fun getCount(): Int = images.size
 

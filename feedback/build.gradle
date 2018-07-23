@@ -20,4 +20,6 @@ android {
 dependencies {
     compile project(':androidcommon')
     compile project(':aircraftdetail')
+
+    implementation "android.arch.work:work-runtime-ktx:1.0.0-alpha04"
 }

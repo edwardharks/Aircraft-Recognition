@@ -7,7 +7,6 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
 
 
 object RetrofitAdapter {
-
     private val retrofit: Retrofit by lazy {
         Retrofit.Builder()
                 .baseUrl(AIRCRAFT_BASE_URL)
@@ -18,5 +17,9 @@ object RetrofitAdapter {
 
     val aircraftService: AircraftService by lazy {
         retrofit.create(AircraftService::class.java)
+    }
+
+    val feedbackService: FeedbackService by lazy {
+        retrofit.create(FeedbackService::class.java)
     }
 }
