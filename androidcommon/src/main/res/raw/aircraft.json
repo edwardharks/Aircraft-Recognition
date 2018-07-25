@@ -2772,9 +2772,9 @@
         "height": 454
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Cessna.f172g.g-bgmp.arp.jpg/1024px-Cessna.f172g.g-bgmp.arp.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Cessna_172S_Skyhawk_SP%2C_Private_JP6817606.jpg/1024px-Cessna_172S_Skyhawk_SP%2C_Private_JP6817606.jpg",
         "width": 1024,
-        "height": 648
+        "height": 683
       },
       {
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Cessna172I.jpg",
@@ -3579,7 +3579,7 @@
   {
     "id": "piper-j-3-cub",
     "name": "J-3 Cub",
-    "manufacturer": "Piper Aircraft",
+    "manufacturer": "Piper",
     "longDescription": "The Piper J-3 Cub is an American light aircraft that was built between 1937 and 1947 by Piper Aircraft. The aircraft has a simple, lightweight design which gives it good low-speed handling properties and short-field performance. The Cub is one of the best known light aircraft of all time. Its simplicity, affordability and popularity as well as large production numbers with nearly 20,000 built in the United States invokes comparisons to the Ford Model T automobile.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Piper_J-3_Cub",
@@ -3630,7 +3630,7 @@
   {
     "id": "piper-pa-34-seneca",
     "name": "PA-34 Seneca",
-    "manufacturer": "Piper Aircraft",
+    "manufacturer": "Piper",
     "longDescription": "The Piper PA-34 Seneca is an American twin-engined light aircraft, produced by Piper Aircraft since 1971 and that remains in production. The Seneca is primarily used for personal and business flying.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-34_Seneca",
@@ -3681,7 +3681,7 @@
   {
     "id": "piper-pa-20-pacer",
     "name": "PA-20 Pacer",
-    "manufacturer": "Piper Aircraft",
+    "manufacturer": "Piper",
     "longDescription": "The PA-20 Pacer and PA-22 Tri-Pacer are a family of four-place, strut braced, high-wing light aircraft that were built by Piper Aircraft in the post-World War II period. The Pacer was essentially a four-place version of the two-place PA-17 Vagabond light aircraft. It features a steel tube fuselage and an aluminum frame wing, covered with fabric, much like Piper's most famous aircraft, the Cub and Super Cub. An aircraft prized for its ruggedness, spacious cabin, and, for its time, impressive speed, many Pacers continue to fly today.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-20_Pacer",
@@ -3731,7 +3731,7 @@
   {
     "id": "piper-pa-25-pawnee",
     "name": "PA-25 Pawnee",
-    "manufacturer": "Piper Aircraft",
+    "manufacturer": "Piper",
     "longDescription": "The PA-25 Pawnee was an agricultural aircraft produced by Piper Aircraft between 1959 and 1981. It remains a widely used aircraft in agricultural spraying and is also used as a tow plane, or tug, for launching gliders or for towing banners. In 1988 the design rights and support responsibility were sold to Latino Americana de Aviación of Argentina.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-25_Pawnee",
