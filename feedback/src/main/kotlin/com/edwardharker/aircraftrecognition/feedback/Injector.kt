@@ -1,9 +1,7 @@
-package com.edwardharker.aircraftrecognition.ui.feedback
+package com.edwardharker.aircraftrecognition.feedback
 
 import androidx.work.WorkManager
-import com.edwardharker.aircraftrecognition.feedback.FeedbackPresenter
-import com.edwardharker.aircraftrecognition.feedback.ScheduleFeedbackUseCase
-import com.edwardharker.aircraftrecognition.feedback.WorkManagerScheduleFeedbackUseCase
+import com.edwardharker.aircraftrecognition.repository.feedbackRepository
 
 private fun workManager(): WorkManager {
     return WorkManager.getInstance()!!
@@ -12,6 +10,12 @@ private fun workManager(): WorkManager {
 private fun scheduleFeedbackUseCase(): ScheduleFeedbackUseCase {
     return WorkManagerScheduleFeedbackUseCase(
         workManager = workManager()
+    )
+}
+
+fun submitFeedbackUseCase(): SubmitFeedbackUseCase {
+    return RepositorySubmitFeedbackUseCase(
+        feedbackRepository = feedbackRepository()
     )
 }
 

@@ -9,10 +9,11 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
 object RetrofitAdapter {
     private val retrofit: Retrofit by lazy {
         Retrofit.Builder()
-                .baseUrl(AIRCRAFT_BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-                .build()
+            .baseUrl(AIRCRAFT_BASE_URL)
+            .addConverterFactory(UnitConverterFactory)
+            .addConverterFactory(GsonConverterFactory.create())
+            .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+            .build()
     }
 
     val aircraftService: AircraftService by lazy {

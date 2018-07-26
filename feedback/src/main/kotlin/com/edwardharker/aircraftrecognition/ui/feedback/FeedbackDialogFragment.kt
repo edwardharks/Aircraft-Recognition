@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
 import com.edwardharker.aircraftrecognition.feedback.FeedbackView
+import com.edwardharker.aircraftrecognition.feedback.feedbackPresenter
 import com.edwardharker.aircraftrecognition.ui.Navigator
 
 fun Navigator.launchFeedbackDialog() {

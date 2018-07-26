@@ -1,16 +1,22 @@
 package com.edwardharker.aircraftrecognition.feedback
 
-import android.util.Log
 import androidx.work.*
 import androidx.work.NetworkType.*
+import com.edwardharker.aircraftrecognition.model.FeedbackResult
 
 class SubmitFeedbackWorker : Worker() {
+    private val submitFeedbackUseCase = submitFeedbackUseCase()
+
     override fun doWork(): Result {
         val message = inputData.getString(MESSAGE_KEY, null)
                 ?: throw IllegalArgumentException("No message passed to SubmitFeedbackWorker")
 
-        Log.d("--->", "Hello worker. This is your message: $message")
-        return Result.SUCCESS
+        val result = submitFeedbackUseCase.submitFeedback(message)
+
+        return when (result) {
+            FeedbackResult.Success -> Result.SUCCESS
+            FeedbackResult.Error -> Result.RETRY
+        }
     }
 
     companion object {

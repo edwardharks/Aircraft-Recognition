@@ -1,10 +1,7 @@
 package com.edwardharker.aircraftrecognition.repository
 
-interface FeedbackRepository {
-    sealed class FeedbackResult {
-        object Success : FeedbackResult()
-        object Error : FeedbackResult()
-    }
+import com.edwardharker.aircraftrecognition.model.FeedbackResult
 
+interface FeedbackRepository {
     fun submitFeedback(message: String): FeedbackResult
 }
