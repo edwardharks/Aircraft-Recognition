@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatDialogFragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.Toast
+import com.edwardharker.aircraftrecognition.feedback.FeedbackView
 import com.edwardharker.aircraftrecognition.ui.Navigator
 
 fun Navigator.launchFeedbackDialog() {
@@ -13,7 +16,9 @@ fun Navigator.launchFeedbackDialog() {
     fragment.show(fragmentManager, FeedbackDialogFragment.TAG)
 }
 
-class FeedbackDialogFragment : AppCompatDialogFragment() {
+class FeedbackDialogFragment : AppCompatDialogFragment(), FeedbackView {
+    private val presenter = feedbackPresenter()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -24,11 +29,32 @@ class FeedbackDialogFragment : AppCompatDialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val messageEditText = view.findViewById<EditText>(R.id.feedback_message)
+        val submitButton = view.findViewById<View>(R.id.submit_button)
 
+        submitButton.setOnClickListener {
+            presenter.submitFeedback(messageEditText.text.toString())
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        presenter.startPresenting(this)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        presenter.stopPresenting()
+    }
+
+    override fun showSuccess() {
+        Toast.makeText(context, "Success!", Toast.LENGTH_LONG).show()
+        dismiss()
     }
 
     companion object {
         const val TAG = "FeedbackDialogFragment"
+
         fun newInstance(): FeedbackDialogFragment {
             return FeedbackDialogFragment()
         }
