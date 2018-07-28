@@ -1,15 +1,17 @@
 package com.edwardharker.aircraftrecognition.ui.feedback
 
 import android.os.Bundle
+import android.os.Handler
 import android.support.v7.app.AppCompatDialogFragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.*
 import android.view.ViewGroup
 import android.widget.EditText
-import android.widget.Toast
 import com.edwardharker.aircraftrecognition.feedback.FeedbackView
 import com.edwardharker.aircraftrecognition.feedback.feedbackPresenter
 import com.edwardharker.aircraftrecognition.ui.Navigator
+import com.edwardharker.aircraftrecognition.ui.toast
 
 fun Navigator.launchFeedbackDialog() {
     val fragmentManager = activity.supportFragmentManager
@@ -19,6 +21,11 @@ fun Navigator.launchFeedbackDialog() {
 
 class FeedbackDialogFragment : AppCompatDialogFragment(), FeedbackView {
     private val presenter = feedbackPresenter()
+    private val handler = Handler()
+    private val dismissRunnable = { dismiss() }
+
+    private lateinit var enterFeedbackGroup: View
+    private lateinit var feedbackConfirmationGroup: View
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -32,6 +39,8 @@ class FeedbackDialogFragment : AppCompatDialogFragment(), FeedbackView {
         super.onViewCreated(view, savedInstanceState)
         val messageEditText = view.findViewById<EditText>(R.id.feedback_message)
         val submitButton = view.findViewById<View>(R.id.submit_button)
+        enterFeedbackGroup = view.findViewById(R.id.enter_feedback_group)
+        feedbackConfirmationGroup = view.findViewById(R.id.feedback_confirmation_group)
 
         submitButton.setOnClickListener {
             presenter.submitFeedback(messageEditText.text.toString())
@@ -46,14 +55,21 @@ class FeedbackDialogFragment : AppCompatDialogFragment(), FeedbackView {
     override fun onStop() {
         super.onStop()
         presenter.stopPresenting()
+        handler.removeCallbacks(dismissRunnable)
     }
 
     override fun showSuccess() {
-        Toast.makeText(context, "Success!", Toast.LENGTH_LONG).show()
-        dismiss()
+        enterFeedbackGroup.visibility = GONE
+        feedbackConfirmationGroup.visibility = VISIBLE
+        handler.postDelayed(dismissRunnable, DISMISS_DELAY)
+    }
+
+    override fun showValidationError() {
+        toast(R.string.feedback_validation_error)
     }
 
     companion object {
+        private const val DISMISS_DELAY = 2000L
         const val TAG = "FeedbackDialogFragment"
 
         fun newInstance(): FeedbackDialogFragment {

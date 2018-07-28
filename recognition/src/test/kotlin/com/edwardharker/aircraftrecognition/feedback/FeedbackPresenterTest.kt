@@ -28,6 +28,27 @@ class FeedbackPresenterTest {
     }
 
     @Test
+    fun `does not submit feedback when message is too short`() {
+        val mockSubmitFeedbackUseCase = Mockito.mock(ScheduleFeedbackUseCase::class.java)
+        val presenter = FeedbackPresenter(mockSubmitFeedbackUseCase)
+
+        presenter.submitFeedback(EMPTY_MESSAGE)
+
+        verify(mockSubmitFeedbackUseCase, never()).scheduleFeedback(EMPTY_MESSAGE)
+    }
+
+    @Test
+    fun `shows validation error when message is too short`() {
+        val mockView = Mockito.mock(FeedbackView::class.java)
+        val presenter = FeedbackPresenter(ScheduleFeedbackUseCase.NO_OP)
+
+        presenter.startPresenting(mockView)
+        presenter.submitFeedback(EMPTY_MESSAGE)
+
+        verify(mockView).showValidationError()
+    }
+
+    @Test
     fun `never shows success after stopPresenting`() {
         val mockView = Mockito.mock(FeedbackView::class.java)
         val presenter = FeedbackPresenter(ScheduleFeedbackUseCase.NO_OP)
@@ -41,5 +62,6 @@ class FeedbackPresenterTest {
 
     companion object {
         private const val MESSAGE = "a nice message"
+        private const val EMPTY_MESSAGE = ""
     }
 }

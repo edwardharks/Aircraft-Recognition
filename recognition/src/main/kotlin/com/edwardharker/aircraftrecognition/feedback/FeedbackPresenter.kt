@@ -14,7 +14,11 @@ class FeedbackPresenter(
     }
 
     fun submitFeedback(message: String) {
-        scheduleFeedbackUseCase.scheduleFeedback(message)
-        view?.showSuccess()
+        if (message.isNotBlank()) {
+            scheduleFeedbackUseCase.scheduleFeedback(message)
+            view?.showSuccess()
+        } else {
+            view?.showValidationError()
+        }
     }
 }
