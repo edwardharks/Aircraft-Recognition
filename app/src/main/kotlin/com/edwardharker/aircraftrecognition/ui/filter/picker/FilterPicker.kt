@@ -54,7 +54,7 @@ internal class FilterPicker : LinearLayout {
                 selectedFilterOptions.select(it.name, filterOption.value)
                 selectionListener.invoke()
             }
-            filterOptionsRecyclerView.adapter.notifyDataSetChanged()
+            filterOptionsRecyclerView.adapter!!.notifyDataSetChanged()
         }
     }
 

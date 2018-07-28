@@ -71,7 +71,7 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
     private fun snap() {
         val position = linearLayoutManager.findFirstVisibleItemPosition()
         if (position >= 0) {
-            val view = linearLayoutManager.findViewByPosition(position)
+            val view = linearLayoutManager.findViewByPosition(position)!!
             val scrollPos = if (abs(view.top) > view.height / 2) {
                 min(adapter.itemCount, position + 1)
             } else {
@@ -91,8 +91,7 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
     }
 
     private inner class ScrollListener : RecyclerView.OnScrollListener() {
-
-        override fun onScrollStateChanged(recyclerView: RecyclerView?, newState: Int) {
+        override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
             if (newState == SCROLL_STATE_IDLE) {
                 snap()
             }

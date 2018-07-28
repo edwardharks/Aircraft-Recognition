@@ -1,9 +1,9 @@
 buildscript {
     ext {
-        androidVersion = 26
+        androidVersion = 28
         minSdk = 21
         toolsVersion = '26.0.2'
-        supportLibraryVersion = '27.1.1'
+        supportLibraryVersion = '28.0.0-beta01'
         playServicesVersion = '11.4.2'
         kotlinVersion = '1.1.51'
         retrofitVersion = '2.4.0'
