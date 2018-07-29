@@ -37,5 +37,6 @@ android {
 dependencies {
     compile files('libs/YouTubeAndroidPlayerApi.jar')
     compile project(':androidcommon')
+    compile project(':feedback')
     compile 'com.pacioianu.david:ink-page-indicator:1.2.0'
 }

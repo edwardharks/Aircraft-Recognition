@@ -20,13 +20,10 @@ import android.support.v7.widget.Toolbar
 import android.text.SpannableString
 import android.text.style.StyleSpan
 import android.transition.Transition
-import android.view.LayoutInflater
-import android.view.View
+import android.view.*
 import android.view.View.ALPHA
 import android.view.View.TRANSLATION_Y
-import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
-import android.view.ViewTreeObserver
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.edwardharker.aircraftrecognition.aircraftdetail.AircraftDetailView
@@ -42,6 +39,7 @@ import com.edwardharker.aircraftrecognition.ui.TransitionListenerAdapter
 import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
+import com.edwardharker.aircraftrecognition.ui.feedback.launchFeedbackDialog
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 import com.edwardharker.aircraftrecognition.ui.pixelsToDp
 import com.edwardharker.aircraftrecognition.youtube.youtubeStandalonePlayerHelper
@@ -50,18 +48,31 @@ import java.lang.Math.min
 private val aircraftIdExtra = "aircraftId"
 private val startedWithTransitionExtra = "startedWithTransition"
 
-fun Navigator.launchAircraftDetailActivity(aircraftId: String, aircraftImage: View, background: View, aircraftName: View) {
+fun Navigator.launchAircraftDetailActivity(
+    aircraftId: String,
+    aircraftImage: View,
+    background: View,
+    aircraftName: View
+) {
     val intent = Intent(activity, AircraftDetailActivity::class.java).apply {
         putExtra(aircraftIdExtra, aircraftId)
         putExtra(startedWithTransitionExtra, true)
     }
-    activity.startActivity(intent,
-            ActivityOptions.makeSceneTransitionAnimation(
-                    activity,
-                    android.util.Pair(aircraftImage, activity.getString(R.string.transition_aircraft_image)),
-                    android.util.Pair(background, activity.getString(R.string.transition_aircraft_detail_background)),
-                    android.util.Pair(aircraftName, activity.getString(R.string.transition_aircraft_name))
-            ).toBundle())
+    activity.startActivity(
+        intent,
+        ActivityOptions.makeSceneTransitionAnimation(
+            activity,
+            android.util.Pair(
+                aircraftImage,
+                activity.getString(R.string.transition_aircraft_image)
+            ),
+            android.util.Pair(
+                background,
+                activity.getString(R.string.transition_aircraft_detail_background)
+            ),
+            android.util.Pair(aircraftName, activity.getString(R.string.transition_aircraft_name))
+        ).toBundle()
+    )
 }
 
 fun Navigator.launchAircraftDetailActivity(aircraftId: String) {
@@ -85,23 +96,29 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val aircraftDetailsContainer by bind<View>(R.id.aircraft_details_container)
 
     private val transitionSlidingViews by lazy {
-        listOf(aircraftDescription,
-                aircraftMetaDataContainer,
-                similarAircraftRail)
+        listOf(
+            aircraftDescription,
+            aircraftMetaDataContainer,
+            similarAircraftRail
+        )
     }
 
     private val transitionFadingViews by lazy {
-        listOf(aircraftMetaDataContainer,
-                aircraftDescription,
-                aircraftMetaDataContainer)
+        listOf(
+            aircraftMetaDataContainer,
+            aircraftDescription,
+            aircraftMetaDataContainer
+        )
     }
 
     private val initialInvisibleViews by lazy {
-        listOf(toolbar,
-                aircraftDescription,
-                aircraftMetaDataContainer,
-                photoCarouselButton,
-                similarAircraftRail)
+        listOf(
+            toolbar,
+            aircraftDescription,
+            aircraftMetaDataContainer,
+            photoCarouselButton,
+            similarAircraftRail
+        )
     }
 
     private val aircraftId: String by lazy {
@@ -185,11 +202,25 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_aircraft_detail, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.action_feedback) {
+            navigator().launchFeedbackDialog()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
     override fun showAircraft(aircraftDetailViewModel: AircraftDetailViewModel) {
         val aircraft = aircraftDetailViewModel.aircraft
 
         aircraftImage.loadAircraftImage(aircraft) {
-            aircraftImage.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
+            aircraftImage.viewTreeObserver.addOnGlobalLayoutListener(object :
+                ViewTreeObserver.OnGlobalLayoutListener {
                 override fun onGlobalLayout() {
                     supportStartPostponedEnterTransition()
                     aircraftImage.viewTreeObserver.removeOnGlobalLayoutListener(this)
@@ -210,10 +241,16 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         }
     }
 
-    private fun addAircraftMetaDataItem(label: String,
-                                        value: String,
-                                        onClick: (() -> Unit)? = null) {
-        val metaDataView = LayoutInflater.from(this).inflate(R.layout.view_meta_data_item, aircraftMetaDataContainer, false) as TextView
+    private fun addAircraftMetaDataItem(
+        label: String,
+        value: String,
+        onClick: (() -> Unit)? = null
+    ) {
+        val metaDataView = LayoutInflater.from(this).inflate(
+            R.layout.view_meta_data_item,
+            aircraftMetaDataContainer,
+            false
+        ) as TextView
         val spannable = SpannableString(getString(R.string.meta_data_item, label, value))
         spannable.setSpan(StyleSpan(BOLD), spannable.length - value.length, spannable.length, 0)
         metaDataView.text = spannable
@@ -223,7 +260,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     }
 
     private fun addWatchOnYoutubeItem(videoId: String) {
-        val videoView = LayoutInflater.from(this).inflate(R.layout.view_aircraft_featured_video, aircraftMetaDataContainer, false)
+        val videoView = LayoutInflater.from(this)
+            .inflate(R.layout.view_aircraft_featured_video, aircraftMetaDataContainer, false)
         videoView.setOnClickListener {
             youtubeStandalonePlayerHelper().launchYoutubeStandalonePlayer(this, videoId)
         }
@@ -242,11 +280,16 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         aircraftImage.translationY = (scrollY / 4).toFloat()
         val toolbarAlphaScale = min(scrollY, aircraftImage.height) / aircraftImage.height.toFloat()
         val primaryColour = getColor(this, R.color.colorPrimary)
-        toolbar.setBackgroundColor(argb((255 * toolbarAlphaScale).toInt(),
-                red(primaryColour), green(primaryColour), blue(primaryColour)))
+        toolbar.setBackgroundColor(
+            argb(
+                (255 * toolbarAlphaScale).toInt(),
+                red(primaryColour), green(primaryColour), blue(primaryColour)
+            )
+        )
         toolbar.setTitleTextColor(argb((255 * toolbarAlphaScale).toInt(), 255, 255, 255))
         val toolbarMaxElevation = 4.dpToPixels()
-        toolbar.elevation = min(scrollY, scrollView.paddingTop).toFloat() / toolbarMaxElevation.toFloat()
+        toolbar.elevation = min(scrollY, scrollView.paddingTop).toFloat() /
+                toolbarMaxElevation.toFloat()
     }
 
     private fun navigateToPhotoCarousel(view: View) {
@@ -268,8 +311,10 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
             aircraftDetailsContainer.setBackgroundColor(detailsBackgroundColour)
             toolbar.animate().alpha(1.0f).start()
             photoCarouselButton.animate().alpha(1.0f).start()
-            val slideAnimators = transitionSlidingViews.map { ObjectAnimator.ofFloat(it, TRANSLATION_Y, 0.0f) }
-            val fadeAnimators = transitionSlidingViews.map { ObjectAnimator.ofFloat(it, ALPHA, 1.0f) }
+            val slideAnimators =
+                transitionSlidingViews.map { ObjectAnimator.ofFloat(it, TRANSLATION_Y, 0.0f) }
+            val fadeAnimators =
+                transitionSlidingViews.map { ObjectAnimator.ofFloat(it, ALPHA, 1.0f) }
             AnimatorSet().apply {
                 interpolator = LinearOutSlowInInterpolator()
                 duration = 160
@@ -285,6 +330,6 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 }
 
 private fun <T> List<T>.append(list: List<T>): List<T> =
-        this.toMutableList().apply {
-            addAll(list)
-        }
+    this.toMutableList().apply {
+        addAll(list)
+    }
