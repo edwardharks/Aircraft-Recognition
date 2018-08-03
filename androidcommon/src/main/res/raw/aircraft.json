@@ -1358,11 +1358,7 @@
         "height": 682
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "douglas-dc-8",
@@ -1416,11 +1412,7 @@
         "height": 683
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "embraer-erj-145",
@@ -1469,11 +1461,7 @@
         "height": 683
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "embraer-e-Jet",
@@ -1527,11 +1515,7 @@
         "height": 696
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "fairchild-dornier-328jet",
@@ -1579,11 +1563,7 @@
         "height": 514
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "fokker-f28-fellowship",
@@ -1632,11 +1612,7 @@
         "height": 691
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "fokker-70",
@@ -1674,11 +1650,7 @@
         "height": 680
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "fokker-100",
@@ -1726,9 +1698,328 @@
         "height": 680
       }
     ],
+    "youtubeVideos": []
+  },
+  {
+    "id": "gulfstream-v",
+    "name": "V",
+    "manufacturer": "Gulfstream",
+    "longDescription": "The Gulfstream V (Model GV, pronounced Gee-5) is a long-range, large business jet aircraft produced by Gulfstream Aerospace, derived from the previous Gulfstream IV. It flies up to Mach 0.885, up to 51,000 feet (16,000 m) and has a 6,500 nautical miles (12,000 km) range. It typically accommodates four crew and 14 passengers. It first flew on November 28, 1995, and entered service in June 1997. It is used by the US military under the designation C-37A. It is followed by an improved version, the Gulfstream 550 (Model GV-SP).",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_V",
+    "metaData": {
+      "Role": "Business jet",
+      "Manufacturer": "Gulfstream Aerospace",
+      "National origin": "United States",
+      "First flight": "November 28, 1995",
+      "Introduction": "June 1997",
+      "Number built": "193",
+      "Variants": "Gulfstream G550"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Gulfstream_Aerospace_G-V_Gulfstream_V_AN0811210.jpg",
+        "width": 1075,
+        "height": 692
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/United_States_Coast_Guard_C-37A.jpg/1024px-United_States_Coast_Guard_C-37A.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Gulfstream_Aerospace_G-V_Gulfstream_V_AN1027943.jpg",
+        "width": 1024,
+        "height": 718
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Gulfstream_Aerospace_G-V_Gulfstream_V_AN1547227.jpg",
+        "width": 1024,
+        "height": 726
+      }
+    ],
     "youtubeVideos": [
       {
-        "videoId": ""
+        "videoId": "ktB4gRAYL70"
+      }
+    ]
+  },
+  {
+    "id": "gulfstream-iv",
+    "name": "IV",
+    "manufacturer": "Gulfstream",
+    "longDescription": "The Gulfstream IV (or G-IV or GIV) and derivatives are a family of twinjet aircraft, mainly for private or business use. They were designed and built by Gulfstream Aerospace, a General Dynamics company based in Savannah, Georgia, United States, from 1985 until 2018. Aircraft power is provided by two Rolls-Royce RB.183 Tay turbofans.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_IV",
+    "metaData": {
+      "Role": "Business jet",
+      "Manufacturer": "Gulfstream Aerospace",
+      "Produced": "1985-2018",
+      "First flight": "September 19, 1985",
+      "Number built": "900+",
+      "Variants": "Gulfstream V, Gulfstream G350/G450"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Gulfstream_IV_RNLAF.jpg/1024px-Gulfstream_IV_RNLAF.jpg",
+        "width": 1024,
+        "height": 766
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/GULFSTREAM_G-IV_photo_D_Ramey_Logan.jpg/1024px-GULFSTREAM_G-IV_photo_D_Ramey_Logan.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/GULFSTREAM_g450_photo_D_Ramey_Logan.jpg/1024px-GULFSTREAM_g450_photo_D_Ramey_Logan.jpg",
+        "width": 1024,
+        "height": 558
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/JASDF_U-4_04.jpg/1024px-JASDF_U-4_04.jpg",
+        "width": 1024,
+        "height": 683
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "nO0bZEGfuhE"
+      }
+    ]
+  },
+  {
+    "id": "gulfstream-ii",
+    "name": "II",
+    "manufacturer": "Gulfstream",
+    "longDescription": "The Gulfstream II (G-II) is an American twin engine business jet designed and built by Grumman and then in succession, Grumman American and finally Gulfstream American. Its Grumman model number is G-1159 and its US military designation is C-11 Gulfstream II. It has been succeeded by the Gulfstream III. The first Gulfstream II flew on October 2, 1966.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Grumman_Gulfstream_II",
+    "metaData": {
+      "Role": "Business jet",
+      "Manufacturer": "Grumman/Gulfstream Aerospace",
+      "National origin": "United States",
+      "Produced": "1967-1979",
+      "First flight": "2 October 1966",
+      "Number built": "258",
+      "Variants": "Gulfstream III"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/N748MN_1977_GRUMMAN_AMERICAN_AVN._G-1159_Gulfstream_II_s-n_215_%2830656219254%29.jpg/1024px-N748MN_1977_GRUMMAN_AMERICAN_AVN._G-1159_Gulfstream_II_s-n_215_%2830656219254%29.jpg",
+        "width": 1024,
+        "height": 546
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Ng-GII-bams-N82CR-070709-01-16.jpg/1024px-Ng-GII-bams-N82CR-070709-01-16.jpg",
+        "width": 1024,
+        "height": 671
+      }
+    ],
+    "youtubeVideos": []
+  },
+  {
+    "id": "gulfstream-iii",
+    "name": "III",
+    "manufacturer": "Gulfstream",
+    "longDescription": "The Gulfstream III, a business jet produced by Gulfstream Aerospace, is an improved variant of the Grumman Gulfstream II.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_III",
+    "metaData": {
+      "Role": "Business jet",
+      "Manufacturer": "Gulfstream Aerospace",
+      "Produced": "1979-1986",
+      "First flight": "2 December 1979",
+      "Introduction": "1980",
+      "Number built": "202",
+      "Variants": "Gulfstream IV/G400/G450"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/N221WR_%282844198571%29.jpg/1024px-N221WR_%282844198571%29.jpg",
+        "width": 1024,
+        "height": 691
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/HZ-NR2-GulfstreamIII-304.jpg/1024px-HZ-NR2-GulfstreamIII-304.jpg",
+        "width": 1024,
+        "height": 578
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/NASA_83-0502_with_UAVSAR_at_Edwards_AFB_%28ED07-0027-68%29.jpg/1024px-NASA_83-0502_with_UAVSAR_at_Edwards_AFB_%28ED07-0027-68%29.jpg",
+        "width": 1024,
+        "height": 683
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "TtSkU6-coBM"
+      }
+    ]
+  },
+  {
+    "id": "gulfstream-g650",
+    "name": "G650",
+    "manufacturer": "Gulfstream",
+    "longDescription": "The Gulfstream G650 is a twin-engine business jet airplane produced by Gulfstream Aerospace. The model is designated Gulfstream GVI in its type certificate, and may be configured to carry from 11 to 18 passengers. Gulfstream began the G650 program in 2005 and revealed it to the public in 2008. The G650 is the company\u0027s largest and fastest business jet with a top speed of Mach 0.925.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_G650",
+    "metaData": {
+      "Role": "Business jet",
+      "Manufacturer": "Gulfstream Aerospace",
+      "National origin": "United States",
+      "Produced": "2008-present",
+      "First flight": "November 25, 2009",
+      "Number built": "300+ as of July 2018"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIl",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/G-ULFS_Gulfstream_G650_CVT_05-05-16_%2827046023031%29_%28cropped%29.jpg/1024px-G-ULFS_Gulfstream_G650_CVT_05-05-16_%2827046023031%29_%28cropped%29.jpg",
+        "width": 1024,
+        "height": 681
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Silkway_Business_Jets_Gulfstream_Aerospace_GVI_%28G650%29_-_4K-AI88_-_ZRH_%2824129697343%29.jpg/1024px-Silkway_Business_Jets_Gulfstream_Aerospace_GVI_%28G650%29_-_4K-AI88_-_ZRH_%2824129697343%29.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Swiss_Jet_AG_Gulfstream_GVI_%28G650%29_-_HB-JUF_-_ZRH_%2823719951475%29.jpg/1024px-Swiss_Jet_AG_Gulfstream_GVI_%28G650%29_-_HB-JUF_-_ZRH_%2823719951475%29.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Gulfstream_Aerospace_G650_AN2224812.jpg",
+        "width": 1024,
+        "height": 683
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "mXcqlCVRl6U"
+      }
+    ]
+  },
+  {
+    "id": "gulfstream-g550",
+    "name": "G550",
+    "manufacturer": "Gulfstream",
+    "longDescription": "The Gulfstream G550 is a business jet aircraft produced by General Dynamics\u0027 Gulfstream Aerospace unit in Savannah, Georgia, US. The certification designation is GV-SP. There were 450 Gulfstream G550s in active service as of January 2016. A version with reduced fuel capacity was marketed as the G500.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_G550",
+    "metaData": {
+      "Role": "Business jet",
+      "Manufacturer": "Gulfstream Aerospace",
+      "National origin": "United States",
+      "Produced": "2003-present",
+      "Introduction": "2004",
+      "Number built": "550+ as of Aug 2017"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/2010-07-21_G550_NetJets_CS-DKE_EDDF_01.jpg/1024px-2010-07-21_G550_NetJets_CS-DKE_EDDF_01.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/U.S._Air_Force%2C_09-0525%2C_Gulfstream_Aerospace_C-37B_%2827878765353%29.jpg/1024px-U.S._Air_Force%2C_09-0525%2C_Gulfstream_Aerospace_C-37B_%2827878765353%29.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/N550AU_-_Gulfstream_G550_-_MACAU_%286946876768%29.jpg/1024px-N550AU_-_Gulfstream_G550_-_MACAU_%286946876768%29.jpg",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Tanzania_Gulfstream_G550.jpg/1024px-Tanzania_Gulfstream_G550.jpg",
+        "width": 1024,
+        "height": 768
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "EKq64_Uct0U"
+      }
+    ]
+  },
+  {
+    "id": "gulfstream-g280",
+    "name": "G280",
+    "manufacturer": "Gulfstream",
+    "longDescription": "The Gulfstream G280 is a twin-engine business jet built under license by IAI in Israel for Gulfstream Aerospace. It began delivery to users in 2012.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_G280",
+    "metaData": {
+      "Role": "Business jet",
+      "Manufacturer": "Gulfstream Aerospace",
+      "Produced": "2009-present",
+      "First flight": "December 11, 2009",
+      "Number built": "115+ as of August 2017"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "TAIL",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/4X-WBJ_Micha_Sender-1.jpg/1024px-4X-WBJ_Micha_Sender-1.jpg",
+        "width": 1024,
+        "height": 686
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/4X-CVC_Udi_Brill.jpg",
+        "width": 1015,
+        "height": 689
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "kRPzbtmE2uE"
       }
     ]
   },
@@ -1769,11 +2060,7 @@
         "height": 480
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "lockheed-l-1011-tristar",
@@ -1817,11 +2104,7 @@
         "height": 669
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "mcdonnell-douglas-dc-9",
@@ -1870,11 +2153,7 @@
         "height": 692
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "mcdonnell-douglas-md-80",
@@ -1923,11 +2202,7 @@
         "height": 683
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "mcdonnell-douglas-dc-10",
@@ -1975,11 +2250,7 @@
         "height": 683
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "mcdonnell-douglas-md-11",
@@ -2032,11 +2303,7 @@
         "height": 684
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "mcdonnell-douglas-md-90",
@@ -2080,11 +2347,7 @@
         "height": 682
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "sukhoi-superjet-100",
@@ -2127,11 +2390,7 @@
         "height": 688
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "tupolev-tu-134",
@@ -2180,11 +2439,7 @@
         "height": 326
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "tupolev-tu-154",
@@ -2238,11 +2493,7 @@
         "height": 1023
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "tupolev-tu-204",
@@ -2291,11 +2542,7 @@
         "height": 485
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "yakovlev-yak-40",
@@ -2349,11 +2596,7 @@
         "height": 1024
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "yakovlev-yak-42",
@@ -2397,11 +2640,7 @@
         "height": 703
       }
     ],
-    "youtubeVideos": [
-      {
-        "videoId": ""
-      }
-    ]
+    "youtubeVideos": []
   },
   {
     "id": "britten-norman_bn-2_islander",
