@@ -521,6 +521,53 @@
     ]
   },
   {
+    "id": "antonov-an-24",
+    "name": "An-24",
+    "manufacturer": "Antonov",
+    "longDescription": "The Antonov An-24 (Russian/Ukrainian: Антонов Ан-24) is a 44-seat twin turboprop transport/passenger aircraft designed in 1957 in the Soviet Union by the Antonov Design Bureau and manufactured by Kiev, Irkutsk and Ulan-Ude Aviation Factories.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Antonov_An-24",
+    "metaData": {
+      "Role": "Airliner",
+      "Manufacturer": "Antonov",
+      "National origin": "Soviet Union",
+      "Produced": "1959-1979",
+      "First flight": "29 October 1959",
+      "Introduction": "1962",
+      "Number built": "1,367 (including the Chinese Y-7)",
+      "Variants": "Antonov An-26 Antonov An-30 Antonov An-32"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Polet_Antonov_An-24_Pichugin-2.jpg",
+        "width": 1023,
+        "height": 677
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Antonow_an-24.jpg",
+        "width": 100,
+        "height": 476
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Antonov_An-24RV%2C_Sakhalinskie_Aviatrassy_%28SAT%29_JP6454795.jpg",
+        "width": 1024,
+        "height": 685
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "8yiO33eboVY"
+      }
+    ]
+  },
+  {
     "id": "antonov-an-148",
     "name": "An-148",
     "manufacturer": "Antonov",
@@ -3872,9 +3919,9 @@
   },
   {
     "id": "piper-pa-28-cherokee",
-    "name": "PA-28 Cherokee",
+    "name": "P28A Cherokee",
     "manufacturer": "Piper",
-    "longDescription": "The Piper PA-28 Cherokee is a family of light aircraft built by Piper Aircraft and designed for flight training, air taxi, and personal use. The PA-28 family of aircraft are all-metal, unpressurized, single-engine, piston-powered airplanes with low-mounted wings and tricycle landing gear. They have a single door on the copilot side, which is entered by stepping on the wing.",
+    "longDescription": "The Piper P28A Cherokee is a family of light aircraft built by Piper Aircraft and designed for flight training, air taxi, and personal use. The PA-28 family of aircraft are all-metal, unpressurized, single-engine, piston-powered airplanes with low-mounted wings and tricycle landing gear. They have a single door on the copilot side, which is entered by stepping on the wing.",
     "attribution": "Wikipedia",
     "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-28_Cherokee",
     "metaData": {
