@@ -1408,6 +1408,57 @@
     "youtubeVideos": []
   },
   {
+    "id": "concorde",
+    "name": "",
+    "manufacturer": "Concorde",
+    "longDescription": "The Aérospatiale/BAC Concorde is a British-French turbojet-powered supersonic passenger airliner that was operated from 1976 until 2003. It had a maximum speed over twice the speed of sound at Mach 2.04 (1,354 mph or 2,180 km/h at cruise altitude), with seating for 92 to 128 passengers. First flown in 1969, Concorde entered service in 1976 and continued flying for the next 27 years. It is one of only two supersonic transports to have been operated commercially; the other is the Soviet-built Tupolev Tu-144, which operated in passenger service from 1977 to 1978.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Concorde",
+    "metaData": {
+      "Role": "Supersonic transport",
+      "Manufacturer": "BAC (later BAe and BAE Systems) Sud Aviation (later Aérospatiale and Airbus)",
+      "National origin": "United Kingdom and France",
+      "Produced": "1965-1979",
+      "First flight": "2 March 1969",
+      "Introduction": "21 January 1976",
+      "Number built": "20 (inc. 6 non-commercial aircraft)"
+    },
+    "filterOptions": {
+      "engines": "FOUR",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "BELOW",
+      "engine-type": "JET"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/British_Airways_Concorde_G-BOAC_03.jpg",
+        "width": 1024,
+        "height": 679
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/British_Concorde.jpg",
+        "width": 709,
+        "height": 382
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Concorde_landing_Farnborough_Fitzgerald.jpg",
+        "width": 1023,
+        "height": 681
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Air_France_Concorde_Jonsson.jpg",
+        "width": 1024,
+        "height": 647
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "5MCETiKCLhc"
+      }
+    ]
+  },
+  {
     "id": "douglas-dc-8",
     "name": "DC-8",
     "manufacturer": "Douglas",
@@ -3128,6 +3179,55 @@
     "youtubeVideos": [
       {
         "videoId": "tI4cdc_zsn0"
+      }
+    ]
+  },
+  {
+    "id": "cessna-152",
+    "name": "152",
+    "manufacturer": "Cessna",
+    "longDescription": "The Cessna 152 is an American two-seat, fixed tricycle gear, general aviation airplane, used primarily for flight training and personal use. It was based on the earlier Cessna 150, including a number of minor design changes and a slightly more powerful engine running on 100LL aviation gasoline.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_152",
+    "metaData": {
+      "Role": "Multipurpose civil aircraft",
+      "Manufacturer": "Cessna",
+      "Produced": "1977-1985",
+      "Introduction": "1977",
+      "Number built": "7,584"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/G-BRNE-Cessna152.jpg",
+        "width": 1132,
+        "height": 745
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/1978Cessna152.jpg",
+        "width": 1024,
+        "height": 732
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Cessna152-1978.jpg",
+        "width": 1024,
+        "height": 686
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Cessna_152_091.jpg/1024px-Cessna_152_091.jpg",
+        "width": 1024,
+        "height": 640
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "euGCoVSG138"
       }
     ]
   },
