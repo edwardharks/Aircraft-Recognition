@@ -45,8 +45,8 @@ import com.edwardharker.aircraftrecognition.ui.pixelsToDp
 import com.edwardharker.aircraftrecognition.youtube.youtubeStandalonePlayerHelper
 import java.lang.Math.min
 
-private val aircraftIdExtra = "aircraftId"
-private val startedWithTransitionExtra = "startedWithTransition"
+private const val aircraftIdExtra = "aircraftId"
+private const val startedWithTransitionExtra = "startedWithTransition"
 
 fun Navigator.launchAircraftDetailActivity(
     aircraftId: String,
@@ -83,7 +83,6 @@ fun Navigator.launchAircraftDetailActivity(aircraftId: String) {
 }
 
 class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
-
     private val aircraftImage by bind<AspectRatioImageView>(R.id.aircraft_image)
     private val aircraftImageContainer by bind<View>(R.id.aircraft_image_container)
     private val aircraftName by bind<TextView>(R.id.aircraft_name)
@@ -209,7 +208,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.action_feedback) {
-            navigator().launchFeedbackDialog()
+            navigator.launchFeedbackDialog()
             return true
         }
         return super.onOptionsItemSelected(item)
@@ -293,11 +292,10 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     }
 
     private fun navigateToPhotoCarousel(view: View) {
-        navigator().launchPhotoCarouselActivity(aircraftId, aircraftImage)
+        navigator.launchPhotoCarouselActivity(aircraftId, aircraftImage)
     }
 
     private inner class EnterTransitionListener : TransitionListenerAdapter() {
-
         val slideDistance = 400.pixelsToDp().toFloat()
 
         override fun onTransitionStart(transition: Transition?) {

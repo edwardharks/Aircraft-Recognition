@@ -24,9 +24,10 @@ import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 import java.util.*
 
 class AircraftRailView @JvmOverloads constructor(
-    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
 ) : RecyclerView(context, attrs, defStyleAttr) {
-
     var aircraft: List<Aircraft>
         set(value) = railAdapter.update(value)
         get() = railAdapter.filterResults
@@ -88,8 +89,10 @@ private class RailAdapter : RecyclerView.Adapter<ViewHolder>() {
 
 }
 
-private class ViewHolder(val view: View, eventFactory: (aircraftId: String) -> Event?) :
-    RecyclerView.ViewHolder(view) {
+private class ViewHolder(
+    val view: View,
+    eventFactory: (aircraftId: String) -> Event?
+) : RecyclerView.ViewHolder(view) {
     var aircraft: Aircraft? = null
 
     val aircraftImage: AspectRatioImageView by lazy {
@@ -110,7 +113,7 @@ private class ViewHolder(val view: View, eventFactory: (aircraftId: String) -> E
         view.setOnClickListener {
             aircraft?.let { aircraft ->
                 val activity = view.context as FragmentActivity
-                activity.navigator()
+                activity.navigator
                     .launchAircraftDetailActivity(
                         aircraft.id,
                         aircraftImage,

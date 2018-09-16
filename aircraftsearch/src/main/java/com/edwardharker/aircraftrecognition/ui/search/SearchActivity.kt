@@ -38,10 +38,10 @@ class SearchActivity : AppCompatActivity() {
 
     private val searchAdapter = SearchAdapter(
         aircraftClickListener = {
-            navigator().launchAircraftDetailActivity(it.id)
+            navigator.launchAircraftDetailActivity(it.id)
         },
         feedbackClickListener = {
-            navigator().launchFeedbackDialog()
+            navigator.launchFeedbackDialog()
         }
     )
 

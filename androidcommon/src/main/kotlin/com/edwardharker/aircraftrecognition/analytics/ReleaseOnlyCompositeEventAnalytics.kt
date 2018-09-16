@@ -1,7 +1,9 @@
 package com.edwardharker.aircraftrecognition.analytics
 
-class ReleaseOnlyCompositeEventAnalytics(private val releaseBuild: Boolean,
-                                         vararg private val eventAnalytics: EventAnalytics) : EventAnalytics {
+class ReleaseOnlyCompositeEventAnalytics(
+    private val releaseBuild: Boolean,
+    private vararg val eventAnalytics: EventAnalytics
+) : EventAnalytics {
 
     override fun logEvent(event: Event) {
         if (releaseBuild) {

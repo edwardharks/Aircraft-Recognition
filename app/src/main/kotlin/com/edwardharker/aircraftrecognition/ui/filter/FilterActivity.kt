@@ -12,14 +12,12 @@ import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.filterScreen
 import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.bind
-import com.edwardharker.aircraftrecognition.ui.feedback.launchFeedbackDialog
 import com.edwardharker.aircraftrecognition.ui.filter.picker.FilterPickerRecyclerView
 import com.edwardharker.aircraftrecognition.ui.filter.results.FilterResultsRecyclerView
 import com.edwardharker.aircraftrecognition.ui.search.launchSearchActivity
 
 class FilterActivity : AppCompatActivity(), OnMenuItemClickListener,
     FilterResultsRecyclerView.HiddenListener {
-
     private val toolbar by bind<Toolbar>(R.id.toolbar)
     private val bottomSheetView by bind<FilterResultsRecyclerView>(R.id.content_filter)
     private val filterPicker by bind<FilterPickerRecyclerView>(R.id.filter_picker)
@@ -57,7 +55,7 @@ class FilterActivity : AppCompatActivity(), OnMenuItemClickListener,
 
     override fun onMenuItemClick(item: MenuItem): Boolean {
         if (item.itemId == R.id.action_search) {
-            navigator().launchSearchActivity()
+            navigator.launchSearchActivity()
         }
         return false
     }
