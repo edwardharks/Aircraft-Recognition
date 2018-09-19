@@ -10,21 +10,32 @@ import com.edwardharker.aircraftrecognition.similaraircraft.SimilarAircraftPrese
 import com.edwardharker.aircraftrecognition.youtube.youtubeAvailabilityChecker
 import rx.android.schedulers.AndroidSchedulers.mainThread
 
-private fun aircraftDetailUseCase(): AircraftDetailUseCase =
-        RepositoryAircraftDetailUseCase(aircraftRepository())
+private fun aircraftDetailUseCase(): AircraftDetailUseCase {
+    return RepositoryAircraftDetailUseCase(aircraftRepository = aircraftRepository())
+}
 
-fun aircraftDetailPresenter(): AircraftDetailPresenter =
-        AircraftDetailPresenter(
-                mainThread(),
-                { aircraftDetailUseCase().aircraft(it) },
-                youtubeAvailabilityChecker()::isYoutubeAvailable
-        )
+fun aircraftDetailPresenter(): AircraftDetailPresenter {
+    return AircraftDetailPresenter(
+        mainScheduler = mainThread(),
+        aircraftDetailUseCase = aircraftDetailUseCase(),
+        isYoutubeAvailable = youtubeAvailabilityChecker()::isYoutubeAvailable
+    )
+}
 
-fun photoCarouselPresenter(): PhotoCarouselPresenter =
-        PhotoCarouselPresenter(mainThread(), { aircraftDetailUseCase().aircraft(it) })
+fun photoCarouselPresenter(): PhotoCarouselPresenter {
+    return PhotoCarouselPresenter(
+        mainScheduler = mainThread(),
+        aircraftDetailUseCase = aircraftDetailUseCase()
+    )
+}
 
-private fun similarAircraftUseCase(): SimilarAircaftUseCase =
-        SimilarAircaftUseCase(aircraftRepository())
+private fun similarAircraftUseCase(): SimilarAircaftUseCase {
+    return SimilarAircaftUseCase(aircraftRepository = aircraftRepository())
+}
 
-fun similarAircraftPresenter(): SimilarAircraftPresenter =
-        SimilarAircraftPresenter(mainThread(), similarAircraftUseCase())
+fun similarAircraftPresenter(): SimilarAircraftPresenter {
+    return SimilarAircraftPresenter(
+        mainScheduler = mainThread(),
+        similarAircraft = similarAircraftUseCase()
+    )
+}

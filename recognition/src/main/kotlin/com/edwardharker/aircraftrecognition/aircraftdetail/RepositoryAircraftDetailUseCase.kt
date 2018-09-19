@@ -5,8 +5,9 @@ import com.edwardharker.aircraftrecognition.repository.AircraftRepository
 import rx.Observable
 
 class RepositoryAircraftDetailUseCase(
-        private val aircraftRepository: AircraftRepository
+    private val aircraftRepository: AircraftRepository
 ) : AircraftDetailUseCase {
-
-    override fun aircraft(id: String): Observable<Aircraft> = aircraftRepository.findAircraftById(id)
+    override fun getAircraft(id: String): Observable<Aircraft> {
+        return aircraftRepository.findAircraftById(id)
+    }
 }

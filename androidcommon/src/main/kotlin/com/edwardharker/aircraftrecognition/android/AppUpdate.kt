@@ -4,7 +4,6 @@ import android.content.pm.PackageInfo
 
 class AppUpdate(private val sharedPreferences: AircraftSharedPreferences,
                 private val packageInfo: PackageInfo) {
-
     private val hasUpdated: Boolean by lazy {
         val hasUpdated =
                 sharedPreferences.getInt(LAST_APP_VERSION_KEY, 0) < packageInfo.versionCode

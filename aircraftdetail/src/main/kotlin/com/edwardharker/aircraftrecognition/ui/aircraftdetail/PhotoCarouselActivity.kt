@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.ViewGroup.LayoutParams.*
 import android.view.ViewTreeObserver
 import com.edwardharker.aircraftrecognition.aircraftdetail.PhotoCarouselView
 import com.edwardharker.aircraftrecognition.aircraftdetail.R
@@ -25,7 +26,7 @@ import com.edwardharker.aircraftrecognition.ui.dpToPixels
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 import com.pixelcan.inkpageindicator.InkPageIndicator
 
-private val aircraftIdExtra = "aircraftId"
+private const val aircraftIdExtra = "aircraftId"
 
 fun Navigator.launchPhotoCarouselActivity(aircraftId: String, aircraftImage: View) {
     val intent = Intent(activity, PhotoCarouselActivity::class.java).apply {
@@ -39,7 +40,6 @@ fun Navigator.launchPhotoCarouselActivity(aircraftId: String, aircraftImage: Vie
 }
 
 class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
-
     private val currentImagePositionKey = "currentImagePosition"
 
     private val toolbar by bind<Toolbar>(R.id.toolbar)
@@ -106,6 +106,10 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
         }
     }
 
+    override fun dismiss() {
+        finish()
+    }
+
     private inner class CarouselAdapter : PagerAdapter() {
 
         override fun instantiateItem(container: ViewGroup, position: Int): Any {
@@ -120,7 +124,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
                     startPostponedTransitionFor(imageView)
                 }
             }
-            container.addView(layout, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
+            container.addView(layout, MATCH_PARENT, MATCH_PARENT)
             return layout
         }
 
@@ -143,7 +147,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
         }
     }
 
-    companion object {
+    private companion object {
         private const val TRANSITION_TIMEOUT = 500L
     }
 }

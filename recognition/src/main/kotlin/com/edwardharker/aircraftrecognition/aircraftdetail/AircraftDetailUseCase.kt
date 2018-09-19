@@ -4,6 +4,5 @@ import com.edwardharker.aircraftrecognition.model.Aircraft
 import rx.Observable
 
 interface AircraftDetailUseCase {
-
-    fun aircraft(id: String): Observable<Aircraft>
+    fun getAircraft(id: String): Observable<Aircraft>
 }

@@ -9,56 +9,80 @@ import rx.Observable
 import rx.schedulers.Schedulers.immediate
 
 class AircraftDetailPresenterTest {
-
-    private val id = "id"
-    private val videoId = "videoId"
-    private val aircraft = Aircraft()
-    private val aircraftWithVideo = Aircraft(youtubeVideos = listOf(YoutubeVideo(videoId)))
     private val mockedView = Mockito.mock(AircraftDetailView::class.java)
 
     @Test
     fun showsAircraft() {
-        val presenter = AircraftDetailPresenter(immediate(), {
-            if (id == it) {
-                Observable.just(aircraft)
-            } else {
-                Observable.empty()
-            }
-        }, { false })
+        val presenter = AircraftDetailPresenter(
+            mainScheduler = immediate(),
+            aircraftDetailUseCase = FakeAircraftDetailUseCase(
+                withAircraftForId = ID to AIRCRAFT
+            ),
+            isYoutubeAvailable = { false }
+        )
 
-        presenter.startPresenting(mockedView, id)
-        verify(mockedView).showAircraft(AircraftDetailViewModel(aircraft, null))
+        presenter.startPresenting(mockedView, ID)
+        verify(mockedView).showAircraft(AircraftDetailViewModel(AIRCRAFT, null))
     }
 
     @Test
     fun showsVideoWhenYoutubeAvailableAndAircraftHasVideos() {
-        val presenter = AircraftDetailPresenter(immediate(), { Observable.just(aircraftWithVideo) }, { true })
+        val presenter = AircraftDetailPresenter(
+            mainScheduler = immediate(),
+            aircraftDetailUseCase = FakeAircraftDetailUseCase(
+                withAircraftForId = ID to AIRCRAFT_WITH_VIDEO
+            ),
+            isYoutubeAvailable = { true }
+        )
 
-        presenter.startPresenting(mockedView, id)
-        verify(mockedView).showAircraft(AircraftDetailViewModel(aircraftWithVideo, videoId))
+        presenter.startPresenting(mockedView, ID)
+        verify(mockedView).showAircraft(AircraftDetailViewModel(AIRCRAFT_WITH_VIDEO, VIDEO_ID))
     }
 
     @Test
     fun doesNotShowYoutubeWhenAvailableAndAircraftHasNoVideos() {
-        val presenter = AircraftDetailPresenter(immediate(), { Observable.just(aircraft) }, { true })
+        val presenter = AircraftDetailPresenter(
+            mainScheduler = immediate(),
+            aircraftDetailUseCase = FakeAircraftDetailUseCase(
+                withAircraftForId = ID to AIRCRAFT
+            ),
+            isYoutubeAvailable = { true }
+        )
 
-        presenter.startPresenting(mockedView, id)
-        verify(mockedView).showAircraft(AircraftDetailViewModel(aircraft, null))
+        presenter.startPresenting(mockedView, ID)
+        verify(mockedView).showAircraft(AircraftDetailViewModel(AIRCRAFT, null))
     }
 
     @Test
     fun doesNotShowYoutubeWhenNotAvailableAndAircraftHasVideos() {
-        val presenter = AircraftDetailPresenter(immediate(), { Observable.just(aircraftWithVideo) }, { false })
+        val presenter = AircraftDetailPresenter(
+            mainScheduler = immediate(),
+            aircraftDetailUseCase = FakeAircraftDetailUseCase(
+                withAircraftForId = ID to AIRCRAFT_WITH_VIDEO
+            ),
+            isYoutubeAvailable = { false }
+        )
 
-        presenter.startPresenting(mockedView, id)
-        verify(mockedView).showAircraft(AircraftDetailViewModel(aircraftWithVideo, null))
+        presenter.startPresenting(mockedView, ID)
+        verify(mockedView).showAircraft(AircraftDetailViewModel(AIRCRAFT_WITH_VIDEO, null))
     }
 
     @Test
     fun doesNotShowYoutubeWhenNotAvailableAndAircraftHasNoVideos() {
-        val presenter = AircraftDetailPresenter(immediate(), { Observable.just(aircraft) }, { false })
+        val presenter = AircraftDetailPresenter(
+            mainScheduler = immediate(),
+            aircraftDetailUseCase = FakeAircraftDetailUseCase(withAircraftForId = ID to AIRCRAFT),
+            isYoutubeAvailable = { false }
+        )
 
-        presenter.startPresenting(mockedView, id)
-        verify(mockedView).showAircraft(AircraftDetailViewModel(aircraft, null))
+        presenter.startPresenting(mockedView, ID)
+        verify(mockedView).showAircraft(AircraftDetailViewModel(AIRCRAFT, null))
+    }
+
+    private companion object {
+        private const val ID = "id"
+        private const val VIDEO_ID = "videoId"
+        private val AIRCRAFT = Aircraft()
+        private val AIRCRAFT_WITH_VIDEO = Aircraft(youtubeVideos = listOf(YoutubeVideo(VIDEO_ID)))
     }
 }

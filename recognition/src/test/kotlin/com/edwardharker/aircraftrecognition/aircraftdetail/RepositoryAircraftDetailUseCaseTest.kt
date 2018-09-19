@@ -15,7 +15,7 @@ class RepositoryAircraftDetailUseCaseTest {
         val aircraft = Aircraft()
         val fakeAircraftRepository = FakeAircraftRepository().thatEmits(aircraft, id)
         val useCase = RepositoryAircraftDetailUseCase(fakeAircraftRepository)
-        useCase.aircraft(id).subscribe(testSubscriber)
+        useCase.getAircraft(id).subscribe(testSubscriber)
         testSubscriber.assertValue(aircraft)
         testSubscriber.assertCompleted()
     }
