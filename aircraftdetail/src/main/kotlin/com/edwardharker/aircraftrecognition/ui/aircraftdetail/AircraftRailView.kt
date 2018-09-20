@@ -46,8 +46,13 @@ class AircraftRailView @JvmOverloads constructor(
         adapter = RailAdapter()
     }
 
-    override fun onMeasure(widthSpec: Int, heightSpec: Int) =
-        super.onMeasure(widthSpec, makeMeasureSpec(200.dpToPixels(), EXACTLY))
+    override fun onMeasure(widthSpec: Int, heightSpec: Int) {
+        super.onMeasure(widthSpec, makeMeasureSpec(RAIL_HEIGHT.dpToPixels(), EXACTLY))
+    }
+
+    private companion object {
+        private const val RAIL_HEIGHT = 200
+    }
 }
 
 private class RailAdapter : RecyclerView.Adapter<ViewHolder>() {

@@ -13,9 +13,10 @@ import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.similaraircraft.SimilarAircraftMvpView
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
 
-
 class SimilarAircraftView @JvmOverloads constructor(
-        context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr), SimilarAircraftMvpView {
 
     private val presenter = similarAircraftPresenter()
@@ -31,7 +32,7 @@ class SimilarAircraftView @JvmOverloads constructor(
         val titleView = TextView(context).apply {
             setTextAppearanceCompat(R.style.TextAppearance_AppCompat_Title)
             text = context.getString(R.string.similar_aircraft)
-            setPadding(16.dpToPixels(), 0, 16.dpToPixels(), 0)
+            setPadding(TITLE_PADDING.dpToPixels(), 0, TITLE_PADDING.dpToPixels(), 0)
         }
 
         addView(titleView, LayoutParams(MATCH_PARENT, WRAP_CONTENT))
@@ -55,10 +56,15 @@ class SimilarAircraftView @JvmOverloads constructor(
     override fun hideView() {
         visibility = GONE
     }
+
+    private companion object {
+        private const val TITLE_PADDING = 16
+    }
 }
 
+// TODO move
 private fun TextView.setTextAppearanceCompat(textAppearance: Int) {
-    if (Build.VERSION.SDK_INT < 23) {
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
         @Suppress("DEPRECATION")
         setTextAppearance(context, textAppearance)
     } else {

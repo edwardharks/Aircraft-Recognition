@@ -5,7 +5,8 @@ import android.os.Handler
 import android.support.v7.app.AppCompatDialogFragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.*
+import android.view.View.GONE
+import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.widget.EditText
 import com.edwardharker.aircraftrecognition.feedback.FeedbackView

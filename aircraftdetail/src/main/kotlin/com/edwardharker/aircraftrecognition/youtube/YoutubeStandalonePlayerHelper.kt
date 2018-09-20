@@ -2,10 +2,10 @@ package com.edwardharker.aircraftrecognition.youtube
 
 import android.app.Activity
 import android.util.Log
-import com.edwardharker.aircraftrecognition.aircraftdetail.BuildConfig.*
+import com.edwardharker.aircraftrecognition.aircraftdetail.BuildConfig.YOUTUBE_API_KEY
 import com.google.android.youtube.player.YouTubeStandalonePlayer
 
-class YoutubeStandalonePlayerHelper {
+object YoutubeStandalonePlayerHelper {
     fun launchYoutubeStandalonePlayer(activity: Activity, videoId: String) {
         try {
             val createVideoIntent = YouTubeStandalonePlayer

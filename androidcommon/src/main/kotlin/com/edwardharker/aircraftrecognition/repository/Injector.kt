@@ -6,12 +6,22 @@ import com.edwardharker.aircraftrecognition.repository.realm.realmAircraftReposi
 import com.edwardharker.aircraftrecognition.repository.retrofit.retrofitAircraftRepository
 import com.edwardharker.aircraftrecognition.repository.retrofit.retrofitFeedbackRepository
 
-fun aircraftRepository(): AircraftRepository = realmAircraftRepository()
+fun aircraftRepository(): AircraftRepository {
+    return realmAircraftRepository()
+}
 
-fun staticAircraftRepository(): AircraftRepository = assetsAircraftRepository()
+fun staticAircraftRepository(): AircraftRepository {
+    return assetsAircraftRepository()
+}
 
-fun remoteAircraftRepository(): AircraftRepository = retrofitAircraftRepository()
+fun remoteAircraftRepository(): AircraftRepository {
+    return retrofitAircraftRepository()
+}
 
-fun filterRepository(): FilterRepository = assetsFilterRepository()
+fun filterRepository(): FilterRepository {
+    return assetsFilterRepository()
+}
 
-fun feedbackRepository(): FeedbackRepository = retrofitFeedbackRepository()
+fun feedbackRepository(): FeedbackRepository {
+    return retrofitFeedbackRepository()
+}

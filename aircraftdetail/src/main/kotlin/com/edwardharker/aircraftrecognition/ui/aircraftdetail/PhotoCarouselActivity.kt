@@ -11,7 +11,7 @@ import android.support.v7.widget.Toolbar
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.ViewGroup.LayoutParams.*
+import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.view.ViewTreeObserver
 import com.edwardharker.aircraftrecognition.aircraftdetail.PhotoCarouselView
 import com.edwardharker.aircraftrecognition.aircraftdetail.R
@@ -19,29 +19,29 @@ import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.photoCarouselScreen
 import com.edwardharker.aircraftrecognition.extension.postDelayed
 import com.edwardharker.aircraftrecognition.model.Image
-import com.edwardharker.aircraftrecognition.ui.Navigator
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
+import com.edwardharker.aircraftrecognition.ui.Navigator
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 import com.pixelcan.inkpageindicator.InkPageIndicator
 
-private const val aircraftIdExtra = "aircraftId"
+private const val AIRCRAFT_ID_EXTRA = "aircraftId"
 
 fun Navigator.launchPhotoCarouselActivity(aircraftId: String, aircraftImage: View) {
     val intent = Intent(activity, PhotoCarouselActivity::class.java).apply {
-        putExtra(aircraftIdExtra, aircraftId)
+        putExtra(AIRCRAFT_ID_EXTRA, aircraftId)
     }
-    activity.startActivity(intent,
-            ActivityOptions.makeSceneTransitionAnimation(
-                    activity,
-                    android.util.Pair(aircraftImage, activity.getString(R.string.transition_aircraft_image))
-            ).toBundle())
+    activity.startActivity(
+        intent,
+        ActivityOptions.makeSceneTransitionAnimation(
+            activity,
+            android.util.Pair(aircraftImage, activity.getString(R.string.transition_aircraft_image))
+        ).toBundle()
+    )
 }
 
 class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
-    private val currentImagePositionKey = "currentImagePosition"
-
     private val toolbar by bind<Toolbar>(R.id.toolbar)
     private val viewPager by bind<ViewPager>(R.id.view_pager)
     private val indicator by bind<InkPageIndicator>(R.id.indicator)
@@ -66,14 +66,14 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
         toolbar.setNavigationIcon(R.drawable.ic_close_white_24dp)
 
         viewPager.adapter = CarouselAdapter()
-        viewPager.pageMargin = 24.dpToPixels()
+        viewPager.pageMargin = VIEW_PAGER_MARGIN.dpToPixels()
 
-        page = savedInstanceState?.getInt(currentImagePositionKey) ?: 0
+        page = savedInstanceState?.getInt(CURRENT_IMAGE_POSITION_KEY) ?: 0
     }
 
     override fun onStart() {
         super.onStart()
-        presenter.startPresenting(this, intent.getStringExtra(aircraftIdExtra))
+        presenter.startPresenting(this, intent.getStringExtra(AIRCRAFT_ID_EXTRA))
         eventAnalytics().logScreenView(photoCarouselScreen())
     }
 
@@ -84,7 +84,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putInt(currentImagePositionKey, viewPager.currentItem)
+        outState.putInt(CURRENT_IMAGE_POSITION_KEY, viewPager.currentItem)
     }
 
     override fun onBackPressed() {
@@ -114,7 +114,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
 
         override fun instantiateItem(container: ViewGroup, position: Int): Any {
             val layout = LayoutInflater.from(container.context)
-                    .inflate(R.layout.view_photo_carousel_image, container, false)
+                .inflate(R.layout.view_photo_carousel_image, container, false)
             val imageView = layout.findViewById<AspectRatioImageView>(R.id.aircraft_image)
             imageView.setZoomable(true)
             imageView.fixedAspectRatio = true
@@ -137,7 +137,8 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
         override fun getCount(): Int = images.size
 
         private fun startPostponedTransitionFor(view: View) {
-            view.viewTreeObserver.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
+            view.viewTreeObserver.addOnGlobalLayoutListener(object :
+                ViewTreeObserver.OnGlobalLayoutListener {
                 override fun onGlobalLayout() {
                     view.transitionName = getString(R.string.transition_aircraft_image)
                     supportStartPostponedEnterTransition()
@@ -149,5 +150,7 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
 
     private companion object {
         private const val TRANSITION_TIMEOUT = 500L
+        private const val CURRENT_IMAGE_POSITION_KEY = "currentImagePosition"
+        private const val VIEW_PAGER_MARGIN = 24
     }
 }

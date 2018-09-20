@@ -1,10 +1,9 @@
 package com.edwardharker.aircraftrecognition.repository.retrofit
 
-import com.edwardharker.aircraftrecognition.androidcommon.BuildConfig.*
-import retrofit2.converter.gson.GsonConverterFactory
+import com.edwardharker.aircraftrecognition.androidcommon.BuildConfig.AIRCRAFT_BASE_URL
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
-
+import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitAdapter {
     private val retrofit: Retrofit by lazy {
@@ -24,3 +23,4 @@ object RetrofitAdapter {
         retrofit.create(FeedbackService::class.java)
     }
 }
+

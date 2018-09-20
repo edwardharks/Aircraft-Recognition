@@ -1,7 +1,11 @@
 package com.edwardharker.aircraftrecognition.feedback
 
-import androidx.work.*
-import androidx.work.NetworkType.*
+import androidx.work.Constraints
+import androidx.work.NetworkType.CONNECTED
+import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.WorkRequest
+import androidx.work.Worker
+import androidx.work.toWorkData
 import com.edwardharker.aircraftrecognition.model.FeedbackResult
 
 class SubmitFeedbackWorker : Worker() {

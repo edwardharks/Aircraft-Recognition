@@ -5,6 +5,6 @@ import com.edwardharker.aircraftrecognition.applicationContext
 import com.google.android.gms.analytics.GoogleAnalytics
 
 private val tracker = GoogleAnalytics.getInstance(applicationContext())
-        .newTracker(GA_TRACKING_ID)
+    .newTracker(GA_TRACKING_ID)
 
 fun googleEventAnalytics(): GoogleEventAnalytics = GoogleEventAnalytics(tracker)

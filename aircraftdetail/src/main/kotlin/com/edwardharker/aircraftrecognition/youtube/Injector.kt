@@ -7,5 +7,5 @@ fun youtubeAvailabilityChecker(): YoutubeAvailabilityChecker {
 }
 
 fun youtubeStandalonePlayerHelper(): YoutubeStandalonePlayerHelper {
-    return YoutubeStandalonePlayerHelper()
+    return YoutubeStandalonePlayerHelper
 }

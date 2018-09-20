@@ -15,7 +15,6 @@ import java.lang.Math.min
 import java.util.*
 
 class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
-
     private val pickerHeight by lazy {
         resources.getDimensionPixelSize(R.dimen.filter_picker_height)
     }
@@ -33,7 +32,11 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
 
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
 
-    constructor(context: Context, attrs: AttributeSet?, defStyle: Int) : super(context, attrs, defStyle)
+    constructor(context: Context, attrs: AttributeSet?, defStyle: Int) : super(
+        context,
+        attrs,
+        defStyle
+    )
 
     init {
         clipToPadding = false
@@ -59,7 +62,8 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
 
     override fun showFilters(filters: List<Filter>) {
         val firstVisibleItemPosition = linearLayoutManager.findFirstVisibleItemPosition()
-        val currentFilter = if (firstVisibleItemPosition >= 0) adapter.filters[firstVisibleItemPosition] else null
+        val currentFilter =
+            if (firstVisibleItemPosition >= 0) adapter.filters[firstVisibleItemPosition] else null
 
         adapter.update(filters)
         val newPosition = adapter.filters.indexOf(currentFilter)
@@ -87,7 +91,7 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
             if (scrollOnSelection && firstVisibleItemPosition < linearLayoutManager.itemCount - 1) {
                 smoothScrollToPosition(firstVisibleItemPosition + 1)
             }
-        }, 200)
+        }, AUTO_SCROLL_DELAY)
     }
 
     private inner class ScrollListener : RecyclerView.OnScrollListener() {
@@ -99,7 +103,6 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
     }
 
     private inner class Adapter : RecyclerView.Adapter<ViewHolder>() {
-
         val filters = ArrayList<Filter>()
 
         fun update(filters: List<Filter>) {
@@ -117,13 +120,16 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
         override fun getItemCount(): Int = filters.size
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
-                ViewHolder(FilterPicker(parent.context))
-
+            ViewHolder(FilterPicker(parent.context))
     }
 
     private inner class ViewHolder(val view: FilterPicker) : RecyclerView.ViewHolder(view) {
         init {
             view.layoutParams = ViewGroup.LayoutParams(MATCH_PARENT, MATCH_PARENT)
         }
+    }
+
+    private companion object {
+        private const val AUTO_SCROLL_DELAY = 200L
     }
 }

@@ -7,24 +7,24 @@ import rx.Completable
 import rx.Observable
 
 class RetrofitAircraftRepository(
-        private val aircraftService: AircraftService
+    private val aircraftService: AircraftService
 ) : AircraftRepository {
-
     override fun saveAircraft(aircraft: List<Aircraft>) {
         throw UnsupportedOperationException()
     }
 
-    override fun allAircraft(): Observable<List<Aircraft>> =
-            aircraftService.getAircraft()
-                    .flatMap { response ->
-                        return@flatMap if (response.isSuccessful) {
-                            Observable.just(response.body() ?: listOf())
-                        } else {
-                            Observable.never<List<Aircraft>>()
-                        }
-                    }
-                    .doOnError { Log.w("AircraftRepository", it.message, it) }
-                    .onErrorReturn { listOf() }
+    override fun allAircraft(): Observable<List<Aircraft>> {
+        return aircraftService.getAircraft()
+            .flatMap { response ->
+                return@flatMap if (response.isSuccessful) {
+                    Observable.just(response.body() ?: listOf())
+                } else {
+                    Observable.never<List<Aircraft>>()
+                }
+            }
+            .doOnError { Log.w("AircraftRepository", it.message, it) }
+            .onErrorReturn { listOf() }
+    }
 
     override fun allAircraftCount(): Observable<Long> {
         throw UnsupportedOperationException()
@@ -45,5 +45,4 @@ class RetrofitAircraftRepository(
     override fun findAircraftById(id: String): Observable<Aircraft> {
         throw UnsupportedOperationException()
     }
-
 }

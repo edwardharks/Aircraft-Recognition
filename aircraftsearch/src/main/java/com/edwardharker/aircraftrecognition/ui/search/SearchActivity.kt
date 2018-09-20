@@ -64,7 +64,7 @@ class SearchActivity : AppCompatActivity() {
         searchResults.adapter = searchAdapter
 
         val events: Observable<Action> = RxTextView.afterTextChangeEvents(searchEditText)
-            .debounce(200, TimeUnit.MILLISECONDS)
+            .debounce(SEARCH_DELAY, TimeUnit.MILLISECONDS)
             .filter { it.toString().isNotBlank() }
             .observeOn(AndroidSchedulers.mainThread())
             .map { searchEditText.text.toString() }
@@ -88,5 +88,9 @@ class SearchActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         eventsDisposable?.unsubscribe()
+    }
+
+    private companion object {
+        private const val SEARCH_DELAY = 200L
     }
 }
