@@ -12,6 +12,7 @@ import com.edwardharker.aircraftrecognition.analytics.similarAircraftClickEvent
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.similaraircraft.SimilarAircraftMvpView
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
+import com.edwardharker.aircraftrecognition.ui.setTextAppearanceCompat
 
 class SimilarAircraftView @JvmOverloads constructor(
     context: Context,
@@ -59,15 +60,5 @@ class SimilarAircraftView @JvmOverloads constructor(
 
     private companion object {
         private const val TITLE_PADDING = 16
-    }
-}
-
-// TODO move
-private fun TextView.setTextAppearanceCompat(textAppearance: Int) {
-    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
-        @Suppress("DEPRECATION")
-        setTextAppearance(context, textAppearance)
-    } else {
-        setTextAppearance(textAppearance)
     }
 }
