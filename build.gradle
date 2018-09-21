@@ -3,10 +3,13 @@ buildscript {
         androidVersion = 28
         minSdk = 21
         toolsVersion = '26.0.2'
-        supportLibraryVersion = '28.0.0-beta01'
+        supportLibraryVersion = '28.0.0-rc02'
         playServicesVersion = '11.4.2'
         kotlinVersion = '1.2.51'
         retrofitVersion = '2.4.0'
+        gsonVersion = '2.8.2'
+        rxJavaVersion = '1.3.0'
+        rxKotlinVersion = '0.60.0'
     }
     repositories {
         jcenter()
@@ -19,7 +22,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0-alpha15'
+        classpath 'com.android.tools.build:gradle:3.3.0-alpha11'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath "io.realm:realm-gradle-plugin:2.0.2"
         classpath 'com.google.gms:google-services:3.0.0'

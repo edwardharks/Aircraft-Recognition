@@ -12,7 +12,7 @@ class SubmitFeedbackWorker : Worker() {
     private val submitFeedbackUseCase = submitFeedbackUseCase()
 
     override fun doWork(): Result {
-        val message = inputData.getString(MESSAGE_KEY, null)
+        val message = inputData.getString(MESSAGE_KEY)
                 ?: throw IllegalArgumentException("No message passed to SubmitFeedbackWorker")
 
         val result = submitFeedbackUseCase.submitFeedback(message)
