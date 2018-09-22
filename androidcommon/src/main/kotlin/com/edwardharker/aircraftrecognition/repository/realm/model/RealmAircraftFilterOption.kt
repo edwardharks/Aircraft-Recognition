@@ -6,7 +6,7 @@ import io.realm.annotations.PrimaryKey
 
 @Keep
 open class RealmAircraftFilterOption(
-        @PrimaryKey open var id: String = "",
-        open var name: String = "",
-        open var value: String = ""
+    @PrimaryKey open var id: String = "",
+    open var name: String = "",
+    open var value: String = ""
 ) : RealmObject()

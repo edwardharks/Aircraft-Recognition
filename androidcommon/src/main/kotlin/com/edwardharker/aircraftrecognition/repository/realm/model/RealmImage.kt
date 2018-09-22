@@ -6,7 +6,7 @@ import io.realm.annotations.PrimaryKey
 
 @Keep
 open class RealmImage(
-        @PrimaryKey open var url: String = "",
-        open var width: Int = 0,
-        open var height: Int = 0
+    @PrimaryKey open var url: String = "",
+    open var width: Int = 0,
+    open var height: Int = 0
 ) : RealmObject()

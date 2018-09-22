@@ -6,7 +6,6 @@ import org.junit.Test
 import rx.observers.TestSubscriber
 
 class RepositoryAircraftDetailUseCaseTest {
-
     private val testSubscriber = TestSubscriber<Aircraft>()
 
     @Test

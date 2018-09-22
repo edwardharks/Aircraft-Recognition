@@ -14,7 +14,6 @@ import rx.Completable
 import rx.Observable
 
 class RealmAircraftRepository(private val realm: Observable<Realm>) : AircraftRepository {
-
     override fun saveAircraft(aircraft: List<Aircraft>) {
         realm.first().subscribe {
             it.beginTransaction()
@@ -23,72 +22,82 @@ class RealmAircraftRepository(private val realm: Observable<Realm>) : AircraftRe
         }
     }
 
-    override fun allAircraft(): Observable<List<Aircraft>> =
-            realm.flatMap {
-                it.where(RealmAircraft::class.java)
-                        .findAllSortedAsync(arrayOf("manufacturer", "name"),
-                                arrayOf(Sort.ASCENDING, Sort.ASCENDING))
-                        .asObservable()
-            }.filter {
-                it.isLoaded
-            }.map {
-                it.map(::realmAircraftToAircraft)
-            }
+    override fun allAircraft(): Observable<List<Aircraft>> {
+        return realm.flatMap {
+            it.where(RealmAircraft::class.java)
+                .findAllSortedAsync(
+                    arrayOf("manufacturer", "name"),
+                    arrayOf(Sort.ASCENDING, Sort.ASCENDING)
+                )
+                .asObservable()
+        }.filter {
+            it.isLoaded
+        }.map {
+            it.map(::realmAircraftToAircraft)
+        }
+    }
 
     override fun allAircraftCount(): Observable<Long> =
-            realm.flatMap { realm ->
-                Observable.fromCallable {
-                    realm.where(RealmAircraft::class.java)
-                            .count()
-                }
-            }
-
-    override fun filteredAircraft(filters: Map<String, String>): Observable<List<Aircraft>> =
-            realm.flatMap {
-                it.where(RealmAircraft::class.java)
-                        .withFilters(filters)
-                        .findAllSortedAsync(arrayOf("manufacturer", "name"),
-                                arrayOf(Sort.ASCENDING, Sort.ASCENDING))
-                        .asObservable()
-            }.filter {
-                it.isLoaded
-            }.map {
-                it.map(::realmAircraftToAircraft)
-            }
-
-    override fun filteredAircraftCount(filters: Map<String, String>): Long =
-            realm.toBlocking().first()
-                    .where(RealmAircraft::class.java)
-                    .withFilters(filters)
+        realm.flatMap { realm ->
+            Observable.fromCallable {
+                realm.where(RealmAircraft::class.java)
                     .count()
+            }
+        }
+
+    override fun filteredAircraft(filters: Map<String, String>): Observable<List<Aircraft>> {
+        return realm.flatMap {
+            it.where(RealmAircraft::class.java)
+                .withFilters(filters)
+                .findAllSortedAsync(
+                    arrayOf("manufacturer", "name"),
+                    arrayOf(Sort.ASCENDING, Sort.ASCENDING)
+                )
+                .asObservable()
+        }.filter {
+            it.isLoaded
+        }.map {
+            it.map(::realmAircraftToAircraft)
+        }
+    }
+
+    override fun filteredAircraftCount(filters: Map<String, String>): Long {
+        return realm.toBlocking().first()
+            .where(RealmAircraft::class.java)
+            .withFilters(filters)
+            .count()
+    }
 
 
-    private fun RealmQuery<RealmAircraft>.withFilters(filters: Map<String, String>): RealmQuery<RealmAircraft> {
+    private fun RealmQuery<RealmAircraft>.withFilters(
+        filters: Map<String, String>
+    ): RealmQuery<RealmAircraft> {
         filters.forEach {
             equalTo("aircraftFilterOptions.id", createFilterOptionId(it.key, it.value))
         }
         return this
     }
 
-    override fun deleteAllAircraft(): Completable =
-            realm.first()
-                    .doOnNext {
-                        it.beginTransaction()
-                        it.deleteAll()
-                        it.commitTransaction()
-                    }.toCompletable()
+    override fun deleteAllAircraft(): Completable {
+        return realm.first()
+            .doOnNext {
+                it.beginTransaction()
+                it.deleteAll()
+                it.commitTransaction()
+            }.toCompletable()
+    }
 
-    override fun findAircraftById(id: String): Observable<Aircraft> =
-            realm.flatMap {
-                it.where(RealmAircraft::class.java)
-                        .equalTo("id", id)
-                        .findAll()
-                        .asObservable()
-            }.filter {
-                it.isLoaded
-            }.filter {
-                it.isNotEmpty()
-            }.map(RealmResults<RealmAircraft>::first)
-                    .map(::realmAircraftToAircraft)
-
+    override fun findAircraftById(id: String): Observable<Aircraft> {
+        return realm.flatMap {
+            it.where(RealmAircraft::class.java)
+                .equalTo("id", id)
+                .findAll()
+                .asObservable()
+        }.filter {
+            it.isLoaded
+        }.filter {
+            it.isNotEmpty()
+        }.map(RealmResults<RealmAircraft>::first)
+            .map(::realmAircraftToAircraft)
+    }
 }

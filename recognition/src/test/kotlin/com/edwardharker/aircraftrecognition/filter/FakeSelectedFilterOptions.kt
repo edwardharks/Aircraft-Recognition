@@ -5,7 +5,6 @@ import rx.Observable
 import rx.lang.kotlin.PublishSubject
 
 class FakeSelectedFilterOptions : SelectedFilterOptions {
-
     val subject = PublishSubject<SelectedFilterOptionsMap>()
 
     override fun isSelected(name: String, value: String): Boolean = false

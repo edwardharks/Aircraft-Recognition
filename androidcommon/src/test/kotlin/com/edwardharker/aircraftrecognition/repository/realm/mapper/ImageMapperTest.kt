@@ -7,11 +7,6 @@ import org.junit.Assert.assertThat
 import org.junit.Test
 
 class ImageMapperTest {
-
-    val height = 50
-    val width = 100
-    val url = "url"
-
     @Test
     fun mapsImageToRealmImage() {
         val expected = RealmImage(url, width, height)
@@ -24,5 +19,11 @@ class ImageMapperTest {
         val expected = Image(url, width, height)
         val actual = realmImageToImage(RealmImage(url, width, height))
         assertThat(actual, sameBeanAs(expected))
+    }
+
+    companion object {
+        private const val height = 50
+        private const val width = 100
+        private const val url = "url"
     }
 }

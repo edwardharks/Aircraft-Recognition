@@ -12,7 +12,6 @@ import java.lang.Math.min
 
 
 class ExtendedFrameLayout : FrameLayout {
-
     var maxWidth: Int = MAX_VALUE
 
     constructor(context: Context) : this(context, null)

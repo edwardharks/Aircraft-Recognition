@@ -4,4 +4,7 @@ import com.edwardharker.aircraftrecognition.filter.InMemorySelectedFilterOptions
 import com.edwardharker.aircraftrecognition.filter.SelectedFilterOptions
 
 private val inMemorySelectedFilterOptions = InMemorySelectedFilterOptions()
-fun selectedFilterOptions(): SelectedFilterOptions = inMemorySelectedFilterOptions
+
+fun selectedFilterOptions(): SelectedFilterOptions {
+    return inMemorySelectedFilterOptions
+}

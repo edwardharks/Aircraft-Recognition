@@ -7,7 +7,6 @@ import com.google.android.gms.analytics.HitBuilders
 import com.google.android.gms.analytics.Tracker
 
 class GoogleEventAnalytics(private val tracker: Tracker) : EventAnalytics {
-
     override fun logEvent(event: Event) {
         tracker.send(event.toGaEvent())
     }

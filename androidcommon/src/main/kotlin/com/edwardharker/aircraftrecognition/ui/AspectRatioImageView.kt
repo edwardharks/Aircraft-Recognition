@@ -6,7 +6,6 @@ import android.view.View.MeasureSpec.getSize
 import com.github.chrisbanes.photoview.PhotoView
 
 class AspectRatioImageView : PhotoView {
-
     enum class Aspect {
         WIDTH, HEIGHT
     }
@@ -31,7 +30,11 @@ class AspectRatioImageView : PhotoView {
 
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
 
-    constructor(context: Context, attrs: AttributeSet, defStyle: Int) : super(context, attrs, defStyle)
+    constructor(context: Context, attrs: AttributeSet, defStyle: Int) : super(
+        context,
+        attrs,
+        defStyle
+    )
 
     init {
         setZoomable(false)

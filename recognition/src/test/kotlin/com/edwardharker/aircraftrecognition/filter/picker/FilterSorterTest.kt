@@ -7,14 +7,24 @@ import org.junit.Assert.assertThat
 import org.junit.Test
 
 class FilterSorterTest {
-
     @Test
     fun sortsFiltersByFilterOptions() {
-        val oneFilterOptions = Filter(filterOptions = listOf(FilterOption("", "")))
-        val twoFilterOptions = Filter(filterOptions = listOf(FilterOption("", ""), FilterOption("", "")))
-        val threeFilterOptions = Filter(filterOptions = listOf(FilterOption("", ""), FilterOption("", ""), FilterOption("", "")))
+        val oneFilterOptions = Filter(
+            filterOptions = listOf(FilterOption("", ""))
+        )
+        val twoFilterOptions = Filter(
+            filterOptions = listOf(FilterOption("", ""), FilterOption("", ""))
+        )
+        val threeFilterOptions = Filter(
+            filterOptions = listOf(
+                FilterOption("", ""),
+                FilterOption("", ""),
+                FilterOption("", "")
+            )
+        )
         val filters = listOf(oneFilterOptions, threeFilterOptions, twoFilterOptions)
         val expected = listOf(threeFilterOptions, twoFilterOptions, oneFilterOptions)
+
         assertThat(expected, sameBeanAs(sortFiltersByFilterOptions(filters)))
     }
 }

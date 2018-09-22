@@ -6,5 +6,5 @@ import io.realm.annotations.PrimaryKey
 
 @Keep
 open class RealmYoutubeVideo(
-        @PrimaryKey open var videoId: String = ""
+    @PrimaryKey open var videoId: String = ""
 ) : RealmObject()

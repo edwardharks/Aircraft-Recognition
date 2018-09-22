@@ -1,11 +1,11 @@
 package com.edwardharker.aircraftrecognition.android
 
 class FakeAircraftSharedPreferences(
-        private vararg val thatReturns: Pair<String, Any>
+    private val thatReturns: Pair<String, Int>
 ) : AircraftSharedPreferences {
-
-    override fun getInt(key: String, default: Int): Int =
-            thatReturns.first { it.first == key }.second as Int
+    override fun getInt(key: String, default: Int): Int {
+        return if (thatReturns.first == key) thatReturns.second else 0
+    }
 
     override fun saveInt(key: String, value: Int) {}
 }

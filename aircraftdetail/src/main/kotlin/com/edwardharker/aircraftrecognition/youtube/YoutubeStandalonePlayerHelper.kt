@@ -9,7 +9,7 @@ object YoutubeStandalonePlayerHelper {
     fun launchYoutubeStandalonePlayer(activity: Activity, videoId: String) {
         try {
             val createVideoIntent = YouTubeStandalonePlayer
-                    .createVideoIntent(activity, YOUTUBE_API_KEY, videoId)
+                .createVideoIntent(activity, YOUTUBE_API_KEY, videoId)
             activity.startActivity(createVideoIntent)
         } catch (ignored: Exception) {
             Log.e("Youtube", "Failed to start youtube player", ignored)

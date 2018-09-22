@@ -7,9 +7,6 @@ import com.shazam.shazamcrest.matcher.Matchers
 import org.junit.Test
 
 class YoutubeVideoMapperTest {
-
-    private val videoId = "aVideoId"
-
     @Test
     fun mapsYoutubeVideoToRealmYoutubeVideo() {
         val expected = RealmYoutubeVideo(videoId)
@@ -22,5 +19,9 @@ class YoutubeVideoMapperTest {
         val expected = YoutubeVideo(videoId)
         val actual = realmYoutubeVideoToYoutubeVideo(RealmYoutubeVideo(videoId))
         assertThat(actual, Matchers.sameBeanAs(expected))
+    }
+
+    private companion object {
+        private const val videoId = "aVideoId"
     }
 }

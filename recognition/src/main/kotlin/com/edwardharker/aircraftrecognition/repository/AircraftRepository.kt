@@ -5,7 +5,6 @@ import rx.Completable
 import rx.Observable
 
 interface AircraftRepository {
-
     fun saveAircraft(aircraft: List<Aircraft>)
 
     fun allAircraft(): Observable<List<Aircraft>>

@@ -11,6 +11,8 @@ class FakeFilterRepository : FilterRepository {
         return this
     }
 
-    override fun filters(): Observable<List<Filter>> = Observable.fromCallable { filters }
+    override fun filters(): Observable<List<Filter>> {
+        return Observable.fromCallable { filters }
+    }
 }
 

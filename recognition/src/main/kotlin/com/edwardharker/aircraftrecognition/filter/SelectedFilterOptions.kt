@@ -4,7 +4,6 @@ import com.edwardharker.aircraftrecognition.model.SelectedFilterOptionsMap
 import rx.Observable
 
 interface SelectedFilterOptions {
-
     fun isSelected(name: String, value: String): Boolean
 
     fun select(name: String, value: String)

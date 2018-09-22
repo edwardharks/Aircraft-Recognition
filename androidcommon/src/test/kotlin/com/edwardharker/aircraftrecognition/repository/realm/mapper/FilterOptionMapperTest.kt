@@ -6,11 +6,6 @@ import org.junit.Assert.assertThat
 import org.junit.Test
 
 class FilterOptionMapperTest {
-
-    val name = "name"
-    val value = "value"
-    val id = "$name-$value"
-
     @Test
     fun convertsPairToRealmFilterOptions() {
         val expected = RealmAircraftFilterOption(id, name, value)
@@ -23,5 +18,11 @@ class FilterOptionMapperTest {
         val expected = Pair(name, value)
         val actual = realmAircraftFilterOptionsToPair(RealmAircraftFilterOption(id, name, value))
         assertThat(actual, sameBeanAs(expected))
+    }
+
+    private companion object {
+        private const val name = "name"
+        private const val value = "value"
+        private const val id = "$name-$value"
     }
 }

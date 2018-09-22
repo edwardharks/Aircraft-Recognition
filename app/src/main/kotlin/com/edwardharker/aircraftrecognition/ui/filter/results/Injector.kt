@@ -7,11 +7,13 @@ import com.edwardharker.aircraftrecognition.repository.aircraftRepository
 import com.edwardharker.aircraftrecognition.ui.filter.selectedFilterOptions
 import rx.android.schedulers.AndroidSchedulers.mainThread
 
-fun filterResultsPresenter(): FilterResultsPresenter =
-        FilterResultsPresenter(
-                mainThread(),
-                filterResultsUseCase()::filteredAircraft
-        )
+fun filterResultsPresenter(): FilterResultsPresenter {
+    return FilterResultsPresenter(
+        mainThread(),
+        filterResultsUseCase()::filteredAircraft
+    )
+}
 
-private fun filterResultsUseCase(): FilterResultsUseCase =
-        RepositoryFilterResultsUseCase(selectedFilterOptions(), aircraftRepository())
+private fun filterResultsUseCase(): FilterResultsUseCase {
+    return RepositoryFilterResultsUseCase(selectedFilterOptions(), aircraftRepository())
+}

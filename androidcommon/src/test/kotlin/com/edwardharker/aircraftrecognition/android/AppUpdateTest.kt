@@ -9,15 +9,16 @@ import org.junit.Test
 import org.mockito.Mockito.verify
 
 class AppUpdateTest {
-
     @Test
     fun `returns true when new version is greater than old version`() {
-        val fakePreferences = FakeAircraftSharedPreferences(thatReturns = AppUpdate.LAST_APP_VERSION_KEY to 1)
+        val fakePreferences = FakeAircraftSharedPreferences(
+            thatReturns = AppUpdate.LAST_APP_VERSION_KEY to 1
+        )
         val appUpdate = AppUpdate(
-                sharedPreferences = fakePreferences,
-                packageInfo = PackageInfo().apply {
-                    versionCode = 2
-                }
+            sharedPreferences = fakePreferences,
+            packageInfo = PackageInfo().apply {
+                versionCode = 2
+            }
         )
 
         assertThat(appUpdate.hasUpdated(), equalTo(true))
@@ -30,10 +31,10 @@ class AppUpdateTest {
             on { getInt(AppUpdate.LAST_APP_VERSION_KEY, 0) } doReturn 1
         }
         val appUpdate = AppUpdate(
-                sharedPreferences = mockPreferences,
-                packageInfo = PackageInfo().apply {
-                    versionCode = newVersionCode
-                }
+            sharedPreferences = mockPreferences,
+            packageInfo = PackageInfo().apply {
+                versionCode = newVersionCode
+            }
         )
 
         appUpdate.hasUpdated()
@@ -47,10 +48,10 @@ class AppUpdateTest {
             on { getInt(AppUpdate.LAST_APP_VERSION_KEY, 0) } doReturn 1
         }
         val appUpdate = AppUpdate(
-                sharedPreferences = mockPreferences,
-                packageInfo = PackageInfo().apply {
-                    versionCode = 2
-                }
+            sharedPreferences = mockPreferences,
+            packageInfo = PackageInfo().apply {
+                versionCode = 2
+            }
         )
 
         appUpdate.hasUpdated()

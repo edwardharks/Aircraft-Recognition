@@ -6,7 +6,8 @@ import com.edwardharker.aircraftrecognition.repository.FakeAircraftRepository
 import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 import org.junit.Test
-import org.mockito.Mockito.*
+import org.mockito.Mockito.never
+import org.mockito.Mockito.verify
 import rx.Observable
 import rx.schedulers.Schedulers
 
@@ -14,7 +15,7 @@ class AircraftUpdaterTest {
     private val aircraft = listOf(Aircraft())
 
     @Test
-    fun `saves aircaft from static repository in aircraft repository when aircraft repository is empty`() {
+    fun `saves aircraft from static repository in aircraft repository when aircraft repository is empty`() {
         val mockRepository = mock<AircraftRepository> {
             on { allAircraftCount() } doReturn Observable.just(0L)
         }

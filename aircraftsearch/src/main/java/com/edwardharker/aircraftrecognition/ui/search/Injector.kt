@@ -7,6 +7,16 @@ import com.edwardharker.aircraftrecognition.search.SearchState
 import com.edwardharker.aircraftrecognition.search.SearchUseCase
 import redux.Store
 
-fun searchUseCase(): SearchUseCase = SearchUseCase(aircraftRepository(), AircraftSearch::search)
+fun searchUseCase(): SearchUseCase {
+    return SearchUseCase(
+        aircraftRepository = aircraftRepository(),
+        aircraftSearch = AircraftSearch::search
+    )
+}
 
-fun searchStore(): Store<SearchState> = Store(SearchReducer::reduce, SearchState())
+fun searchStore(): Store<SearchState> {
+    return Store(
+        reducer = SearchReducer::reduce,
+        initialState = SearchState()
+    )
+}

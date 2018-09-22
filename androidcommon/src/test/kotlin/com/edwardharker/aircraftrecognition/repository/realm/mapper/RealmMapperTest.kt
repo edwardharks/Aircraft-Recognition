@@ -7,10 +7,6 @@ import org.junit.Assert.assertThat
 import org.junit.Test
 
 class RealmMapperTest {
-
-    val one = "one"
-    val two = "two"
-
     @Test
     fun mapToRealmListWithMap() {
         val expected = RealmList<TestPair>(TestPair(one, two))
@@ -24,9 +20,16 @@ class RealmMapperTest {
         val actual = listOf(Pair(one, two)).mapToRealmList { TestPair(it.first, it.second) }
         assertThat(expected, sameBeanAs(actual))
     }
-}
 
-open class TestPair(
+    @Suppress("unused")
+    open class TestPair(
         open var first: String = "",
         open var second: String = ""
-) : RealmObject()
+    ) : RealmObject()
+
+    private companion object {
+        private const val one = "one"
+        private const val two = "two"
+    }
+}
+

@@ -5,6 +5,6 @@ import io.realm.RealmObject
 
 @Keep
 open class RealmPair(
-        open var left: String = "",
-        open var right: String = ""
+    open var left: String = "",
+    open var right: String = ""
 ) : RealmObject()

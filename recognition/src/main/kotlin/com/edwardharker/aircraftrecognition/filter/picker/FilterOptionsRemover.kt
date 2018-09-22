@@ -6,21 +6,32 @@ import com.edwardharker.aircraftrecognition.model.SelectedFilterOptionsMap
 import com.edwardharker.aircraftrecognition.repository.AircraftRepository
 
 class FilterOptionsRemover(private val aircraftRepository: AircraftRepository) {
-
-    fun removeRedundantFilterOptions(filter: Filter, selectedFilterOptionsMap: SelectedFilterOptionsMap): Filter =
-            Filter(
-                    name = filter.name,
-                    filterText = filter.filterText,
-                    filterOptions = filter.filterOptions
-                            .removeFilterOptionsWithNoAircraft(filter, selectedFilterOptionsMap)
-            )
+    fun removeRedundantFilterOptions(
+        filter: Filter,
+        selectedFilterOptionsMap: SelectedFilterOptionsMap
+    ): Filter {
+        return Filter(
+            name = filter.name,
+            filterText = filter.filterText,
+            filterOptions = filter.filterOptions
+                .removeFilterOptionsWithNoAircraft(filter, selectedFilterOptionsMap)
+        )
+    }
 
     private fun List<FilterOption>.removeFilterOptionsWithNoAircraft(
-            filter: Filter,
-            selectedFilterOptionsMap: SelectedFilterOptionsMap
-    ): List<FilterOption> =
-            filter {
-                aircraftRepository
-                        .filteredAircraftCount(selectedFilterOptionsMap.plus(Pair(filter.name, it.value))) > 0
-            }
+        filter: Filter,
+        selectedFilterOptionsMap: SelectedFilterOptionsMap
+    ): List<FilterOption> {
+        return filter {
+            aircraftRepository
+                .filteredAircraftCount(
+                    selectedFilterOptionsMap.plus(
+                        Pair(
+                            filter.name,
+                            it.value
+                        )
+                    )
+                ) > 0
+        }
+    }
 }

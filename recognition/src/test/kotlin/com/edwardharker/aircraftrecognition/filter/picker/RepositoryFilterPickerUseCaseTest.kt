@@ -9,20 +9,21 @@ import org.junit.Test
 import rx.observers.TestSubscriber
 
 class RepositoryFilterPickerUseCaseTest {
-
     @Test
     fun emitsFiltersWhenNoFiltersSelected() {
         val filters = listOf(Filter())
         val fakeSelectedFilterOptions = FakeSelectedFilterOptions()
         val useCase = RepositoryFilterPickerUseCase(
-                FakeFilterRepository().thatEmits(filters),
-                fakeSelectedFilterOptions,
-                FakeAircraftRepository().thatEmits(listOf(Aircraft())),
-                { filter, _ -> filter }
+            filterRepository = FakeFilterRepository().thatEmits(filters),
+            selectedFilterOptions = fakeSelectedFilterOptions,
+            aircraftRepository = FakeAircraftRepository().thatEmits(listOf(Aircraft())),
+            filterOptionsRemover = { filter, _ -> filter }
         )
         val testSubscriber = TestSubscriber.create<List<Filter>>()
+
         useCase.filters().subscribe(testSubscriber)
         fakeSelectedFilterOptions.subject.onNext(emptyMap())
+
         testSubscriber.assertValues(filters)
     }
 }

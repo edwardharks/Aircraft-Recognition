@@ -1,11 +1,10 @@
 package com.edwardharker.aircraftrecognition
 
 import android.app.Application
-import com.edwardharker.aircraftrecognition.stetho.initialiseStetho
 import com.edwardharker.aircraftrecognition.aircraftupdater.aircraftUpdater
+import com.edwardharker.aircraftrecognition.stetho.initialiseStetho
 
 class AircraftRecognitionApp : Application() {
-
     override fun onCreate() {
         super.onCreate()
         app = this

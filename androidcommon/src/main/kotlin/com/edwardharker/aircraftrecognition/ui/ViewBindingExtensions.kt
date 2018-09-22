@@ -12,4 +12,6 @@ fun <T : View> View.bind(@IdRes idRes: Int): Lazy<T> {
     return unsafeLazy { findViewById<T>(idRes) }
 }
 
-private fun <T> unsafeLazy(initializer: () -> T) = lazy(LazyThreadSafetyMode.NONE, initializer)
+private fun <T> unsafeLazy(initializer: () -> T): Lazy<T> {
+    return lazy(LazyThreadSafetyMode.NONE, initializer)
+}

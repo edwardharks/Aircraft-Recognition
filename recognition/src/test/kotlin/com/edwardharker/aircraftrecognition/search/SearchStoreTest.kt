@@ -6,14 +6,8 @@ import rx.Observable
 import rx.observers.TestSubscriber
 
 class SearchStoreTest {
-
-    private val queryChangedAction = QueryChangedAction("query")
-
     private val testSubscriber = TestSubscriber<SearchState>()
     private val actionSubject = rx.subjects.PublishSubject.create<SearchAction>()
-
-    private val noOpReducer = fun(oldState: SearchState, _: SearchAction): SearchState = oldState
-    private val noOpSearchUseCase = fun(_: QueryChangedAction): Observable<SearchAction> = Observable.never()
 
     @Test
     fun usesSearchFunctionForQueryChangedActions() {
@@ -45,7 +39,7 @@ class SearchStoreTest {
         val expected = SearchState.error()
         val fakeReducer = fun(_: SearchState, _: SearchAction): SearchState = expected
         val fakeSearchUseCase = fun(_: QueryChangedAction): Observable<SearchAction> =
-                Observable.just(SearchResultsAction(emptyList()))
+            Observable.just(SearchResultsAction(emptyList()))
 
         val store = SearchStore(fakeSearchUseCase, fakeReducer)
         store.dispatch(actionSubject)
@@ -57,5 +51,19 @@ class SearchStoreTest {
 
     private interface MockSearchUseCase {
         fun search(action: QueryChangedAction): Observable<SearchAction>
+    }
+
+    private companion object {
+        private val queryChangedAction = QueryChangedAction("query")
+
+        private val noOpReducer =
+            fun(oldState: SearchState, _: SearchAction): SearchState {
+                return oldState
+            }
+
+        private val noOpSearchUseCase =
+            fun(_: QueryChangedAction): Observable<SearchAction> {
+                return Observable.never()
+            }
     }
 }

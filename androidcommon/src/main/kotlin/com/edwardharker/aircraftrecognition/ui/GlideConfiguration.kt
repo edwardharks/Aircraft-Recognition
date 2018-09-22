@@ -9,7 +9,6 @@ import com.bumptech.glide.module.GlideModule
 
 @Keep
 class GlideConfiguration : GlideModule {
-
     override fun applyOptions(context: Context, builder: GlideBuilder) {
         builder.setDecodeFormat(DecodeFormat.PREFER_ARGB_8888)
     }

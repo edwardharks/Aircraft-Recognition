@@ -7,22 +7,25 @@ import org.junit.Test
 import rx.observers.TestSubscriber
 
 class RepositoryFilterResultsUseCaseTest {
-
-    private val fakeSelectedFilterOptions = FakeSelectedFilterOptions()
-    private val fakeAircraftRepository = FakeAircraftRepository()
-    private val testSubscriber = TestSubscriber<List<Aircraft>>()
-
     @Test
     fun filterEmissionsEmitFilteredAircraft() {
         val aircraft = listOf(Aircraft())
         val filters = mapOf(Pair("key", "value"))
         fakeAircraftRepository.thatEmits(aircraft, filters)
 
-        val repositoryFilterResultsUseCase =
-                RepositoryFilterResultsUseCase(fakeSelectedFilterOptions, fakeAircraftRepository)
+        val repositoryFilterResultsUseCase = RepositoryFilterResultsUseCase(
+            selectedFilterOptions = fakeSelectedFilterOptions,
+            aircraftRepository = fakeAircraftRepository
+        )
 
         repositoryFilterResultsUseCase.filteredAircraft().subscribe(testSubscriber)
         fakeSelectedFilterOptions.subject.onNext(filters)
         testSubscriber.assertValues(aircraft)
+    }
+
+    companion object {
+        private val fakeSelectedFilterOptions = FakeSelectedFilterOptions()
+        private val fakeAircraftRepository = FakeAircraftRepository()
+        private val testSubscriber = TestSubscriber<List<Aircraft>>()
     }
 }

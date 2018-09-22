@@ -9,43 +9,6 @@ import org.junit.Assert.assertThat
 import org.junit.Test
 
 class AircraftMapperTest {
-
-    val id = "id"
-    val name = "name"
-    val shortDescription = "shortDescription"
-    val longDescription = "longDescription"
-    val manufacturer = "manufacturer"
-    val metaDataName = "metaDataName"
-    val metaDataValue = "metaDataValue"
-    val attribution = "attribution"
-    val attributionUrl = "attributionUrl"
-
-    val aircraft = Aircraft(
-            id,
-            name,
-            manufacturer,
-            shortDescription,
-            longDescription,
-            attribution,
-            attributionUrl,
-            mapOf(Pair(metaDataName, metaDataValue)),
-            emptyMap(),
-            emptyList(),
-            emptyList())
-
-    val realmAircraft = RealmAircraft(
-            id,
-            name,
-            manufacturer,
-            shortDescription,
-            longDescription,
-            attribution,
-            attributionUrl,
-            RealmList(RealmPair(metaDataName, metaDataValue)),
-            RealmList(),
-            RealmList(),
-            RealmList())
-
     @Test
     fun mapsAircraftToRealmAircraft() {
         val expected = realmAircraft
@@ -58,5 +21,45 @@ class AircraftMapperTest {
         val expected = aircraft
         val actual = realmAircraftToAircraft(realmAircraft)
         assertThat(actual, sameBeanAs(expected))
+    }
+
+    private companion object {
+        private const val id = "id"
+        private const val name = "name"
+        private const val shortDescription = "shortDescription"
+        private const val longDescription = "longDescription"
+        private const val manufacturer = "manufacturer"
+        private const val metaDataName = "metaDataName"
+        private const val metaDataValue = "metaDataValue"
+        private const val attribution = "attribution"
+        private const val attributionUrl = "attributionUrl"
+
+        private val aircraft = Aircraft(
+            id,
+            name,
+            manufacturer,
+            shortDescription,
+            longDescription,
+            attribution,
+            attributionUrl,
+            mapOf(Pair(metaDataName, metaDataValue)),
+            emptyMap(),
+            emptyList(),
+            emptyList()
+        )
+
+        private val realmAircraft = RealmAircraft(
+            id,
+            name,
+            manufacturer,
+            shortDescription,
+            longDescription,
+            attribution,
+            attributionUrl,
+            RealmList(RealmPair(metaDataName, metaDataValue)),
+            RealmList(),
+            RealmList(),
+            RealmList()
+        )
     }
 }

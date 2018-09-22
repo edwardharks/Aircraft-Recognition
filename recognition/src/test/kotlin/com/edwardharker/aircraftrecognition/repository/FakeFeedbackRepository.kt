@@ -5,5 +5,7 @@ import com.edwardharker.aircraftrecognition.model.FeedbackResult
 class FakeFeedbackRepository(
     private val withResult: FeedbackResult
 ) : FeedbackRepository {
-    override fun submitFeedback(message: String): FeedbackResult = withResult
+    override fun submitFeedback(message: String): FeedbackResult {
+        return withResult
+    }
 }

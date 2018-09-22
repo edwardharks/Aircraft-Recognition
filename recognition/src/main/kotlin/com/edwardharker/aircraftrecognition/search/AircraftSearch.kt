@@ -4,9 +4,8 @@ import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.displayName
 
 object AircraftSearch {
-
     fun search(query: String, aircraft: List<Aircraft>): List<Aircraft> {
-        if (query.isNullOrBlank()) {
+        if (query.isBlank()) {
             return emptyList()
         }
 

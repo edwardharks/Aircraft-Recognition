@@ -19,12 +19,11 @@ import com.edwardharker.aircraftrecognition.filter.results.FilterResultsView
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.displayName
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
-import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDetailActivity
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
+import com.edwardharker.aircraftrecognition.ui.navigator
 
 class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
-
     private val bottomSheetBehaviour by lazy {
         BottomSheetBehavior.from(this)
     }

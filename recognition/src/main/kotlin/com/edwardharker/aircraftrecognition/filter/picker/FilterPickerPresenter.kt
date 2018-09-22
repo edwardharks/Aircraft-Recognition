@@ -5,19 +5,22 @@ import rx.Observable
 import rx.Scheduler
 import rx.subscriptions.CompositeSubscription
 
-class FilterPickerPresenter(private val mainScheduler: Scheduler,
-                            private val filterPickerUseCase: () -> Observable<List<Filter>>) {
-
+class FilterPickerPresenter(
+    private val mainScheduler: Scheduler,
+    private val filterPickerUseCase: () -> Observable<List<Filter>>
+) {
     private val subscriptions = CompositeSubscription()
 
     fun startPresenting(view: FilterPickerView) {
         subscriptions.add(filterPickerUseCase.invoke()
-                .subscribeOn(mainScheduler)
-                .observeOn(mainScheduler)
-                .subscribe { filters ->
-                    view.showFilters(filters)
-                })
+            .subscribeOn(mainScheduler)
+            .observeOn(mainScheduler)
+            .subscribe { filters ->
+                view.showFilters(filters)
+            })
     }
 
-    fun stopPresenting() = subscriptions.unsubscribe()
+    fun stopPresenting() {
+        subscriptions.unsubscribe()
+    }
 }

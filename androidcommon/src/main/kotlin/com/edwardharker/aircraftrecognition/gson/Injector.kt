@@ -11,4 +11,6 @@ import java.util.*
 val aircraftListType: Type = object : TypeToken<ArrayList<Aircraft>>() {}.type
 val filtersListType: Type = object : TypeToken<ArrayList<Filter>>() {}.type
 
-fun gson(): Gson = GsonBuilder().create()
+fun gson(): Gson {
+    return GsonBuilder().create()
+}

@@ -9,7 +9,6 @@ interface Action
 typealias Unsubscriber = () -> Unit
 
 class Store<S>(private val reducer: (S, Action) -> S, initialState: S) {
-
     var state: S = initialState
         private set
     private val listeners = HashSet<(S) -> Unit>()
@@ -46,14 +45,18 @@ class Store<S>(private val reducer: (S, Action) -> S, initialState: S) {
     }
 
     companion object {
-        fun <S> create(reducer: (S, Action) -> S, initialState: S): Store<S> = Store(reducer, initialState)
+        fun <S> create(reducer: (S, Action) -> S, initialState: S): Store<S> =
+            Store(reducer, initialState)
     }
 }
 
-fun <S> Store<S>.dispatch(actions: Observable<out Action>): Subscription = actions.subscribe { dispatch(it) }
+fun <S> Store<S>.dispatch(actions: Observable<out Action>): Subscription {
+    return actions.subscribe { dispatch(it) }
+}
 
-fun <S> Store<S>.observe(): Observable<out S> =
-        Observable.create({ emitter ->
-            val unsubscriber = subscribe { emitter.onNext(it) }
-            emitter.setCancellation(unsubscriber)
-        }, Emitter.BackpressureMode.DROP)
+fun <S> Store<S>.observe(): Observable<out S> {
+    return Observable.create({ emitter ->
+        val unsubscriber = subscribe { emitter.onNext(it) }
+        emitter.setCancellation(unsubscriber)
+    }, Emitter.BackpressureMode.DROP)
+}

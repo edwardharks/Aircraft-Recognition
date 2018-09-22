@@ -8,29 +8,38 @@ import rx.Observable
 import rx.schedulers.Schedulers
 
 class SimilarAircraftPresenterTest {
-
-    private val id = "id"
-    private val aircraft = Aircraft()
     private val mockedView = mock(SimilarAircraftMvpView::class.java)
 
     @Test
     fun `shows aircraft`() {
-        val presenter = SimilarAircraftPresenter(Schedulers.immediate()) { id ->
-            if (this.id == id) {
-                Observable.just(listOf(aircraft))
-            } else {
-                Observable.empty()
+        val presenter = SimilarAircraftPresenter(
+            mainScheduler = Schedulers.immediate(),
+            similarAircraft = { id ->
+                if (ID == id) {
+                    Observable.just(listOf(AIRCRAFT))
+                } else {
+                    Observable.empty()
+                }
             }
-        }
+        )
 
-        presenter.startPresenting(mockedView, id)
-        verify(mockedView).showSimilarAircraft(listOf(aircraft))
+        presenter.startPresenting(mockedView, ID)
+        verify(mockedView).showSimilarAircraft(listOf(AIRCRAFT))
     }
 
     @Test
     fun `hides view when no similar aircraft`() {
-        val presenter = SimilarAircraftPresenter(Schedulers.immediate()) { Observable.just(listOf()) }
-        presenter.startPresenting(mockedView, id)
+        val presenter =
+            SimilarAircraftPresenter(
+                mainScheduler = Schedulers.immediate(),
+                similarAircraft = { Observable.just(listOf()) }
+            )
+        presenter.startPresenting(mockedView, ID)
         verify(mockedView).hideView()
+    }
+
+    private companion object {
+        private const val ID = "id"
+        private val AIRCRAFT = Aircraft()
     }
 }

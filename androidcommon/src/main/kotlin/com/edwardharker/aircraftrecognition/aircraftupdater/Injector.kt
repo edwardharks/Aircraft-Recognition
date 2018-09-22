@@ -6,11 +6,12 @@ import com.edwardharker.aircraftrecognition.repository.staticAircraftRepository
 import rx.android.schedulers.AndroidSchedulers.mainThread
 import rx.schedulers.Schedulers.io
 
-fun aircraftUpdater(): AircraftUpdater =
-    AircraftUpdater(
+fun aircraftUpdater(): AircraftUpdater {
+    return AircraftUpdater(
         ioScheduler = io(),
         mainScheduler = mainThread(),
         staticAircraftRepository = staticAircraftRepository(),
         remoteAircraftRepository = remoteAircraftRepository(),
         aircraftRepository = aircraftRepository()
     )
+}

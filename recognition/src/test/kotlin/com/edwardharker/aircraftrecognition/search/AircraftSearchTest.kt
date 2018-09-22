@@ -6,7 +6,6 @@ import org.junit.Assert.assertThat
 import org.junit.Test
 
 class AircraftSearchTest {
-
     @Test
     fun returnsAircraftWithManufacturersThatStartWithQuery() {
         val boeing = Aircraft(manufacturer = "Boeing")

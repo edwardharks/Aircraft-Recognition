@@ -2,6 +2,10 @@ package com.edwardharker.aircraftrecognition
 
 import android.content.Context
 
-fun aircraftRecognitionApp(): AircraftRecognitionApp = AircraftRecognitionApp.app
+fun aircraftRecognitionApp(): AircraftRecognitionApp {
+    return AircraftRecognitionApp.app
+}
 
-fun applicationContext(): Context = aircraftRecognitionApp()
+fun applicationContext(): Context {
+    return aircraftRecognitionApp()
+}

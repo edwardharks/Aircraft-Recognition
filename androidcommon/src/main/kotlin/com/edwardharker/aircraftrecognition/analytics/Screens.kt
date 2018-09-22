@@ -1,7 +1,13 @@
 package com.edwardharker.aircraftrecognition.analytics
 
-fun filterScreen() = ScreenView("filter")
+fun filterScreen(): ScreenView {
+    return ScreenView("filter")
+}
 
-fun aircraftDetailScreen() = ScreenView("aircraft_detail")
+fun aircraftDetailScreen(): ScreenView {
+    return ScreenView("aircraft_detail")
+}
 
-fun photoCarouselScreen() = ScreenView("photo_carousel")
+fun photoCarouselScreen(): ScreenView {
+    return ScreenView("photo_carousel")
+}

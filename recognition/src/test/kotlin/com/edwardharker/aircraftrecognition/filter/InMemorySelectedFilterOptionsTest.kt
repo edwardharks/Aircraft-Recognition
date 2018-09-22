@@ -6,10 +6,6 @@ import org.junit.Test
 import rx.observers.TestSubscriber
 
 class InMemorySelectedFilterOptionsTest {
-
-    val value = "value"
-    val name = "name"
-
     private val testSubscriber = TestSubscriber<Map<String, String>>()
     private val selectedFilterOptions = InMemorySelectedFilterOptions()
 
@@ -47,5 +43,10 @@ class InMemorySelectedFilterOptionsTest {
     fun selectionsObservableEmitsEmptyWhenNoSelections() {
         selectedFilterOptions.asObservable().subscribe(testSubscriber)
         testSubscriber.assertValues(emptyMap())
+    }
+
+    companion object {
+        private const val value = "value"
+        private const val name = "name"
     }
 }

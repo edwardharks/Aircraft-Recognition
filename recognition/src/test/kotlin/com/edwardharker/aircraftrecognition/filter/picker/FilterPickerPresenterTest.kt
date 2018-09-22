@@ -8,15 +8,15 @@ import rx.Observable
 import rx.schedulers.Schedulers.immediate
 
 class FilterPickerPresenterTest {
-
     @Test
     fun showsFilters() {
         val filters = listOf(Filter())
         val mockedView = mock(FilterPickerView::class.java)
 
         val presenter = FilterPickerPresenter(
-                immediate(),
-                { Observable.just(filters) })
+            mainScheduler = immediate(),
+            filterPickerUseCase = { Observable.just(filters) }
+        )
 
         presenter.startPresenting(mockedView)
         verify(mockedView).showFilters(filters)

@@ -11,11 +11,11 @@ class SearchUseCase(
 ) {
     private val aircraftObservable by lazy { aircraftRepository.allAircraft().cache() }
 
-    fun searchAircraftByName(actions: Observable<String>): Observable<Action> =
-        actions.flatMap { query ->
+    fun searchAircraftByName(actions: Observable<String>): Observable<Action> {
+        return actions.flatMap { query ->
             aircraftObservable
                 .map { aircraftSearch(query, it) }
                 .map { SearchResultsAction(it) }
         }
-
+    }
 }

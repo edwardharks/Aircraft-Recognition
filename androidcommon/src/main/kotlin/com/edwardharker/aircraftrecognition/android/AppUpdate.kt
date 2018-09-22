@@ -2,11 +2,13 @@ package com.edwardharker.aircraftrecognition.android
 
 import android.content.pm.PackageInfo
 
-class AppUpdate(private val sharedPreferences: AircraftSharedPreferences,
-                private val packageInfo: PackageInfo) {
+class AppUpdate(
+    private val sharedPreferences: AircraftSharedPreferences,
+    private val packageInfo: PackageInfo
+) {
     private val hasUpdated: Boolean by lazy {
         val hasUpdated =
-                sharedPreferences.getInt(LAST_APP_VERSION_KEY, 0) < packageInfo.versionCode
+            sharedPreferences.getInt(LAST_APP_VERSION_KEY, 0) < packageInfo.versionCode
         if (hasUpdated) {
             sharedPreferences.saveInt(LAST_APP_VERSION_KEY, packageInfo.versionCode)
         }

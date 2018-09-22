@@ -4,7 +4,6 @@ class ReleaseOnlyCompositeEventAnalytics(
     private val releaseBuild: Boolean,
     private vararg val eventAnalytics: EventAnalytics
 ) : EventAnalytics {
-
     override fun logEvent(event: Event) {
         if (releaseBuild) {
             eventAnalytics.forEach { it.logEvent(event) }

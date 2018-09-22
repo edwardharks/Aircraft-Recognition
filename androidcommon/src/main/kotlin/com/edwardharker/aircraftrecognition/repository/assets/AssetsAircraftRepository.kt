@@ -9,7 +9,10 @@ import com.google.gson.Gson
 import rx.Completable
 import rx.Observable
 
-class AssetsAircraftRepository(private val context: Context, private val gson: Gson) : AircraftRepository {
+class AssetsAircraftRepository(
+    private val context: Context,
+    private val gson: Gson
+) : AircraftRepository {
     override fun allAircraftCount(): Observable<Long> {
         throw UnsupportedOperationException("AssetsAircraftRepository does not support aircraft count")
     }
@@ -18,16 +21,17 @@ class AssetsAircraftRepository(private val context: Context, private val gson: G
         throw UnsupportedOperationException("AssetsAircraftRepository does not support saving aircraft")
     }
 
-    override fun allAircraft(): Observable<List<Aircraft>> =
-            Observable.fromCallable {
-                val inputStream = context.resources.openRawResource(R.raw.aircraft)
-                val size = inputStream.available()
-                val buffer = ByteArray(size)
-                inputStream.read(buffer)
-                inputStream.close()
-                val aircraft: List<Aircraft> = gson.fromJson(String(buffer), aircraftListType)
-                return@fromCallable aircraft
-            }
+    override fun allAircraft(): Observable<List<Aircraft>> {
+        return Observable.fromCallable {
+            val inputStream = context.resources.openRawResource(R.raw.aircraft)
+            val size = inputStream.available()
+            val buffer = ByteArray(size)
+            inputStream.read(buffer)
+            inputStream.close()
+            val aircraft: List<Aircraft> = gson.fromJson(String(buffer), aircraftListType)
+            return@fromCallable aircraft
+        }
+    }
 
     override fun filteredAircraft(filters: Map<String, String>): Observable<List<Aircraft>> {
         throw UnsupportedOperationException("AssetsAircraftRepository does not support filtered aircraft")

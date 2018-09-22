@@ -5,7 +5,6 @@ import org.mockito.Mockito
 import org.mockito.Mockito.never
 
 class ReleaseOnlyCompositeEventAnalyticsTest {
-
     private val mockEventAnalytics = Mockito.mock(EventAnalytics::class.java)
     private val event = Event(EventType.SELECT_CONTENT)
     private val screenView = ScreenView("screen")
@@ -13,8 +12,9 @@ class ReleaseOnlyCompositeEventAnalyticsTest {
     @Test
     fun logsEventWhenReleaseBuild() {
         val eventAnalytics = ReleaseOnlyCompositeEventAnalytics(
-                releaseBuild = true,
-                eventAnalytics = mockEventAnalytics)
+            releaseBuild = true,
+            eventAnalytics = mockEventAnalytics
+        )
 
         eventAnalytics.logEvent(event)
         Mockito.verify(mockEventAnalytics).logEvent(event)
@@ -23,8 +23,9 @@ class ReleaseOnlyCompositeEventAnalyticsTest {
     @Test
     fun logsScreenViewWhenReleaseBuild() {
         val eventAnalytics = ReleaseOnlyCompositeEventAnalytics(
-                releaseBuild = true,
-                eventAnalytics = mockEventAnalytics)
+            releaseBuild = true,
+            eventAnalytics = mockEventAnalytics
+        )
 
         eventAnalytics.logScreenView(screenView)
         Mockito.verify(mockEventAnalytics).logScreenView(screenView)
@@ -33,8 +34,9 @@ class ReleaseOnlyCompositeEventAnalyticsTest {
     @Test
     fun neverLogsEventWhenNotReleaseBuild() {
         val eventAnalytics = ReleaseOnlyCompositeEventAnalytics(
-                releaseBuild = false,
-                eventAnalytics = mockEventAnalytics)
+            releaseBuild = false,
+            eventAnalytics = mockEventAnalytics
+        )
 
         eventAnalytics.logEvent(event)
         Mockito.verify(mockEventAnalytics, never()).logEvent(event)
@@ -43,8 +45,9 @@ class ReleaseOnlyCompositeEventAnalyticsTest {
     @Test
     fun neverLogsScreenViewWhenNotReleaseBuild() {
         val eventAnalytics = ReleaseOnlyCompositeEventAnalytics(
-                releaseBuild = false,
-                eventAnalytics = mockEventAnalytics)
+            releaseBuild = false,
+            eventAnalytics = mockEventAnalytics
+        )
 
         eventAnalytics.logScreenView(screenView)
         Mockito.verify(mockEventAnalytics, never()).logScreenView(screenView)
