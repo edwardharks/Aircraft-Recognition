@@ -1,14 +1,20 @@
 package com.edwardharker.aircraftrecognition.feedback
 
+import android.content.Context
 import androidx.work.Constraints
 import androidx.work.NetworkType.CONNECTED
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkRequest
 import androidx.work.Worker
+import androidx.work.WorkerParameters
 import androidx.work.toWorkData
+import androidx.work.workDataOf
 import com.edwardharker.aircraftrecognition.model.FeedbackResult
 
-class SubmitFeedbackWorker : Worker() {
+class SubmitFeedbackWorker(
+    context: Context,
+    params: WorkerParameters
+) : Worker(context, params) {
     private val submitFeedbackUseCase = submitFeedbackUseCase()
 
     override fun doWork(): Result {
@@ -28,7 +34,7 @@ class SubmitFeedbackWorker : Worker() {
 
         fun createWorkRequest(message: String): WorkRequest {
             return OneTimeWorkRequestBuilder<SubmitFeedbackWorker>()
-                .setInputData(mapOf(MESSAGE_KEY to message).toWorkData())
+                .setInputData(workDataOf(MESSAGE_KEY to message))
                 .setConstraints(
                     Constraints.Builder()
                         .setRequiredNetworkType(CONNECTED)

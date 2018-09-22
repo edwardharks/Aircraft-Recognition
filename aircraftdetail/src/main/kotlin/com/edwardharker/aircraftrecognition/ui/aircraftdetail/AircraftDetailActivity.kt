@@ -349,6 +349,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     }
 }
 
+// TODO move
 private fun <T> List<T>.append(list: List<T>): List<T> =
     this.toMutableList().apply {
         addAll(list)

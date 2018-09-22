@@ -4,7 +4,7 @@ import androidx.work.WorkManager
 import com.edwardharker.aircraftrecognition.repository.feedbackRepository
 
 private fun workManager(): WorkManager {
-    return WorkManager.getInstance()!!
+    return WorkManager.getInstance()
 }
 
 private fun scheduleFeedbackUseCase(): ScheduleFeedbackUseCase {

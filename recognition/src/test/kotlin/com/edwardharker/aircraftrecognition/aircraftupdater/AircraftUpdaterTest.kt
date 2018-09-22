@@ -11,7 +11,6 @@ import rx.Observable
 import rx.schedulers.Schedulers
 
 class AircraftUpdaterTest {
-
     private val aircraft = listOf(Aircraft())
 
     @Test
@@ -20,11 +19,11 @@ class AircraftUpdaterTest {
             on { allAircraftCount() } doReturn Observable.just(0L)
         }
         val aircraftUpdater = AircraftUpdater(
-                ioScheduler = Schedulers.trampoline(),
-                mainScheduler = Schedulers.trampoline(),
-                staticAircraftRepository = FakeAircraftRepository().thatEmits(aircraft),
-                remoteAircraftRepository = FakeAircraftRepository(),
-                aircraftRepository = mockRepository
+            ioScheduler = Schedulers.trampoline(),
+            mainScheduler = Schedulers.trampoline(),
+            staticAircraftRepository = FakeAircraftRepository().thatEmits(aircraft),
+            remoteAircraftRepository = FakeAircraftRepository(),
+            aircraftRepository = mockRepository
         )
 
         aircraftUpdater.update()
@@ -38,11 +37,11 @@ class AircraftUpdaterTest {
             on { allAircraftCount() } doReturn Observable.just(1L)
         }
         val aircraftUpdater = AircraftUpdater(
-                ioScheduler = Schedulers.trampoline(),
-                mainScheduler = Schedulers.trampoline(),
-                staticAircraftRepository = FakeAircraftRepository().thatEmits(aircraft),
-                remoteAircraftRepository = FakeAircraftRepository(),
-                aircraftRepository = mockRepository
+            ioScheduler = Schedulers.trampoline(),
+            mainScheduler = Schedulers.trampoline(),
+            staticAircraftRepository = FakeAircraftRepository().thatEmits(aircraft),
+            remoteAircraftRepository = FakeAircraftRepository(),
+            aircraftRepository = mockRepository
         )
 
         aircraftUpdater.update()
@@ -57,11 +56,11 @@ class AircraftUpdaterTest {
             on { allAircraftCount() } doReturn Observable.never()
         }
         val aircraftUpdater = AircraftUpdater(
-                ioScheduler = Schedulers.trampoline(),
-                mainScheduler = Schedulers.trampoline(),
-                staticAircraftRepository = FakeAircraftRepository(),
-                remoteAircraftRepository = FakeAircraftRepository().thatEmits(aircraft),
-                aircraftRepository = mockRepository
+            ioScheduler = Schedulers.trampoline(),
+            mainScheduler = Schedulers.trampoline(),
+            staticAircraftRepository = FakeAircraftRepository(),
+            remoteAircraftRepository = FakeAircraftRepository().thatEmits(aircraft),
+            aircraftRepository = mockRepository
         )
 
         aircraftUpdater.update()
@@ -70,16 +69,16 @@ class AircraftUpdaterTest {
     }
 
     @Test
-    fun `does not saves aircaft when aircraft repository emits empty list`() {
+    fun `does not saves aircraft when aircraft repository emits empty list`() {
         val mockRepository = mock<AircraftRepository> {
             on { allAircraftCount() } doReturn Observable.never()
         }
         val aircraftUpdater = AircraftUpdater(
-                ioScheduler = Schedulers.trampoline(),
-                mainScheduler = Schedulers.trampoline(),
-                staticAircraftRepository = FakeAircraftRepository(),
-                remoteAircraftRepository = FakeAircraftRepository().thatEmits(listOf()),
-                aircraftRepository = mockRepository
+            ioScheduler = Schedulers.trampoline(),
+            mainScheduler = Schedulers.trampoline(),
+            staticAircraftRepository = FakeAircraftRepository(),
+            remoteAircraftRepository = FakeAircraftRepository().thatEmits(listOf()),
+            aircraftRepository = mockRepository
         )
 
         aircraftUpdater.update()
