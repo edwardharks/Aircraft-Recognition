@@ -11,6 +11,7 @@ import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.filterScreen
 import com.edwardharker.aircraftrecognition.perf.TraceFactory.filterActivityContentLoadTracer
+import com.edwardharker.aircraftrecognition.perf.TraceFactory.filterPickerLoadTracer
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.filter.picker.FilterPickerRecyclerView
 import com.edwardharker.aircraftrecognition.ui.filter.results.FilterResultsRecyclerView
@@ -29,9 +30,11 @@ class FilterActivity : AppCompatActivity(), OnMenuItemClickListener,
     private val expandMoreDrawable by lazy { getDrawable(R.drawable.ic_expand_more_white_24dp) }
 
     private val filterActivityContentLoadTracer = filterActivityContentLoadTracer()
+    private val filterPickerLoadTracer = filterPickerLoadTracer()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         filterActivityContentLoadTracer.start()
+        filterPickerLoadTracer.start()
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_filter)
@@ -40,15 +43,21 @@ class FilterActivity : AppCompatActivity(), OnMenuItemClickListener,
         toolbar.setOnMenuItemClickListener(this)
 
         bottomSheetView.hiddenListener = this
+
+        bottomSheetView.viewTreeObserver.addOnPreDrawListener {
+            resultsHandleContainer.translationY = bottomSheetView.y - resultsHandleView.height
+            return@addOnPreDrawListener true
+        }
+
         bottomSheetView.showAircraftListener = {
             // clear the listener so we don't get called again
             bottomSheetView.showAircraftListener = null
             filterActivityContentLoadTracer.stop()
         }
-
-        bottomSheetView.viewTreeObserver.addOnPreDrawListener {
-            resultsHandleContainer.translationY = bottomSheetView.y - resultsHandleView.height
-            return@addOnPreDrawListener true
+        filterPicker.showFilterListener = {
+            // clear the listener so we don't get called again
+            filterPicker.showFilterListener = null
+            filterPickerLoadTracer.stop()
         }
 
         resultsHandleContainer.setOnClickListener { toggleBottomSheetHidden() }
