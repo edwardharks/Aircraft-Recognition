@@ -1312,6 +1312,57 @@
     ]
   },
   {
+    "id": "bombardier-dash-8",
+    "name": "Dash 8",
+    "manufacturer": "Bombardier",
+    "longDescription": "The Bombardier Dash 8 or Q Series, previously known as the de Havilland Canada Dash 8 or DHC-8, is a series of twin-engined, medium-range, turboprop airliners. Introduced by de Havilland Canada (DHC) in 1984, they are now produced by Bombardier Aerospace. Over 1,000 Dash 8s of all models have been built. Bombardier currently markets the aircraft as the Q Series, complementing the company's CRJ Series aircraft.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Bombardier_Dash_8",
+    "metaData": {
+      "Role": "Turboprop airliner",
+      "Manufacturer": "de Havilland Canada Bombardier Aerospace",
+      "Produced": "1983-present",
+      "First flight": "June 20, 1983",
+      "Introduction": "1984 with NorOntair",
+      "Number built": "1,249 (as of June 30, 2018)",
+      "Variants": "Series 100, Series 200, Series 300, Series 400"
+    },
+    "filterOptions": {
+      "engines": "TWO",
+      "decks": "ONE",
+      "engine-position": "WING",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flybe_dash8_g-jecl_takeoff_manchester_arp.jpg/1024px-Flybe_dash8_g-jecl_takeoff_manchester_arp.jpg",
+        "width": 1024,
+        "height": 674
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Dash_Q400.jpg/1024px-Dash_Q400.jpg",
+        "width": 1024,
+        "height": 697
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/De_Havilland_Canada_DHC-8-100_VH-QQC_%28cropped%29.jpg/1024px-De_Havilland_Canada_DHC-8-100_VH-QQC_%28cropped%29.jpg",
+        "width": 1024,
+        "height": 574
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/C-GTAG_landing_in_Vancouver.jpg/1024px-C-GTAG_landing_in_Vancouver.jpg",
+        "width": 1024,
+        "height": 683
+      }
+    ],
+    "youtubeVideos": [
+      {
+        "videoId": "cxrrrZXBsqI"
+      }
+    ]
+  },
+  {
     "id": "british-aerospace-146",
     "name": "146",
     "manufacturer": "British Aerospace",
@@ -2935,6 +2986,51 @@
     ]
   },
   {
+    "id": "beechcraft-musketeer",
+    "name": "Musketeer",
+    "manufacturer": "Beechcraft",
+    "longDescription": "The Beechcraft Musketeer is a family of single-engined, low-wing, light aircraft that was produced by Beechcraft. The line includes the Model 19 Musketeer Sport, the Model 23 Musketeer, Custom and Sundowner, the Model 23-24 Musketeer Super III the retractable gear Model 24-R Sierra and the military CT-134 Musketeer. The Musketeer line was in production from model years 1963 to 1983, during which time a total of 4,366 were produced. The type certificate for the Musketeer family of aircraft has been owned by Hawker Beechcraft since March 26, 2007.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Musketeer",
+    "metaData": {
+      "Role": "Light personal and trainer aircraft",
+      "Manufacturer": "Beech Aircraft Corporation",
+      "Produced": "1963-1983",
+      "Number built": "4,366",
+      "Variants": "CT-134 Musketeer"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/BeechcraftA23MusketeerC-FSJL.jpg",
+        "width": 750,
+        "height": 563
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/BeechSierra.jpg",
+        "width": 1024,
+        "height": 607
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/1963BeechcraftModel23.jpg",
+        "width": 1024,
+        "height": 728
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Beechcraft_BE-23_Sundowner_C-GJML.JPG/1024px-Beechcraft_BE-23_Sundowner_C-GJML.JPG",
+        "width": 1024,
+        "height": 768
+      }
+    ],
+    "youtubeVideos": []
+  },
+  {
     "id": "dhc-6-twin-otter",
     "name": "DHC-6 Twin Otter",
     "manufacturer": "de Havilland Canada",
@@ -3376,6 +3472,52 @@
         "videoId": "fTCwWuRiIqM"
       }
     ]
+  },
+  {
+    "id": "cessna-185-skywagon",
+    "name": "185 Skywagon",
+    "manufacturer": "Cessna",
+    "longDescription": "The Cessna 185 Skywagon is a six-seat, single-engined, general aviation light aircraft manufactured by Cessna. It first flew as a prototype in July 1960, with the first production model completed in March 1961. The Cessna 185 is a high-winged aircraft with non-retractable conventional landing gear and a tailwheel.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_185_Skywagon",
+    "metaData": {
+      "Role": "Light utility aircraft",
+      "Manufacturer": "Cessna Aircraft Company",
+      "Produced": "1961-1985",
+      "First flight": "July 1960",
+      "Introduction": "1961",
+      "Number built": "over 4,400"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "ABOVE",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/C-FFXO_Cessna_Skywagon_II_185_%28C185%29_03.JPG/1018px-C-FFXO_Cessna_Skywagon_II_185_%28C185%29_03.JPG",
+        "width": 1018,
+        "height": 768
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Cessna-A185F-N5159R.jpg/1024px-Cessna-A185F-N5159R.jpg",
+        "width": 1024,
+        "height": 732
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/U-17A_VNAF_NhaTrang.jpg",
+        "width": 600,
+        "height": 397
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Cessna_A185F_Skywagon_-_VH-TLO_%282014-12-27%29.JPG/1024px-Cessna_A185F_Skywagon_-_VH-TLO_%282014-12-27%29.JPG",
+        "width": 1024,
+        "height": 648
+      }
+    ],
+    "youtubeVideos": []
   },
   {
     "id": "cessna-206",
@@ -4016,6 +4158,54 @@
         "videoId": "GlgVakxQmLY"
       }
     ]
+  },
+  {
+    "id": "piper-pa-24-comanche",
+    "name": "PA-24 Comanche",
+    "manufacturer": "Piper",
+    "longDescription": "The Piper PA-24 Comanche is an American four-seat or six-seat, low-wing, all-metal, light aircraft of semi-monocoque construction with tricycle retractable landing gear. Piper Aircraft designed and developed the Comanche, which first flew on May 24, 1956. Together with the PA-30 and PA-39 Twin Comanche, it made up the core of the Piper Aircraft lineup until 1972, when the production lines for both aircraft were wiped out in a flood.",
+    "attribution": "Wikipedia",
+    "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-24_Comanche",
+    "metaData": {
+      "Role": "Civil utility aircraft",
+      "Manufacturer": "Piper Aircraft",
+      "National origin": "United States",
+      "Produced": "1957-1972",
+      "First flight": "May 24, 1956",
+      "Introduction": "1958",
+      "Number built": "4,857",
+      "Variants": "Piper PA-30 Twin Comanche, Piper PA-39 Twin Comanche Ravin 500"
+    },
+    "filterOptions": {
+      "engines": "ONE",
+      "decks": "ONE",
+      "engine-position": "NOSE",
+      "wing-position": "BELOW",
+      "engine-type": "PROPELLER"
+    },
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Pa24-N5760P-071126-01-16.jpg/1024px-Pa24-N5760P-071126-01-16.jpg",
+        "width": 1024,
+        "height": 675
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/1959ModelPiperPA-24Comanche.jpg",
+        "width": 749,
+        "height": 562
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Piper-PA-24-260-Landing.jpg",
+        "width": 1024,
+        "height": 671
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Comanche4.jpg/1024px-Comanche4.jpg",
+        "width": 1024,
+        "height": 768
+      }
+    ],
+    "youtubeVideos": []
   },
   {
     "id": "piper-pa-28-cherokee",
