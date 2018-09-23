@@ -58,9 +58,9 @@ android {
 }
 
 dependencies {
-    compile project(':androidcommon')
-    compile project(':aircraftdetail')
-    compile project(':aircraftsearch')
+    implementation project(':androidcommon')
+    implementation project(':aircraftdetail')
+    implementation project(':aircraftsearch')
 }
 
 repositories {

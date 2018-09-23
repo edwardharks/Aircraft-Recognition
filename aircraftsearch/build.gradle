@@ -18,7 +18,8 @@ android {
 }
 
 dependencies {
-    compile project(':androidcommon')
-    compile project(':aircraftdetail')
-    compile project(':feedback')
+    implementation project(':androidcommon')
+    implementation project(':aircraftdetail')
+    implementation project(':feedback')
+    implementation project(':redux')
 }
