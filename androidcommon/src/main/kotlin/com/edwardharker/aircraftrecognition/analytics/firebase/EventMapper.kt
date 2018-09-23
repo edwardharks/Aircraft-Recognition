@@ -18,5 +18,6 @@ fun EventType.toFirebaseEventType(): String {
     return when (this) {
         EventType.SELECT_CONTENT -> FirebaseAnalytics.Event.SELECT_CONTENT
         EventType.IMAGE_LOAD_ERROR -> "image_load_error"
+        EventType.SELECT_FILTER_OPTION -> "select_filter_option"
     }
 }

@@ -7,6 +7,8 @@ import android.util.AttributeSet
 import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import com.edwardharker.aircraftrecognition.R
+import com.edwardharker.aircraftrecognition.analytics.Events.selectFilterOptionEvent
+import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.filter.picker.FilterPickerView
 import com.edwardharker.aircraftrecognition.model.Filter
 import com.edwardharker.aircraftrecognition.ui.SlowScrollingLinearLayoutManager
@@ -23,9 +25,8 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
     private val linearLayoutManager: LinearLayoutManager by lazy {
         SlowScrollingLinearLayoutManager(context)
     }
-    private val presenter by lazy {
-        filterPickerPresenter()
-    }
+    private val presenter = filterPickerPresenter()
+    private val eventAnalytics = eventAnalytics()
 
     var scrollOnSelection = true
     var showFilterListener: (() -> Unit)? = null
@@ -119,7 +120,15 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val filter = filters[position]
             holder.view.bindTo(filter)
-            holder.view.selectionListener = { onFilterOptionSelected() }
+            holder.view.selectionListener = { selectedFilter, selectedFilterOption ->
+                onFilterOptionSelected()
+                eventAnalytics.logEvent(
+                    selectFilterOptionEvent(
+                        filter = selectedFilter,
+                        filterOption = selectedFilterOption
+                    )
+                )
+            }
         }
 
         override fun getItemCount(): Int = filters.size

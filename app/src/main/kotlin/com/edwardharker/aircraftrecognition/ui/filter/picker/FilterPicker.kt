@@ -24,7 +24,7 @@ internal class FilterPicker : LinearLayout {
 
     private var filter: Filter? = null
 
-    var selectionListener: () -> Unit = {}
+    var selectionListener: (filter: String, filterOption: String) -> Unit = { _, _ -> }
 
     constructor(context: Context) : this(context, null)
 
@@ -54,7 +54,7 @@ internal class FilterPicker : LinearLayout {
                 selectedFilterOptions.deselect(it.name)
             } else {
                 selectedFilterOptions.select(it.name, filterOption.value)
-                selectionListener.invoke()
+                selectionListener.invoke(it.name, filterOption.value)
             }
             filterOptionsRecyclerView.adapter!!.notifyDataSetChanged()
         }

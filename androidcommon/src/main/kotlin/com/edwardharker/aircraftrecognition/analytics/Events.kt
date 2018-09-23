@@ -2,6 +2,7 @@ package com.edwardharker.aircraftrecognition.analytics
 
 import com.edwardharker.aircraftrecognition.analytics.EventType.IMAGE_LOAD_ERROR
 import com.edwardharker.aircraftrecognition.analytics.EventType.SELECT_CONTENT
+import com.edwardharker.aircraftrecognition.analytics.EventType.SELECT_FILTER_OPTION
 
 object Events {
     fun aircraftDetailEvent(aircraftId: String): Event {
@@ -35,6 +36,13 @@ object Events {
             itemId = videoId,
             content = videoId,
             origin = aircraftId
+        )
+    }
+
+    fun selectFilterOptionEvent(filter: String, filterOption: String): Event {
+        return Event(
+            eventType = SELECT_FILTER_OPTION,
+            content = "$filter:$filterOption"
         )
     }
 }

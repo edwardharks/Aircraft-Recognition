@@ -2,8 +2,10 @@ package com.edwardharker.aircraftrecognition.analytics
 
 import com.edwardharker.aircraftrecognition.analytics.EventType.IMAGE_LOAD_ERROR
 import com.edwardharker.aircraftrecognition.analytics.EventType.SELECT_CONTENT
+import com.edwardharker.aircraftrecognition.analytics.EventType.SELECT_FILTER_OPTION
 import com.edwardharker.aircraftrecognition.analytics.Events.aircraftDetailEvent
 import com.edwardharker.aircraftrecognition.analytics.Events.imageErrorEvent
+import com.edwardharker.aircraftrecognition.analytics.Events.selectFilterOptionEvent
 import com.edwardharker.aircraftrecognition.analytics.Events.similarAircraftClickEvent
 import com.edwardharker.aircraftrecognition.analytics.Events.youtubeVideoClickEvent
 import org.hamcrest.CoreMatchers.equalTo
@@ -57,10 +59,27 @@ class EventsTest {
         assertThat(youtubeVideoClickEvent(VIDEO_ID, AIRCRAFT_ID), equalTo(expected))
     }
 
+    @Test
+    fun `creates select filter option event`() {
+        val expected = Event(
+            eventType = SELECT_FILTER_OPTION,
+            content = "$FILTER:$FILTER_OPTION"
+        )
+
+        val actual = selectFilterOptionEvent(
+            filter = FILTER,
+            filterOption = FILTER_OPTION
+        )
+
+        assertThat(actual, equalTo(expected))
+    }
+
     private companion object {
         private const val AIRCRAFT_ID = "an_aircraft_id"
         private const val VIDEO_ID = "a_video_id"
         private const val IMAGE_URL = "image://url"
         private const val REASON = "a_reason"
+        private const val FILTER = "filter"
+        private const val FILTER_OPTION = "filter_option"
     }
 }
