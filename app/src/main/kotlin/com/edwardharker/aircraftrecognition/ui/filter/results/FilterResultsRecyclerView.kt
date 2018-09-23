@@ -38,6 +38,7 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
     }
 
     var hiddenListener: HiddenListener? = null
+    var showAircraftListener: (() -> Unit)? = null
 
     var isHidden = false
         private set(value) {
@@ -81,6 +82,7 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
 
     override fun showAircraft(aircraft: List<Aircraft>) {
         adapter.update(aircraft)
+        showAircraftListener?.invoke()
     }
 
     fun hideBottomSheet() {
@@ -164,7 +166,7 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
         }
 
         init {
-            view.setOnClickListener {
+            view.setOnClickListener { _ ->
                 aircraft?.let {
                     val activity = view.context as? FragmentActivity
                     activity?.navigator?.launchAircraftDetailActivity(
