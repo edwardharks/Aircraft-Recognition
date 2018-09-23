@@ -39,6 +39,7 @@ import com.edwardharker.aircraftrecognition.analytics.Events.youtubeVideoClickEv
 import com.edwardharker.aircraftrecognition.analytics.aircraftDetailScreen
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.extension.postDelayed
+import com.edwardharker.aircraftrecognition.perf.TracerFactory.aircraftDetailActivityContentLoad
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.Navigator
 import com.edwardharker.aircraftrecognition.ui.TransitionListenerAdapter
@@ -151,8 +152,11 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val presenter = aircraftDetailPresenter()
     private val youtubeStandalonePlayerHelper = youtubeStandalonePlayerHelper()
     private val eventAnalytics = eventAnalytics()
+    private val aircraftDetailActivityTracer = aircraftDetailActivityContentLoad()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        aircraftDetailActivityTracer.start()
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_aircraft_detail)
         setSupportActionBar(toolbar)
@@ -248,6 +252,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         addAircraftMetaDataItem(getString(R.string.attribution), aircraft.attribution) {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(aircraft.attributionUrl)))
         }
+
+        aircraftDetailActivityTracer.stop()
     }
 
     private fun addAircraftMetaDataItem(

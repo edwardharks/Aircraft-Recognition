@@ -10,8 +10,8 @@ import android.widget.ImageView
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.filterScreen
-import com.edwardharker.aircraftrecognition.perf.TraceFactory.filterActivityContentLoadTracer
-import com.edwardharker.aircraftrecognition.perf.TraceFactory.filterPickerLoadTracer
+import com.edwardharker.aircraftrecognition.perf.TracerFactory.filterActivityContentLoadTracer
+import com.edwardharker.aircraftrecognition.perf.TracerFactory.filterPickerLoadTracer
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.filter.picker.FilterPickerRecyclerView
 import com.edwardharker.aircraftrecognition.ui.filter.results.FilterResultsRecyclerView
