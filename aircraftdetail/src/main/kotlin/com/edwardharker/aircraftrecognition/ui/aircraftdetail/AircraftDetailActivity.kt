@@ -34,7 +34,8 @@ import android.widget.TextView
 import com.edwardharker.aircraftrecognition.aircraftdetail.AircraftDetailView
 import com.edwardharker.aircraftrecognition.aircraftdetail.AircraftDetailViewModel
 import com.edwardharker.aircraftrecognition.aircraftdetail.R
-import com.edwardharker.aircraftrecognition.analytics.aircraftDetailEvent
+import com.edwardharker.aircraftrecognition.analytics.Events.aircraftDetailEvent
+import com.edwardharker.aircraftrecognition.analytics.Events.youtubeVideoClickEvent
 import com.edwardharker.aircraftrecognition.analytics.aircraftDetailScreen
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.extension.postDelayed
@@ -149,6 +150,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
 
     private val presenter = aircraftDetailPresenter()
     private val youtubeStandalonePlayerHelper = youtubeStandalonePlayerHelper()
+    private val eventAnalytics = eventAnalytics()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -192,8 +194,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     override fun onStart() {
         super.onStart()
         presenter.startPresenting(this, aircraftId)
-        eventAnalytics().logScreenView(aircraftDetailScreen())
-        eventAnalytics().logEvent(aircraftDetailEvent(aircraftId))
+        eventAnalytics.logScreenView(aircraftDetailScreen())
+        eventAnalytics.logEvent(aircraftDetailEvent(aircraftId))
     }
 
     override fun onStop() {
@@ -261,7 +263,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         val spannable = SpannableString(getString(R.string.meta_data_item, label, value))
         spannable.setSpan(StyleSpan(BOLD), spannable.length - value.length, spannable.length, 0)
         metaDataView.text = spannable
-        onClick?.let { metaDataView.setOnClickListener { onClick.invoke() } }
+        onClick?.let { _ -> metaDataView.setOnClickListener { onClick.invoke() } }
         aircraftMetaDataContainer.addView(metaDataView)
         addDivider()
     }
@@ -269,9 +271,17 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private fun addWatchOnYoutubeItem(videoId: String) {
         val videoView = LayoutInflater.from(this)
             .inflate(R.layout.view_aircraft_featured_video, aircraftMetaDataContainer, false)
+
         videoView.setOnClickListener {
             youtubeStandalonePlayerHelper.launchYoutubeStandalonePlayer(this, videoId)
+            eventAnalytics.logEvent(
+                youtubeVideoClickEvent(
+                    videoId = videoId,
+                    aircraftId = aircraftId
+                )
+            )
         }
+
         aircraftMetaDataContainer.addView(videoView)
         addDivider()
     }

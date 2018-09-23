@@ -9,8 +9,8 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
+import com.edwardharker.aircraftrecognition.analytics.Events.imageErrorEvent
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
-import com.edwardharker.aircraftrecognition.analytics.imageErrorEvent
 import com.edwardharker.aircraftrecognition.androidcommon.R
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.Image

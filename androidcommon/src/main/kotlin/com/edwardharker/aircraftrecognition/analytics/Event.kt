@@ -9,5 +9,6 @@ data class Event(
 )
 
 enum class EventType {
-    SELECT_CONTENT, IMAGE_LOAD_ERROR
+    SELECT_CONTENT,
+    IMAGE_LOAD_ERROR
 }

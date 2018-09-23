@@ -1,14 +1,13 @@
 package com.edwardharker.aircraftrecognition.ui.aircraftdetail
 
 import android.content.Context
-import android.os.Build
 import android.util.AttributeSet
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.edwardharker.aircraftrecognition.aircraftdetail.R
-import com.edwardharker.aircraftrecognition.analytics.similarAircraftClickEvent
+import com.edwardharker.aircraftrecognition.analytics.Events.similarAircraftClickEvent
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.similaraircraft.SimilarAircraftMvpView
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
@@ -19,7 +18,6 @@ class SimilarAircraftView @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr), SimilarAircraftMvpView {
-
     private val presenter = similarAircraftPresenter()
 
     private val railView = AircraftRailView(context).apply {
