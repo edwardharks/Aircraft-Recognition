@@ -39,7 +39,7 @@ class Store<S>(private val reducer: (S, Action) -> S, initialState: S) {
         listeners.add(listener)
         listener(state)
 
-        return fun() {
+        return {
             listeners.remove(listener)
         }
     }
