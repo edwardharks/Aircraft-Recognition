@@ -1,4 +1,4 @@
-package com.edwardharker.aircraftrecognition.android
+package com.edwardharker.aircraftrecognition.android.preferences
 
 import android.annotation.SuppressLint
 import android.content.SharedPreferences

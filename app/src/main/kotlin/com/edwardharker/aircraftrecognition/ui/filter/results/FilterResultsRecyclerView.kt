@@ -141,11 +141,12 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
             holder.aircraftImage.loadAircraftImage(aircraft)
         }
 
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
-            ViewHolder(
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+            return ViewHolder(
                 LayoutInflater.from(parent.context)
                     .inflate(R.layout.view_filter_results_aircraft, parent, false)
             )
+        }
 
         override fun getItemCount(): Int = filterResults.size
 

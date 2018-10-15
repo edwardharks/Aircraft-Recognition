@@ -76,7 +76,7 @@ class SearchActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         disposables.add(searchStore.observe().subscribe {
-            searchAdapter.bindSearchResults(it.searchResults)
+            searchAdapter.submitList(it.searchResults)
         })
     }
 

@@ -4,6 +4,8 @@ import android.content.SharedPreferences
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
 import android.preference.PreferenceManager.getDefaultSharedPreferences
+import com.edwardharker.aircraftrecognition.android.preferences.AircraftSharedPreferences
+import com.edwardharker.aircraftrecognition.android.preferences.AndroidSharedPreferences
 import com.edwardharker.aircraftrecognition.applicationContext
 
 private val appUpdate = AppUpdate(aircraftSharedPreferences(), packageInfo())
@@ -13,7 +15,9 @@ fun appUpdate(): AppUpdate {
 }
 
 fun aircraftSharedPreferences(): AircraftSharedPreferences {
-    return AndroidSharedPreferences(sharedPreferences())
+    return AndroidSharedPreferences(
+        sharedPreferences()
+    )
 }
 
 fun sharedPreferences(): SharedPreferences {

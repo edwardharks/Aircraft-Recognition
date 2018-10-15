@@ -1,6 +1,7 @@
 package com.edwardharker.aircraftrecognition.android
 
 import android.content.pm.PackageInfo
+import com.edwardharker.aircraftrecognition.android.preferences.AircraftSharedPreferences
 import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 import org.hamcrest.CoreMatchers.equalTo

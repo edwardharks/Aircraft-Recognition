@@ -1,5 +1,7 @@
 package com.edwardharker.aircraftrecognition.android
 
+import com.edwardharker.aircraftrecognition.android.preferences.AircraftSharedPreferences
+
 class FakeAircraftSharedPreferences(
     private val thatReturns: Pair<String, Int>
 ) : AircraftSharedPreferences {

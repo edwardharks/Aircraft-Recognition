@@ -1,6 +1,7 @@
 package com.edwardharker.aircraftrecognition.android
 
 import android.content.pm.PackageInfo
+import com.edwardharker.aircraftrecognition.android.preferences.AircraftSharedPreferences
 
 class AppUpdate(
     private val sharedPreferences: AircraftSharedPreferences,

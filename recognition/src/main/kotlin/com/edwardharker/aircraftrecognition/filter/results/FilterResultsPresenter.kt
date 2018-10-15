@@ -3,6 +3,7 @@ package com.edwardharker.aircraftrecognition.filter.results
 import com.edwardharker.aircraftrecognition.model.Aircraft
 import rx.Observable
 import rx.Scheduler
+import rx.lang.kotlin.addTo
 import rx.subscriptions.CompositeSubscription
 
 class FilterResultsPresenter(
@@ -12,11 +13,13 @@ class FilterResultsPresenter(
     private val subscriptions = CompositeSubscription()
 
     fun startPresenting(view: FilterResultsView) {
-        subscriptions.add(filterResultsUseCase.invoke()
+        filterResultsUseCase.invoke()
             .subscribeOn(mainScheduler)
             .observeOn(mainScheduler)
-            .subscribe
-            { view.showAircraft(it) })
+            .subscribe {
+                view.showAircraft(it)
+            }
+            .addTo(subscriptions)
     }
 
 
