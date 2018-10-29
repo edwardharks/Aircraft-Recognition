@@ -14,7 +14,7 @@ def versionBuild = 3
 
 android {
     compileSdkVersion androidVersion
-    buildToolsVersion toolsVersion
+
     defaultConfig {
         applicationId "com.edwardharker.aircraftrecognition"
         minSdkVersion minSdk

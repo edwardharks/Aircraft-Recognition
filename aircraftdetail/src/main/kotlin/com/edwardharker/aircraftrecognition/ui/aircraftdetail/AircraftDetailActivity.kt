@@ -130,7 +130,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val aircraftId: String by lazy {
         when {
             intent.hasExtra(AIRCRAFT_ID_EXTRA) -> intent.getStringExtra(AIRCRAFT_ID_EXTRA)
-            intent.data != null -> intent.data.lastPathSegment
+            intent.data != null -> intent.data!!.lastPathSegment
             else -> {
                 finish()
                 ""

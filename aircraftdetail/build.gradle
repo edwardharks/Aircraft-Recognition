@@ -12,7 +12,6 @@ if (propsFile.exists()) {
 
 android {
     compileSdkVersion androidVersion
-    buildToolsVersion toolsVersion
 
     defaultConfig {
         minSdkVersion minSdk
