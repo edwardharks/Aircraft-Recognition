@@ -13,7 +13,7 @@ class ReleaseOnlyCompositeEventAnalyticsTest {
     fun logsEventWhenReleaseBuild() {
         val eventAnalytics = ReleaseOnlyCompositeEventAnalytics(
             releaseBuild = true,
-            eventAnalytics = mockEventAnalytics
+            eventAnalytics = *arrayOf(mockEventAnalytics)
         )
 
         eventAnalytics.logEvent(event)
@@ -24,7 +24,7 @@ class ReleaseOnlyCompositeEventAnalyticsTest {
     fun logsScreenViewWhenReleaseBuild() {
         val eventAnalytics = ReleaseOnlyCompositeEventAnalytics(
             releaseBuild = true,
-            eventAnalytics = mockEventAnalytics
+            eventAnalytics = *arrayOf(mockEventAnalytics)
         )
 
         eventAnalytics.logScreenView(screenView)
@@ -35,7 +35,7 @@ class ReleaseOnlyCompositeEventAnalyticsTest {
     fun neverLogsEventWhenNotReleaseBuild() {
         val eventAnalytics = ReleaseOnlyCompositeEventAnalytics(
             releaseBuild = false,
-            eventAnalytics = mockEventAnalytics
+            eventAnalytics = *arrayOf(mockEventAnalytics)
         )
 
         eventAnalytics.logEvent(event)
@@ -46,7 +46,7 @@ class ReleaseOnlyCompositeEventAnalyticsTest {
     fun neverLogsScreenViewWhenNotReleaseBuild() {
         val eventAnalytics = ReleaseOnlyCompositeEventAnalytics(
             releaseBuild = false,
-            eventAnalytics = mockEventAnalytics
+            eventAnalytics = *arrayOf(mockEventAnalytics)
         )
 
         eventAnalytics.logScreenView(screenView)
