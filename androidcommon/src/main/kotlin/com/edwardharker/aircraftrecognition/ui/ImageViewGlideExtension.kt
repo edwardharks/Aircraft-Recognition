@@ -2,9 +2,9 @@ package com.edwardharker.aircraftrecognition.ui
 
 import android.graphics.Bitmap
 import android.graphics.drawable.ColorDrawable
-import android.support.annotation.ColorRes
-import android.support.v4.content.ContextCompat.getColor
 import android.widget.ImageView
+import androidx.annotation.ColorRes
+import androidx.core.content.ContextCompat.getColor
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestListener

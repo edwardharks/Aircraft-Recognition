@@ -7,7 +7,6 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkRequest
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import androidx.work.toWorkData
 import androidx.work.workDataOf
 import com.edwardharker.aircraftrecognition.model.FeedbackResult
 
@@ -24,8 +23,8 @@ class SubmitFeedbackWorker(
         val result = submitFeedbackUseCase.submitFeedback(message)
 
         return when (result) {
-            FeedbackResult.Success -> Result.SUCCESS
-            FeedbackResult.Error -> Result.RETRY
+            FeedbackResult.Success -> Result.success()
+            FeedbackResult.Error -> Result.retry()
         }
     }
 

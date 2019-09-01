@@ -1,11 +1,11 @@
 package com.edwardharker.aircraftrecognition.ui.filter.picker
 
 import android.content.Context
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.util.AttributeSet
 import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.analytics.Events.selectFilterOptionEvent
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics

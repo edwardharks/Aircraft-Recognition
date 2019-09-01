@@ -1,6 +1,6 @@
 package com.edwardharker.aircraftrecognition.android.diffutils
 
-import android.support.v7.util.DiffUtil
+import androidx.recyclerview.widget.DiffUtil
 import com.edwardharker.aircraftrecognition.model.Aircraft
 
 object AircraftDiffCallback : DiffUtil.ItemCallback<Aircraft>() {

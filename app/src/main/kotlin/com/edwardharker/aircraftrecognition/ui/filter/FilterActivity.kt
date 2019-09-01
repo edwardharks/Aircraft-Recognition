@@ -1,12 +1,11 @@
 package com.edwardharker.aircraftrecognition.ui.filter
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
-import android.support.v7.widget.Toolbar.OnMenuItemClickListener
 import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.filterScreen
@@ -18,7 +17,7 @@ import com.edwardharker.aircraftrecognition.ui.filter.results.FilterResultsRecyc
 import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.search.launchSearchActivity
 
-class FilterActivity : AppCompatActivity(), OnMenuItemClickListener,
+class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
     FilterResultsRecyclerView.HiddenListener {
     private val toolbar by bind<Toolbar>(R.id.toolbar)
     private val bottomSheetView by bind<FilterResultsRecyclerView>(R.id.content_filter)

@@ -2,13 +2,13 @@ package com.edwardharker.aircraftrecognition.ui.feedback
 
 import android.os.Bundle
 import android.os.Handler
-import android.support.v7.app.AppCompatDialogFragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatDialogFragment
 import com.edwardharker.aircraftrecognition.feedback.FeedbackView
 import com.edwardharker.aircraftrecognition.feedback.feedbackPresenter
 import com.edwardharker.aircraftrecognition.ui.Navigator

@@ -1,19 +1,14 @@
 package com.edwardharker.aircraftrecognition.ui.filter.results
 
 import android.content.Context
-import android.support.design.widget.BottomSheetBehavior
-import android.support.design.widget.BottomSheetBehavior.STATE_COLLAPSED
-import android.support.design.widget.BottomSheetBehavior.STATE_DRAGGING
-import android.support.design.widget.BottomSheetBehavior.STATE_HIDDEN
-import android.support.design.widget.BottomSheetBehavior.STATE_SETTLING
-import android.support.v4.app.FragmentActivity
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.StaggeredGridLayoutManager
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.fragment.app.FragmentActivity
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.filter.results.FilterResultsView
 import com.edwardharker.aircraftrecognition.model.Aircraft
@@ -22,6 +17,11 @@ import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDetailActivity
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 import com.edwardharker.aircraftrecognition.ui.navigator
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_COLLAPSED
+import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_DRAGGING
+import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_HIDDEN
+import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_SETTLING
 
 class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
     private val bottomSheetBehaviour by lazy {

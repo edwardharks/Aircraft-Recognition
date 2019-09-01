@@ -1,8 +1,8 @@
 package com.edwardharker.aircraftrecognition.ui
 
 import android.app.Activity
-import android.support.annotation.IdRes
 import android.view.View
+import androidx.annotation.IdRes
 
 fun <T : View> Activity.bind(@IdRes idRes: Int): Lazy<T> {
     return unsafeLazy { findViewById<T>(idRes) }

@@ -1,15 +1,14 @@
 package com.edwardharker.aircraftrecognition.ui.filter.picker
 
 import android.content.Context
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.util.AttributeSet
-import android.view.LayoutInflater
 import android.view.LayoutInflater.from
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.model.Filter
 import com.edwardharker.aircraftrecognition.model.FilterOption
@@ -39,7 +38,7 @@ internal class FilterPicker : LinearLayout {
         clipToPadding = false
         clipChildren = false
         from(context).inflate(R.layout.view_filter_picker, this)
-        filterOptionsRecyclerView.layoutManager = LinearLayoutManager(context, HORIZONTAL, false)
+        filterOptionsRecyclerView.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
     }
 
     fun bindTo(filter: Filter) {
@@ -76,8 +75,7 @@ internal class FilterPicker : LinearLayout {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
             ViewHolder(
-                LayoutInflater.from(parent.context)
-                    .inflate(R.layout.view_filter_option, parent, false)
+                from(parent.context).inflate(R.layout.view_filter_option, parent, false)
             )
 
 

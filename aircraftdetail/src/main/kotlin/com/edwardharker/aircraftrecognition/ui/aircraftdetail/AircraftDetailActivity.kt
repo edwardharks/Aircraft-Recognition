@@ -12,11 +12,6 @@ import android.graphics.Typeface.BOLD
 import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
-import android.support.v4.content.ContextCompat.getColor
-import android.support.v4.view.animation.LinearOutSlowInInterpolator
-import android.support.v4.widget.NestedScrollView
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
 import android.text.SpannableString
 import android.text.style.StyleSpan
 import android.transition.Transition
@@ -31,6 +26,11 @@ import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.view.ViewTreeObserver
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
+import androidx.core.widget.NestedScrollView
+import androidx.interpolator.view.animation.LinearOutSlowInInterpolator
 import com.edwardharker.aircraftrecognition.aircraftdetail.AircraftDetailView
 import com.edwardharker.aircraftrecognition.aircraftdetail.AircraftDetailViewModel
 import com.edwardharker.aircraftrecognition.aircraftdetail.R
@@ -145,7 +145,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         intent.data != null
     }
     private val detailsBackgroundColour by lazy {
-        getColor(this@AircraftDetailActivity, R.color.windowBackground)
+        ContextCompat.getColor(this@AircraftDetailActivity, R.color.windowBackground)
     }
     private var animateOnBackPressed = true
 
@@ -295,14 +295,14 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private fun addDivider() {
         val divider = View(this)
         divider.layoutParams = LinearLayout.LayoutParams(MATCH_PARENT, 1)
-        divider.setBackgroundColor(getColor(this, R.color.colorPrimaryLight))
+        divider.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimaryLight))
         aircraftMetaDataContainer.addView(divider)
     }
 
     private fun onScrollChanged(scrollY: Int) {
         aircraftImage.translationY = (scrollY / PARALLAX_FACTOR).toFloat()
         val toolbarAlphaScale = min(scrollY, aircraftImage.height) / aircraftImage.height.toFloat()
-        val primaryColour = getColor(this, R.color.colorPrimary)
+        val primaryColour = ContextCompat.getColor(this, R.color.colorPrimary)
         toolbar.setBackgroundColor(
             argb(
                 (FULL_COLOUR * toolbarAlphaScale).toInt(),

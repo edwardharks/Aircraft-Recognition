@@ -1,9 +1,6 @@
 package com.edwardharker.aircraftrecognition.ui.aircraftdetail
 
 import android.content.Context
-import android.support.v4.app.FragmentActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +8,9 @@ import android.view.View.MeasureSpec.EXACTLY
 import android.view.View.MeasureSpec.makeMeasureSpec
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.fragment.app.FragmentActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.edwardharker.aircraftrecognition.aircraftdetail.R
 import com.edwardharker.aircraftrecognition.analytics.Event
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
@@ -18,9 +18,9 @@ import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.displayName
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView.Aspect.HEIGHT
-import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
+import com.edwardharker.aircraftrecognition.ui.navigator
 import java.util.*
 
 class AircraftRailView @JvmOverloads constructor(

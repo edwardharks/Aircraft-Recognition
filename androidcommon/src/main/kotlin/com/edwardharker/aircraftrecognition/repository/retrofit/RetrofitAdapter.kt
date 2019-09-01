@@ -23,4 +23,3 @@ object RetrofitAdapter {
         retrofit.create(FeedbackService::class.java)
     }
 }
-
