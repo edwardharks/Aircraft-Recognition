@@ -8,9 +8,9 @@ def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 def versionMajor = 1
-def versionMinor = 8
+def versionMinor = 9
 def versionPatch = 0
-def versionBuild = 3
+def versionBuild = 0
 
 android {
     compileSdkVersion androidVersion
