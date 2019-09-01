@@ -13,7 +13,7 @@ class AppUpdateTest {
     @Test
     fun `returns true when new version is greater than old version`() {
         val fakePreferences = FakeAircraftSharedPreferences(
-            thatReturns = AppUpdate.LAST_APP_VERSION_KEY to 1
+            getIntReturns  = AppUpdate.LAST_APP_VERSION_KEY to 1
         )
         val appUpdate = AppUpdate(
             sharedPreferences = fakePreferences,

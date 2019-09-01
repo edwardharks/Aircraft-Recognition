@@ -17,4 +17,8 @@ class AndroidSharedPreferences(
             apply()
         }
     }
+
+    override fun contains(key: String): Boolean {
+        return sharedPreferences.contains(key)
+    }
 }

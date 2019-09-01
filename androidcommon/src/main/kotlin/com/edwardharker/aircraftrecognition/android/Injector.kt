@@ -14,6 +14,13 @@ fun appUpdate(): AppUpdate {
     return appUpdate
 }
 
+fun firstInstall(): FirstInstall {
+    return FirstInstall(
+        sharedPreferences = aircraftSharedPreferences(),
+        packageInfo = packageInfo()
+    )
+}
+
 fun aircraftSharedPreferences(): AircraftSharedPreferences {
     return AndroidSharedPreferences(
         sharedPreferences()

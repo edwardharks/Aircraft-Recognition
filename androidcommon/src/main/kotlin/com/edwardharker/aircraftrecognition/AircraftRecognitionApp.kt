@@ -2,6 +2,7 @@ package com.edwardharker.aircraftrecognition
 
 import android.app.Application
 import com.edwardharker.aircraftrecognition.aircraftupdater.aircraftUpdater
+import com.edwardharker.aircraftrecognition.android.firstInstall
 import com.edwardharker.aircraftrecognition.stetho.initialiseStetho
 
 class AircraftRecognitionApp : Application() {
@@ -10,6 +11,8 @@ class AircraftRecognitionApp : Application() {
         app = this
 
         initialiseStetho(this)
+
+        firstInstall().saveVersion()
 
         aircraftUpdater().update()
     }
