@@ -100,8 +100,9 @@ class PhotoCarouselActivity : AppCompatActivity(), PhotoCarouselView {
         this.images = images
         viewPager.adapter?.notifyDataSetChanged()
         viewPager.setCurrentItem(page, false)
-        if (images.isNotEmpty()) {
-            // InkPageIndicator crashes for a view pager with 0 items :/
+        if (images.isNotEmpty() && images.size < 10) {
+            // InkPageIndicator crashes for a view pager with 0 items
+            // and runs out of memory for a view pager with too many items :/
             indicator.setViewPager(viewPager)
         }
     }
