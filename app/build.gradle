@@ -20,14 +20,6 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
-    signingConfigs {
-        release {
-            storeFile file(System.env.BITRISEIO_ANDROID_KEYSTORE_URL)
-            storePassword System.env.BITRISEIO_ANDROID_KEYSTORE_PASSWORD
-            keyAlias System.env.BITRISEIO_ANDROID_KEYSTORE_ALIAS
-            keyPassword System.env.BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD
-        }
-    }
     buildTypes {
         release {
             multiDexEnabled false
@@ -35,7 +27,6 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
             ndk {
                 abiFilters "arm64-v8a", "armeabi-v7a", "armeabi"
             }
