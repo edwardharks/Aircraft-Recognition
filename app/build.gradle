@@ -3,10 +3,6 @@ apply plugin: 'kotlin-android'
 apply plugin: 'com.google.firebase.firebase-perf'
 apply plugin: 'io.fabric'
 
-def keystorePropertiesFile = rootProject.file("keystore.properties")
-def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-
 def versionMajor = 1
 def versionMinor = 9
 def versionPatch = 0
@@ -26,10 +22,10 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
+            storeFile file(System.env.BITRISEIO_ANDROID_KEYSTORE_URL)
+            storePassword System.env.BITRISEIO_ANDROID_KEYSTORE_PASSWORD
+            keyAlias System.env.BITRISEIO_ANDROID_KEYSTORE_ALIAS
+            keyPassword System.env.BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD
         }
     }
     buildTypes {
