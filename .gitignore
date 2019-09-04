@@ -9,3 +9,4 @@
 .externalNativeBuild
 /app/secret.properties
 /secret.properties
+/install-secrets.sh

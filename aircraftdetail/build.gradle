@@ -1,15 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
-Properties props = new Properties()
-File propsFile = file('../secret.properties')
-if (propsFile.exists()) {
-    props.load(propsFile.newDataInputStream())
-} else {
-    props.setProperty("youtubeApiKey", "")
-    props.setProperty("websiteUrl", "")
-}
-
 android {
     compileSdkVersion androidVersion
 
@@ -17,8 +8,8 @@ android {
         minSdkVersion minSdk
         targetSdkVersion androidVersion
 
-        buildConfigField "String", "YOUTUBE_API_KEY", "\"${props.getProperty("youtubeApiKey")}\""
-        resValue "string", "website_url", "${props.getProperty("websiteUrl")}"
+        buildConfigField "String", "YOUTUBE_API_KEY", "\"$System.env.YOUTUBE_API_KEY\""
+        resValue "string", "website_url", "$System.env.WEBSITE_URL"
     }
     buildTypes {
         release {

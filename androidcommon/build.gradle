@@ -3,15 +3,6 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'realm-android'
 
-Properties props = new Properties()
-File propsFile = file('../secret.properties')
-if (propsFile.exists()) {
-    props.load(propsFile.newDataInputStream())
-} else {
-    props.setProperty("gaTrackingId", "")
-    props.setProperty("aircraftBaseUrl", "")
-}
-
 android {
     compileSdkVersion androidVersion
 
@@ -21,8 +12,8 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        buildConfigField "String", "GA_TRACKING_ID", "\"${props.getProperty("gaTrackingId")}\""
-        buildConfigField "String", "AIRCRAFT_BASE_URL", "\"${props.getProperty("aircraftBaseUrl")}\""
+        buildConfigField "String", "GA_TRACKING_ID", "\"$System.env.GA_TRACKING_ID\""
+        buildConfigField "String", "AIRCRAFT_BASE_URL", "\"$System.env.AIRCRAFT_BASE_URL\""
     }
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
