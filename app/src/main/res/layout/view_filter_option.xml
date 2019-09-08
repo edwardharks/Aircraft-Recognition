@@ -7,10 +7,12 @@
     android:layout_margin="2dp"
     android:background="@drawable/bg_filter_option"
     android:clickable="true"
+    android:focusable="true"
     android:foreground="?selectableItemBackground"
     android:gravity="center"
     android:orientation="vertical"
     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
     android:textColor="@color/text_colour_filter_option"
     android:textSize="26sp"
+    tools:ignore="UnusedAttribute"
     tools:text="Under the wings" />

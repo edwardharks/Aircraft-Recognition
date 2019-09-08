@@ -1,0 +1,7 @@
+android {
+    lintOptions {
+        abortOnError true
+        ignoreWarnings false
+        warningsAsErrors true
+    }
+}

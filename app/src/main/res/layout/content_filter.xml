@@ -12,4 +12,5 @@
     android:outlineProvider="background"
     android:padding="2dp"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:ignore="Overdraw"
     tools:showIn="@layout/activity_filter" />

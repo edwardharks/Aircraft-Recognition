@@ -4,23 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:foreground="?selectableItemBackground"
-    android:padding="2dp">
-
-    <View
-        android:id="@+id/background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignBottom="@+id/aircraft_name"
-        android:layout_alignParentTop="true"
-        android:background="@color/colorPrimaryDark"
-        android:transitionName="@string/transition_aircraft_detail_background" />
-
-    <com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
-        android:id="@+id/aircraft_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryLight"
-        android:scaleType="fitXY" />
+    android:padding="2dp"
+    tools:ignore="UnusedAttribute">
 
     <TextView
         android:id="@+id/aircraft_name"
@@ -37,4 +22,20 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:transitionName="@string/transition_aircraft_name"
         tools:text="Boeing 737" />
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/aircraft_name"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:transitionName="@string/transition_aircraft_detail_background" />
+
+    <com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
+        android:id="@+id/aircraft_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:scaleType="fitXY" />
 </RelativeLayout>
