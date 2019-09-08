@@ -7,22 +7,6 @@
     android:padding="2dp"
     tools:ignore="UnusedAttribute">
 
-    <TextView
-        android:id="@+id/aircraft_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/aircraft_image"
-        android:background="@color/colorPrimary"
-        android:ellipsize="end"
-        android:gravity="center_vertical"
-        android:lines="1"
-        android:minHeight="48dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:transitionName="@string/transition_aircraft_name"
-        tools:text="Boeing 737" />
-
     <View
         android:id="@+id/background"
         android:layout_width="match_parent"
@@ -38,4 +22,20 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryLight"
         android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/aircraft_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aircraft_image"
+        android:background="@color/colorPrimary"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:transitionName="@string/transition_aircraft_name"
+        tools:text="Boeing 737" />
 </RelativeLayout>
