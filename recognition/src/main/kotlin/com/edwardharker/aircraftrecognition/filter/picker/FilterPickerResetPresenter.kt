@@ -3,6 +3,7 @@ package com.edwardharker.aircraftrecognition.filter.picker
 import com.edwardharker.aircraftrecognition.filter.SelectedFilterOptions
 import rx.Observable
 import rx.Scheduler
+import rx.lang.kotlin.plusAssign
 import rx.subscriptions.CompositeSubscription
 
 class FilterPickerResetPresenter(
@@ -13,7 +14,7 @@ class FilterPickerResetPresenter(
     private val subscriptions = CompositeSubscription()
 
     fun startPresenting(view: FilterPickerResetView) {
-        subscriptions.add(shouldShowResetUseCase.invoke()
+        subscriptions += shouldShowResetUseCase.invoke()
             .subscribeOn(mainScheduler)
             .observeOn(mainScheduler)
             .subscribe { shouldShowReset ->
@@ -22,7 +23,7 @@ class FilterPickerResetPresenter(
                 } else {
                     view.hideReset()
                 }
-            })
+            }
     }
 
     fun resetFilters() {

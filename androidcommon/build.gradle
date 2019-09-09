@@ -53,6 +53,8 @@ dependencies {
 
     api 'com.github.chrisbanes:PhotoView:2.0.0'
 
+    implementation 'com.facebook.device.yearclass:yearclass:2.1.0'
+
     debugImplementation 'com.facebook.stetho:stetho:1.4.1'
 
     testImplementation project(':testcommon')

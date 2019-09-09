@@ -24,10 +24,9 @@ import rx.subscriptions.CompositeSubscription
 import java.util.concurrent.TimeUnit
 
 fun Navigator.launchSearchActivity() {
-    val intent = Intent(activity, SearchActivity::class.java)
-    activity.startActivity(
-        intent,
-        ActivityOptions.makeSceneTransitionAnimation(activity).toBundle()
+    launch(
+        intent = Intent(activity, SearchActivity::class.java),
+        options = ActivityOptions.makeSceneTransitionAnimation(activity).toBundle()
     )
 }
 

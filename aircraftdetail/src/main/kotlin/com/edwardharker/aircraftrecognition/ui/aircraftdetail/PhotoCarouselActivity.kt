@@ -28,12 +28,11 @@ import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 private const val AIRCRAFT_ID_EXTRA = "aircraftId"
 
 fun Navigator.launchPhotoCarouselActivity(aircraftId: String, aircraftImage: View) {
-    val intent = Intent(activity, PhotoCarouselActivity::class.java).apply {
-        putExtra(AIRCRAFT_ID_EXTRA, aircraftId)
-    }
-    activity.startActivity(
-        intent,
-        ActivityOptions.makeSceneTransitionAnimation(
+    launch(
+        intent = Intent(activity, PhotoCarouselActivity::class.java).apply {
+            putExtra(AIRCRAFT_ID_EXTRA, aircraftId)
+        },
+        options = ActivityOptions.makeSceneTransitionAnimation(
             activity,
             android.util.Pair(aircraftImage, activity.getString(R.string.transition_aircraft_image))
         ).toBundle()

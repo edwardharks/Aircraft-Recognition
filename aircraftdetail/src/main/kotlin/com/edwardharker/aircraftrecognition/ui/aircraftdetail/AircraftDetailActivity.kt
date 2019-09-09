@@ -42,6 +42,7 @@ import com.edwardharker.aircraftrecognition.extension.postDelayed
 import com.edwardharker.aircraftrecognition.perf.TracerFactory.aircraftDetailActivityContentLoad
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.Navigator
+import com.edwardharker.aircraftrecognition.ui.Navigator.Companion.STARTED_WITH_TRANSITION_EXTRA
 import com.edwardharker.aircraftrecognition.ui.TransitionListenerAdapter
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
@@ -53,7 +54,6 @@ import com.edwardharker.aircraftrecognition.youtube.youtubeStandalonePlayerHelpe
 import java.lang.Math.min
 
 private const val AIRCRAFT_ID_EXTRA = "aircraftId"
-private const val STARTED_WITH_TRANSITION_EXTRA = "startedWithTransition"
 
 fun Navigator.launchAircraftDetailActivity(
     aircraftId: String,
@@ -61,13 +61,11 @@ fun Navigator.launchAircraftDetailActivity(
     background: View,
     aircraftName: View
 ) {
-    val intent = Intent(activity, AircraftDetailActivity::class.java).apply {
-        putExtra(AIRCRAFT_ID_EXTRA, aircraftId)
-        putExtra(STARTED_WITH_TRANSITION_EXTRA, true)
-    }
-    activity.startActivity(
-        intent,
-        ActivityOptions.makeSceneTransitionAnimation(
+    launch(
+        intent = Intent(activity, AircraftDetailActivity::class.java).apply {
+            putExtra(AIRCRAFT_ID_EXTRA, aircraftId)
+        },
+        options = ActivityOptions.makeSceneTransitionAnimation(
             activity,
             android.util.Pair(
                 aircraftImage,
@@ -83,10 +81,11 @@ fun Navigator.launchAircraftDetailActivity(
 }
 
 fun Navigator.launchAircraftDetailActivity(aircraftId: String) {
-    val intent = Intent(activity, AircraftDetailActivity::class.java).apply {
-        putExtra(AIRCRAFT_ID_EXTRA, aircraftId)
-    }
-    activity.startActivity(intent)
+    launch(
+        intent = Intent(activity, AircraftDetailActivity::class.java).apply {
+            putExtra(AIRCRAFT_ID_EXTRA, aircraftId)
+        }
+    )
 }
 
 class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
