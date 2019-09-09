@@ -13,5 +13,7 @@ class FakeSelectedFilterOptions : SelectedFilterOptions {
 
     override fun deselect(name: String) = Unit
 
+    override fun deselectAll() = Unit
+
     override fun asObservable(): Observable<SelectedFilterOptionsMap> = subject
 }

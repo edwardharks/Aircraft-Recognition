@@ -22,6 +22,11 @@ class InMemorySelectedFilterOptions : SelectedFilterOptions {
         subject.onNext(HashMap<String, String>(selections))
     }
 
+    override fun deselectAll() {
+        selections.clear()
+        subject.onNext(HashMap<String, String>(selections))
+    }
+
     override fun asObservable(): Observable<SelectedFilterOptionsMap> {
         return subject
     }

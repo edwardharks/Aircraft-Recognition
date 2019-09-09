@@ -10,5 +10,7 @@ interface SelectedFilterOptions {
 
     fun deselect(name: String)
 
+    fun deselectAll()
+
     fun asObservable(): Observable<SelectedFilterOptionsMap>
 }

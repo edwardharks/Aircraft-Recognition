@@ -13,15 +13,17 @@ import com.edwardharker.aircraftrecognition.ui.filter.selectedFilterOptions
 import rx.android.schedulers.AndroidSchedulers.mainThread
 
 private fun filterOptionsRemover(): FilterOptionsRemover {
-    return FilterOptionsRemover(aircraftRepository())
+    return FilterOptionsRemover(
+        aircraftRepository = aircraftRepository()
+    )
 }
 
 private fun filterPickerUseCase(): FilterPickerUseCase {
     return RepositoryFilterPickerUseCase(
-        filterRepository(),
-        selectedFilterOptions(),
-        aircraftRepository(),
-        filterOptionsRemover()::removeRedundantFilterOptions
+        filterRepository = filterRepository(),
+        selectedFilterOptions = selectedFilterOptions(),
+        aircraftRepository = aircraftRepository(),
+        filterOptionsRemover = filterOptionsRemover()::removeRedundantFilterOptions
     )
 }
 
@@ -33,14 +35,15 @@ private fun filterPickerShowResetUseCase(): FilterPickerShowResetUseCase {
 
 fun filterPickerPresenter(): FilterPickerPresenter {
     return FilterPickerPresenter(
-        mainThread(),
-        filterPickerUseCase()::filters
+        mainScheduler = mainThread(),
+        filterPickerUseCase = filterPickerUseCase()::filters
     )
 }
 
 fun filterPickerResetPresenter(): FilterPickerResetPresenter {
     return FilterPickerResetPresenter(
-        mainThread(),
-        filterPickerShowResetUseCase()::shouldShowReset
+        mainScheduler = mainThread(),
+        shouldShowResetUseCase = filterPickerShowResetUseCase()::shouldShowReset,
+        selectedFilterOptions = selectedFilterOptions()
     )
 }

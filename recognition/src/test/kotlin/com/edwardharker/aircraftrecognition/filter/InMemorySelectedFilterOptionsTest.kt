@@ -24,6 +24,19 @@ class InMemorySelectedFilterOptionsTest {
     }
 
     @Test
+    fun isNotSelectedAfterDeselectingAll() {
+        selectedFilterOptions.select(name, value)
+        selectedFilterOptions.select(name2, value2)
+        assertTrue(selectedFilterOptions.isSelected(name, value))
+        assertTrue(selectedFilterOptions.isSelected(name2, value2))
+
+        selectedFilterOptions.deselectAll()
+
+        assertFalse(selectedFilterOptions.isSelected(name, value))
+        assertFalse(selectedFilterOptions.isSelected(name2, value2))
+    }
+
+    @Test
     fun selectionsUpdateSelectionsObservable() {
         selectedFilterOptions.select(name, value)
         selectedFilterOptions.asObservable().subscribe(testSubscriber)
@@ -40,6 +53,17 @@ class InMemorySelectedFilterOptionsTest {
     }
 
     @Test
+    fun deselectionAllUpdateSelectionsObservable() {
+        selectedFilterOptions.select(name, value)
+        selectedFilterOptions.select(name2, value2)
+
+        selectedFilterOptions.deselectAll()
+        selectedFilterOptions.asObservable().subscribe(testSubscriber)
+
+        testSubscriber.assertValues(emptyMap())
+    }
+
+    @Test
     fun selectionsObservableEmitsEmptyWhenNoSelections() {
         selectedFilterOptions.asObservable().subscribe(testSubscriber)
         testSubscriber.assertValues(emptyMap())
@@ -48,5 +72,8 @@ class InMemorySelectedFilterOptionsTest {
     companion object {
         private const val value = "value"
         private const val name = "name"
+
+        private const val value2 = "value2"
+        private const val name2 = "name2"
     }
 }

@@ -82,10 +82,18 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
     }
 
     override fun onMenuItemClick(item: MenuItem): Boolean {
-        if (item.itemId == R.id.action_search) {
-            navigator.launchSearchActivity()
+        return when {
+            item.itemId == R.id.action_search -> {
+                navigator.launchSearchActivity()
+                true
+            }
+            item.itemId == R.id.action_reset -> {
+                filterPicker.clearFilters()
+                filterPickerResetPresenter.resetFilters()
+                true
+            }
+            else -> false
         }
-        return false
     }
 
     override fun onBackPressed() {

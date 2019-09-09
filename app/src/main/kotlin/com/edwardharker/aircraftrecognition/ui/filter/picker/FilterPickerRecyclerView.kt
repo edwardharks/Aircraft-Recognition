@@ -78,6 +78,10 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
         showFilterListener?.invoke()
     }
 
+    fun clearFilters() {
+        adapter.update(emptyList())
+    }
+
     private fun snap() {
         val position = linearLayoutManager.findFirstVisibleItemPosition()
         if (position >= 0) {
@@ -109,11 +113,12 @@ class FilterPickerRecyclerView : RecyclerView, FilterPickerView {
     }
 
     private inner class Adapter : RecyclerView.Adapter<ViewHolder>() {
-        val filters = ArrayList<Filter>()
+        private val _filters = ArrayList<Filter>()
+        val filters: List<Filter> = _filters
 
         fun update(filters: List<Filter>) {
-            this.filters.clear()
-            this.filters.addAll(filters)
+            _filters.clear()
+            _filters.addAll(filters)
             notifyDataSetChanged()
         }
 
