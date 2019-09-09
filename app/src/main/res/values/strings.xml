@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Aircraft Recognition</string>
     <string name="action_search">@string/search</string>
+    <string name="action_reset">Reset</string>
     <string name="action_collapse">Collapse</string>
 </resources>

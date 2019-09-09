@@ -9,16 +9,18 @@ import androidx.appcompat.widget.Toolbar
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.filterScreen
+import com.edwardharker.aircraftrecognition.filter.picker.FilterPickerResetView
 import com.edwardharker.aircraftrecognition.perf.TracerFactory.filterActivityContentLoadTracer
 import com.edwardharker.aircraftrecognition.perf.TracerFactory.filterPickerLoadTracer
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.filter.picker.FilterPickerRecyclerView
+import com.edwardharker.aircraftrecognition.ui.filter.picker.filterPickerResetPresenter
 import com.edwardharker.aircraftrecognition.ui.filter.results.FilterResultsRecyclerView
 import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.search.launchSearchActivity
 
 class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
-    FilterResultsRecyclerView.HiddenListener {
+    FilterResultsRecyclerView.HiddenListener, FilterPickerResetView {
     private val toolbar by bind<Toolbar>(R.id.toolbar)
     private val bottomSheetView by bind<FilterResultsRecyclerView>(R.id.content_filter)
     private val filterPicker by bind<FilterPickerRecyclerView>(R.id.filter_picker)
@@ -31,6 +33,8 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
     private val filterActivityContentLoadTracer = filterActivityContentLoadTracer()
     private val filterPickerLoadTracer = filterPickerLoadTracer()
 
+    private val filterPickerResetPresenter = filterPickerResetPresenter()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         filterActivityContentLoadTracer.start()
         filterPickerLoadTracer.start()
@@ -38,7 +42,7 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_filter)
 
-        toolbar.inflateMenu(R.menu.menu_filter)
+        toolbar.inflateMenu(R.menu.menu_filter_search)
         toolbar.setOnMenuItemClickListener(this)
 
         bottomSheetView.hiddenListener = this
@@ -68,7 +72,13 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
 
     override fun onStart() {
         super.onStart()
+        filterPickerResetPresenter.startPresenting(this)
         eventAnalytics().logScreenView(filterScreen())
+    }
+
+    override fun onStop() {
+        super.onStop()
+        filterPickerResetPresenter.stopPresenting()
     }
 
     override fun onMenuItemClick(item: MenuItem): Boolean {
@@ -97,6 +107,16 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
         } else {
             bottomSheetView.hideBottomSheet()
         }
+    }
+
+    override fun showReset() {
+        toolbar.menu.clear()
+        toolbar.inflateMenu(R.menu.menu_filter_reset)
+    }
+
+    override fun hideReset() {
+        toolbar.menu.clear()
+        toolbar.inflateMenu(R.menu.menu_filter_search)
     }
 
     private fun updateBottomSheetToggle(hidden: Boolean) {
