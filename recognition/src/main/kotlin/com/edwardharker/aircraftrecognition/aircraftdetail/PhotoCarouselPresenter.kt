@@ -23,6 +23,6 @@ class PhotoCarouselPresenter(
     }
 
     fun stopPresenting() {
-        subscriptions.unsubscribe()
+        subscriptions.clear()
     }
 }

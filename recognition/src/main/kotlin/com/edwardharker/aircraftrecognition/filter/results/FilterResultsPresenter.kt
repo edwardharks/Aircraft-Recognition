@@ -24,6 +24,6 @@ class FilterResultsPresenter(
 
 
     fun stopPresenting() {
-        subscriptions.unsubscribe()
+        subscriptions.clear()
     }
 }

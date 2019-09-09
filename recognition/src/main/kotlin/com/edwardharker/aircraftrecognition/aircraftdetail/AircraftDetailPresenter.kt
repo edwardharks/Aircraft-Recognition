@@ -30,6 +30,6 @@ class AircraftDetailPresenter(
     }
 
     fun stopPresenting() {
-        subscriptions.unsubscribe()
+        subscriptions.clear()
     }
 }

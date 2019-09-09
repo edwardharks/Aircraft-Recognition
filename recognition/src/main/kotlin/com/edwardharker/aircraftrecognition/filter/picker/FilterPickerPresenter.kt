@@ -21,6 +21,6 @@ class FilterPickerPresenter(
     }
 
     fun stopPresenting() {
-        subscriptions.unsubscribe()
+        subscriptions.clear()
     }
 }

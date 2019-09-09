@@ -24,6 +24,6 @@ class SimilarAircraftPresenter(
     }
 
     fun stopPresenting() {
-        subscriptions.unsubscribe()
+        subscriptions.clear()
     }
 }
