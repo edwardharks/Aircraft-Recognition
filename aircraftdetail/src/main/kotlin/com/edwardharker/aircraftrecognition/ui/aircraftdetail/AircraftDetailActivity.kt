@@ -42,7 +42,6 @@ import com.edwardharker.aircraftrecognition.extension.postDelayed
 import com.edwardharker.aircraftrecognition.perf.TracerFactory.aircraftDetailActivityContentLoad
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.Navigator
-import com.edwardharker.aircraftrecognition.ui.Navigator.Companion.STARTED_WITH_TRANSITION_EXTRA
 import com.edwardharker.aircraftrecognition.ui.TransitionListenerAdapter
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
@@ -51,9 +50,10 @@ import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 import com.edwardharker.aircraftrecognition.ui.navigator
 import com.edwardharker.aircraftrecognition.ui.pixelsToDp
 import com.edwardharker.aircraftrecognition.youtube.youtubeStandalonePlayerHelper
-import java.lang.Math.min
+import kotlin.math.min
 
 private const val AIRCRAFT_ID_EXTRA = "aircraftId"
+private const val STARTED_WITH_SHARED_ELEMENT_TRANSITION_EXTRA = "startedWithTransition"
 
 fun Navigator.launchAircraftDetailActivity(
     aircraftId: String,
@@ -77,7 +77,9 @@ fun Navigator.launchAircraftDetailActivity(
             ),
             android.util.Pair(aircraftName, activity.getString(R.string.transition_aircraft_name))
         ).toBundle()
-    )
+    ) {
+        putExtra(STARTED_WITH_SHARED_ELEMENT_TRANSITION_EXTRA, true)
+    }
 }
 
 fun Navigator.launchAircraftDetailActivity(aircraftId: String) {
@@ -137,8 +139,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         }
     }
 
-    private val startedWithTransition by lazy {
-        intent.getBooleanExtra(STARTED_WITH_TRANSITION_EXTRA, false)
+    private val startedWithSharedElementTransition by lazy {
+        intent.getBooleanExtra(STARTED_WITH_SHARED_ELEMENT_TRANSITION_EXTRA, false)
     }
     private val isFromDeepLink by lazy {
         intent.data != null
@@ -174,7 +176,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         }
         animateOnBackPressed = savedInstanceState == null
 
-        if (savedInstanceState == null && startedWithTransition) {
+        if (savedInstanceState == null && startedWithSharedElementTransition) {
             initialInvisibleViews.forEach { it.alpha = 0f }
             aircraftDetailsContainer.background = null
             window.sharedElementEnterTransition.addListener(EnterTransitionListener())

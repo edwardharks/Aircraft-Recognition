@@ -10,17 +10,17 @@ class Navigator(
     val activity: FragmentActivity,
     private val yearClassProvider: YearClassProvider
 ) {
-    fun launch(intent: Intent, options: Bundle? = null) {
+    fun launch(
+        intent: Intent,
+        options: Bundle? = null,
+        runWhenAnimating: Intent.() -> Unit = {}
+    ) {
         if (yearClassProvider.yearClass <= 2014) {
             activity.startActivity(intent, null)
         } else {
-            intent.putExtra(STARTED_WITH_TRANSITION_EXTRA, true)
+            runWhenAnimating.invoke(intent)
             activity.startActivity(intent, options)
         }
-    }
-
-    companion object {
-        const val STARTED_WITH_TRANSITION_EXTRA = "startedWithTransition"
     }
 }
 
