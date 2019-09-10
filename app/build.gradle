@@ -16,7 +16,7 @@ android {
         applicationId "com.edwardharker.aircraftrecognition"
         minSdkVersion minSdk
         targetSdkVersion androidVersion
-        versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
+        versionCode versionMajor * 100000 + versionMinor * 10000 + versionPatch * 1000 + versionBuild
         versionName "${versionMajor}.${versionMinor}.${versionPatch}"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
