@@ -1598,12 +1598,7 @@
         },
         "images": [
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bombardier%2C_BD-500_CSeries_CS300%2C_C-FFDK_-_SIAE_2015_%2818887460245%29.jpg/1024px-Bombardier%2C_BD-500_CSeries_CS300%2C_C-FFDK_-_SIAE_2015_%2818887460245%29.jpg",
-                "width": 1024,
-                "height": 683
-            },
-            {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Bombardier%2C_BD-500_CSeries_CS300%2C_C-FFDK_%2818777967098%29.jpg/1024px-Bombardier%2C_BD-500_CSeries_CS300%2C_C-FFDK_%2818777967098%29.jpg",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Airbus_A220-300.jpg/1024px-Airbus_A220-300.jpg",
                 "width": 1024,
                 "height": 683
             },
@@ -1613,9 +1608,39 @@
                 "height": 683
             },
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/CS100_CS300_3view.jpg",
-                "width": 1061,
-                "height": 534
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Bombardier_BD-500-1A11_CSeries_CS300_on_finals_after_its_first_flight.jpg/1024px-Bombardier_BD-500-1A11_CSeries_CS300_on_finals_after_its_first_flight.jpg",
+                "width": 1024,
+                "height": 676
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/C-FFCO_%2823872468999%29.jpg",
+                "width": 800,
+                "height": 602
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/CS100-FTV1-TO.jpg/1024px-CS100-FTV1-TO.jpg",
+                "width": 1024,
+                "height": 576
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/CS100-FTV1.jpg/1024px-CS100-FTV1.jpg",
+                "width": 1024,
+                "height": 576
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/CS100_CS300_3view.jpg/1024px-CS100_CS300_3view.jpg",
+                "width": 1024,
+                "height": 515
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/HB-JBC_Bombardier_BD-500-1A10_CS100_BCS1_-_SWR_%2833142509796%29.jpg/1024px-HB-JBC_Bombardier_BD-500-1A10_CS100_BCS1_-_SWR_%2833142509796%29.jpg",
+                "width": 1024,
+                "height": 639
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/YL-CSD_Bombardier_BD-500-1A100_CS300_BCS3_Airbus_A220-300_A223_c_n_55006_-_BTI_%2831100301167%29.jpg/1024px-YL-CSD_Bombardier_BD-500-1A100_CS300_BCS3_Airbus_A220-300_A223_c_n_55006_-_BTI_%2831100301167%29.jpg",
+                "width": 1024,
+                "height": 682
             }
         ],
         "youtubeVideos": [
@@ -2207,14 +2232,9 @@
                 "height": 683
             },
             {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lancair.columbia.400.n79hr.arp.jpg/1024px-Lancair.columbia.400.n79hr.arp.jp",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lancair.columbia.400.n79hr.arp.jpg/1024px-Lancair.columbia.400.n79hr.arp.jpg",
                 "width": 1024,
                 "height": 708
-            },
-            {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/CorvalisTTx_Cockpit_mockup.jpg/1024px-CorvalisTTx_Cockpit_mockup.jpg",
-                "width": 1024,
-                "height": 681
             }
         ],
         "youtubeVideos": [
