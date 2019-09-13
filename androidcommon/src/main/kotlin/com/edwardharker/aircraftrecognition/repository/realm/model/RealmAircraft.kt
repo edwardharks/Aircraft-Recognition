@@ -9,7 +9,6 @@ import io.realm.annotations.PrimaryKey
 open class RealmAircraft(
     @PrimaryKey open var id: String = "",
     open var name: String = "",
-    open var manufacturer: String = "",
     open var shortDescription: String = "",
     open var longDescription: String = "",
     open var attribution: String = "",

@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.edwardharker.aircraftrecognition.android.diffutils.AircraftDiffCallback
 import com.edwardharker.aircraftrecognition.model.Aircraft
-import com.edwardharker.aircraftrecognition.model.displayName
 import com.edwardharker.aircraftsearch.R
 
 class SearchAdapter(
@@ -33,7 +32,7 @@ class SearchAdapter(
         holder: ViewHolder
     ) {
         val aircraft = getItem(position)
-        holder.label.text = aircraft.displayName
+        holder.label.text = aircraft.name
         holder.itemView.setOnClickListener { aircraftClickListener(aircraft) }
     }
 

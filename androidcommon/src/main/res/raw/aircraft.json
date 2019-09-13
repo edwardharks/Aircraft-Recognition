@@ -2,8 +2,7 @@
 [
     {
         "id": "airbus-a300",
-        "name": "A300",
-        "manufacturer": "Airbus",
+        "name": "Airbus A300",
         "longDescription": "The Airbus A300 is a short- to medium-range wide-body twin-engine jet airliner that was developed and manufactured by Airbus. Formally announced in 1969 and first flying in October 1972, it holds the distinction of being the world's first twin-engined widebody airliner; it was also the first product of Airbus Industrie, a consortium of European aerospace manufacturers, now a subsidiary of Airbus Group. The A300 can typically seat 266 passengers in a two-class layout, with a maximum range of 4,070 nautical miles (7,540 km) when fully loaded, depending on model.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A300",
@@ -55,8 +54,7 @@
     },
     {
         "id": "airbus-a310",
-        "name": "A310",
-        "manufacturer": "Airbus",
+        "name": "Airbus A310",
         "longDescription": "The Airbus A310 is a medium to long-range twin-engined wide-body jet airliner that was developed and manufactured by Airbus. Released in 1983, it was the second aircraft to enter production by Airbus Industrie,Note 1 the consortium of European aerospace companies now a subsidiary of Airbus Group. The A310 is a derivative of the Airbus A300, the first twin-engined widebody airliner.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A310",
@@ -108,8 +106,7 @@
     },
     {
         "id": "airbus-a318",
-        "name": "A318",
-        "manufacturer": "Airbus",
+        "name": "Airbus A318",
         "longDescription": "The Airbus A318 is the smallest member of the Airbus A320 family of short- to medium-range, narrow-body, commercial passenger twin-engine jet airliners manufactured by Airbus. The A318 carries up to 132 passengers and has a maximum range of 3,100 nmi (5,700 km; 3,600 mi). Final assembly of the aircraft takes place in Hamburg, Germany. It is intended primarily for short-range service, although British Airways uses them on their London City Airport to New York-JFK Airport transatlantic route (albeit with a stopover in Shannon for refueling on the westbound leg).",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A318",
@@ -160,8 +157,7 @@
     },
     {
         "id": "airbus-a319",
-        "name": "A319",
-        "manufacturer": "Airbus",
+        "name": "Airbus A319",
         "longDescription": "The Airbus A319 is a member of the Airbus A320 family of short- to medium-range, narrow-body, commercial passenger twin-engine jet airliners manufactured by Airbus. The A319 carries up to 160 passengers and has a maximum range of 3,700 nmi (6,900 km; 4,300 mi). Final assembly of the aircraft takes place in Hamburg, Germany and Tianjin, China.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A319",
@@ -212,8 +208,7 @@
     },
     {
         "id": "airbus-a320",
-        "name": "A320",
-        "manufacturer": "Airbus",
+        "name": "Airbus A320",
         "longDescription": "The first member of the A320 family—the A320—was launched in March 1984, first flew on 22 February 1987, and was first delivered in March 1988 to launch customer Air France. The family was extended to include the A321 (first delivered 1994), the A319 (1996), and the A318 (2003). The A320 family pioneered the use of digital fly-by-wire flight control systems, as well as side-stick controls, in commercial aircraft. There has been a continuous improvement process since introduction.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A320_family",
@@ -263,8 +258,7 @@
     },
     {
         "id": "airbus-a321",
-        "name": "A321",
-        "manufacturer": "Airbus",
+        "name": "Airbus A321",
         "longDescription": "The Airbus A321 is a member of the Airbus A320 family of short to medium-range, narrow-body, commercial passenger twin-engine jet airliners manufactured by Airbus. It was the first derivative of the baseline Airbus A320 aircraft, and carries up to 236 passengers with a maximum range of 3,200 nmi (5,900 km; 3,700 mi). Final assembly of the aircraft takes place in Hamburg, Germany or Mobile, Alabama in the US.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A321",
@@ -306,8 +300,7 @@
     },
     {
         "id": "airbus-a330",
-        "name": "A330",
-        "manufacturer": "Airbus",
+        "name": "Airbus A330",
         "longDescription": "The Airbus A330 is a medium- to long-range wide-body twin-engine jet airliner made by Airbus, a division of Airbus Group. Versions of the A330 have a range of 5,000 to 13,430 kilometres (2,700 to 7,250 nmi; 3,110 to 8,350 mi) and can accommodate up to 335 passengers in a two-class layout or carry 70 tonnes (154,000 lb) of cargo.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A330",
@@ -359,8 +352,7 @@
     },
     {
         "id": "airbus-a340",
-        "name": "A340",
-        "manufacturer": "Airbus",
+        "name": "Airbus A340",
         "longDescription": "The Airbus A340 is a long-range, four-engine, wide-body commercial passenger jet airliner developed and produced by the European aerospace company Airbus. The A340 was assembled at Toulouse, France. It seats up to 375 passengers in the standard variants and 440 in the stretched -600 series. Depending on the model, it has a range of 6,700 to 9,000 nautical miles (12,400 to 16,700 km; 7,700 to 10,400 mi). Its distinguishing features are four high-bypass turbofan engines and three-bogie main landing gears.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A340",
@@ -412,8 +404,7 @@
     },
     {
         "id": "airbus-a350",
-        "name": "A350",
-        "manufacturer": "Airbus",
+        "name": "Airbus A350",
         "longDescription": "The Airbus A350 XWB is a family of long-range, twin-engine wide-body jet airliners developed by European aircraft manufacturer Airbus. The A350 is the first Airbus aircraft with both fuselage and wing structures made primarily of carbon-fibre-reinforced polymer. Its variants seat 280 to 366 passengers in typical three-class seating layouts. The A350 is positioned to succeed the A340, and compete with the Boeing 787 and 777.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A350_XWB",
@@ -470,8 +461,7 @@
     },
     {
         "id": "airbus-a380",
-        "name": "A380",
-        "manufacturer": "Airbus",
+        "name": "Airbus A380",
         "longDescription": "The Airbus A380 is a double-deck, wide-body, four-engine jet airliner manufactured by European Union manufacturer Airbus. It is the world's largest passenger airliner, and the airports at which it operates have upgraded facilities to accommodate it. It was initially named Airbus A3XX and designed to challenge Boeing's monopoly in the large-aircraft market. The A380 made its first flight on 27 April 2005 and entered commercial service in 25 October 2007 with Singapore Airlines.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_A380",
@@ -523,8 +513,7 @@
     },
     {
         "id": "antonov-an-148",
-        "name": "An-148",
-        "manufacturer": "Antonov",
+        "name": "Antonov An-148",
         "longDescription": "The Antonov An-148 (Ukrainian: &#1040;&#1085;&#1090;&#1086;&#1085;&#1086;&#1074; &#1040;&#1085;-148) is a regional jet airliner designed by the Ukrainian Antonov company and produced by Antonov itself and also on outsource by Russia's Voronezh Aircraft Production Association. Development of the aircraft was started in the 1990s, and the maiden flight took place on 17 December 2004. The aircraft completed its certification programme on 26 February 2007. The An-148 has a maximum range of 2,100?4,400 km (1,100?2,400 nmi; 1,300?2,700 mi) and is able to carry 68?85 passengers, depending on the configuration.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Antonov_An-148",
@@ -576,8 +565,7 @@
     },
     {
         "id": "antonov-an-24",
-        "name": "An-24",
-        "manufacturer": "Antonov",
+        "name": "Antonov An-24",
         "longDescription": "The Antonov An-24 (Russian/Ukrainian: Антонов Ан-24) is a 44-seat twin turboprop transport/passenger aircraft designed in 1957 in the Soviet Union by the Antonov Design Bureau and manufactured by Kiev, Irkutsk and Ulan-Ude Aviation Factories.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Antonov_An-24",
@@ -623,8 +611,7 @@
     },
     {
         "id": "atr-42",
-        "name": "42",
-        "manufacturer": "ATR",
+        "name": "ATR 42",
         "longDescription": "The ATR 42 is a twin-turboprop, short-haul regional airliner developed and manufactured in France and Italy by ATR (Aerei da Trasporto Regionale or Avions de transport régional), a joint venture formed by French aerospace company Aérospatiale (now Airbus) and Italian aviation conglomerate Aeritalia (now Leonardo S.p.A.). The number \"42\" in its name is derived from the aircraft's standard seating configuration in a passenger-carrying configuration, which typically varies between 40 and 52 passengers.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/ATR_42",
@@ -674,8 +661,7 @@
     },
     {
         "id": "atr-72",
-        "name": "72",
-        "manufacturer": "ATR",
+        "name": "ATR 72",
         "longDescription": "The ATR 72 is a twin-engine turboprop, short-haul regional airliner developed and produced in France and Italy by aircraft manufacturer ATR (Aerei da Trasporto Regionale or Avions de transport régional), a joint venture formed by French aerospace company Aérospatiale (now Airbus) and Italian aviation conglomerate Aeritalia (now Leonardo S.p.A.). The number \"72\" in its name is derived from the aircraft's standard seating configuration in a passenger-carrying configuration, which could seat 72–78 passengers in a single-class arrangement.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/ATR_72",
@@ -725,8 +711,7 @@
     },
     {
         "id": "beechcraft-1900",
-        "name": "1900",
-        "manufacturer": "Beechcraft",
+        "name": "Beechcraft 1900",
         "longDescription": "The Beechcraft 1900 is a 19-passenger, pressurized twin-engine turboprop fixed-wing aircraft that was manufactured by Beechcraft. It was designed, and is primarily used, as a regional airliner. It is also used as a freight aircraft and corporate transport, and by several governmental and military organisations. With customers favoring larger regional jets, Raytheon ended production in October 2002.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_1900",
@@ -775,8 +760,7 @@
     },
     {
         "id": "beechcraft-bonanza",
-        "name": "Bonanza",
-        "manufacturer": "Beechcraft",
+        "name": "Beechcraft Bonanza",
         "longDescription": "The Beechcraft Bonanza is an American general aviation aircraft introduced in 1947 by Beech Aircraft Corporation of Wichita, Kansas. The six-seater, single-engined aircraft is still being produced by Beechcraft and has been in continuous production longer than any other airplane in history. More than 17,000 Bonanzas of all variants have been built, produced in both distinctive V-tail and conventional tail configurations.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Bonanza",
@@ -832,8 +816,7 @@
     },
     {
         "id": "beechcraft-king-air",
-        "name": "King Air",
-        "manufacturer": "Beechcraft",
+        "name": "Beechcraft King Air",
         "longDescription": "The Beechcraft King Air family is part of a line of American utility aircraft produced by Beechcraft. The King Air line comprises a number of twin-turboprop models that have been divided into two families. The Model 90 and 100 series developed in the 1960s are known as King Airs, while the later T-tail Model 200 and 300 series were originally marketed as Super King Airs, with the name \"Super\" being dropped by Beechcraft in 1996 (although it is still often used to differentiate the 200 and 300 series King Airs from their smaller stablemates).\nThe King Air was the first aircraft in its class and has been in continuous production since 1964. It has outsold all of its turboprop competitors combined. It now faces competition from jet aircraft such as the Embraer Phenom 100, Honda HA-420 HondaJet and Cessna Citation Mustang; as well as from newer turboprop aircraft including the Piaggio P180 Avanti, and single-engine Piper Malibu Meridian, Pilatus PC-12, and Socata TBM.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_King_Air",
@@ -902,8 +885,7 @@
     },
     {
         "id": "beechcraft-musketeer",
-        "name": "Musketeer",
-        "manufacturer": "Beechcraft",
+        "name": "Beechcraft Musketeer",
         "longDescription": "The Beechcraft Musketeer is a family of single-engined, low-wing, light aircraft that was produced by Beechcraft. The line includes the Model 19 Musketeer Sport, the Model 23 Musketeer, Custom and Sundowner, the Model 23-24 Musketeer Super III the retractable gear Model 24-R Sierra and the military CT-134 Musketeer. The Musketeer line was in production from model years 1963 to 1983, during which time a total of 4,366 were produced. The type certificate for the Musketeer family of aircraft has been owned by Hawker Beechcraft since March 26, 2007.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Musketeer",
@@ -946,8 +928,7 @@
     },
     {
         "id": "boeing-707",
-        "name": "707",
-        "manufacturer": "Boeing",
+        "name": "Boeing 707",
         "longDescription": "The Boeing 707 is a mid-sized, long-range, narrow-body, four-engine jet airliner built by Boeing Commercial Airplanes from 1958 to 1979. Its name is commonly pronounced as \"seven oh seven\". Versions of the aircraft have a capacity from 140 to 219 passengers and a range of 2,500 to 5,750 nautical miles (2,880 to 6,620 mi; 4,630 to 10,650 km).",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_707",
@@ -998,8 +979,7 @@
     },
     {
         "id": "boeing-717",
-        "name": "717",
-        "manufacturer": "Boeing",
+        "name": "Boeing 717",
         "longDescription": "The Boeing 717 is a twin-engine, single-aisle jet airliner, developed for the 100-seat market. The airliner was designed and originally marketed by McDonnell Douglas as the MD-95, a derivative of the DC-9 family. Capable of seating up to 134 passengers, the 717 has a design range of 2,060 nautical miles (3,815 km). It is powered by two Rolls-Royce BR715 turbofan engines mounted at the rear of the fuselage.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_717",
@@ -1045,8 +1025,7 @@
     },
     {
         "id": "boeing-737",
-        "name": "737",
-        "manufacturer": "Boeing",
+        "name": "Boeing 737",
         "longDescription": "The Boeing 737 is an American short- to medium-range twinjet narrow-body airliner developed and manufactured by Boeing Commercial Airplanes. Originally developed as a shorter, lower-cost twin-engine airliner derived from the 707 and 727, the 737 has developed into a family of several passenger models with capacities from 85 to 215 passengers. The 737 is Boeing's only narrow-body airliner in production, with the 737 Next Generation (-700, -800, and -900ER), and the re-engined and updated 737 MAX variants.\nThe 737 was originally envisioned in 1964. The initial 737-100 made its first flight in April 1967, and entered airline service in February 1968 with Lufthansa. Next, the lengthened 737-200 entered service in April 1968. In the 1980s Boeing launched the longer 737-300, -400, and -500 variants (referred to as the Boeing 737 Classic series) featuring CFM56 turbofan engines and wing improvements.\nThe Boeing 737 Next Generation (NG) was introduced in the 1990s, with a redesigned, increased wing span, upgraded \"glass\" cockpit, and new interior. The 737 NG comprises the 737-600, -700, -800, and -900 variants, with lengths ranging from 31.09 to 42.06 m (102 to 138 ft). Boeing Business Jet versions of the 737 NG are also produced. The 737 was revised again in the 2010s for greater efficiency, with the 737 MAX series featuring CFM LEAP-1B engines and improved winglets. The 737 MAX entered service in 2017, but was grounded worldwide in March 2019 following two fatal crashes.\nThe 737 series is the highest-selling commercial jetliner in history. The 737 has been continuously manufactured since 1967; the 10,000th was rolled out on March 13, 2018, a MAX 8 destined for Southwest Airlines, and over 4,600 orders are pending. Assembly of the 737 is performed at the Boeing Renton Factory in Renton, Washington. Many 737s serve markets previously filled by 707, 727, 757, DC-9, and MD-80/MD-90 airliners, and the aircraft currently competes primarily with the Airbus A320 family. As of 2006, there were an average of 1,250 Boeing 737s airborne at any given time, with two either departing or landing somewhere every five seconds.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_737",
@@ -1131,8 +1110,7 @@
     },
     {
         "id": "boeing-747",
-        "name": "747",
-        "manufacturer": "Boeing",
+        "name": "Boeing 747",
         "longDescription": "The Boeing 747 is an American wide-body commercial jet airliner and cargo aircraft, often referred to by its original nickname, Jumbo Jet, or Queen of the Skies. Its distinctive \"hump\" upper deck along the forward part of the aircraft makes it among the world's most recognizable aircraft, and it was the first wide-body produced. Manufactured by Boeing's Commercial Airplane unit in the United States, the original version of the 747 was envisioned to have 150 percent greater capacity than the Boeing 707, one of the common large commercial aircraft of the 1960s. First flown commercially in 1970, the 747 held the passenger capacity record for 37 years.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_747",
@@ -1179,8 +1157,7 @@
     },
     {
         "id": "boeing-757",
-        "name": "757",
-        "manufacturer": "Boeing",
+        "name": "Boeing 757",
         "longDescription": "The Boeing 757 is a mid-size, narrow-body twin-engine jet airliner that was designed and built by Boeing Commercial Airplanes. It is the manufacturer's largest single-aisle passenger aircraft and was produced from 1981 to 2004. The twinjet has a two-crew member glass cockpit, turbofan engines of sufficient power to allow takeoffs from relatively short runways and higher altitudes, a conventional tail and, for reduced aerodynamic drag, a supercritical wing design. Intended to replace the smaller three-engine 727 on short and medium routes, the 757 can carry 200 to 295 passengers for a maximum of 3,150 to 4,100 nautical miles (5,830 to 7,590 km), depending on variant. The 757 was designed concurrently with a wide-body twinjet, the 767, and owing to shared features pilots can obtain a common type rating that allows them to operate both aircraft.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_757",
@@ -1232,8 +1209,7 @@
     },
     {
         "id": "boeing-767",
-        "name": "767",
-        "manufacturer": "Boeing",
+        "name": "Boeing 767",
         "longDescription": "The Boeing 767 is a mid- to large-size, long-range, wide-body twin-engine jet airliner built by Boeing Commercial Airplanes. It was Boeing's first wide-body twinjet and its first airliner with a two-crew glass cockpit. The aircraft has two turbofan engines, a conventional tail, and, for reduced aerodynamic drag, a supercritical wing design. Designed as a smaller wide-body airliner than earlier aircraft such as the 747, the 767 has seating capacity for 181 to 375 people, and a design range of 3,850 to 6,385 nautical miles (7,130 to 11,825 km), depending on variant. Development of the 767 occurred in tandem with a narrow-body twinjet, the 757, resulting in shared design features which allow pilots to obtain a common type rating to operate both aircraft.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_767",
@@ -1285,8 +1261,7 @@
     },
     {
         "id": "boeing-777",
-        "name": "777",
-        "manufacturer": "Boeing",
+        "name": "Boeing 777",
         "longDescription": "The Boeing 777 is a family of long-range wide-body twin-engine jet airliners developed and manufactured by Boeing Commercial Airplanes. It is the world's largest twinjet and has a typical seating capacity of 314 to 396 passengers, with a range of 5,240 to 8,555 nautical miles (9,704 to 15,844 km). Commonly referred to as the \"Triple Seven\", its distinguishing features include the largest-diameter turbofan engines of any aircraft, six wheels on each main landing gear, fully circular fuselage cross-section, and a blade-shaped tail cone. Developed in consultation with eight major airlines, the 777 was designed to replace older wide-body airliners and bridge the capacity difference between Boeing's 767 and 747. As Boeing's first fly-by-wire airliner, it has computer-mediated controls. It was also the first commercial aircraft to be designed entirely with computer-aided design.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_777",
@@ -1343,8 +1318,7 @@
     },
     {
         "id": "boeing-787-dreamliner",
-        "name": "787 Dreamliner",
-        "manufacturer": "Boeing",
+        "name": "Boeing 787 Dreamliner",
         "longDescription": "The Boeing 787 Dreamliner is an American long-haul, mid-size widebody, twin-engine jet airliner made by Boeing Commercial Airplanes. Its variants seat 242 to 335 passengers in typical three-class seating configurations. It is Boeing's most fuel-efficient airliner and is a pioneering airliner with the use of composite materials as the primary material in the construction of its airframe. The 787 was designed to be 20% more fuel efficient than the Boeing 767, which it was intended to replace. The 787 Dreamliner's distinguishing features include mostly electrical flight systems, raked wingtips, and noise-reducing chevrons on its engine nacelles. It shares a common type rating with the larger Boeing 777 to allow qualified pilots to operate both models.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_787_Dreamliner",
@@ -1401,8 +1375,7 @@
     },
     {
         "id": "bombardier-crj200",
-        "name": "CRJ200",
-        "manufacturer": "Bombardier",
+        "name": "Bombardier CRJ200",
         "longDescription": "The Bombardier CRJ100 and CRJ200 are a family of regional airliners manufactured by Bombardier, and based on the Canadair Challenger business jet. These regional jet models were formerly known as the Canadair CRJ100 and CRJ200.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Bombardier_CRJ200",
@@ -1453,8 +1426,7 @@
     },
     {
         "id": "bombardier-crj700",
-        "name": "CRJ700",
-        "manufacturer": "Bombardier",
+        "name": "Bombardier CRJ700",
         "longDescription": "The Bombardier CRJ700, CRJ900, and CRJ1000 are regional airliners manufactured by Bombardier and based on the CRJ200. Final assembly of the aircraft is at Montr?l-Mirabel International Airport in Mirabel, Quebec, outside Montreal, Quebec, Canada.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Bombardier_CRJ700_series",
@@ -1516,8 +1488,7 @@
     },
     {
         "id": "bombardier-cseries",
-        "name": "CSeries",
-        "manufacturer": "Bombardier",
+        "name": "Bombardier CSeries",
         "longDescription": "The Bombardier CSeries or C Series (officially BD-500-1A10 [CS100] / -1A11 [CS300]) is a family of narrow-body, twin-engine, medium-range jet airliners by Canadian manufacturer Bombardier Aerospace. The 108 to 133-seat CS100 made its maiden flight on 16 September 2013, was awarded an initial type certification by Transport Canada on 18 December 2015 and entered service on 15 July 2016 with Swiss Global Air Lines. The 130 to 160-seat CS300 first flew on 27 February 2015, received an initial type certification on 11 July 2016 and the first one entered service with launch customer airBaltic on 14 December 2016.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Bombardier_CSeries",
@@ -1569,8 +1540,7 @@
     },
     {
         "id": "bombardier-dash-8",
-        "name": "Dash 8",
-        "manufacturer": "Bombardier",
+        "name": "Bombardier Dash 8",
         "longDescription": "The Bombardier Dash 8 or Q Series, previously known as the de Havilland Canada Dash 8 or DHC-8, is a series of twin-engined, medium-range, turboprop airliners. Introduced by de Havilland Canada (DHC) in 1984, they are now produced by Bombardier Aerospace. Over 1,000 Dash 8s of all models have been built. Bombardier currently markets the aircraft as the Q Series, complementing the company's CRJ Series aircraft.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Bombardier_Dash_8",
@@ -1620,8 +1590,7 @@
     },
     {
         "id": "british-aerospace-146",
-        "name": "146",
-        "manufacturer": "British Aerospace",
+        "name": "British Aerospace 146",
         "longDescription": "The British Aerospace 146 (also BAe 146) is a short-haul airliner and a regional airliner that was manufactured in the United Kingdom by British Aerospace, later part of BAE Systems. Production ran from 1983 until 2002. Manufacture of an improved version known as the Avro RJ began in 1992. A further-improved version with new engines, the Avro RJX, was announced in 1997, but only two prototypes and one production aircraft were built before production ceased in 2001. With 387 aircraft produced, the Avro RJ/BAe 146 is the most successful British civil jet airliner programme.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/British_Aerospace_146",
@@ -1678,8 +1647,7 @@
     },
     {
         "id": "britten-norman_bn-2_islander",
-        "name": "BN-2 Islander",
-        "manufacturer": "Britten-Norman",
+        "name": "Britten-Norman BN-2 Islander",
         "longDescription": "The Britten-Norman BN-2 Islander is a 1960s British light utility aircraft, regional airliner and cargo aircraft designed and originally manufactured by Britten-Norman of the United Kingdom. Still in production, the Islander is one of the best-selling commercial aircraft types produced in Europe. Although designed in the 1960s, over 750 are still in service with commercial operators around the world. The aircraft is also used by the British Army and police forces in the United Kingdom and is a light transport with over 30 military aviation operators around the world.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Britten-Norman_BN-2_Islander",
@@ -1728,8 +1696,7 @@
     },
     {
         "id": "casa-c-212-aviocar",
-        "name": "C-212 Aviocar",
-        "manufacturer": "CASA",
+        "name": "CASA C-212 Aviocar",
         "longDescription": "The CASA C-212 Aviocar is a turboprop-powered STOL medium transport aircraft designed and built by CASA in Spain for civil and military use. C-212s are also produced under licence in Indonesia by Indonesian Aerospace (IAe), formerly called IPTN. The design was initially marketed under the name of Aviocar, but EADS-CASA no longer uses that name in referring to the C-212.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/CASA_C-212_Aviocar",
@@ -1773,8 +1740,7 @@
     },
     {
         "id": "cessna-152",
-        "name": "152",
-        "manufacturer": "Cessna",
+        "name": "Cessna 152",
         "longDescription": "The Cessna 152 is an American two-seat, fixed tricycle gear, general aviation airplane, used primarily for flight training and personal use. It was based on the earlier Cessna 150, including a number of minor design changes and a slightly more powerful engine running on 100LL aviation gasoline.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_152",
@@ -1822,8 +1788,7 @@
     },
     {
         "id": "cessna-162-skycatcher",
-        "name": "162 Skycatcher",
-        "manufacturer": "Cessna",
+        "name": "Cessna 162 Skycatcher",
         "longDescription": "The Cessna 162 Skycatcher is an American side-by-side two-seat, high-wing, strut-braced, tricycle gear light-sport aircraft (LSA) that was designed and produced by Cessna between December 2009 and December 2013. It is the most recently introduced aircraft in the company's general aviation product line and the most recently canceled; its intended market was flight training and personal use.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_162_Skycatcher",
@@ -1866,8 +1831,7 @@
     },
     {
         "id": "cessna-172",
-        "name": "172",
-        "manufacturer": "Cessna",
+        "name": "Cessna 172",
         "longDescription": "The Cessna 172 Skyhawk is an American four-seat, single-engine, high wing, fixed-wing aircraft made by the Cessna Aircraft Company. First flown in 1955, more 172s have been built than any other aircraft.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_172",
@@ -1918,8 +1882,7 @@
     },
     {
         "id": "cessna-182-skylane",
-        "name": "182 Skylane",
-        "manufacturer": "Cessna",
+        "name": "Cessna 182 Skylane",
         "longDescription": "The Cessna 182 Skylane is an American four-seat, single-engined light airplane, built by Cessna of Wichita, Kansas. It has the option of adding two child seats, installed in the baggage area.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_182_Skylane",
@@ -1968,8 +1931,7 @@
     },
     {
         "id": "cessna-185-skywagon",
-        "name": "185 Skywagon",
-        "manufacturer": "Cessna",
+        "name": "Cessna 185 Skywagon",
         "longDescription": "The Cessna 185 Skywagon is a six-seat, single-engined, general aviation light aircraft manufactured by Cessna. It first flew as a prototype in July 1960, with the first production model completed in March 1961. The Cessna 185 is a high-winged aircraft with non-retractable conventional landing gear and a tailwheel.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_185_Skywagon",
@@ -2013,8 +1975,7 @@
     },
     {
         "id": "cessna-206",
-        "name": "206",
-        "manufacturer": "Cessna",
+        "name": "Cessna 206",
         "longDescription": "The Cessna 205, 206, and 207, known primarily as the Stationair (and marketed variously as the Super Skywagon, Skywagon and Super Skylane) are a family of single-engined, general aviation aircraft with fixed landing gear, used in commercial air service and also for personal use. The family was originally developed from the popular retractable-gear Cessna 210 and is produced by Cessna.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_206",
@@ -2062,8 +2023,7 @@
     },
     {
         "id": "cessna-350-corvalis",
-        "name": "350 Corvalis",
-        "manufacturer": "Cessna",
+        "name": "Cessna 350 Corvalis",
         "longDescription": "The Cessna 350 Corvalis is a composite construction, single-engine, normally aspirated, fixed-gear, low-wing general aviation aircraft that was built by Cessna Aircraft until the end of 2010.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_350_Corvalis",
@@ -2105,8 +2065,7 @@
     },
     {
         "id": "cessna-400",
-        "name": "400",
-        "manufacturer": "Cessna",
+        "name": "Cessna 400",
         "longDescription": "The Cessna 400, now marketed as the Cessna TTx, is a single-engine, fixed-gear, low-wing general aviation aircraft built from composite materials by Cessna Aircraft. The Cessna 400 was originally built by Columbia Aircraft as the Columbia 400. From 2013, the aircraft was built as the Cessna TTx Model T240.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_400",
@@ -2148,8 +2107,7 @@
     },
     {
         "id": "cessna-citation-excel",
-        "name": "Citation Excel",
-        "manufacturer": "Cessna",
+        "name": "Cessna Citation Excel",
         "longDescription": "The Cessna Citation Excel (Model 560XL) is a 2,100 nmi (3,900 km) American business jet built by Cessna, part of the Citation Family. Announced in October 1994, it first flew on February 29, 1996, certification was granted in April 1998 and over 900 have been delivered. The 20,200 lb (9,200 kg) MTOW jet is powered by two 3,650-4,080 lbf (16.2?18.1 kN) PW500 turbofans, has the Citation V (560) cruciform tail and unswept supercritical wing of 370 sq ft (34 m²), and the Citation X stand-up cabin slightly shortened. The XLS 2004 update had upgraded engines and a glass cockpit and the 2008 XLS+ had upgrade engines again and a revised nose.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_Excel",
@@ -2187,8 +2145,7 @@
     },
     {
         "id": "cessna-citation-jet-m2",
-        "name": "CitationJet/M2",
-        "manufacturer": "Cessna",
+        "name": "Cessna CitationJet/M2",
         "longDescription": "The Cessna CitationJet/M2/CJ series (Model 525) are light business jets part of the Cessna Citation family, built by the Cessna Aircraft Company. Its variants are marketed under the CJ, CJ1, CJ1+, M2, CJ2, CJ2+, CJ3, CJ3+, and CJ4 names. As of June 2017, 2,000 have been delivered with five million hours flown.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_CitationJet/M2",
@@ -2237,8 +2194,7 @@
     },
     {
         "id": "cessna-citation-mustang",
-        "name": "Citation Mustang",
-        "manufacturer": "Cessna",
+        "name": "Cessna Citation Mustang",
         "longDescription": "The Cessna Citation Mustang, Model 510, is a very light jet (VLJ) class business jet built by Cessna Aircraft Company at their Independence, Kansas production facility. The Mustang, in standard configuration, has four passenger seats in the aft cabin, a toilet, and seating for two in the cockpit. Like most other light jets, the Mustang is approved for single-pilot operation.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_Mustang",
@@ -2278,8 +2234,7 @@
     },
     {
         "id": "cessna-citation-sovereign",
-        "name": "Citation Sovereign",
-        "manufacturer": "Cessna",
+        "name": "Cessna Citation Sovereign",
         "longDescription": "The Cessna Citation Sovereign (Model 680) is an American 3,200 nmi (5,900 km) range business jet developed by Cessna, part of the Cessna Citation family. Announced at the 1998 NBAA convention, it made its maiden flight in February 2002, certification was awarded on June 2, 2004, and deliveries began in late September. The improved Sovereign+ was announced at the October 2012 NBAA for a first flight in April 2012 and deliveries in December, with winglets, improved engines and flight deck. The Citation Excel fuselage was stretched and joined with a large, clean-sheet 16.3 °, 516 sq ft (47.9 m2) wing and two 5,900 lbf (26 kN) PW300 engines for a 30,800 lb (14,000 kg) MTOW.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_Sovereign",
@@ -2312,8 +2267,7 @@
     },
     {
         "id": "cessna-citation-x",
-        "name": "Citation X",
-        "manufacturer": "Cessna",
+        "name": "Cessna Citation X",
         "longDescription": "The Cessna Citation X (Model 750) is an American business jet with 3,460 nmi (6,408 km) of range produced by Cessna and part of the Citation family. Announced at the October 1990 NBAA convention, it made its maiden flight on December 21, 1993, received its type certification on June 3, 1996 and was first delivered in July 1996. The updated Citation X+ was offered from 2012 with a 14 in (360 mm) cabin stretch and upgraded systems. Keeping the Citation III fuselage cross section, it has a new 37° swept wing with an area of 527 ft² (49 m²) for a fast Mach 0.935 MMo and 36,600 lb (16.6 t) MTOW, a T-tail and two 7,034 lbf (31.29 kN) AE3007 turbofans. After 338 deliveries, production should end in 2018.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_X",
@@ -2362,8 +2316,7 @@
     },
     {
         "id": "cirrus-sr20",
-        "name": "SR20",
-        "manufacturer": "Cirrus",
+        "name": "Cirrus SR20",
         "longDescription": "The Cirrus SR20 is an American piston-engine, four-or-five-seat, composite monoplane built by Cirrus Aircraft of Duluth, Minnesota.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cirrus_SR20",
@@ -2411,8 +2364,7 @@
     },
     {
         "id": "cirrus-sr22",
-        "name": "SR22",
-        "manufacturer": "Cirrus",
+        "name": "Cirrus SR22",
         "longDescription": "The Cirrus SR22 is a single-engine four- or five-seat composite aircraft built from 2001 by Cirrus Aircraft of Duluth, Minnesota.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Cirrus_SR22",
@@ -2460,8 +2412,7 @@
     },
     {
         "id": "comac-arj21",
-        "name": "ARJ21",
-        "manufacturer": "Comac",
+        "name": "Comac ARJ21",
         "longDescription": "The Comac ARJ21 Xiangfeng (Chinese: &#32724;&#20964;; pinyin: xi?gf?g; literally: \"Flying Phoenix\") is a twin-engined regional jet, manufactured by Chinese aerospace company Comac.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Comac_ARJ21",
@@ -2497,7 +2448,7 @@
     },
     {
         "id": "concorde",
-        "manufacturer": "Concorde",
+        "name": "Concorde",
         "longDescription": "The Aérospatiale/BAC Concorde is a British-French turbojet-powered supersonic passenger airliner that was operated from 1976 until 2003. It had a maximum speed over twice the speed of sound at Mach 2.04 (1,354 mph or 2,180 km/h at cruise altitude), with seating for 92 to 128 passengers. First flown in 1969, Concorde entered service in 1976 and continued flying for the next 27 years. It is one of only two supersonic transports to have been operated commercially; the other is the Soviet-built Tupolev Tu-144, which operated in passenger service from 1977 to 1978.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Concorde",
@@ -2547,8 +2498,7 @@
     },
     {
         "id": "dhc-6-twin-otter",
-        "name": "DHC-6 Twin Otter",
-        "manufacturer": "de Havilland Canada",
+        "name": "de Havilland DHC-6 Twin Otter",
         "longDescription": "The de Havilland Canada DHC-6 Twin Otter, currently marketed as the Viking Air DHC-6 Twin Otter, is a Canadian 19-passenger STOL (Short Takeoff and Landing) utility aircraft developed by de Havilland Canada and currently produced by Viking Air. The aircraft's fixed tricycle undercarriage, STOL capabilities, twin turboprop engines and high rate of climb have made it a successful commuter passenger airliner as well as a cargo and Medevac aircraft. In addition, the Twin Otter has been popular with commercial skydiving operations, and is used by the United States Army Parachute Team and the United States Air Force's 98th Flying Training Squadron.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/De_Havilland_Canada_DHC-6_Twin_Otter",
@@ -2602,8 +2552,7 @@
     },
     {
         "id": "diamond-da20",
-        "name": "DA20",
-        "manufacturer": "Diamond",
+        "name": "Diamond DA20",
         "longDescription": "The Diamond DV20/DA20 Katana is an Austrian-designed two-seat tricycle gear general aviation light aircraft. Developed and manufactured by Austrian aircraft manufacturer Diamond Aircraft, it was originally produced in Austria as the DV20.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Diamond_DA20",
@@ -2648,8 +2597,7 @@
     },
     {
         "id": "diamond-da40",
-        "name": "DA40",
-        "manufacturer": "Diamond",
+        "name": "Diamond DA40",
         "longDescription": "The Diamond DA40 Star is an Austrian four-seat, single engine, light aircraft constructed from composite materials. Built in both Austria and Canada, it was developed as a four-seat version of the earlier DA20 by Diamond Aircraft Industries.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Diamond_DA40",
@@ -2696,8 +2644,7 @@
     },
     {
         "id": "dornier-do-228",
-        "name": "Do 228",
-        "manufacturer": "Dornier",
+        "name": "Dornier Do 228",
         "longDescription": "The Dornier Do 228 is a twin-turboprop STOL utility aircraft, manufactured by Dornier GmbH (later DASA Dornier, Fairchild-Dornier) from 1981 until 1998. In 1983, Hindustan Aeronautics (HAL) bought a production licence and manufactured 125 aircraft. In Oberpfaffenhofen, Germany, 245 were built, and 125 in Kanpur, India. In July 2017, 63 aircraft were in airline service.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Dornier_Do_228",
@@ -2739,8 +2686,7 @@
     },
     {
         "id": "douglas-dc-8",
-        "name": "DC-8",
-        "manufacturer": "Douglas",
+        "name": "Douglas DC-8",
         "longDescription": "The Douglas DC-8 (also known as the McDonnell Douglas DC-8) is a four-engine long-range narrow-body jet airliner built from 1958 to 1972 by the Douglas Aircraft Company. Launched after the competing Boeing 707, the DC-8 nevertheless kept Douglas in a strong position in the airliner market, and remained in production until 1972 when it began to be superseded by larger wide-body designs, including the Boeing 747, McDonnell Douglas DC-10 and Lockheed L-1011 TriStar. The DC-8's design allowed it a slightly larger cargo capacity than the 707 and some re-engined DC-8s are still in use as freighters.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Douglas_DC-8",
@@ -2792,8 +2738,7 @@
     },
     {
         "id": "embraer-e-Jet",
-        "name": "E-Jet",
-        "manufacturer": "Embraer",
+        "name": "Embraer E-Jet",
         "longDescription": "The Embraer E-Jet family is a series of narrow-body medium-range twin-engine jet airliners produced by Brazilian aerospace conglomerate Embraer. Launched at the Paris Air Show in 1999, and entering production in 2002, the aircraft series has been a commercial success primarily for its safety and efficiency. The aircraft is used by mainline and regional airlines around the world. As of 30 September 2015, there is a backlog of 263 firm orders for the E-Jets, 433 options and 1158 units delivered.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Embraer_E-Jet_family",
@@ -2845,8 +2790,7 @@
     },
     {
         "id": "embraer-emb-110-bandeirante",
-        "name": "EMB 110 Bandeirante",
-        "manufacturer": "Embraer",
+        "name": "Embraer EMB 110 Bandeirante",
         "longDescription": "The Embraer EMB 110 Bandeirante is a general purpose 15?21 passenger twin-turboprop light transport aircraft suitable for military and civil duties. It was manufactured by the Brazilian corporation Embraer.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Embraer_EMB_110_Bandeirante",
@@ -2886,8 +2830,7 @@
     },
     {
         "id": "embraer-erj-145",
-        "name": "ERJ 145",
-        "manufacturer": "Embraer",
+        "name": "Embraer ERJ 145",
         "longDescription": "The Embraer ERJ 145 family is a series of twin-engine regional jets produced by Embraer, a Brazilian aerospace company. Family members include the ERJ 135 (37 passengers), ERJ 140 (44 passengers), and ERJ 145 (50 passengers), as well as the Legacy business jet and the R-99 family of military aircraft. The ERJ 145 is the largest of the group. Each jet in the series is powered by two turbofan engines. The family's primary competition comes from the Bombardier CRJ regional jets.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Embraer_ERJ_145_family",
@@ -2934,8 +2877,7 @@
     },
     {
         "id": "fairchild-dornier-328jet",
-        "name": "328JET",
-        "manufacturer": "Fairchild-Dornier",
+        "name": "Fairchild-Dornier 328JET",
         "longDescription": "The Fairchild-Dornier 328JET is a commuter airliner based upon the turboprop-powered Dornier 328. A proposed stretched variant was the 428JET. The 328 was designed and placed into initial production by the German aerospace firm Dornier Luftfahrt GmbH, but in 1996 that firm was acquired by the United States aerospace company Fairchild Aircraft. The resulting corporation, named Fairchild Dornier, continued the production of the 328 family in Oberpfaffenhofen, Germany, conducted sales from San Antonio, Texas, and supported the product line from both locations.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Fairchild_Dornier_328JET",
@@ -2981,8 +2923,7 @@
     },
     {
         "id": "fairchild-swearingen-metroliner",
-        "name": "Swearingen Metroliner",
-        "manufacturer": "Fairchild",
+        "name": "Fairchild Swearingen Metroliner",
         "longDescription": "The Fairchild Swearingen Metroliner (previously the Swearingen Metro and later Fairchild Aerospace Metro) is a 19-seat, pressurized, twin-turboprop airliner first produced by Swearingen Aircraft and later by Fairchild at a plant in San Antonio, Texas, United States.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Fairchild_Swearingen_Metroliner",
@@ -3032,8 +2973,7 @@
     },
     {
         "id": "fokker-100",
-        "name": "100",
-        "manufacturer": "Fokker",
+        "name": "Fokker 100",
         "longDescription": "The Fokker 100 is a medium-sized, twin-turbofan airliner from Fokker. Upon introduction, the type possessed low operational costs and had scant competition in the 100-seat short-range class of regional airliner, which contributed to strong sales during the late 1980s. It was the largest jet airliner built by Fokker before its bankruptcy in 1996.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Fokker_100",
@@ -3079,8 +3019,7 @@
     },
     {
         "id": "fokker-70",
-        "name": "70",
-        "manufacturer": "Fokker",
+        "name": "Fokker 70",
         "longDescription": "The Fokker 70 is a narrow-body, twin-engined, medium-range, turbofan regional airliner produced by Fokker as a smaller version of the Fokker 100. Both the F70 and F100 were preceded by the first jet airliner manufactured by Fokker, the Fokker F28 Fellowship. Since its first flight in 1993, 47 aircraft, plus one prototype, have been manufactured and 38 are still in active service with airlines around the world.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Fokker_70",
@@ -3116,8 +3055,7 @@
     },
     {
         "id": "fokker-f28-fellowship",
-        "name": "F28 Fellowship",
-        "manufacturer": "Fokker",
+        "name": "Fokker F28 Fellowship",
         "longDescription": "The Fokker F28 Fellowship is a short range jet airliner designed and built by Dutch aircraft manufacturer Fokker.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Fokker_F28_Fellowship",
@@ -3164,8 +3102,7 @@
     },
     {
         "id": "gulfstream-g280",
-        "name": "G280",
-        "manufacturer": "Gulfstream",
+        "name": "Gulfstream G280",
         "longDescription": "The Gulfstream G280 is a twin-engine business jet built under license by IAI in Israel for Gulfstream Aerospace. It began delivery to users in 2012.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_G280",
@@ -3203,8 +3140,7 @@
     },
     {
         "id": "gulfstream-g550",
-        "name": "G550",
-        "manufacturer": "Gulfstream",
+        "name": "Gulfstream G550",
         "longDescription": "The Gulfstream G550 is a business jet aircraft produced by General Dynamics' Gulfstream Aerospace unit in Savannah, Georgia, US. The certification designation is GV-SP. There were 450 Gulfstream G550s in active service as of January 2016. A version with reduced fuel capacity was marketed as the G500.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_G550",
@@ -3253,8 +3189,7 @@
     },
     {
         "id": "gulfstream-g650",
-        "name": "G650",
-        "manufacturer": "Gulfstream",
+        "name": "Gulfstream G650",
         "longDescription": "The Gulfstream G650 is a twin-engine business jet airplane produced by Gulfstream Aerospace. The model is designated Gulfstream GVI in its type certificate, and may be configured to carry from 11 to 18 passengers. Gulfstream began the G650 program in 2005 and revealed it to the public in 2008. The G650 is the company's largest and fastest business jet with a top speed of Mach 0.925.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_G650",
@@ -3303,8 +3238,7 @@
     },
     {
         "id": "gulfstream-ii",
-        "name": "II",
-        "manufacturer": "Gulfstream",
+        "name": "Gulfstream II",
         "longDescription": "The Gulfstream II (G-II) is an American twin engine business jet designed and built by Grumman and then in succession, Grumman American and finally Gulfstream American. Its Grumman model number is G-1159 and its US military designation is C-11 Gulfstream II. It has been succeeded by the Gulfstream III. The first Gulfstream II flew on October 2, 1966.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Grumman_Gulfstream_II",
@@ -3339,8 +3273,7 @@
     },
     {
         "id": "gulfstream-iii",
-        "name": "III",
-        "manufacturer": "Gulfstream",
+        "name": "Gulfstream III",
         "longDescription": "The Gulfstream III, a business jet produced by Gulfstream Aerospace, is an improved variant of the Grumman Gulfstream II.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_III",
@@ -3385,8 +3318,7 @@
     },
     {
         "id": "gulfstream-iv",
-        "name": "IV",
-        "manufacturer": "Gulfstream",
+        "name": "Gulfstream IV",
         "longDescription": "The Gulfstream IV (or G-IV or GIV) and derivatives are a family of twinjet aircraft, mainly for private or business use. They were designed and built by Gulfstream Aerospace, a General Dynamics company based in Savannah, Georgia, United States, from 1985 until 2018. Aircraft power is provided by two Rolls-Royce RB.183 Tay turbofans.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_IV",
@@ -3435,8 +3367,7 @@
     },
     {
         "id": "gulfstream-v",
-        "name": "V",
-        "manufacturer": "Gulfstream",
+        "name": "Gulfstream V",
         "longDescription": "The Gulfstream V (Model GV, pronounced Gee-5) is a long-range, large business jet aircraft produced by Gulfstream Aerospace, derived from the previous Gulfstream IV. It flies up to Mach 0.885, up to 51,000 feet (16,000 m) and has a 6,500 nautical miles (12,000 km) range. It typically accommodates four crew and 14 passengers. It first flew on November 28, 1995, and entered service in June 1997. It is used by the US military under the designation C-37A. It is followed by an improved version, the Gulfstream 550 (Model GV-SP).",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_V",
@@ -3486,8 +3417,7 @@
     },
     {
         "id": "ilyushin-il-96",
-        "name": "Il-96",
-        "manufacturer": "Ilyushin",
+        "name": "Ilyushin Il-96",
         "longDescription": "The Ilyushin Il-96 (Russian: &#1048;&#1083;&#1100;&#1102;&#769;&#1096;&#1080;&#1085; &#1048;&#1083;-96) is a Russian four-engined long-haul wide-body airliner designed by Ilyushin in the former Soviet Union and manufactured by the Voronezh Aircraft Production Association in Voronezh, Russia. It is powered by four Aviadvigatel PS-90 two-shaft turbofan engines.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Ilyushin_Il-96",
@@ -3524,8 +3454,7 @@
     },
     {
         "id": "let-l-410-turbolet",
-        "name": "L-410 Turbolet",
-        "manufacturer": "Let",
+        "name": "Let L-410 Turbolet",
         "longDescription": "The Let L-410 Turbolet is a twin-engine short-range transport aircraft, manufactured by the Czech aircraft manufacturer LET, often used as an airliner. The aircraft is capable of landing on short and unpaved runways and operating under extreme conditions from +50 °C to -50 °C. In 2016, 1,200 L-410 have been built and over 350 are in service in more than 50 countries.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Let_L-410_Turbolet",
@@ -3574,8 +3503,7 @@
     },
     {
         "id": "lockheed-l-1011-tristar",
-        "name": "L-1011 TriStar",
-        "manufacturer": "Lockheed",
+        "name": "Lockheed L-1011 TriStar",
         "longDescription": "The Lockheed L-1011 TriStar, commonly referred to as the L-1011 (pronounced \"L-ten-eleven\") or TriStar, is a medium-to-long-range, wide-body trijet airliner by Lockheed Corporation. It was the third wide-body airliner to enter commercial operations, after the Boeing 747 and the McDonnell Douglas DC-10. The airliner has a seating capacity up to 400 passengers and a range over 4,000 nautical miles (7,410 km). Its trijet configuration has three Rolls-Royce RB211 engines with one engine under each wing, and a third engine, center-mounted with an S-duct air inlet embedded in the tail and the upper fuselage. The aircraft has an autoland capability, an automated descent control system, and available lower deck galley and lounge facilities.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Lockheed_L-1011_TriStar",
@@ -3617,8 +3545,7 @@
     },
     {
         "id": "maule-m-7",
-        "name": "M-7",
-        "manufacturer": "Maule",
+        "name": "Maule M-7",
         "longDescription": "The Maule M-7 is a family of single-engine light aircraft that has been manufactured in the United States since the mid-1980s.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Maule_M-7",
@@ -3666,8 +3593,7 @@
     },
     {
         "id": "mcdonnell-douglas-dc-10",
-        "name": "DC-10",
-        "manufacturer": "McDonnell Douglas",
+        "name": "McDonnell Douglas DC-10",
         "longDescription": "The McDonnell Douglas DC-10 is a three-engine wide-body jet airliner manufactured by McDonnell Douglas. The DC-10 has range for medium- to long-haul flights, capable of carrying a maximum of 380 passengers. Its most distinguishing feature is the two turbofan engines mounted on underwing pylons and a third engine at the base of the vertical stabilizer. The model was a successor to McDonnell Douglas's DC-8 for long-range operations, and competed in the same markets as the Lockheed L-1011 TriStar, which has a similar layout. In its early years the DC-10 had a poor safety record; however, this has greatly improved over time.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_DC-10",
@@ -3713,8 +3639,7 @@
     },
     {
         "id": "mcdonnell-douglas-dc-9",
-        "name": "Douglas DC-9",
-        "manufacturer": "McDonnell Douglas",
+        "name": "McDonnell Douglas Douglas DC-9",
         "longDescription": "The McDonnell Douglas DC-9 (initially known as Douglas DC-9) is a twin-engine, single-aisle jet airliner. It was first manufactured in 1965 with its maiden flight later that year. The DC-9 was designed for frequent, short flights. The final DC-9 was delivered in October 1982.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_DC-9",
@@ -3761,8 +3686,7 @@
     },
     {
         "id": "mcdonnell-douglas-md-11",
-        "name": "MD-11",
-        "manufacturer": "McDonnell Douglas",
+        "name": "McDonnell Douglas MD-11",
         "longDescription": "The McDonnell Douglas MD-11 is an American three-engine medium- to long-range wide-body jet airliner, manufactured by McDonnell Douglas and, later, by Boeing Commercial Airplanes. Based on the DC-10, it features a stretched fuselage, increased wingspan with winglets, refined airfoils on the wing and smaller tailplane, new engines and increased use of composite materials. Two of its engines are mounted on underwing pylons and a third engine at the base of the vertical stabilizer. It also features a glass cockpit that decreases the flight deck crew from the three required on the DC-10 to two by eliminating the need for a flight engineer.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-11",
@@ -3813,8 +3737,7 @@
     },
     {
         "id": "mcdonnell-douglas-md-80",
-        "name": "MD-80",
-        "manufacturer": "McDonnell Douglas",
+        "name": "McDonnell Douglas MD-80",
         "longDescription": "The McDonnell Douglas MD-80 is a series of twin-engine, short- to medium-range, single-aisle commercial jet airliners. It was lengthened and updated from the DC-9. This series can seat from 130 to 172 passengers depending on variant and seating configuration.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-80",
@@ -3861,8 +3784,7 @@
     },
     {
         "id": "mcdonnell-douglas-md-90",
-        "name": "MD-90",
-        "manufacturer": "McDonnell Douglas",
+        "name": "McDonnell Douglas MD-90",
         "longDescription": "The McDonnell Douglas MD-90 is a twin-engine, short- to medium-range, single-aisle commercial jet airliner. The MD-90 was developed from the MD-80 series. Differences from the MD-80 include more fuel-efficient International Aero Engines V2500 engines and a longer fuselage. The MD-90 has a seating capacity of up to 172 passengers and was introduced into service with Delta Air Lines in 1995.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-90",
@@ -3904,8 +3826,7 @@
     },
     {
         "id": "mooney-m20",
-        "name": "M20",
-        "manufacturer": "Mooney",
+        "name": "Mooney M20",
         "longDescription": "The Mooney M20 is a family of piston-powered, propeller-driven, general aviation aircraft, all featuring low wings and tricycle gear, manufactured by the Mooney International Corporation.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Mooney_M20",
@@ -3954,8 +3875,7 @@
     },
     {
         "id": "piper-j-3-cub",
-        "name": "J-3 Cub",
-        "manufacturer": "Piper",
+        "name": "Piper J-3 Cub",
         "longDescription": "The Piper J-3 Cub is an American light aircraft that was built between 1937 and 1947 by Piper Aircraft. The aircraft has a simple, lightweight design which gives it good low-speed handling properties and short-field performance. The Cub is one of the best known light aircraft of all time. Its simplicity, affordability and popularity as well as large production numbers with nearly 20,000 built in the United States invokes comparisons to the Ford Model T automobile.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Piper_J-3_Cub",
@@ -4005,8 +3925,7 @@
     },
     {
         "id": "piper-pa-20-pacer",
-        "name": "PA-20 Pacer",
-        "manufacturer": "Piper",
+        "name": "Piper PA-20 Pacer",
         "longDescription": "The PA-20 Pacer and PA-22 Tri-Pacer are a family of four-place, strut braced, high-wing light aircraft that were built by Piper Aircraft in the post-World War II period. The Pacer was essentially a four-place version of the two-place PA-17 Vagabond light aircraft. It features a steel tube fuselage and an aluminum frame wing, covered with fabric, much like Piper's most famous aircraft, the Cub and Super Cub. An aircraft prized for its ruggedness, spacious cabin, and, for its time, impressive speed, many Pacers continue to fly today.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-20_Pacer",
@@ -4055,8 +3974,7 @@
     },
     {
         "id": "piper-pa-24-comanche",
-        "name": "PA-24 Comanche",
-        "manufacturer": "Piper",
+        "name": "Piper PA-24 Comanche",
         "longDescription": "The Piper PA-24 Comanche is an American four-seat or six-seat, low-wing, all-metal, light aircraft of semi-monocoque construction with tricycle retractable landing gear. Piper Aircraft designed and developed the Comanche, which first flew on May 24, 1956. Together with the PA-30 and PA-39 Twin Comanche, it made up the core of the Piper Aircraft lineup until 1972, when the production lines for both aircraft were wiped out in a flood.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-24_Comanche",
@@ -4102,8 +4020,7 @@
     },
     {
         "id": "piper-pa-25-pawnee",
-        "name": "PA-25 Pawnee",
-        "manufacturer": "Piper",
+        "name": "Piper PA-25 Pawnee",
         "longDescription": "The PA-25 Pawnee was an agricultural aircraft produced by Piper Aircraft between 1959 and 1981. It remains a widely used aircraft in agricultural spraying and is also used as a tow plane, or tug, for launching gliders or for towing banners. In 1988 the design rights and support responsibility were sold to Latino Americana de Aviación of Argentina.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-25_Pawnee",
@@ -4153,8 +4070,7 @@
     },
     {
         "id": "piper-pa-28-cherokee",
-        "name": "P28A Cherokee",
-        "manufacturer": "Piper",
+        "name": "Piper P28A Cherokee",
         "longDescription": "The Piper P28A Cherokee is a family of light aircraft built by Piper Aircraft and designed for flight training, air taxi, and personal use. The PA-28 family of aircraft are all-metal, unpressurized, single-engine, piston-powered airplanes with low-mounted wings and tricycle landing gear. They have a single door on the copilot side, which is entered by stepping on the wing.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-28_Cherokee",
@@ -4203,8 +4119,7 @@
     },
     {
         "id": "piper-pa-34-seneca",
-        "name": "PA-34 Seneca",
-        "manufacturer": "Piper",
+        "name": "Piper PA-34 Seneca",
         "longDescription": "The Piper PA-34 Seneca is an American twin-engined light aircraft, produced by Piper Aircraft since 1971 and that remains in production. The Seneca is primarily used for personal and business flying.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-34_Seneca",
@@ -4254,8 +4169,7 @@
     },
     {
         "id": "piper-pa-46",
-        "name": "PA-46",
-        "manufacturer": "Piper",
+        "name": "Piper PA-46",
         "longDescription": "The Piper PA-46 Malibu and Matrix are a family of American light aircraft manufactured by Piper Aircraft of Vero Beach, Florida. The aircraft is powered by a single engine and has the capacity for one pilot and five passengers. Early Malibus were all piston-engined, but a turboprop version, the Malibu Meridian, is also available.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Piper_PA-46",
@@ -4302,8 +4216,7 @@
     },
     {
         "id": "sukhoi-superjet-100",
-        "name": "Superjet 100",
-        "manufacturer": "Sukhoi",
+        "name": "Sukhoi Superjet 100",
         "longDescription": "The Sukhoi Superjet 100 (Russian: &#1057;&#1091;&#1093;&#1086;&#1081; &#1057;&#1091;&#1087;&#1077;&#1088;&#1076;&#1078;&#1077;&#1090; 100) is a modern fly-by-wire twin-engine regional jet with 8 (VIP) to 108 (all economy) passenger seats. With development initiated in 2000, the airliner was designed and spearheaded by Sukhoi, a division of the Russian civil aerospace company (UAC), in co-operation with several foreign partners. Its maiden flight was conducted on 19 May 2008. On 21 April 2011, the Superjet 100 undertook its first commercial passenger flight, on the Armavia route from Yerevan to Moscow.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Sukhoi_Superjet_100",
@@ -4344,8 +4257,7 @@
     },
     {
         "id": "tupolev-tu-134",
-        "name": "Tu-134",
-        "manufacturer": "Tupolev",
+        "name": "Tupolev Tu-134",
         "longDescription": "The Tupolev Tu-134 (NATO reporting name: Crusty) is a twin-engined, narrow-body, jet airliner built in the Soviet Union from 1966 to 1984. The original version featured a glazed-nose design and, like certain other Russian airliners (including its sister model the Tu-154), it can operate from unpaved airfields.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-134",
@@ -4392,8 +4304,7 @@
     },
     {
         "id": "tupolev-tu-154",
-        "name": "Tu-154",
-        "manufacturer": "Tupolev",
+        "name": "Tupolev Tu-154",
         "longDescription": "The Tupolev Tu-154 (Russian: Ty&#1087;&#1086;&#1083;&#1077;&#1074; &#1058;&#1091;-154; NATO reporting name: Careless) is a three-engine medium-range narrow-body airliner designed in the mid-1960s and manufactured by Tupolev. A workhorse of Soviet and (subsequently) Russian airlines for several decades, it carried half of all passengers flown by Aeroflot and its subsidiaries (137.5 million/year or 243.8 billion passenger km in 1990), remaining the standard domestic-route airliner of Russia and former Soviet states until the mid-2000s. It was exported to 17 non-Russian airlines and used as head-of-state transport by the air forces of several countries.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-154",
@@ -4445,8 +4356,7 @@
     },
     {
         "id": "tupolev-tu-204",
-        "name": "Tu-204",
-        "manufacturer": "Tupolev",
+        "name": "Tupolev Tu-204",
         "longDescription": "The Tupolev Tu-204 is a twin-engined medium-range jet airliner capable of carrying 210 passengers, designed by Tupolev and produced by Aviastar SP and Kazan Aircraft Production Association. First introduced in 1989, it is intended to be broadly equivalent to the Boeing 757, with slightly lower range and payload, and has competitive performance and fuel efficiency in its class. It was developed for Aeroflot as a replacement for the medium-range Tupolev Tu-154 trijet. The latest version, with significant upgrades and improvements, is the Tu-204SM, which made its maiden flight on 29 December 2010.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-204",
@@ -4493,8 +4403,7 @@
     },
     {
         "id": "yakovlev-yak-40",
-        "name": "Yak-40",
-        "manufacturer": "Yakovlev",
+        "name": "Yakovlev Yak-40",
         "longDescription": "The Yakovlev Yak-40 (Russian: &#1071;&#1082;-40), NATO reporting name: Codling) is a small, three-engined airliner. It is the world's first commuter trijet. Maiden flight was made in 1966, and production took place from 1967 to 1981. Introduced in September 1968, the Yak-40 was exported since 1970.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Yakovlev_Yak-40",
@@ -4546,8 +4455,7 @@
     },
     {
         "id": "yakovlev-yak-42",
-        "name": "Yak-42",
-        "manufacturer": "Yakovlev",
+        "name": "Yakovlev Yak-42",
         "longDescription": "The Yakovlev Yak-42 (NATO reporting name: \"Clobber\") is a 100/120-seat three-engined mid-range passenger jet. It is the first airliner produced in the Soviet Union to be powered by modern high-bypass turbofan engines.",
         "attribution": "Wikipedia",
         "attributionUrl": "https://en.wikipedia.org/wiki/Yakovlev_Yak-42",

@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.filter.results.FilterResultsView
 import com.edwardharker.aircraftrecognition.model.Aircraft
-import com.edwardharker.aircraftrecognition.model.displayName
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDetailActivity
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
@@ -137,7 +136,7 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
             val aircraft = filterResults[position]
             holder.aircraft = aircraft
 
-            holder.aircraftName.text = aircraft.displayName
+            holder.aircraftName.text = aircraft.name
             holder.aircraftImage.loadAircraftImage(aircraft)
         }
 

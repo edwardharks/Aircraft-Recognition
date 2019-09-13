@@ -242,9 +242,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
             })
         }
 
-        val formatAircraftName = String.format("%s %s", aircraft.manufacturer, aircraft.name)
-        aircraftName.text = formatAircraftName
-        title = formatAircraftName
+        aircraftName.text = aircraft.name
+        title = aircraft.name
         aircraftDescription.text = aircraft.longDescription
 
         aircraftMetaDataContainer.removeAllViews()

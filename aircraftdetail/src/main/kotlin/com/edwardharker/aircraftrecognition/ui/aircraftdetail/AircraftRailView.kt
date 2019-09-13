@@ -15,7 +15,6 @@ import com.edwardharker.aircraftrecognition.aircraftdetail.R
 import com.edwardharker.aircraftrecognition.analytics.Event
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.model.Aircraft
-import com.edwardharker.aircraftrecognition.model.displayName
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView.Aspect.HEIGHT
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
@@ -74,7 +73,7 @@ private class RailAdapter : RecyclerView.Adapter<ViewHolder>() {
         val aircraft = filterResults[position]
         holder.aircraft = aircraft
 
-        holder.aircraftName.text = aircraft.displayName
+        holder.aircraftName.text = aircraft.name
         holder.aircraftImage.loadAircraftImage(aircraft)
     }
 

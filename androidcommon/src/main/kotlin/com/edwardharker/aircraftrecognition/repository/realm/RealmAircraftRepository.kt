@@ -26,8 +26,8 @@ class RealmAircraftRepository(private val realm: Observable<Realm>) : AircraftRe
         return realm.flatMap {
             it.where(RealmAircraft::class.java)
                 .findAllSortedAsync(
-                    arrayOf("manufacturer", "name"),
-                    arrayOf(Sort.ASCENDING, Sort.ASCENDING)
+                    arrayOf("name"),
+                    arrayOf(Sort.ASCENDING)
                 )
                 .asObservable()
         }.filter {
@@ -50,8 +50,8 @@ class RealmAircraftRepository(private val realm: Observable<Realm>) : AircraftRe
             it.where(RealmAircraft::class.java)
                 .withFilters(filters)
                 .findAllSortedAsync(
-                    arrayOf("manufacturer", "name"),
-                    arrayOf(Sort.ASCENDING, Sort.ASCENDING)
+                    arrayOf("name"),
+                    arrayOf(Sort.ASCENDING)
                 )
                 .asObservable()
         }.filter {

@@ -8,7 +8,6 @@ fun aircraftToRealmAircraft(aircraft: Aircraft): RealmAircraft {
     return RealmAircraft(
         aircraft.id,
         aircraft.name,
-        aircraft.manufacturer,
         aircraft.shortDescription,
         aircraft.longDescription,
         aircraft.attribution,
@@ -24,7 +23,6 @@ fun realmAircraftToAircraft(realmAircraft: RealmAircraft): Aircraft {
     return Aircraft(
         realmAircraft.id,
         realmAircraft.name,
-        realmAircraft.manufacturer,
         realmAircraft.shortDescription,
         realmAircraft.longDescription,
         realmAircraft.attribution,
