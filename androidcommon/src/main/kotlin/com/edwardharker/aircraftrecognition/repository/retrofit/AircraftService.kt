@@ -7,6 +7,6 @@ import rx.Observable
 
 
 interface AircraftService {
-    @GET("aircraft/aircraft.json")
+    @GET("aircraft/1/aircraft.json")
     fun getAircraft(): Observable<Response<List<Aircraft>>>
 }
