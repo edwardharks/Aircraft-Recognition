@@ -28,38 +28,35 @@ class AircraftMapperTest {
         private const val name = "name"
         private const val shortDescription = "shortDescription"
         private const val longDescription = "longDescription"
-        private const val manufacturer = "manufacturer"
         private const val metaDataName = "metaDataName"
         private const val metaDataValue = "metaDataValue"
         private const val attribution = "attribution"
         private const val attributionUrl = "attributionUrl"
 
         private val aircraft = Aircraft(
-            id,
-            name,
-            manufacturer,
-            shortDescription,
-            longDescription,
-            attribution,
-            attributionUrl,
-            mapOf(Pair(metaDataName, metaDataValue)),
-            emptyMap(),
-            emptyList(),
-            emptyList()
+            id = id,
+            name = name,
+            shortDescription = shortDescription,
+            longDescription = longDescription,
+            attribution = attribution,
+            attributionUrl = attributionUrl,
+            metaData = mapOf(Pair(metaDataName, metaDataValue)),
+            filterOptions = emptyMap(),
+            images = emptyList(),
+            youtubeVideos = emptyList()
         )
 
         private val realmAircraft = RealmAircraft(
-            id,
-            name,
-            manufacturer,
-            shortDescription,
-            longDescription,
-            attribution,
-            attributionUrl,
-            RealmList(RealmPair(metaDataName, metaDataValue)),
-            RealmList(),
-            RealmList(),
-            RealmList()
+            id = id,
+            name = name,
+            shortDescription = shortDescription,
+            longDescription = longDescription,
+            attribution = attribution,
+            attributionUrl = attributionUrl,
+            metaData = RealmList(RealmPair(metaDataName, metaDataValue)),
+            aircraftFilterOptions = RealmList(),
+            images = RealmList(),
+            youtubeVideos = RealmList()
         )
     }
 }
