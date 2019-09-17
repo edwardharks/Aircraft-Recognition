@@ -69,8 +69,8 @@ internal class FilterPicker : LinearLayout {
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val filterOption = filterOptions[position]
             holder.label.text = filterOption.label
-            holder.itemView.isSelected = selectedFilterOptions
-                .isSelected(filterName, filterOption.value)
+            val selected = selectedFilterOptions.isSelected(filterName, filterOption.value)
+            holder.itemView.isSelected = selected
             val imageRes = filterOption.imageRes
             if (imageRes != null) {
                 holder.image.setImageResource(imageRes)
