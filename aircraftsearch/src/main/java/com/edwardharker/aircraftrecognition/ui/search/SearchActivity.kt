@@ -12,6 +12,7 @@ import com.edwardharker.aircraftrecognition.ui.aircraftdetail.launchAircraftDeta
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.feedback.launchFeedbackDialog
 import com.edwardharker.aircraftrecognition.ui.navigator
+import com.edwardharker.aircraftrecognition.ui.showKeyboard
 import com.edwardharker.aircraftsearch.R
 import com.jakewharton.rxbinding.widget.RxTextView
 import redux.Action
@@ -59,6 +60,8 @@ class SearchActivity : AppCompatActivity() {
             setNavigationOnClickListener { onBackPressed() }
             setNavigationIcon(R.drawable.ic_arrow_back_white_24dp)
         }
+
+        searchEditText.showKeyboard()
 
         searchResults.adapter = searchAdapter
 

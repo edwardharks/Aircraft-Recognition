@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatDialogFragment
 import com.edwardharker.aircraftrecognition.feedback.FeedbackView
 import com.edwardharker.aircraftrecognition.feedback.feedbackPresenter
 import com.edwardharker.aircraftrecognition.ui.Navigator
+import com.edwardharker.aircraftrecognition.ui.showKeyboard
 import com.edwardharker.aircraftrecognition.ui.toast
 
 fun Navigator.launchFeedbackDialog() {
@@ -42,6 +43,8 @@ class FeedbackDialogFragment : AppCompatDialogFragment(), FeedbackView {
         val submitButton = view.findViewById<View>(R.id.submit_button)
         enterFeedbackGroup = view.findViewById(R.id.enter_feedback_group)
         feedbackConfirmationGroup = view.findViewById(R.id.feedback_confirmation_group)
+
+        messageEditText.showKeyboard()
 
         submitButton.setOnClickListener {
             presenter.submitFeedback(messageEditText.text.toString())
