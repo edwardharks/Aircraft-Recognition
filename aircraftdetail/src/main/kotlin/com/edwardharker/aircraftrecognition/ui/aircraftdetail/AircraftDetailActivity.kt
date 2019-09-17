@@ -23,7 +23,7 @@ import android.view.View.ALPHA
 import android.view.View.TRANSLATION_Y
 import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
-import android.view.ViewTreeObserver
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -44,6 +44,7 @@ import com.edwardharker.aircraftrecognition.ui.AspectRatioImageView
 import com.edwardharker.aircraftrecognition.ui.Navigator
 import com.edwardharker.aircraftrecognition.ui.TransitionListenerAdapter
 import com.edwardharker.aircraftrecognition.ui.bind
+import com.edwardharker.aircraftrecognition.ui.doOnLayout
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
 import com.edwardharker.aircraftrecognition.ui.feedback.launchFeedbackDialog
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
@@ -95,6 +96,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val aircraftImageContainer by bind<View>(R.id.aircraft_image_container)
     private val aircraftName by bind<TextView>(R.id.aircraft_name)
     private val aircraftDescription by bind<TextView>(R.id.aircraft_description)
+    private val seeMore by bind<ImageView>(R.id.see_more)
     private val aircraftMetaDataContainer by bind<ViewGroup>(R.id.aircraft_meta_data_container)
     private val toolbar by bind<Toolbar>(R.id.toolbar)
     private val scrollView by bind<NestedScrollView>(R.id.scroll_view)
@@ -102,9 +104,13 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val similarAircraftRail by bind<SimilarAircraftView>(R.id.similar_aircraft_rail)
     private val aircraftDetailsContainer by bind<View>(R.id.aircraft_details_container)
 
+    private val expandLessDrawable by lazy { getDrawable(R.drawable.ic_expand_less_white_24dp) }
+    private val expandMoreDrawable by lazy { getDrawable(R.drawable.ic_expand_more_white_24dp) }
+
     private val transitionSlidingViews by lazy {
         listOf(
             aircraftDescription,
+            seeMore,
             aircraftMetaDataContainer,
             similarAircraftRail
         )
@@ -114,6 +120,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         listOf(
             aircraftMetaDataContainer,
             aircraftDescription,
+            seeMore,
             aircraftMetaDataContainer
         )
     }
@@ -122,6 +129,7 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         listOf(
             toolbar,
             aircraftDescription,
+            seeMore,
             aircraftMetaDataContainer,
             photoCarouselButton,
             similarAircraftRail
@@ -194,6 +202,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         }
 
         similarAircraftRail.aircraftId = aircraftId
+
+        aircraftDescription.maxLines = AIRCRAFT_DESCRIPTION_COLLAPSED_LINES
     }
 
     override fun onStart() {
@@ -233,13 +243,9 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         val aircraft = aircraftDetailViewModel.aircraft
 
         aircraftImage.loadAircraftImage(aircraft) {
-            aircraftImage.viewTreeObserver.addOnGlobalLayoutListener(object :
-                ViewTreeObserver.OnGlobalLayoutListener {
-                override fun onGlobalLayout() {
-                    supportStartPostponedEnterTransition()
-                    aircraftImage.viewTreeObserver.removeOnGlobalLayoutListener(this)
-                }
-            })
+            aircraftImage.doOnLayout {
+                supportStartPostponedEnterTransition()
+            }
         }
 
         aircraftName.text = aircraft.name
@@ -251,6 +257,10 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         aircraft.metaData.forEach { addAircraftMetaDataItem(it.key, it.value) }
         addAircraftMetaDataItem(getString(R.string.attribution), aircraft.attribution) {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(aircraft.attributionUrl)))
+        }
+
+        aircraftDescription.doOnLayout {
+            setUpDescription()
         }
 
         aircraftDetailActivityTracer.stop()
@@ -328,6 +338,34 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         navigator.launchPhotoCarouselActivity(aircraftId, aircraftImage)
     }
 
+    private fun setUpDescription() {
+        if (aircraftDescription.lineCount <= AIRCRAFT_DESCRIPTION_COLLAPSED_LINES) {
+            seeMore.visibility = View.GONE
+        } else {
+            aircraftDescription.setOnClickListener {
+                expandOrCollapseDescription()
+            }
+            seeMore.setOnClickListener {
+                expandOrCollapseDescription()
+            }
+        }
+    }
+
+    private fun expandOrCollapseDescription() {
+        val newMaxLines: Int
+        if (aircraftDescription.maxLines == AIRCRAFT_DESCRIPTION_COLLAPSED_LINES) {
+            newMaxLines = aircraftDescription.lineCount
+            seeMore.setImageDrawable(expandLessDrawable)
+        } else {
+            newMaxLines = AIRCRAFT_DESCRIPTION_COLLAPSED_LINES
+            seeMore.setImageDrawable(expandMoreDrawable)
+        }
+        val animation = ObjectAnimator.ofInt(aircraftDescription, "maxLines", newMaxLines)
+        val duration = (aircraftDescription.lineCount - AIRCRAFT_DESCRIPTION_COLLAPSED_LINES) *
+                AIRCRAFT_DESCRIPTION_ANIMATION_TIME_MULTIPLIER
+        animation.setDuration(duration).start()
+    }
+
     private inner class EnterTransitionListener : TransitionListenerAdapter() {
         val slideDistance = SLIDE_DISTANCE.pixelsToDp().toFloat()
 
@@ -362,6 +400,8 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         private const val FULL_COLOUR = 255
         private const val SLIDE_DISTANCE = 400
         private const val ENTER_ANIMATION_DURATION = 160L
+        private const val AIRCRAFT_DESCRIPTION_COLLAPSED_LINES = 6
+        private const val AIRCRAFT_DESCRIPTION_ANIMATION_TIME_MULTIPLIER = 10L
     }
 }
 
