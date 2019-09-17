@@ -11,13 +11,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/windowBackground"
+            android:background="?selectableItemBackground"
             android:fontFamily="sans-serif-light"
             android:paddingBottom="8dp"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="12dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:tag="always_expanded"/>
 
         <LinearLayout
             android:id="@+id/aircraft_meta_data_container"

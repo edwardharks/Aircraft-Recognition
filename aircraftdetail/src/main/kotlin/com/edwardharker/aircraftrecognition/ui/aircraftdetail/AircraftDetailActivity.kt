@@ -23,7 +23,6 @@ import android.view.View.ALPHA
 import android.view.View.TRANSLATION_Y
 import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
-import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -46,6 +45,7 @@ import com.edwardharker.aircraftrecognition.ui.TransitionListenerAdapter
 import com.edwardharker.aircraftrecognition.ui.bind
 import com.edwardharker.aircraftrecognition.ui.doOnLayout
 import com.edwardharker.aircraftrecognition.ui.dpToPixels
+import com.edwardharker.aircraftrecognition.ui.drawableBottom
 import com.edwardharker.aircraftrecognition.ui.feedback.launchFeedbackDialog
 import com.edwardharker.aircraftrecognition.ui.loadAircraftImage
 import com.edwardharker.aircraftrecognition.ui.navigator
@@ -96,7 +96,6 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val aircraftImageContainer by bind<View>(R.id.aircraft_image_container)
     private val aircraftName by bind<TextView>(R.id.aircraft_name)
     private val aircraftDescription by bind<TextView>(R.id.aircraft_description)
-    private val seeMore by bind<ImageView>(R.id.see_more)
     private val aircraftMetaDataContainer by bind<ViewGroup>(R.id.aircraft_meta_data_container)
     private val toolbar by bind<Toolbar>(R.id.toolbar)
     private val scrollView by bind<NestedScrollView>(R.id.scroll_view)
@@ -110,7 +109,6 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     private val transitionSlidingViews by lazy {
         listOf(
             aircraftDescription,
-            seeMore,
             aircraftMetaDataContainer,
             similarAircraftRail
         )
@@ -120,7 +118,6 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         listOf(
             aircraftMetaDataContainer,
             aircraftDescription,
-            seeMore,
             aircraftMetaDataContainer
         )
     }
@@ -129,7 +126,6 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         listOf(
             toolbar,
             aircraftDescription,
-            seeMore,
             aircraftMetaDataContainer,
             photoCarouselButton,
             similarAircraftRail
@@ -202,8 +198,6 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         }
 
         similarAircraftRail.aircraftId = aircraftId
-
-        aircraftDescription.maxLines = AIRCRAFT_DESCRIPTION_COLLAPSED_LINES
     }
 
     override fun onStart() {
@@ -339,13 +333,13 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
     }
 
     private fun setUpDescription() {
-        if (aircraftDescription.lineCount <= AIRCRAFT_DESCRIPTION_COLLAPSED_LINES) {
-            seeMore.visibility = View.GONE
+        if (aircraftDescription.tag == "always_expanded" ||
+            aircraftDescription.lineCount <= AIRCRAFT_DESCRIPTION_COLLAPSED_LINES
+        ) {
+            aircraftDescription.drawableBottom = null
         } else {
+            aircraftDescription.maxLines = AIRCRAFT_DESCRIPTION_COLLAPSED_LINES
             aircraftDescription.setOnClickListener {
-                expandOrCollapseDescription()
-            }
-            seeMore.setOnClickListener {
                 expandOrCollapseDescription()
             }
         }
@@ -355,10 +349,10 @@ class AircraftDetailActivity : AppCompatActivity(), AircraftDetailView {
         val newMaxLines: Int
         if (aircraftDescription.maxLines == AIRCRAFT_DESCRIPTION_COLLAPSED_LINES) {
             newMaxLines = aircraftDescription.lineCount
-            seeMore.setImageDrawable(expandLessDrawable)
+            aircraftDescription.drawableBottom = expandLessDrawable
         } else {
             newMaxLines = AIRCRAFT_DESCRIPTION_COLLAPSED_LINES
-            seeMore.setImageDrawable(expandMoreDrawable)
+            aircraftDescription.drawableBottom = expandMoreDrawable
         }
         val animation = ObjectAnimator.ofInt(aircraftDescription, "maxLines", newMaxLines)
         val duration = (aircraftDescription.lineCount - AIRCRAFT_DESCRIPTION_COLLAPSED_LINES) *

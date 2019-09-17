@@ -1,5 +1,6 @@
 package com.edwardharker.aircraftrecognition.ui
 
+import android.graphics.drawable.Drawable
 import android.os.Build
 import android.widget.TextView
 
@@ -11,3 +12,14 @@ fun TextView.setTextAppearanceCompat(textAppearance: Int) {
         setTextAppearance(textAppearance)
     }
 }
+
+var TextView.drawableBottom: Drawable?
+    get() = compoundDrawables[3]
+    set(value) {
+        setCompoundDrawablesRelativeWithIntrinsicBounds(
+            compoundDrawables[0],
+            compoundDrawables[1],
+            compoundDrawables[2],
+            value
+        )
+    }
