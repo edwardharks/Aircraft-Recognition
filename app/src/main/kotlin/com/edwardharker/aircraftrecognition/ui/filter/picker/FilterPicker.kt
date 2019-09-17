@@ -5,6 +5,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater.from
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -38,7 +39,8 @@ internal class FilterPicker : LinearLayout {
         clipToPadding = false
         clipChildren = false
         from(context).inflate(R.layout.view_filter_picker, this)
-        filterOptionsRecyclerView.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
+        filterOptionsRecyclerView.layoutManager =
+            LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
     }
 
     fun bindTo(filter: Filter) {
@@ -67,8 +69,14 @@ internal class FilterPicker : LinearLayout {
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val filterOption = filterOptions[position]
             holder.label.text = filterOption.label
-            holder.label.isSelected =
-                    selectedFilterOptions.isSelected(filterName, filterOption.value)
+            holder.itemView.isSelected = selectedFilterOptions
+                .isSelected(filterName, filterOption.value)
+            val imageRes = filterOption.imageRes
+            if (imageRes != null) {
+                holder.image.setImageResource(imageRes)
+            } else {
+                holder.image.setImageDrawable(null)
+            }
         }
 
         override fun getItemCount(): Int = filterOptions.size
@@ -81,6 +89,7 @@ internal class FilterPicker : LinearLayout {
 
         private inner class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
             val label: TextView by lazy { view.findViewById<TextView>(R.id.filter_label) }
+            val image: ImageView by lazy { view.findViewById<ImageView>(R.id.filter_image) }
 
             init {
                 view.setOnClickListener {

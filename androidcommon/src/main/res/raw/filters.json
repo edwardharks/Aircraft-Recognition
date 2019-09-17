@@ -5,11 +5,13 @@
     "filterOptions": [
       {
         "value": "JET",
-        "label": "Jet"
+        "label": "Jet",
+        "image": "filter_jet_1"
       },
       {
         "value": "PROPELLER",
-        "label": "Propeller"
+        "label": "Propeller",
+        "image": "filter_propeller"
       }
     ]
   },
@@ -19,19 +21,23 @@
     "filterOptions": [
       {
         "value": "ONE",
-        "label": "One"
+        "label": "One",
+        "image": "filter_propeller"
       },
       {
         "value": "TWO",
-        "label": "Two"
+        "label": "Two",
+        "image": "filter_jet_2"
       },
       {
         "value": "THREE",
-        "label": "Three"
+        "label": "Three",
+        "image": "filter_jet_3"
       },
       {
         "value": "FOUR",
-        "label": "Four"
+        "label": "Four",
+        "image": "filter_jet_4"
       }
     ]
   },
@@ -41,19 +47,23 @@
     "filterOptions": [
       {
         "value": "WING",
-        "label": "Under the wings"
+        "label": "Under the wings",
+        "image": "filter_under_wing"
       },
       {
         "value": "TAIL",
-        "label": "On the tail"
+        "label": "On the tail",
+        "image": "filter_tail"
       },
       {
         "value": "BOTH",
-        "label": "Tail and wings"
+        "label": "Tail and wings",
+        "image": "filter_wings_tail"
       },
       {
         "value": "NOSE",
-        "label": "Nose"
+        "label": "Nose",
+        "image": "filter_nose"
       }
     ]
   },
@@ -63,11 +73,13 @@
     "filterOptions": [
       {
         "value": "ABOVE",
-        "label": "Above the fuselage"
+        "label": "Above the fuselage",
+        "image": "filter_over_fuselage"
       },
       {
         "value": "BELOW",
-        "label": "Below the fuselage"
+        "label": "Below the fuselage",
+        "image": "filter_under_fuselage"
       }
     ]
   },
@@ -77,11 +89,13 @@
     "filterOptions": [
       {
         "value": "ONE",
-        "label": "One"
+        "label": "One",
+        "image": "filter_single_deck"
       },
       {
         "value": "TWO",
-        "label": "Two"
+        "label": "Two",
+        "image": "filter_double_deck"
       }
     ]
   }
