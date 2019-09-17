@@ -1,11 +1,11 @@
 package com.edwardharker.aircraftrecognition.ui
 
 import android.content.Context
-import androidx.annotation.ColorInt
-import androidx.annotation.ColorRes
+import android.graphics.drawable.Drawable
+import androidx.annotation.DrawableRes
 import androidx.core.content.ContextCompat
 
-@ColorInt
-fun Context.getColour(@ColorRes colour: Int): Int {
-    return ContextCompat.getColor(this, colour)
+
+fun Context.getDrawableCompat(@DrawableRes drawableId: Int): Drawable? {
+    return ContextCompat.getDrawable(this, drawableId)
 }

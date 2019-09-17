@@ -1,10 +1,7 @@
 package com.edwardharker.aircraftrecognition.ui
 
 import android.graphics.Bitmap
-import android.graphics.drawable.ColorDrawable
 import android.widget.ImageView
-import androidx.annotation.ColorRes
-import androidx.core.content.ContextCompat.getColor
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestListener
@@ -16,11 +13,11 @@ import com.edwardharker.aircraftrecognition.model.Aircraft
 import com.edwardharker.aircraftrecognition.model.Image
 
 fun AspectRatioImageView.loadAircraftImage(
-    aircraft: Aircraft, @ColorRes placeholderColour: Int = R.color.colorPrimaryLight,
+    aircraft: Aircraft,
     imageLoadedListener: (() -> Unit)? = null
 ) {
     if (aircraft.images.isNotEmpty()) {
-        loadAircraftImage(aircraft.images.first(), placeholderColour, imageLoadedListener)
+        loadAircraftImage(aircraft.images.first(), imageLoadedListener)
     } else {
         Glide.clear(this)
         aspectRatio = 2f
@@ -28,21 +25,21 @@ fun AspectRatioImageView.loadAircraftImage(
 }
 
 fun AspectRatioImageView.loadAircraftImage(
-    image: Image, @ColorRes placeholderColour: Int = R.color.colorPrimaryLight,
+    image: Image,
     imageLoadedListener: (() -> Unit)? = null
 ) {
-    loadImage(image, placeholderColour, imageLoadedListener)
+    loadImage(image, imageLoadedListener)
     aspectRatio = image.width.toFloat() / image.height.toFloat()
 }
 
 fun ImageView.loadImage(
-    image: Image, @ColorRes placeholderColour: Int = R.color.colorPrimaryLight,
+    image: Image,
     imageLoadedListener: (() -> Unit)? = null
 ) {
     Glide.with(context)
         .load(image.url)
         .asBitmap()
-        .placeholder(ColorDrawable(getColor(context, placeholderColour)))
+        .placeholder(context.getDrawableCompat(R.drawable.fallback_image))
         .diskCacheStrategy(DiskCacheStrategy.ALL)
         .dontAnimate()
         .listener(Listener(imageLoadedListener))
