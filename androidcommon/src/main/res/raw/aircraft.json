@@ -546,6 +546,122 @@
         ]
     },
     {
+        "id": "airbus-beluga",
+        "name": "Airbus Beluga",
+        "longDescription": "The Airbus A300-600ST (Super Transporter) or Beluga, is a version of the standard A300-600 wide-body airliner modified to carry aircraft parts and oversized cargo. It received the official name of Super Transporter early on; however, the name Beluga, a whale it resembles, gained popularity and has since been officially adopted. The Beluga XL, based on the Airbus A330 with similar modifications and dimensions, is being developed by Airbus to replace the type around 2020.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_Beluga",
+        "metaData": {
+            "Role": "Outsize cargo freight aircraft",
+            "Manufacturer": "Airbus",
+            "First flight": "13 September 1994",
+            "Introduction": "September 1995",
+            "Status": "In service",
+            "Primary user": "Airbus Transport International",
+            "Produced": "1992–c.1999",
+            "Number built": "5",
+            "Unit cost": "€183 million",
+            "Developed from": "Airbus A300-600"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/AirExpo_2014_-_Beluga_02_%28cropped%29.jpg",
+                "width": 1008,
+                "height": 756
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Aero_Spacelines_377SGT_Super_Guppy_Turbine%2C_Airbus_Skylink_AN0586290.jpg/1024px-Aero_Spacelines_377SGT_Super_Guppy_Turbine%2C_Airbus_Skylink_AN0586290.jpg",
+                "width": 1024,
+                "height": 692
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Airbus_%28A300-600ST%29_Beluga_unloading_Columbus.jpg/1024px-Airbus_%28A300-600ST%29_Beluga_unloading_Columbus.jpg",
+                "width": 1024,
+                "height": 681
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Airbus_Beluga_-_unloading_Columbus_at_KSC.jpg/1024px-Airbus_Beluga_-_unloading_Columbus_at_KSC.jpg",
+                "width": 1024,
+                "height": 681
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/DSC_3913-F-GSTD_%2810386768453%29.jpg/1024px-DSC_3913-F-GSTD_%2810386768453%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/F-GSTB_-_2_Airbus_A300B4-608ST_Beluga_Airbus_%288634655670%29.jpg/1024px-F-GSTB_-_2_Airbus_A300B4-608ST_Beluga_Airbus_%288634655670%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/F-GSTD_Beluga_Airbus_4_%287801240238%29.jpg/1024px-F-GSTD_Beluga_Airbus_4_%287801240238%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Meeting_a%C3%A9rien_d%27Albert-Picardie_%287_juin_2008%29_020_%28Beluga%29.jpg/1024px-Meeting_a%C3%A9rien_d%27Albert-Picardie_%287_juin_2008%29_020_%28Beluga%29.jpg",
+                "width": 1024,
+                "height": 1388
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "hzXa-I9nNTE"
+            }
+        ]
+    },
+    {
+        "id": "airbus-beluga-xl",
+        "name": "Airbus Beluga XL",
+        "longDescription": "The Airbus Beluga XL (Airbus A330-743L) is a large transport aircraft based on the Airbus A330 airliner. The aircraft is due to enter service with Airbus Transport in 2019 to replace the Airbus Beluga in the movement of oversized aircraft components, for example wings. The Beluga XL made its first flight on 19 July 2018.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Airbus_Beluga_XL",
+        "metaData": {
+            "Role": "Outsize cargo freight aircraft",
+            "Manufacturer": "Airbus",
+            "First flight": "19 July 2018",
+            "Introduction": "Expected 2019",
+            "Status": "Flight Testing",
+            "Primary user": "Airbus Transport International",
+            "Produced": "2016–present",
+            "Number built": "3",
+            "Program cost": "€1 billion (Development and production)",
+            "Developed from": "Airbus A330-200"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/%22Beluga_XL%22_A330-743L_%28cropped%29.jpg/1024px-%22Beluga_XL%22_A330-743L_%28cropped%29.jpg",
+                "width": 1024,
+                "height": 669
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/DSC_3913-F-GSTD_%2810386768453%29.jpg/1024px-DSC_3913-F-GSTD_%2810386768453%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/F-WBXL_A330_Beluga_XL.jpg/1024px-F-WBXL_A330_Beluga_XL.jpg",
+                "width": 1024,
+                "height": 688
+            }
+        ]
+    },
+    {
         "id": "antonov-an-148",
         "name": "Antonov An-148",
         "longDescription": "The Antonov An-148 (Ukrainian: Антонов Ан-148) is a regional jet designed and built by Antonov of Ukraine. Development of the aircraft was started in the 1990s, and its maiden flight took place on 17 December 2004. The aircraft completed its certification programme on 26 February 2007. The An-148 has a maximum range of 2,100–4,400 km (1,100–2,400 nmi; 1,300–2,700 mi) and is able to carry 68–85 passengers, depending on the configuration.\nThe Antonov An-158 is a stretched fuselage version of the aircraft, accommodating up to 100 passengers.\nFollowing a crash in February 2018, all An-148 and An-158 in Russia were grounded by the Russian Ministry of Transport. In addition, Cubana grounded its An-158 fleet as of May 2018 due to several technical issues with the aircraft. Until late 2018, the Antonov An-148 aircraft was also being produced in Russia by Voronezh Aircraft Production Association, however due to the souring political relationship between Ukraine and Russia, production in Russia was discontinued. The last Russian-built An-148 was completed in October 2018.",
@@ -870,6 +986,100 @@
         ]
     },
     {
+        "id": "beechcraft-duchess",
+        "name": "Beechcraft Duchess",
+        "longDescription": "The Beechcraft Model 76 Duchess is an American twin-engined monoplane built by Beechcraft intended partly as a low cost introduction to twin-engine aircraft.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Duchess",
+        "metaData": {
+            "Role": "Four-seat cabin monoplane",
+            "Manufacturer": "Beechcraft",
+            "First flight": "September 1974",
+            "Introduction": "1978",
+            "Primary user": "Flight schools",
+            "Produced": "1978-1983",
+            "Number built": "437"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Beech_76_N6697D_Timm%2C_Milw%2C_WI_07.06.06R_edited-2.jpg/1024px-Beech_76_N6697D_Timm%2C_Milw%2C_WI_07.06.06R_edited-2.jpg",
+                "width": 1024,
+                "height": 647
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Beechcraft76DuchessC-GJFE02.jpg",
+                "width": 750,
+                "height": 563
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Ntps-be76-N5410M-090123-02-cr8.jpg",
+                "width": 800,
+                "height": 600
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "mhrji5FTknA"
+            }
+        ]
+    },
+    {
+        "id": "beechcraft-duke",
+        "name": "Beechcraft Duke",
+        "longDescription": "The Beechcraft 60 Duke is an American-built twin-engine fixed-wing aircraft created by Beechcraft. The aircraft has retractable tricycle landing gear and a pressurized cabin. The two piston engines are turbocharged and the turbochargers also pressurize the cabin with bleed air.\n\n",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Duke",
+        "metaData": {
+            "Role": "Light aircraft",
+            "Manufacturer": "Beechcraft",
+            "First flight": "December 29, 1966",
+            "Introduction": "July 1968",
+            "Produced": "1968–1983",
+            "Number built": "596"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Beech_A60_DukeN7620D_Corona_CA_16.10.86_edited-2.jpg",
+                "width": 1024,
+                "height": 718
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/BeechcraftDukeRocket.jpg",
+                "width": 1024,
+                "height": 745
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Beechcraft_B60_Duke_C-FFFU_01.JPG/1024px-Beechcraft_B60_Duke_C-FFFU_01.JPG",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Duke2.jpg/1024px-Duke2.jpg",
+                "width": 1024,
+                "height": 683
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "FkqTDEQeY8s"
+            }
+        ]
+    },
+    {
         "id": "beechcraft-king-air",
         "name": "Beechcraft King Air",
         "longDescription": "The Beechcraft King Air family is part of a line of American utility aircraft produced by Beechcraft. The King Air line comprises a number of twin-turboprop models that have been divided into two families. The Model 90 and 100 series developed in the 1960s are known as King Airs, while the later T-tail Model 200 and 300 series were originally marketed as Super King Airs, with the name \"Super\" being dropped by Beechcraft in 1996 (although it is still often used to differentiate the 200 and 300 series King Airs from their smaller stablemates).\nThe King Air was the first aircraft in its class and has been in continuous production since 1964. It has outsold all of its turboprop competitors combined. It now faces competition from jet aircraft such as the Embraer Phenom 100, Honda HA-420 HondaJet and Cessna Citation Mustang; as well as from newer turboprop aircraft including the Piaggio P180 Avanti, and single-engine Piper Malibu Meridian, Pilatus PC-12, and Socata TBM.",
@@ -939,6 +1149,52 @@
         ]
     },
     {
+        "id": "beechcraft-model-99",
+        "name": "Beechcraft Model 99",
+        "longDescription": "The Beechcraft Model 99 is a civilian aircraft produced by Beechcraft. It is also known as the Beech 99 Airliner and the Commuter 99. The 99 is a twin-engine, unpressurized, 15 to 17 passenger seat turboprop aircraft, derived from the earlier Beechcraft King Air and Queen Air. It uses the wings of the Queen Air, the engines and nacelles of the King Air, and sub-systems from both, with a specifically-designed nose structure.\n\n",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Model_99",
+        "metaData": {
+            "Role": "Twin-engined utility monoplane",
+            "National origin": "United States",
+            "Manufacturer": "Beechcraft",
+            "First flight": "July 1966",
+            "Introduction": "1968",
+            "Status": "Active",
+            "Produced": "1966-1987",
+            "Developed from": "Beechcraft King Air Beechcraft Queen Air"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Ameriflight-be99-N62989-090123-01-cr8.jpg",
+                "width": 800,
+                "height": 600
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Jamaica_Air_Shuttle_Beechcraft_Model_99_In_Flight.jpg",
+                "width": 600,
+                "height": 400
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Beech_-99_N316VA_AlCtr_Britt_ORD_21.10.75_edited-2.jpg",
+                "width": 1024,
+                "height": 674
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "I2CNF3CM2OU"
+            }
+        ]
+    },
+    {
         "id": "beechcraft-musketeer",
         "name": "Beechcraft Musketeer",
         "longDescription": "The Beechcraft Musketeer is a family of single-engined, low-wing, light aircraft that was produced by Beechcraft. The line includes the Model 19 Musketeer Sport, the Model 23 Musketeer, Custom and Sundowner, the Model 23-24 Musketeer Super III the retractable gear Model 24-R Sierra and the military CT-134 Musketeer.\nThe Musketeer line was in production from model years 1963 to 1983, during which time a total of 4,366 were produced. The type certificate for the Musketeer family of aircraft has been owned by Hawker Beechcraft since March 26, 2007.",
@@ -978,6 +1234,349 @@
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Beechcraft_BE-23_Sundowner_C-GJML.JPG/1024px-Beechcraft_BE-23_Sundowner_C-GJML.JPG",
                 "width": 1024,
                 "height": 768
+            }
+        ]
+    },
+    {
+        "id": "beechcraft-premier-i",
+        "name": "Beechcraft Premier I",
+        "longDescription": "The Beechcraft Premier I is a light business jet aircraft manufactured by the Beechcraft division of Hawker Beechcraft. The aircraft was designed to compete with the Cessna CitationJet series of aircraft.\n\n",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Premier_I",
+        "metaData": {
+            "Role": "Business Jet",
+            "Manufacturer": "Raytheon/Hawker Beechcraft",
+            "First flight": "December 22, 1998",
+            "Status": "Active",
+            "Produced": "2001-2012",
+            "Number built": "292",
+            "Unit cost": "US$ 7.1 million (2012)",
+            "Variants": "Hawker 200"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Private%2C_Raytheon_390_Premier_I%2C_D-ISAG_%2814338584917%29.jpg/1024px-Private%2C_Raytheon_390_Premier_I%2C_D-ISAG_%2814338584917%29.jpg",
+                "width": 1024,
+                "height": 688
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Hawker_Beechcraft_390_Premier_IA_AN2008869.jpg/1024px-Hawker_Beechcraft_390_Premier_IA_AN2008869.jpg",
+                "width": 1024,
+                "height": 683
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "_O-1dKCO6AY"
+            }
+        ]
+    },
+    {
+        "id": "beechcraft-queen-air",
+        "name": "Beechcraft Queen Air",
+        "longDescription": "The Beechcraft Queen Air is a twin-engined light aircraft produced by Beechcraft in several versions from 1960 to 1978.  Based upon the Twin Bonanza, with which it shared key components such as wings, engines, and tail surfaces, but featuring a larger fuselage, it served as the basis for the highly successful King Air series of turboprop aircraft. It is often used as a private aircraft, a utility, or a small commuter airliner. Production ran for 17 years.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Queen_Air",
+        "metaData": {
+            "Role": "Utility aircraft Airliner",
+            "Designer": "Beech Aircraft Corporation",
+            "First flight": "August 28, 1958",
+            "Introduction": "1960",
+            "Status": "Active service",
+            "Produced": "1960-1978",
+            "Number built": "930",
+            "Unit cost": "$135,000 (Model 80 in 1962) $576,000 in 2012 USD",
+            "Developed into": "Beechcraft King Air Beechcraft Model 99"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/N55SA_%2815292611832%29.jpg/1024px-N55SA_%2815292611832%29.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Be65_Iruma_%2822085832262%29_%28cropped%29.jpg",
+                "width": 930,
+                "height": 620
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Beech65_QueenAir.jpg",
+                "width": 1024,
+                "height": 714
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Beech_65-88_Queen_Air_N67T_OPA_29.09.79_edited-3.jpg",
+                "width": 1024,
+                "height": 740
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/QueenAir.jpg",
+                "width": 1024,
+                "height": 548
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "obQ9TXs6djI"
+            }
+        ]
+    },
+    {
+        "id": "beechcraft-skipper",
+        "name": "Beechcraft Skipper",
+        "longDescription": "The Beechcraft Model 77 Skipper is a two-seat, fixed tricycle gear general aviation airplane, originally designed for flight training but also used for touring and personal flying.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Skipper",
+        "metaData": {
+            "Role": "Light utility aircraft",
+            "Manufacturer": "Beech Aircraft Corporation",
+            "First flight": "September 12, 1978",
+            "Introduction": "1979",
+            "Produced": "1979-1983",
+            "Number built": "312"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Beechcraft77Skipper01A.jpg",
+                "width": 750,
+                "height": 493
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Skipper_WA-39.jpg",
+                "width": 750,
+                "height": 548
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/VH-HBJ_Beechcraft_77_Skipper_Hempels_Aviation_%289173247274%29.jpg",
+                "width": 1024,
+                "height": 694
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "FwSykhnCb10"
+            }
+        ]
+    },
+    {
+        "id": "beechcraft-super-king-air",
+        "name": "Beechcraft Super King Air",
+        "longDescription": "The Beechcraft Super King Air family is part of a line of twin-turboprop aircraft produced by Beechcraft. The Model 200 and Model 300 series were originally marketed as the \"Super King Air\" family, but the \"Super\" was dropped in 1996. They form the King Air line together with the King Air Model 90 and 100 series.Beechcraft currently offers the 250 (design. B200GT) and the larger 350i (B300) models. The 350ER (B300CER) is available to government, military and commercial customers for special mission operations such as aerial survey, air ambulance, flight inspection and surveillance. The Beechcraft 1900 regional airliner was derived from the Model B200 King Air.The Super King Air family has been in continuous production since 1974, the longest production run of any civilian turboprop aircraft in its class. It outlasted all of its previous competitors; the only other pressurized multi engine turboprop utility aircraft now in production is the Piaggio P.180 Avanti.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Super_King_Air",
+        "metaData": {
+            "Role": "Civil utility aircraft",
+            "Manufacturer": "Beechcraft",
+            "First flight": "October 27, 1972",
+            "Introduction": "1972 (Military) February 1974 (Civil)",
+            "Status": "Active service",
+            "Primary users": "United States Air Force United States Army Royal Flying Doctor Service of Australia Royal Australian Air Force",
+            "Produced": "1972–present",
+            "Number built": "3,781 at end of 2015",
+            "Unit cost": "King Air 250: US$6.61M King Air 350i: US$7.755M King Air 350iER: US$8.8M",
+            "Developed from": "Beechcraft King Air",
+            "Variants": "Beechcraft C-12 Huron Beechcraft 1900"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Royal_Air_Force_King_Air_B200_Training_Aircraft_MOD_45153010.jpg/1024px-Royal_Air_Force_King_Air_B200_Training_Aircraft_MOD_45153010.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Air-Greenland-beechcraft-b200-king-air-amaalik.jpg/1024px-Air-Greenland-beechcraft-b200-king-air-amaalik.jpg",
+                "width": 1024,
+                "height": 427
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Angled_shot_of_Malaysia_Air_Force%27s_Beechcraft_Super_King_Air_MPA.jpg/1024px-Angled_shot_of_Malaysia_Air_Force%27s_Beechcraft_Super_King_Air_MPA.jpg",
+                "width": 1024,
+                "height": 486
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Australian_Beechcraft_B300_King_Air_350.JPG/1024px-Australian_Beechcraft_B300_King_Air_350.JPG",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Beech_b300_kingair_350_m-five_arp.jpg/1024px-Beech_b300_kingair_350_m-five_arp.jpg",
+                "width": 1024,
+                "height": 730
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Beechcraft_B200_King_Air_-_VH-MSH.jpg/1024px-Beechcraft_B200_King_Air_-_VH-MSH.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/KingAir200-G-CDFY-122.jpg/1024px-KingAir200-G-CDFY-122.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/LR-2.JPG/1024px-LR-2.JPG",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/MAKS2015part4-43.jpg/1024px-MAKS2015part4-43.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/N857GAatSYD.JPG",
+                "width": 800,
+                "height": 534
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/NSW_RFS_%22Firescan%22_%28VH-LAB%29_Beechcraft_B200T_Super_King_Air.jpg/1024px-NSW_RFS_%22Firescan%22_%28VH-LAB%29_Beechcraft_B200T_Super_King_Air.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Royal_Saudi_Air_force_King_Air.jpg/1024px-Royal_Saudi_Air_force_King_Air.jpg",
+                "width": 1024,
+                "height": 640
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/VHFIX.jpg/1024px-VHFIX.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/VHSGV.JPG/1024px-VHSGV.JPG",
+                "width": 1024,
+                "height": 683
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "_ahAc9pdbRU"
+            }
+        ]
+    },
+    {
+        "id": "beechcraft-travel-air",
+        "name": "Beechcraft Travel Air",
+        "longDescription": "The Beechcraft Travel Air was a twin-engine development of the Beechcraft Bonanza.  It was designed to fill the gap between the single engine Model 35 Bonanza and the much larger Model 50 Twin Bonanza, and ultimately served as the basis for its replacement, the Baron.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Travel_Air",
+        "metaData": {
+            "Role": "Light twin aircraft",
+            "National origin": "United States of America",
+            "Manufacturer": "Beechcraft",
+            "First flight": "August 6, 1956 ",
+            "Introduction": "1958",
+            "Status": "Out of production, in service",
+            "Produced": "1958–1968",
+            "Number built": "720",
+            "Unit cost": "$49,500 in 1959",
+            "Developed from": "Beechcraft Bonanza",
+            "Variants": "Beechcraft Baron"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/1959BeechModel95-N47WC_3287.jpg/1024px-1959BeechModel95-N47WC_3287.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/BeechcraftD95.jpg",
+                "width": 1024,
+                "height": 608
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Beechcraft_Model_95.jpg",
+                "width": 550,
+                "height": 448
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "sEEtcqCFlfA"
+            }
+        ]
+    },
+    {
+        "id": "beechcraft-twin-bonanza",
+        "name": "Beechcraft Twin Bonanza",
+        "longDescription": "The Beechcraft Model 50 Twin Bonanza is a small twin-engined aircraft designed by Beechcraft as an executive transport for the business market. It was developed to fill a gap in Beechcraft's product line between the single-engined Model 35 Bonanza and the larger Model 18. The Twin Bonanza is about 50% larger than the Bonanza, has more powerful engines, and is significantly heavier, while in its earliest form having only half the passenger capacity of the Model 18.\n\n",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Beechcraft_Twin_Bonanza",
+        "metaData": {
+            "Role": "Utility aircraft",
+            "Manufacturer": "Beech Aircraft Corporation",
+            "First flight": "November 15, 1949",
+            "Introduction": "1951",
+            "Status": "Active",
+            "Primary user": "Private operators",
+            "Produced": "1951–1961",
+            "Number built": "975 (includes 195 L-23)",
+            "Variants": "L-23/U-8 Seminole",
+            "Developed into": "Beechcraft Queen Air"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Beech_B50_OTT2013_D7N8635_001_%28cropped%29.jpg/1024px-Beech_B50_OTT2013_D7N8635_001_%28cropped%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Beech_Twin_Bonanza_VH-BRH.jpg/1024px-Beech_Twin_Bonanza_VH-BRH.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Beechcraft_U-8D_Seminole_US_Army_in_flight.jpg",
+                "width": 1000,
+                "height": 758
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "dr4PNaj4Y5o"
             }
         ]
     },
@@ -1084,6 +1683,89 @@
         "youtubeVideos": [
             {
                 "videoId": "PXs6ylR0Xas"
+            }
+        ]
+    },
+    {
+        "id": "boeing-727",
+        "name": "Boeing 727",
+        "longDescription": "The Boeing 727 is an American midsized, narrow-body three-engined jet aircraft built by Boeing Commercial Airplanes from the early 1960s to 1984. It can carry 149 to 189 passengers and later models can fly up to 2,700 nautical miles (5,000 km) nonstop. Intended for short and medium-length flights, the 727 can use relatively short runways at smaller airports. It has three Pratt & Whitney JT8D engines below the T-tail, one on each side of the rear fuselage with a center engine that connects through an S-duct to an inlet at the base of the fin. The 727 is the only Boeing trijet, as a commercial design entering production.\nThe 727 followed the 707, a quad-jet airliner, with which it shares its upper fuselage cross-section and cockpit design. The 727-100 first flew in February 1963 and entered service with Eastern Air Lines in February 1964; the stretched 727-200 flew in July 1967 and entered service with Northeast Airlines that December. The 727 became a mainstay of airlines' domestic route networks and was also used on short- and medium-range international routes. Passenger, freighter, and convertible versions of the 727 were built.\nThe highest production rate of the 727 was in the 1970s; the last 727 was completed in 1984. As of July 2018, a total of 44 Boeing 727s (2× 727-100s and 42× -200s) were in commercial service with 23 airlines, plus a few more in government and private use. Airport noise regulations have led to 727s being equipped with hush kits. Since 1964, there have been 118 fatal incidents involving the Boeing 727. Successor models include variants of the 737 and the 757-200. The last commercial passenger flight of the type was in January 2019.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Boeing_727",
+        "metaData": {
+            "Role": "Narrow-body jet airliner",
+            "National origin": "United States",
+            "Manufacturer": "Boeing Commercial Airplanes",
+            "First flight": "February 9, 1963",
+            "Introduction": "February 1, 1964, with Eastern Air Lines",
+            "Status": "Limited to freighters and executive use",
+            "Primary user": "Kalitta Charters Líneas Aéreas Suramericanas",
+            "Produced": "1962–1984",
+            "Number built": "1,832",
+            "Unit cost": "$4.25 million initially -200: US$8.5M (1972) $22 million by 1982"
+        },
+        "filterOptions": {
+            "engines": "THREE",
+            "decks": "ONE",
+            "engine-position": "TAIL",
+            "wing-position": "BELOW",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/11gg_-_Northwest_Airlines_Boeing_727-251%3B_N203US%40FLL%3B30.01.1998_%288064695962%29.jpg/1024px-11gg_-_Northwest_Airlines_Boeing_727-251%3B_N203US%40FLL%3B30.01.1998_%288064695962%29.jpg",
+                "width": 1024,
+                "height": 701
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/B-727_Iberia_%28cropped%29.jpg/1024px-B-727_Iberia_%28cropped%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/B727_%284764445359%29.jpg/1024px-B727_%284764445359%29.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Boeing_727-228-Adv%2C_Ariana_Afghan_Airlines_AN1450645.jpg/1024px-Boeing_727-228-Adv%2C_Ariana_Afghan_Airlines_AN1450645.jpg",
+                "width": 1024,
+                "height": 682
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Boeing_727-228-Adv%2C_Iran_Aseman_Airlines_AN1003609.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Boeing_727_Kalitta_%282819751774%29.jpg",
+                "width": 937,
+                "height": 630
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Fedex_727-233%2C_N281FE.jpg/1024px-Fedex_727-233%2C_N281FE.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Rwr727tail.jpg",
+                "width": 314,
+                "height": 198
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/TAP_Air_Portugal_Boeing_727-100_%28CS-TBO%29.jpg",
+                "width": 652,
+                "height": 435
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/XT-BFA_B727_Burkina_Faso_%286328516101%29.jpg/1024px-XT-BFA_B727_Burkina_Faso_%286328516101%29.jpg",
+                "width": 1024,
+                "height": 683
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "wGHpm_OmTvU"
             }
         ]
     },
@@ -3348,6 +4030,57 @@
         "youtubeVideos": [
             {
                 "videoId": "kRPzbtmE2uE"
+            }
+        ]
+    },
+    {
+        "id": "gulfstream-g500-g600",
+        "name": "Gulfstream G500/G600",
+        "longDescription": "The Gulfstream G500 and G600 (GVII) are twin-engine business jets designed and manufactured by Gulfstream Aerospace.\nBoth were unveiled on October 14, 2014. The G500 first flew on May 18, 2015, received its FAA type certification on July 20, 2018 and was first delivered on September 27, 2018. The longer G600 had its first flight on December 17, 2016, received its FAA type certification in June 2019 and was first delivered on August 8.\nThe G500 will replace the G450 while the larger G600 will succeed the G550. Powered by two Pratt & Whitney Canada PW800 turbofans, the 76,850 lb (34.9 t) MTOW G500 has a range of 5,200 nmi (9,630 km) while the 91,600 lb (41.5 t) G600 can cover 6,500 nmi (12,040 km).",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Gulfstream_G500/G600",
+        "metaData": {
+            "Role": "Business jet",
+            "National origin": "United States",
+            "Manufacturer": "Gulfstream Aerospace",
+            "First flight": "G500: May 18, 2015 G600: December 17, 2016",
+            "Introduction": "G500: September 27, 2018 G600: August 8, 2019",
+            "Status": "both delivered",
+            "Number built": "G500: 10+ as of Feb. 2019 G600: 5 as of August 2017",
+            "Unit cost": "G500: $43.5 M, G600: $54.5M (2014) G500: $46.5M, G600: $57.9 M (2019)"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Gulfstream_G600.jpg/1024px-Gulfstream_G600.jpg",
+                "width": 1024,
+                "height": 569
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Static_display%2C_EBACE_2018%2C_Le_Grand-Saconnex_%28BL7C0638%29.jpg/1024px-Static_display%2C_EBACE_2018%2C_Le_Grand-Saconnex_%28BL7C0638%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Gulfstream%2C_Paris_Air_Show_2019%2C_Le_Bourget_%28SIAE8851%29.jpg/1024px-Gulfstream%2C_Paris_Air_Show_2019%2C_Le_Bourget_%28SIAE8851%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Static_display%2C_EBACE_2018%2C_Le_Grand-Saconnex_%28BL7C0639%29.jpg/1024px-Static_display%2C_EBACE_2018%2C_Le_Grand-Saconnex_%28BL7C0639%29.jpg",
+                "width": 1024,
+                "height": 683
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "PF2avIkoH8I"
             }
         ]
     },
