@@ -662,6 +662,64 @@
         ]
     },
     {
+        "id": "antonov-an-140",
+        "name": "Antonov An-140",
+        "longDescription": "The Antonov An-140 is a turboprop regional airliner, designed by the Ukrainian Antonov ASTC bureau as a successor to the Antonov An-24, with extended cargo capacity and the ability to use unprepared airstrips.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Antonov_An-140",
+        "metaData": {
+            "Role": "Airliner",
+            "Manufacturer": "Antonov Aviakor Iran Aircraft Manufacturing Industrial Company (HESA)",
+            "Designer": "Antonov",
+            "First flight": "17 September 1997",
+            "Introduction": "2002",
+            "Status": "In service",
+            "Primary users": "Ministry of Defense (Russia) Russian Naval Aviation Motor Sich Airlines Yakutia Airlines",
+            "Produced": "1997–present",
+            "Number built": "35as of July 2017 (only 1 operated in commercial service)",
+            "Unit cost": "US$9 million"
+        },
+        "filterOptions": {
+            "engines": "FOUR",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Antonov_An-140_1.jpg/1024px-Antonov_An-140_1.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Antonov_%28HESA%29_An-140-100%2C_HESA_Airlines_AN2221381.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Antonov_An-140-100_at_the_MAKS-2011_%2803%29.jpg/1024px-Antonov_An-140-100_at_the_MAKS-2011_%2803%29.jpg",
+                "width": 1024,
+                "height": 520
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Antonov_An-140_2.jpg/1024px-Antonov_An-140_2.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Antonov_An-140_MAKS-2005-08-20.jpg",
+                "width": 1024,
+                "height": 682
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "-ZKsCKYbWK0"
+            }
+        ]
+    },
+    {
         "id": "antonov-an-148",
         "name": "Antonov An-148",
         "longDescription": "The Antonov An-148 (Ukrainian: Антонов Ан-148) is a regional jet designed and built by Antonov of Ukraine. Development of the aircraft was started in the 1990s, and its maiden flight took place on 17 December 2004. The aircraft completed its certification programme on 26 February 2007. The An-148 has a maximum range of 2,100–4,400 km (1,100–2,400 nmi; 1,300–2,700 mi) and is able to carry 68–85 passengers, depending on the configuration.\nThe Antonov An-158 is a stretched fuselage version of the aircraft, accommodating up to 100 passengers.\nFollowing a crash in February 2018, all An-148 and An-158 in Russia were grounded by the Russian Ministry of Transport. In addition, Cubana grounded its An-158 fleet as of May 2018 due to several technical issues with the aircraft. Until late 2018, the Antonov An-148 aircraft was also being produced in Russia by Voronezh Aircraft Production Association, however due to the souring political relationship between Ukraine and Russia, production in Russia was discontinued. The last Russian-built An-148 was completed in October 2018.",
@@ -717,6 +775,68 @@
         ]
     },
     {
+        "id": "antonov-an-22",
+        "name": "Antonov An-22",
+        "longDescription": "The Antonov An-22 \"Antei\" (Russian: Ан-22 Антей, An-22 Antej; English Antaeus) (NATO reporting name \"Cock\")  is a heavy military transport aircraft designed by the Antonov Design Bureau in the Soviet Union. Powered by four turboprop engines each driving a pair of contra-rotating propellers, the design was the first wide-body transport aircraft and remains the world's largest turboprop-powered aircraft to date. The An-22 first appeared publicly outside the Soviet Union at the 1965 Paris Air Show. Since then, the model has seen extensive use in major military and humanitarian airlifts for the Soviet Union.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Antonov_An-22",
+        "metaData": {
+            "Role": "Strategic airlifter",
+            "National origin": "Soviet Union",
+            "Manufacturer": "Antonov",
+            "First flight": "27 February 1965",
+            "Introduction": "1967",
+            "Status": "In service",
+            "Primary users": "Soviet Air Force Aeroflot Antonov Airlines",
+            "Produced": "1966–1976",
+            "Number built": "68"
+        },
+        "filterOptions": {
+            "engines": "FOUR",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Antonov_Design_Bureau_An-22A_UR-09307_UKKM_2008-9-27.png/1024px-Antonov_Design_Bureau_An-22A_UR-09307_UKKM_2008-9-27.png",
+                "width": 1024,
+                "height": 718
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/An-22_RA-09341_%288711049498%29.jpg/1024px-An-22_RA-09341_%288711049498%29.jpg",
+                "width": 1024,
+                "height": 685
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/An-22_is_landing_on_unpaved_runway.webm/1024px--An-22_is_landing_on_unpaved_runway.webm.jpg",
+                "width": 1024,
+                "height": 576
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aeroflot_An-22_CCCP-64459_UKKM_1991-8-18.png/1024px-Aeroflot_An-22_CCCP-64459_UKKM_1991-8-18.png",
+                "width": 1024,
+                "height": 681
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Lifting.AN-22_RA-09341_%288704268263%29.jpg/1024px-Lifting.AN-22_RA-09341_%288704268263%29.jpg",
+                "width": 1024,
+                "height": 678
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Russian_Air_Force_Antonov_An-22_Petrov.jpg/1024px-Russian_Air_Force_Antonov_An-22_Petrov.jpg",
+                "width": 1024,
+                "height": 684
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "_6f46e2Rizo"
+            }
+        ]
+    },
+    {
         "id": "antonov-an-24",
         "name": "Antonov An-24",
         "longDescription": "The Antonov An-24 (Russian/Ukrainian: Антонов Ан-24) (NATO reporting name: Coke) is a 44-seat twin turboprop transport/passenger aircraft designed in 1957 in the Soviet Union by the Antonov Design Bureau and manufactured by Kiev, Irkutsk and Ulan-Ude Aviation Factories.",
@@ -762,6 +882,164 @@
         "youtubeVideos": [
             {
                 "videoId": "8yiO33eboVY"
+            }
+        ]
+    },
+    {
+        "id": "antonov-an-30",
+        "name": "Antonov An-30",
+        "longDescription": "The Antonov An-30 (NATO reporting name: Clank), is a development of the An-24 designed for aerial cartography.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Antonov_An-30",
+        "metaData": {
+            "Role": "Aerial cartography Aircraft and reconnaissance and transport",
+            "Manufacturer": "Antonov",
+            "Designer": "Beriev",
+            "First flight": "21 August 1967",
+            "Introduction": "July 1968",
+            "Status": "Limited service",
+            "Primary users": "Ukrainian Air Force Bulgarian Air Force Romanian Air Force",
+            "Produced": "1971–1980",
+            "Number built": "123",
+            "Developed from": "Antonov An-24"
+        },
+        "filterOptions": {
+            "engines": "FOUR",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/An-30_-_RA-26226.jpg",
+                "width": 1024,
+                "height": 651
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/An30.jpg",
+                "width": 450,
+                "height": 237
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Antonov_An-30.JPG/1024px-Antonov_An-30.JPG",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Lukaviatrans_Antonov_An-30.jpg/1024px-Lukaviatrans_Antonov_An-30.jpg",
+                "width": 1024,
+                "height": 727
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Ukrainian_an_30.jpg",
+                "width": 750,
+                "height": 502
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "GOGsB7agcr0"
+            }
+        ]
+    },
+    {
+        "id": "antonov-an-38",
+        "name": "Antonov An-38",
+        "longDescription": "The Antonov An-38 is a stretched and upgraded version of Antonov's earlier An-28. It is a twin-engined turboprop transport aircraft, designed by the Antonov Design Bureau in Kiev, Ukraine. Production is in Novosibirsk, Russia, but some crucial parts are also made in Ukraine and Belarus. It first flew in 1994, and received international flight certification in April 2000. A total of 11 were built and 2 remain in airline service as of August 2019.\n\n",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Antonov_An-38",
+        "metaData": {
+            "Role": "Regional airliner",
+            "Manufacturer": "Novosibirsk Aircraft Production Association",
+            "Designer": "Antonov",
+            "First flight": "23 June 1994",
+            "Introduction": "2000",
+            "Status": "Operational",
+            "Primary user": "ALROSA",
+            "Number built": "11 (2 operational)",
+            "Developed from": "Antonov An-28"
+        },
+        "filterOptions": {
+            "engines": "FOUR",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/An-38-100-1999a.jpg",
+                "width": 800,
+                "height": 500
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Vostok_Antonov_An-38_Galkin.jpg",
+                "width": 1024,
+                "height": 768
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "ozy6DxSXx60"
+            }
+        ]
+    },
+    {
+        "id": "antonov-an-72",
+        "name": "Antonov An-72",
+        "longDescription": "The Antonov An-72 (NATO reporting name: Coaler) is a Soviet/Ukrainian transport aircraft, developed by Antonov. It was designed as an STOL transport and intended as a replacement for the Antonov An-26, but variants have found success as commercial freighters.\nThe An-72 and the related An-74 get their nickname, Cheburashka, from the large engine intake ducts, which resemble the oversized ears of the popular Soviet animated character of the same name.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Antonov_An-72",
+        "metaData": {
+            "Role": "Transport aircraft",
+            "National origin": "Soviet Union/Ukraine",
+            "Manufacturer": "Antonov",
+            "First flight": "31 August 1977",
+            "Status": "In service",
+            "Primary users": "Russian Air Force Russian Navy Angolan Air Force",
+            "Produced": "1977–present",
+            "Number built": "195 (An-72 & An-74)",
+            "Variants": "Antonov An-74",
+            "Developed into": "Antonov An-71"
+        },
+        "filterOptions": {
+            "engines": "FOUR",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Kazakhstan_Border_Guards_Antonov_An-72-100_Batuzak-1.jpg/1024px-Kazakhstan_Border_Guards_Antonov_An-72-100_Batuzak-1.jpg",
+                "width": 1024,
+                "height": 695
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Russia_Air_Force_An-72_RA-72979_CKL_2006-2-7.png/1024px-Russia_Air_Force_An-72_RA-72979_CKL_2006-2-7.png",
+                "width": 1024,
+                "height": 682
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Russian_Border_Guard_Antonov_An-72P_at_Vladivostok_Airport.jpg/1024px-Russian_Border_Guard_Antonov_An-72P_at_Vladivostok_Airport.jpg",
+                "width": 1024,
+                "height": 682
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Russian_Navy_Antonov_An-72_Dvurekov-1.jpg/1024px-Russian_Navy_Antonov_An-72_Dvurekov-1.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ukraine_National_Guard_Antonov_An-72_at_Zhulyany.jpg/1024px-Ukraine_National_Guard_Antonov_An-72_at_Zhulyany.jpg",
+                "width": 1024,
+                "height": 683
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "o1ocK9WH4Y8"
             }
         ]
     },
@@ -5218,6 +5496,79 @@
         "youtubeVideos": [
             {
                 "videoId": "ExtS9r1pSiY"
+            }
+        ]
+    },
+    {
+        "id": "socata-tbm",
+        "name": "SOCATA TBM",
+        "longDescription": "The SOCATA TBM (now Daher TBM) is a family of high performance single-engine turboprop light business and utility aircraft manufactured by Daher. It was originally collaboratively developed between the American Mooney Airplane Company and French light aircraft manufacturer SOCATA.\nThe design of the TBM family originates from the Mooney 301, a comparatively low-powered and smaller prototype Mooney developed in the early 1980s. Following Mooney's acquisition by French owners, Mooney and SOCATA held a series of in-depth discussions on the potential for co-developing a new enlarged turboprop design derived from the earlier 301; these resulted in the formation of a joint venture for the purpose of developing and manufacturing the envisioned aircraft, which was designated as the TBM 700. From the onset, emphasis was placed upon the design's speed, altitude, and reliability. Upon its entry onto the market in 1990, it held the distinction of being the first high-performance single-engine passenger/cargo aircraft to enter production.Shortly after launch, the TBM 700 was a market success, which quickly led to the production of multiple variants and improved models, often incorporating more powerful engines and new avionics, amongst other features. The TBM 850 is the production name assigned to the TBM 700N, an improved version of the aircraft powered by a single Pratt & Whitney PT6A-66D. In March 2014, an aerodynamically refined version of the TBM 700N, marketed as the TBM 900, was made available.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/SOCATA_TBM",
+        "metaData": {
+            "Role": "Executive transport and civil utility",
+            "National origin": "France",
+            "Manufacturer": "Daher",
+            "First flight": "14 July 1988",
+            "Introduction": "1990",
+            "Status": "In production",
+            "Primary users": "French Army French Air Force",
+            "Produced": "1988–present",
+            "Number built": "900 (As of July 2018)",
+            "Unit cost": "TBM910: US$4.07M, TBM930: US$4.346M (2019)"
+        },
+        "filterOptions": {
+            "engines": "ONE",
+            "decks": "ONE",
+            "engine-position": "NOSE",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Daher-Socata_TBM_900_Air_to_Air.jpg/1024px-Daher-Socata_TBM_900_Air_to_Air.jpg",
+                "width": 1024,
+                "height": 731
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/French_Air_Force%2C_F-RAXL%2C_Socata_TBM700_%2827881367003%29.jpg/1024px-French_Air_Force%2C_F-RAXL%2C_Socata_TBM700_%2827881367003%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Glass-cockpit.png",
+                "width": 800,
+                "height": 534
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/N893MA_2015_SOCATA-TBM_900_s-n_1065_%2823427100365%29.jpg/1024px-N893MA_2015_SOCATA-TBM_900_s-n_1065_%2823427100365%29.jpg",
+                "width": 1024,
+                "height": 536
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/N900XH_LBG_SIAE_2015_%2819014605555%29.jpg/1024px-N900XH_LBG_SIAE_2015_%2819014605555%29.jpg",
+                "width": 1024,
+                "height": 680
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/N96HK_%285836775447%29.jpg",
+                "width": 800,
+                "height": 534
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Socata_TBM-700%2C_France_-_Army_AN0323263.jpg/1024px-Socata_TBM-700%2C_France_-_Army_AN0323263.jpg",
+                "width": 1024,
+                "height": 603
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Socata_TBM_700_Private_N97RN%2C_LUX_Luxembourg_%28Findel%29%2C_Luxembourg_PP1369480421.jpg/1024px-Socata_TBM_700_Private_N97RN%2C_LUX_Luxembourg_%28Findel%29%2C_Luxembourg_PP1369480421.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Socata_TBM_850_Le_Bourget_133.jpg/1024px-Socata_TBM_850_Le_Bourget_133.jpg",
+                "width": 1024,
+                "height": 683
             }
         ]
     },
