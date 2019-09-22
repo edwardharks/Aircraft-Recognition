@@ -1352,7 +1352,7 @@
         "filterOptions": {
             "engines": "ONE",
             "decks": "ONE",
-            "engine-position": "WING",
+            "engine-position": "NOSE",
             "wing-position": "BELOW",
             "engine-type": "PROPELLER"
         },
