@@ -568,7 +568,7 @@
             "decks": "ONE",
             "engine-position": "WING",
             "wing-position": "BELOW",
-            "engine-type": "PROPELLER"
+            "engine-type": "JET"
         },
         "images": [
             {
@@ -641,7 +641,7 @@
             "decks": "ONE",
             "engine-position": "WING",
             "wing-position": "BELOW",
-            "engine-type": "PROPELLER"
+            "engine-type": "JET"
         },
         "images": [
             {
@@ -1256,9 +1256,9 @@
         "filterOptions": {
             "engines": "TWO",
             "decks": "ONE",
-            "engine-position": "WING",
+            "engine-position": "TAIL",
             "wing-position": "BELOW",
-            "engine-type": "PROPELLER"
+            "engine-type": "JET"
         },
         "images": [
             {
@@ -1350,7 +1350,7 @@
             "Number built": "312"
         },
         "filterOptions": {
-            "engines": "TWO",
+            "engines": "ONE",
             "decks": "ONE",
             "engine-position": "WING",
             "wing-position": "BELOW",
@@ -4054,7 +4054,7 @@
             "decks": "ONE",
             "engine-position": "WING",
             "wing-position": "BELOW",
-            "engine-type": "PROPELLER"
+            "engine-type": "JET"
         },
         "images": [
             {
