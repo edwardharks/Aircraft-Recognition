@@ -680,7 +680,7 @@
             "Unit cost": "US$9 million"
         },
         "filterOptions": {
-            "engines": "FOUR",
+            "engines": "TWO",
             "decks": "ONE",
             "engine-position": "WING",
             "wing-position": "ABOVE",
@@ -904,7 +904,7 @@
             "Developed from": "Antonov An-24"
         },
         "filterOptions": {
-            "engines": "FOUR",
+            "engines": "TWO",
             "decks": "ONE",
             "engine-position": "WING",
             "wing-position": "ABOVE",
@@ -961,7 +961,7 @@
             "Developed from": "Antonov An-28"
         },
         "filterOptions": {
-            "engines": "FOUR",
+            "engines": "TWO",
             "decks": "ONE",
             "engine-position": "WING",
             "wing-position": "ABOVE",
@@ -1004,11 +1004,11 @@
             "Developed into": "Antonov An-71"
         },
         "filterOptions": {
-            "engines": "FOUR",
+            "engines": "TWO",
             "decks": "ONE",
             "engine-position": "WING",
             "wing-position": "ABOVE",
-            "engine-type": "PROPELLER"
+            "engine-type": "JET"
         },
         "images": [
             {
@@ -4330,7 +4330,7 @@
         "filterOptions": {
             "engines": "TWO",
             "decks": "ONE",
-            "engine-position": "WING",
+            "engine-position": "TAIL",
             "wing-position": "BELOW",
             "engine-type": "JET"
         },
