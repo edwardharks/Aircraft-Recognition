@@ -4184,6 +4184,125 @@
         ]
     },
     {
+        "id": "fokker-50",
+        "name": "Fokker 50",
+        "longDescription": "The Fokker 50 is a turboprop-powered airliner, designed as a refinement of and successor to the highly successful Fokker F27 Friendship. The Fokker 60 is a stretched freighter version of the Fokker 50. Both aircraft were manufactured and supported by Dutch aircraft manufacturer Fokker.\nThe Fokker 50 was developed during the early 1980s following a decline in the sales of the company's earlier F27 Friendship. It was decided that the new airliner would be a derivative of its predecessor, sharing much of its airframe and design features, while incorporating new advances and several improvements, such as the adoption of Pratt & Whitney Canada PW127B turboprop engines, in order to produce a successor that had a 30 per cent reduction in fuel consumption over the F27.\nThe Fokker 50 performed its maiden flight on 28 December 1985, and entered revenue service during 1987. The Fokker 60 has been operated by the Royal Netherlands Air Force (RNLAF), ex-RNLAF aircraft are also in service with the Peruvian Naval Aviation and the Republic of China's Air Force.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Fokker_50",
+        "metaData": {
+            "Role": "Airliner",
+            "National origin": "Netherlands",
+            "Manufacturer": "Fokker",
+            "First flight": "28 December 1985",
+            "Introduction": "1987",
+            "Status": "Out of production, in service",
+            "Primary users": "Amapola Flyg Skyward International Karun Airlines Alliance Airlines",
+            "Produced": "1985 – 1997",
+            "Number built": "213",
+            "Unit cost": "US$17.5 million",
+            "Developed from": "Fokker F27"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/CityJet_Fokker_50_OO-VLN_LUX_2010-2-27.png/1024px-CityJet_Fokker_50_OO-VLN_LUX_2010-2-27.png",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Air_Zimbabwe_Fokker_50_Z-WPH_VFA_1995-9-18.png",
+                "width": 1024,
+                "height": 673
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Alliance_Airlines_%28VH-FKW%29_Fokker_50_taxiing_at_Avalon_Airport_%281%29.jpg/1024px-Alliance_Airlines_%28VH-FKW%29_Fokker_50_taxiing_at_Avalon_Airport_%281%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Fokker_50%2C_Aria_Air_AN0709064.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Fokker_50%2C_Kish_Air_AN1633602.jpg/1024px-Fokker_50%2C_Kish_Air_AN1633602.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Fokker_50_Aero.jpg/1024px-Fokker_50_Aero.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Fokker_50%2C_Tanzania_-_Government_AN0816964.jpg/1024px-Fokker_50%2C_Tanzania_-_Government_AN0816964.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Avianca_Fokker_50_HK-4487_Aterrizando_pista_13L_Bogot%C3%A1_%286638746463%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Fokker_50_Innenraum_Baltik_air.JPG/1024px-Fokker_50_Innenraum_Baltik_air.JPG",
+                "width": 1024,
+                "height": 684
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Fokker_60UTA-N%2C_Netherlands_-_Air_Force_AN1394340.jpg",
+                "width": 1024,
+                "height": 678
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Government_of_Tanzania_Fokker_50_Stehmann-1.jpg/1024px-Government_of_Tanzania_Fokker_50_Stehmann-1.jpg",
+                "width": 1024,
+                "height": 682
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Inuti_Skyways_F50.JPG/1024px-Inuti_Skyways_F50.JPG",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Lufthansa_Cityline_Fokker_50%3B_D-AFFJ%40ZRH%3B06.05.1995_%284905844451%29.jpg/1024px-Lufthansa_Cityline_Fokker_50%3B_D-AFFJ%40ZRH%3B06.05.1995_%284905844451%29.jpg",
+                "width": 1024,
+                "height": 699
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Malaysia_Fokker_50_Kuching_MGK.jpg/1024px-Malaysia_Fokker_50_Kuching_MGK.jpg",
+                "width": 1024,
+                "height": 769
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/OO-VLI_FK50_Cityjet_and_Antwerp_tower_%285078275924%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Overdracht_1e_Fokker-50_aan_DLT_%28_West_Duitsland_%29_produktielijn_Fokker-50%2C_Bestanddeelnr_934-0469.jpg/1024px-Overdracht_1e_Fokker-50_aan_DLT_%28_West_Duitsland_%29_produktielijn_Fokker-50%2C_Bestanddeelnr_934-0469.jpg",
+                "width": 1024,
+                "height": 679
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/ROCAF_FOKKER_50_VIP.jpg/1024px-ROCAF_FOKKER_50_VIP.jpg",
+                "width": 1024,
+                "height": 576
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Volkel_1.jpg/1024px-Volkel_1.jpg",
+                "width": 1024,
+                "height": 766
+            }
+        ]
+    },
+    {
         "id": "fokker-70",
         "name": "Fokker 70",
         "longDescription": "The Fokker 70 is a narrow-body, twin-engined, medium-range, turbofan regional airliner produced by Fokker as a smaller version of the Fokker 100.  Both the F70 and F100 were preceded by the first jet airliner manufactured by Fokker, the Fokker F28 Fellowship.  Since its first flight in 1993, 47 aircraft, plus one prototype, have been manufactured and 23 are still in active service with airlines around the world.",
@@ -4218,6 +4337,75 @@
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/VH-QQX_Fokker_70_Alliance_Airlines_%288085348276%29.jpg/1024px-VH-QQX_Fokker_70_Alliance_Airlines_%288085348276%29.jpg",
                 "width": 1024,
                 "height": 680
+            }
+        ]
+    },
+    {
+        "id": "fokker-f27-friendship",
+        "name": "Fokker F27 Friendship",
+        "longDescription": "The Fokker F27 Friendship is a turboprop airliner developed and manufactured by the Dutch aircraft manufacturer Fokker. It has the distinction of being the most numerous post-war aircraft to have been manufactured in the Netherlands; the F27 was also one of the most successful European airliners of its era.\nThe F27 was developed during the early 1950s with the expressed intent of producing a capable successor to the earlier piston engine-powered airliners that had become commonplace on the market, such as the successful Douglas DC-3. A key innovation of the F27 was the adoption of the Rolls-Royce Dart turboprop engine, which produced substantially less vibration and noise which provided improved conditions for passengers; another major comfort feature was cabin pressurisation. Innovative manufacturing techniques were also employed in the aircraft's construction.\nOn 24 November 1955, the F27 performed its maiden flight; on 19 November 1958, the type was introduced to revenue service. Shortly after its introduction, the F27 was recognised as being a commercial success. Under a licensing arrangement reached between Fokker and the U.S. aircraft manufacturer Fairchild, the F27 was manufactured in the United States by the latter; Fairchild went on to independently develop a stretched version of the airliner, which was designated as the Fairchild FH-227. During the 1980s, Fokker developed a modernised successor to the F27, the Fokker 50, which eventually replaced it in production.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Fokker_F27_Friendship",
+        "metaData": {
+            "Role": "Airliner",
+            "National origin": "Netherlands",
+            "Manufacturer": "Fokker",
+            "First flight": "24 November 1955",
+            "Introduction": "19 November 1958",
+            "Status": "Out of production, in active service",
+            "Produced": "1955–1987",
+            "Number built": "586",
+            "Unit cost": "-500: US$1.6M (1972)",
+            "Variants": "Fairchild F-27/FH-227",
+            "Developed into": "Fokker 50"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Fokker_F27_Friendship_US_Army_Golden_Knight.jpg",
+                "width": 714,
+                "height": 519
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Aer_Lingus_Fokker_Friendship_Manchester_1965.jpg",
+                "width": 752,
+                "height": 416
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Braathens_SAFE_F27_LN-SUE.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Dutch_Air_Force_F-27-300M.jpg",
+                "width": 997,
+                "height": 481
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Finnish_Air_Force_F-27-400M.jpg",
+                "width": 1024,
+                "height": 722
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Fokker_F-27-400M_Troopship.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/PHFHF.JPG/1024px-PHFHF.JPG",
+                "width": 1024,
+                "height": 684
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Rolls-Royce_Dart_Fokker_F_27.jpg",
+                "width": 763,
+                "height": 788
             }
         ]
     },
