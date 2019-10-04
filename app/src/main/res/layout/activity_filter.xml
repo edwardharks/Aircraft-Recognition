@@ -27,8 +27,7 @@
         android:id="@+id/results_handle_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_results_handle"
-        android:foreground="?selectableItemBackground">
+        android:background="@drawable/bg_results_handle">
 
         <ImageView
             android:id="@+id/results_handle"

@@ -7,7 +7,6 @@
     android:background="@drawable/bg_filter_option"
     android:clickable="true"
     android:focusable="true"
-    android:foreground="?selectableItemBackground"
     android:gravity="center"
     tools:ignore="UnusedAttribute"
     tools:text="Under the wings">
