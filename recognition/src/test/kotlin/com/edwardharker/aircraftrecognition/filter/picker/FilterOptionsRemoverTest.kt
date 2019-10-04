@@ -38,6 +38,6 @@ class FilterOptionsRemoverTest {
         private const val label = "label"
         private const val name = "name"
         private const val filterText = "filtertext"
-        private val filterOption = FilterOption(value, label)
+        private val filterOption = FilterOption(value, label, "image")
     }
 }

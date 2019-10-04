@@ -10,16 +10,16 @@ class FilterSorterTest {
     @Test
     fun sortsFiltersByFilterOptions() {
         val oneFilterOptions = Filter(
-            filterOptions = listOf(FilterOption("", ""))
+            filterOptions = listOf(FilterOption("", "", ""))
         )
         val twoFilterOptions = Filter(
-            filterOptions = listOf(FilterOption("", ""), FilterOption("", ""))
+            filterOptions = listOf(FilterOption("", "", ""), FilterOption("", "", ""))
         )
         val threeFilterOptions = Filter(
             filterOptions = listOf(
-                FilterOption("", ""),
-                FilterOption("", ""),
-                FilterOption("", "")
+                FilterOption("", "", ""),
+                FilterOption("", "", ""),
+                FilterOption("", "", "")
             )
         )
         val filters = listOf(oneFilterOptions, threeFilterOptions, twoFilterOptions)
