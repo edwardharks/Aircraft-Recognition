@@ -2,4 +2,7 @@
 <resources>
     <dimen name="filter_picker_height">208dp</dimen>
     <integer name="filter_results_column_count">2</integer>
+
+    <dimen name="filter_results_handle_height_visible">24dp</dimen>
+    <dimen name="filter_results_handle_height_hidden">64dp</dimen>
 </resources>

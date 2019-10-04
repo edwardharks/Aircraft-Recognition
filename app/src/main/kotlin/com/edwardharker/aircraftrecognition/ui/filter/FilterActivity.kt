@@ -10,6 +10,8 @@ import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.filterScreen
 import com.edwardharker.aircraftrecognition.filter.picker.FilterPickerResetView
+import com.edwardharker.aircraftrecognition.maths.mapFromPercent
+import com.edwardharker.aircraftrecognition.maths.mapToPercent
 import com.edwardharker.aircraftrecognition.perf.TracerFactory.filterActivityContentLoadTracer
 import com.edwardharker.aircraftrecognition.perf.TracerFactory.filterPickerLoadTracer
 import com.edwardharker.aircraftrecognition.ui.bind
@@ -30,6 +32,19 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
     private val expandLessDrawable by lazy { getDrawable(R.drawable.ic_expand_less_white_24dp) }
     private val expandMoreDrawable by lazy { getDrawable(R.drawable.ic_expand_more_white_24dp) }
 
+    private val pickerHeight by lazy {
+        resources.getDimensionPixelSize(R.dimen.filter_picker_height).toFloat()
+    }
+    private val rootViewBottom by lazy {
+        findViewById<View>(R.id.root_view).bottom.toFloat()
+    }
+    private val resultHandleHeightVisible by lazy {
+        resources.getDimensionPixelSize(R.dimen.filter_results_handle_height_visible).toFloat()
+    }
+    private val resultHandleHeightHidden by lazy {
+        resources.getDimensionPixelSize(R.dimen.filter_results_handle_height_hidden).toFloat()
+    }
+
     private val filterActivityContentLoadTracer = filterActivityContentLoadTracer()
     private val filterPickerLoadTracer = filterPickerLoadTracer()
 
@@ -48,7 +63,21 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
         bottomSheetView.hiddenListener = this
 
         bottomSheetView.viewTreeObserver.addOnPreDrawListener {
-            resultsHandleContainer.translationY = bottomSheetView.y - resultsHandleView.height
+            resultsHandleContainer.translationY = bottomSheetView.y - resultsHandleContainer.height
+            val percent = mapToPercent(
+                resultsHandleContainer.translationY,
+                pickerHeight,
+                rootViewBottom
+            )
+            val handleContainerHeight = mapFromPercent(
+                percent,
+                resultHandleHeightVisible,
+                resultHandleHeightHidden
+            ).toInt()
+            if (handleContainerHeight != resultsHandleContainer.height) {
+                resultsHandleContainer.layoutParams.height = handleContainerHeight
+                resultsHandleContainer.requestLayout()
+            }
             return@addOnPreDrawListener true
         }
 

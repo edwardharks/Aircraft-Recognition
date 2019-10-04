@@ -70,7 +70,7 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
         super.onAttachedToWindow()
         bottomSheetBehaviour.isHideable = true
         bottomSheetBehaviour.setBottomSheetCallback(BottomSheetCallback())
-        updateBottomSheet(bottomSheetBehaviour.state == STATE_HIDDEN)
+        updateBottomSheet(hide = bottomSheetBehaviour.state == STATE_HIDDEN)
         presenter.startPresenting(this)
     }
 
@@ -85,11 +85,11 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
     }
 
     fun hideBottomSheet() {
-        updateBottomSheet(true)
+        updateBottomSheet(hide = true)
     }
 
     fun showBottomSheet() {
-        updateBottomSheet(false)
+        updateBottomSheet(hide = false)
     }
 
     private fun updateBottomSheet(hide: Boolean) {
