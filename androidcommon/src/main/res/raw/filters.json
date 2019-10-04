@@ -38,6 +38,11 @@
         "value": "FOUR",
         "label": "Four",
         "image": "filter_jet_4"
+      },
+      {
+        "value": "SIX",
+        "label": "Six",
+        "image": "filter_jet_6"
       }
     ]
   },

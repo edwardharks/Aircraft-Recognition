@@ -837,6 +837,89 @@
         ]
     },
     {
+        "id": "antonov-an-225-mriya",
+        "name": "Antonov An-225 Mriya",
+        "longDescription": "The Antonov An-225 Mriya (Ukrainian: Антонов Ан-225 Мрія, lit. 'dream' or 'inspiration', NATO reporting name: \"Cossack\") is a strategic airlift cargo aircraft that was designed by the Antonov Design Bureau in the Ukrainian SSR within the Soviet Union during the 1980s. It is powered by six turbofan engines and is the heaviest aircraft ever built, with a maximum takeoff weight of 640 tonnes (710 short tons; 630 long tons). It also has the largest wingspan of any aircraft in operational service. The single example built has the Ukrainian civil registration UR-82060. A second airframe with a slightly different configuration was partially built. Its construction was halted in 1994 because of lack of funding and interest, but revived briefly in 2009, bringing it to 60–70% completion. On 30 August 2016, Antonov agreed to complete the second airframe for Aerospace Industry Corporation of China (not to be confused with the Aviation Industry Corporation of China) as a prelude to AICC commencing series production.The Antonov An-225, initially developed for the task of transporting the Buran spaceplane, was an enlargement of the successful Antonov An-124. The first and only An-225 was completed in 1988. After successfully fulfilling its Soviet military missions, it was mothballed for eight years. It was then refurbished and re-introduced, and is in commercial operation with Antonov Airlines carrying oversized payloads. The airlifter holds the absolute world records for an airlifted single-item payload of 189,980 kilograms (418,830 pounds), and an airlifted total payload of 253,820 kg (559,580 lb). It has also transported a payload of 247,000 kg (545,000 lb) on a commercial flight.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Antonov_An-225_Mriya",
+        "metaData": {
+            "Role": "Outsize cargo freight aircraft",
+            "National origin": "Soviet Union",
+            "Design group": "Antonov",
+            "Built by": "Antonov Serial Production Plant",
+            "First flight": "21 December 1988",
+            "Status": "In service",
+            "Primary user": "Antonov Airlines",
+            "Produced": "1985",
+            "Number built": "1",
+            "Developed from": "Antonov An-124"
+        },
+        "filterOptions": {
+            "engines": "SIX",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "ABOVE",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Antonov_An-225_Beltyukov-1.jpg/1024px-Antonov_An-225_Beltyukov-1.jpg",
+                "width": 1024,
+                "height": 682
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/An-225-manchester-2006.jpg",
+                "width": 800,
+                "height": 600
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/An-225_Mriya.jpg/1024px-An-225_Mriya.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Antonov_An-225.jpg/1024px-Antonov_An-225.jpg",
+                "width": 1024,
+                "height": 401
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Antonov_An-225_at_Farnborough_1990_airshow_%282%29.jpg",
+                "width": 1024,
+                "height": 681
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Antonov_An-225_landing_at_Gostomel_Airport.jpeg/1024px-Antonov_An-225_landing_at_Gostomel_Airport.jpeg",
+                "width": 1024,
+                "height": 680
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Antonov_An-225_with_Buran_at_Le_Bourget_1989_Manteufel.jpg",
+                "width": 1024,
+                "height": 682
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mriya_departing_Gostomel_for_trip_to_Perth.ogv/1024px--Mriya_departing_Gostomel_for_trip_to_Perth.ogv.jpg",
+                "width": 1024,
+                "height": 576
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Antonov-225_main_landing_gear_2.jpg",
+                "width": 800,
+                "height": 900
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/ILA_2018%2C_Sch%C3%B6nefeld_%281X7A5450%29.jpg/1024px-ILA_2018%2C_Sch%C3%B6nefeld_%281X7A5450%29.jpg",
+                "width": 1024,
+                "height": 683
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "i7PhWzBc8Q0"
+            }
+        ]
+    },
+    {
         "id": "antonov-an-24",
         "name": "Antonov An-24",
         "longDescription": "The Antonov An-24 (Russian/Ukrainian: Антонов Ан-24) (NATO reporting name: Coke) is a 44-seat twin turboprop transport/passenger aircraft designed in 1957 in the Soviet Union by the Antonov Design Bureau and manufactured by Kiev, Irkutsk and Ulan-Ude Aviation Factories.",

@@ -11,6 +11,7 @@ val FilterOption.imageRes: Int?
             "filter_jet_2" -> R.drawable.ic_filter_jet_2
             "filter_jet_3" -> R.drawable.ic_filter_jet_3
             "filter_jet_4" -> R.drawable.ic_filter_jet_4
+            "filter_jet_6" -> R.drawable.ic_filter_jet_6
             "filter_under_wing" -> R.drawable.ic_filter_under_wing
             "filter_tail" -> R.drawable.ic_filter_tail
             "filter_wings_tail" -> R.drawable.ic_filter_wings_tail
