@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:contentDescription="@string/action_collapse"
-            android:src="@drawable/ic_expand_more_white_24dp" />
+            app:srcCompat="@drawable/ic_drag_handle_to_arrow_anim" />
     </FrameLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
 import com.edwardharker.aircraftrecognition.R
 import com.edwardharker.aircraftrecognition.analytics.eventAnalytics
 import com.edwardharker.aircraftrecognition.analytics.filterScreen
@@ -29,8 +30,12 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
     private val resultsHandleView by bind<ImageView>(R.id.results_handle)
     private val resultsHandleContainer by bind<View>(R.id.results_handle_container)
 
-    private val expandLessDrawable by lazy { getDrawable(R.drawable.ic_expand_less_white_24dp) }
-    private val expandMoreDrawable by lazy { getDrawable(R.drawable.ic_expand_more_white_24dp) }
+    private val dragHandleToArrowAnim by lazy {
+        AnimatedVectorDrawableCompat.create(this, R.drawable.ic_drag_handle_to_arrow_anim)
+    }
+    private val arrowToDragHandleAnim by lazy {
+        AnimatedVectorDrawableCompat.create(this, R.drawable.ic_arrow_to_drag_handle_anim)
+    }
 
     private val pickerHeight by lazy {
         resources.getDimensionPixelSize(R.dimen.filter_picker_height).toFloat()
@@ -95,6 +100,7 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
         resultsHandleContainer.setOnClickListener { toggleBottomSheetHidden() }
         resultsHandleContainer.setOnTouchListener { _, event ->
             bottomSheetView.onTouchEvent(event)
+            updateBottomSheetToggle(hidden = false)
             return@setOnTouchListener false
         }
     }
@@ -158,9 +164,15 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
 
     private fun updateBottomSheetToggle(hidden: Boolean) {
         if (hidden) {
-            resultsHandleView.setImageDrawable(expandLessDrawable)
+            if (resultsHandleView.drawable != dragHandleToArrowAnim) {
+                resultsHandleView.setImageDrawable(dragHandleToArrowAnim)
+                dragHandleToArrowAnim?.start()
+            }
         } else {
-            resultsHandleView.setImageDrawable(expandMoreDrawable)
+            if (resultsHandleView.drawable != arrowToDragHandleAnim) {
+                resultsHandleView.setImageDrawable(arrowToDragHandleAnim)
+                arrowToDragHandleAnim?.start()
+            }
         }
     }
 }
