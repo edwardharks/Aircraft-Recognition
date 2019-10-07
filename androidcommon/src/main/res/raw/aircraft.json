@@ -1,6 +1,97 @@
 
 [
     {
+        "id": "aeronca-champion",
+        "name": "Aeronca Champion",
+        "longDescription": "The Aeronca Model 7 Champion, commonly known as the \"Champ\", or \"Airknocker\", is a single-engine light airplane with a high wing, generally configured with fixed conventional landing gear and tandem seating for two occupants.\nDesigned for flight training\nand personal use—and specifically developed to compete with the popular Piper Cub, entered production in the United States in 1945, spawning one of the most popular, and longest-produced, light airplane models in the world.In addition to the Champ's large-volume production by Aeronca Aircraft, it was revived in variations by the Champion Aircraft Company in the 1950s and 1960s, and then again in further variants by Bellanca in the 1960s and 1970s, and by American Champion Aircraft in the early 2000s.To take advantage of the new light-sport aircraft (LSA) category, the Champion was returned to production in 2007, but was discontinued by mid 2019.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Aeronca_Champion",
+        "metaData": {
+            "Role": "Light utility aircraft / Trainer",
+            "Manufacturer": "Aeronca Champion Aircraft Bellanca American Champion Aircraft",
+            "Designer": "Ray Hermes",
+            "First flight": "April 29, 1944",
+            "Introduction": "November 1945",
+            "Status": "Production completed",
+            "Primary users": "private owners flight schools, aircraft rental services, United States Air Force, Air National Guard U.S. Army Civil Air Patrol",
+            "Produced": "1946–1951 2007–2018",
+            "Number built": "more than 10,000, all manufacturers and variants (over 7,200 Aeronca 7AC Champion, 1945–1948)",
+            "Unit cost": "US$2,395 (1946) US$88,900 (2015)",
+            "Developed from": "Aeronca L-3, Aeronca T, Aeronca Defender, Aeronca 50 Chief",
+            "Variants": "Aeronca L-16",
+            "Developed into": "Citabria, Champion Lancer"
+        },
+        "filterOptions": {
+            "engines": "ONE",
+            "decks": "ONE",
+            "engine-position": "NOSE",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Champ_7AC-1759.jpg/1024px-Champ_7AC-1759.jpg",
+                "width": 1024,
+                "height": 722
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Aeronca7ACChampC-GDZO.JPG",
+                "width": 750,
+                "height": 563
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Aeronca7FC.jpg",
+                "width": 1024,
+                "height": 532
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/AeroncaChampion7-FCTri-ChampC-FNMB.JPG",
+                "width": 750,
+                "height": 563
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/AeroncaTriChamp01A.JPG",
+                "width": 750,
+                "height": 504
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aeronca_7AC_Champion_AN1179954.jpg/1024px-Aeronca_7AC_Champion_AN1179954.jpg",
+                "width": 1024,
+                "height": 681
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Aeronca_7DC_%28N42344%29.jpg/1024px-Aeronca_7DC_%28N42344%29.jpg",
+                "width": 1024,
+                "height": 684
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Aeronca_7ac_champion_g-bpfm_1946_arp.jpg/1024px-Aeronca_7ac_champion_g-bpfm_1946_arp.jpg",
+                "width": 1024,
+                "height": 696
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aeronca_7bcm_champion_g-timp_1946_arp.jpg/1024px-Aeronca_7bcm_champion_g-timp_1946_arp.jpg",
+                "width": 1024,
+                "height": 724
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Aeronca_L-16_7BCM_140719a.jpg/1024px-Aeronca_L-16_7BCM_140719a.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/JabiruChamp.jpg",
+                "width": 1024,
+                "height": 674
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "Nu2yvhiZcXA"
+            }
+        ]
+    },
+    {
         "id": "airbus-a300",
         "name": "Airbus A300",
         "longDescription": "The Airbus A300 is a wide-body medium range twin-engine jet airliner developed and manufactured by Airbus. Formally announced in 1969 and first flying in October 1972, it holds the distinction of being the world's first twin-engined widebody airliner; it was also the first product of Airbus Industrie, a consortium of European aerospace manufacturers, now known as Airbus. The A300 can typically seat 266 passengers in a two-class layout, with a maximum range of 4,070 nautical miles (7,540 km) when fully loaded, depending on model.\nDevelopment of the A300 began during the 1960s as a European collaborative project between various aircraft manufacturers in the UK, France, and West Germany. In September 1967, the participating nations signed a Memorandum of Understanding to manufacture the aircraft. The British withdrew from the project on 10 April 1969. A new agreement was reached between Germany and France on 29 May 1969, and Airbus Industrie was formally created on 18 December 1970 to develop and produce the A300. The type first flew on 28 October 1972.\nAir France, the launch customer for the A300, introduced the type into service on 30 May 1974. Following a period of limited customer demand, the A300 achieved several large sales in 1978, after which the type was viewed to have proven itself and orders came in at a steady rate across the next three decades. During the 1990s, the A300 became popular with various freight operators, and several different cargo aircraft variants were produced with many from former operators of passengers variants like Korean Air. Production of the A300 ceased in July 2007, along with its smaller A310 derivative. The freighter sales for which the A300 had previously competed in later life are instead fulfilled by the A330-200F, a derivative of the newer Airbus A330.",
@@ -658,6 +749,157 @@
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/F-WBXL_A330_Beluga_XL.jpg/1024px-F-WBXL_A330_Beluga_XL.jpg",
                 "width": 1024,
                 "height": 688
+            }
+        ]
+    },
+    {
+        "id": "american-champion-citabria",
+        "name": "American Champion Citabria",
+        "longDescription": "The Citabria is a light single-engine, two-seat, fixed conventional gear airplane which entered production in the United States in 1964.  Designed for flight training, utility and personal use, it is capable of sustaining aerobatic stresses from +5g to -2g.  Its name spelled backwards, \"airbatic\", reflects this.\n\n",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/American_Champion_Citabria",
+        "metaData": {
+            "Role": "Light utility aircraft and sports plane",
+            "Manufacturer": "American Champion Aircraft Bellanca Champion Aircraft",
+            "Designer": "Champion Aircraft",
+            "First flight": "1964",
+            "Introduction": "1964",
+            "Status": "In Production",
+            "Number built": "over 5238"
+        },
+        "filterOptions": {
+            "engines": "ONE",
+            "decks": "ONE",
+            "engine-position": "NOSE",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/American_Champion_7ECA_Citabria_Aurora_Kyneton_Vabre.jpg",
+                "width": 1024,
+                "height": 685
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Bellanca.citabria.arp.jpg/1024px-Bellanca.citabria.arp.jpg",
+                "width": 1024,
+                "height": 665
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Bellanca_7GCAA_%28N2745Z%29.jpg/1024px-Bellanca_7GCAA_%28N2745Z%29.jpg",
+                "width": 1024,
+                "height": 684
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Bellanca_7GCBC_%28N68576%29.jpg/1024px-Bellanca_7GCBC_%28N68576%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Bellanca_7KCAB_%28N333JS%29.jpg/1024px-Bellanca_7KCAB_%28N333JS%29.jpg",
+                "width": 1024,
+                "height": 684
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Catabria01.jpg",
+                "width": 586,
+                "height": 305
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/SchweizerSGS1-34C-FDUZ31.JPG",
+                "width": 750,
+                "height": 563
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "lGkv3jk9uTE"
+            }
+        ]
+    },
+    {
+        "id": "american-champion-decathlon",
+        "name": "American Champion Decathlon",
+        "longDescription": "The American Champion 8KCAB Decathlon and Super Decathlon are two-seat fixed conventional gear light airplanes designed for flight training and personal use and capable of sustaining aerobatic stresses between +6g and −5g.  The Decathlon entered production in the United States in 1970 as a more powerful and stronger complement to the American Champion Citabria line of aircraft.\nThe Decathlon was designed by the Champion Aircraft Corporation, and is a derivative of the 7-series Citabrias.  While the Citabria designs remain successful, and the introduction of the 7KCAB variant of the Citabria had added limited inverted flight capability, the Citabrias are not capable of \"outside\" maneuvers, those requiring significant negative-g loads.  Pilots wanted an aircraft capable of more maneuvers, and Champion introduced the 8KCAB Decathlon in response to this demand.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/American_Champion_Decathlon",
+        "metaData": {
+            "Role": "Sports plane and aerobatic trainer",
+            "Manufacturer": "American Champion Aircraft",
+            "Designer": "Champion Aircraft Corporation",
+            "Introduction": "1970",
+            "Number built": "Over 6,000"
+        },
+        "filterOptions": {
+            "engines": "ONE",
+            "decks": "ONE",
+            "engine-position": "NOSE",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/AmericanChampionXtreme.jpg",
+                "width": 1024,
+                "height": 677
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/American_Champion_Xtreme.jpg",
+                "width": 1024,
+                "height": 605
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/BELLANCA_8KCAB_photo_D_Ramey_Logan.jpg/1024px-BELLANCA_8KCAB_photo_D_Ramey_Logan.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Champion_8kcab_super_decathlon_g-ezpz_arp.jpg/1024px-Champion_8kcab_super_decathlon_g-ezpz_arp.jpg",
+                "width": 1024,
+                "height": 712
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Decathlon_FUNB.jpg/1024px-Decathlon_FUNB.jpg",
+                "width": 1024,
+                "height": 623
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "qyEsjAv5ldI"
+            }
+        ]
+    },
+    {
+        "id": "american-champion-scout",
+        "name": "American Champion Scout",
+        "longDescription": "The 8GCBC Scout is a two-seat, high-wing, single-engined fixed conventional gear general aviation airplane that entered production in the United States in 1974.  Designed for personal and commercial use, it is commonly found in utility roles such as bush flying—thanks to its short takeoff and landing (STOL) ability—as well as agriculture, pipeline patrol, and glider and banner towing.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/American_Champion_Scout",
+        "metaData": {
+            "Role": "Light utility aircraft",
+            "Manufacturer": "American Champion Aircraft",
+            "Designer": "Bellanca",
+            "Introduction": "1974",
+            "Number built": "more than 500, as of 2008"
+        },
+        "filterOptions": {
+            "engines": "ONE",
+            "decks": "ONE",
+            "engine-position": "NOSE",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bush_plane.jpg",
+                "width": 600,
+                "height": 600
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "OF51nZ3Sero"
             }
         ]
     },
@@ -1979,6 +2221,48 @@
         "youtubeVideos": [
             {
                 "videoId": "dr4PNaj4Y5o"
+            }
+        ]
+    },
+    {
+        "id": "bellanca-viking",
+        "name": "Bellanca Viking",
+        "longDescription": "The Bellanca Viking and Super Viking are a series of single-engine, four-seat, high performance, retractable gear aircraft manufactured in the USA during the 1960s and 1970s. The aircraft developed through modifications of classic designs by the aviation pioneer Giuseppe Bellanca. A total of 1,356 Vikings have been produced with most production between 1968 and 1975 (1019 planes).",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Bellanca_Viking",
+        "metaData": {
+            "Role": "Utility aircraft",
+            "Manufacturer": "Alexandria Aircraft Bellanca",
+            "First flight": "1967",
+            "Number built": "1,356"
+        },
+        "filterOptions": {
+            "engines": "ONE",
+            "decks": "ONE",
+            "engine-position": "NOSE",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Bellanca_Super_Viking.jpg",
+                "width": 1024,
+                "height": 604
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/SuperVikingAtCentennial.jpg/1024px-SuperVikingAtCentennial.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Viking_30456.jpg/1024px-Viking_30456.jpg",
+                "width": 1024,
+                "height": 768
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "85bbvGz1j1Q"
             }
         ]
     },
@@ -3746,6 +4030,80 @@
         "youtubeVideos": [
             {
                 "videoId": "5MCETiKCLhc"
+            }
+        ]
+    },
+    {
+        "id": "de-havilland-canada-dash-7",
+        "name": "De Havilland Canada Dash 7",
+        "longDescription": "The de Havilland Canada DHC-7, popularly known as the Dash 7, is a turboprop-powered regional airliner with short take-off and landing (STOL) performance.  It first flew in 1975 and remained in production until 1988 when the parent company, de Havilland Canada, was purchased by Boeing and was later sold to Bombardier. Bombardier sold the type certificate for the aircraft design to Victoria-based manufacturer Viking Air in 2006.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/De_Havilland_Canada_Dash_7",
+        "metaData": {
+            "Role": "STOL regional airliner",
+            "National origin": "Canada",
+            "Manufacturer": "de Havilland Canada",
+            "First flight": "March 27, 1975",
+            "Introduction": "February 3, 1978",
+            "Status": "In service",
+            "Primary users": "Various airlines Canadian Forces United States Army Venezuelan Navy",
+            "Produced": "1975–1988",
+            "Number built": "113",
+            "Developed from": "de Havilland Canada DHC-6 Twin Otter",
+            "Developed into": "Bombardier Dash 8"
+        },
+        "filterOptions": {
+            "engines": "FOUR",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "ABOVE",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/De_Havilland_Canada_DHC-7-110_Dash_7%2C_Brymon_Airways_AN2141415.jpg",
+                "width": 940,
+                "height": 626
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Arkia_de_Havilland_Canada_DHC-7_4X-AHH.jpg/1024px-Arkia_de_Havilland_Canada_DHC-7_4X-AHH.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Arl-dash7-N158CL-010515-01.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/DHC-7-dash-7.jpg/1024px-DHC-7-dash-7.jpg",
+                "width": 1024,
+                "height": 341
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/DHC-7_G-BOAY_London_City_Aws_LCY_31.10.88_edited-2.jpg/1024px-DHC-7_G-BOAY_London_City_Aws_LCY_31.10.88_edited-2.jpg",
+                "width": 1024,
+                "height": 638
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Dash7LandingGear.jpg",
+                "width": 965,
+                "height": 1024
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/De_Havilland_Canada_DHC-7-100_Dash_7.jpg",
+                "width": 1024,
+                "height": 677
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kulusuk-airport-air-greenland-dash7.jpg/1024px-Kulusuk-airport-air-greenland-dash7.jpg",
+                "width": 1024,
+                "height": 575
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "DiXuRn82kMk"
             }
         ]
     },
