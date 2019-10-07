@@ -1127,6 +1127,47 @@
         ]
     },
     {
+        "id": "aquila-a-210",
+        "name": "Aquila A 210",
+        "longDescription": "The Aquila A 210 is a two-seat reinforced plastic light aircraft produced in Germany from 2002. It remains in production in 2010.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Aquila_A_210",
+        "metaData": {
+            "Role": "Two seat light aircraft",
+            "National origin": "Germany",
+            "Manufacturer": "Aquila Aviation by Excellence",
+            "First flight": "5 March 2000",
+            "Status": "In production 2011",
+            "Primary user": "Cameroon Air Force",
+            "Number built": "120 by early 2011",
+            "Unit cost": "€127,300 (2010) ex-tax"
+        },
+        "filterOptions": {
+            "engines": "ONE",
+            "decks": "ONE",
+            "engine-position": "NOSE",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Aquila_A-210_AT01_%28D-EAIN%29_02.jpg/1024px-Aquila_A-210_AT01_%28D-EAIN%29_02.jpg",
+                "width": 1024,
+                "height": 527
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Aquila_en_volm.jpg",
+                "width": 800,
+                "height": 591
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Cockpit_Aquila_AT01_%28A210%29.jpg/1024px-Cockpit_Aquila_AT01_%28A210%29.jpg",
+                "width": 1024,
+                "height": 678
+            }
+        ]
+    },
+    {
         "id": "atr-42",
         "name": "ATR 42",
         "longDescription": "The ATR 42 is a twin-turboprop, short-haul regional airliner developed and manufactured in France and Italy by ATR (Aerei da Trasporto Regionale or Avions de transport régional), a joint venture formed by French aerospace company Aérospatiale (now Airbus) and Italian aviation conglomerate Aeritalia (now Leonardo S.p.A.). The number \"42\" in its name is derived from the aircraft's standard seating configuration in a passenger-carrying configuration, which typically varies between 40 and 52 passengers.\nDuring the 1980s, French aerospace company Aérospatiale and Italian aviation conglomerate Aeritalia merged their separate work upon a new generation of regional aircraft together. For this purpose, a new jointly owned company was established, ATR, for the purpose of developing, manufacturing, and marketing their first airliner, which was later designated as the ATR 42. On 16 August 1984, the first model of the series, designated as the ATR 42–300, performed the type's maiden flight. Type certification from French and Italian aviation authorities was granted during September 1985, and the aircraft performed its first revenue-earning flight, operated by launch customer Air Littoral, during December of that year.\nTo date, all of the ATR series have been manufactured at the company's final assembly line in Toulouse, France; ATR benefits from its sharing of resources and technology with Airbus SE, which has continued to hold a 50 percent stake in the company. Improved models of the aircraft have been introduced, incorporating new avionics such as a glass cockpit, and the adoption of newer engine versions for enhanced performance, such as increased efficiency and reliability along with reductions in operational costs. The aircraft serves as the basis for the larger ATR 72, which was also developed during the late 1980s to complement its smaller sibling. The ATR 42 and ATR 72 have been produced side-by-side for decades.",
@@ -3914,6 +3955,145 @@
         ]
     },
     {
+        "id": "douglas-dc-3",
+        "name": "Douglas DC-3",
+        "longDescription": "The Douglas DC-3 is a propeller-driven airliner which had a lasting effect on the airline industry in the 1930s/1940s and World War II.\nIt was developed as a larger, improved 14-bed sleeper version of the Douglas DC-2.\nIt is a low-wing metal monoplane with a tailwheel landing gear, powered by two 1,200 hp (890 kW) Pratt & Whitney Twin Wasp radial piston engines.\nIt has a cruise speed of 207 mph (333 km/h), capacity of 21 to 32 passengers or 6,000 lbs (2,700 kg) of cargo, a range of 1,500 mi (2,400 km), and could operate from short runways.\nBefore the war, it pioneered many air travel routes as it could cross the continental US and made worldwide flights possible, carried passengers in greater comfort, was reliable and easy to maintain.\nIt is considered the first airliner that could profitably carry only passengers.\nFollowing the war, the airliner market was flooded with surplus military transport aircraft, and the DC-3 could not be upgraded by Douglas due to cost.\nIt was made obsolete on main routes by more advanced types such as the Douglas DC-6 and Lockheed Constellation, but the design proved adaptable and useful.\nCivil DC-3 production ended in 1942 at 607 aircraft. Military versions, including the C-47 Skytrain (the Dakota in British RAF service), and Russian- and Japanese-built versions, brought total production to over 16,000.\nMany continue to see service in a variety of niche roles: 2,000 DC-3s and military derivatives were estimated to be still flying in 2013.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Douglas_DC-3",
+        "metaData": {
+            "Role": "Airliner and transport aircraft",
+            "National origin": "United States",
+            "Manufacturer": "Douglas Aircraft Company",
+            "First flight": "December 17, 1935",
+            "Introduction": "1936",
+            "Status": "In service",
+            "Produced": "1936–1942, 1950",
+            "Number built": "607",
+            "Unit cost": "US$79,500 (equivalent to $1,452,805 in 2018)",
+            "Developed from": "Douglas DC-2",
+            "Variants": "Douglas C-47 Skytrain Lisunov Li-2 Showa/Nakajima L2D Basler BT-67 Conroy Turbo-Three Conroy Tri-Turbo-Three"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Douglas_DC-3%2C_SE-CFP.jpg/1024px-Douglas_DC-3%2C_SE-CFP.jpg",
+                "width": 1024,
+                "height": 717
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Air_India_DC_3_at_Heathrow.jpg",
+                "width": 844,
+                "height": 553
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/C-47s_at_Tempelhof_Airport_Berlin_1948.jpg/1024px-C-47s_at_Tempelhof_Airport_Berlin_1948.jpg",
+                "width": 1024,
+                "height": 818
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/CX-DC3-VRHDB2.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/DC-3_in_SoAfrica.jpg/1024px-DC-3_in_SoAfrica.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/DC-3_on_Floats_N130Q.JPG/1024px-DC-3_on_Floats_N130Q.JPG",
+                "width": 1024,
+                "height": 435
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/DC-3_spinning_props.JPG/1024px-DC-3_spinning_props.JPG",
+                "width": 1024,
+                "height": 526
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/DSTunitedOAK_%284412476240%29.jpg/1024px-DSTunitedOAK_%284412476240%29.jpg",
+                "width": 1024,
+                "height": 614
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Dc3.takeoff.thales.arp.jpg/1024px-Dc3.takeoff.thales.arp.jpg",
+                "width": 1024,
+                "height": 701
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Douglas_C-47B_EP-ACK_Iranian_Natnl_Ringway_24.04.54_edited-2.jpg",
+                "width": 1024,
+                "height": 696
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Douglas_DC-3C_cold_start.jpg/1024px-Douglas_DC-3C_cold_start.jpg",
+                "width": 1024,
+                "height": 422
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Douglas_DC-3_Aigle_Azur_Palas_Jet_1953.jpg",
+                "width": 592,
+                "height": 320
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Engine_of_Douglas_DC-3.jpg/1024px-Engine_of_Douglas_DC-3.jpg",
+                "width": 1024,
+                "height": 714
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Fujairah_Airlines_Douglas_DC-3_Wheatley.jpg/1024px-Fujairah_Airlines_Douglas_DC-3_Wheatley.jpg",
+                "width": 1024,
+                "height": 778
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Maritime_Patrol_and_Rescue_Conroy_Tri-Turbo_Three_Fitzgerald.jpg",
+                "width": 1023,
+                "height": 681
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/N34---Douglas-DC3-Cockpit.jpg/1024px-N34---Douglas-DC3-Cockpit.jpg",
+                "width": 1024,
+                "height": 765
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Nakajima_L2D2_at_Zamboanga_1945.jpeg/1024px-Nakajima_L2D2_at_Zamboanga_1945.jpeg",
+                "width": 1024,
+                "height": 780
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ntps-c47-N834TP-071112-01cr-16.jpg/1024px-Ntps-c47-N834TP-071112-01cr-16.jpg",
+                "width": 1024,
+                "height": 800
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/PP-ANU_%28aircraft%29_5.jpg/1024px-PP-ANU_%28aircraft%29_5.jpg",
+                "width": 1024,
+                "height": 1365
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/RNZAF_C-47_Dakota%2C_2010.jpg/1024px-RNZAF_C-47_Dakota%2C_2010.jpg",
+                "width": 1024,
+                "height": 488
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/TransNorthern_DC-3_landing_at_ANC.jpg/1024px-TransNorthern_DC-3_landing_at_ANC.jpg",
+                "width": 1024,
+                "height": 490
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "azH8t6Ov5Gk"
+            }
+        ]
+    },
+    {
         "id": "douglas-dc-8",
         "name": "Douglas DC-8",
         "longDescription": "The Douglas DC-8 (also known as the McDonnell Douglas DC-8) is an American four-engine mid- to long-range narrow-body jet airliner built from 1958 to 1972 by the Douglas Aircraft Company. Launched after the competing Boeing 707, the DC-8 nevertheless kept Douglas in a strong position in the airliner market, and remained in production until 1972 when it began to be superseded by larger wide-body designs, including the Boeing 747, McDonnell Douglas DC-10, and Lockheed L-1011 TriStar. The DC-8's design allowed it a slightly larger cargo capacity than the 707 and some re-engined DC-8s are still in use as freighters.",
@@ -4970,6 +5150,522 @@
         ]
     },
     {
+        "id": "learjet-23",
+        "name": "Learjet 23",
+        "longDescription": "The Learjet 23 is an American built six-to-eight-seat (two crew and four to six passengers) twinjet, high-speed business jet manufactured by Learjet.  Introduced in 1964, it was Learjet's first model and created a new market for fast and efficient business aircraft. Production ended in 1966 after 101 aircraft had been delivered.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Learjet_23",
+        "metaData": {
+            "Role": "Business jet",
+            "Manufacturer": "Learjet",
+            "Designer": "William Powell Lear, based on a design by Dr.eng. Hans-Luzius Studer",
+            "First flight": "7 October 1963",
+            "Introduction": "October 13, 1964",
+            "Status": "Active",
+            "Produced": "1964-1966",
+            "Number built": "101"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "TAIL",
+            "wing-position": "BELOW",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Air_Zoo_Learjet_II.JPG/1024px-Air_Zoo_Learjet_II.JPG",
+                "width": 1024,
+                "height": 684
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/NASA_701_Learjet_23_chase_aircraft.jpg/1024px-NASA_701_Learjet_23_chase_aircraft.jpg",
+                "width": 1024,
+                "height": 682
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "JLo2ZaPP-JA"
+            }
+        ]
+    },
+    {
+        "id": "learjet-24",
+        "name": "Learjet 24",
+        "longDescription": "The Learjet 24 is an American six-to-eight-seat (two crew and four to six passengers) twin-engine, high-speed business jet, which was manufactured by Learjet as the successor to the Learjet 23.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Learjet_24",
+        "metaData": {
+            "Role": "Business jet",
+            "Manufacturer": "Learjet",
+            "First flight": "January 24, 1966",
+            "Introduction": "November 9, 1966",
+            "Status": "Active",
+            "Produced": "1966–1977",
+            "Number built": "259"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "TAIL",
+            "wing-position": "BELOW",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/NASA_DFRC_Lear_24_in_flight.jpg/1024px-NASA_DFRC_Lear_24_in_flight.jpg",
+                "width": 1024,
+                "height": 819
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Lear_Jet_24B_F-BUFN_Athens_22.04.73_edited-3.jpg",
+                "width": 1024,
+                "height": 686
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Learjet_24_sn131_at_Wings_Over_the_Rockies_Museum.jpg",
+                "width": 800,
+                "height": 600
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "yNX59Wv3MOE"
+            }
+        ]
+    },
+    {
+        "id": "learjet-25",
+        "name": "Learjet 25",
+        "longDescription": "The Learjet 25 is an American ten-seat (two crew and eight passengers), twin-engine, high-speed business jet aircraft manufactured by Learjet. It is a stretched version of the Learjet 24.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Learjet_25",
+        "metaData": {
+            "Role": "Business jet",
+            "National origin": "United States",
+            "Manufacturer": "Learjet",
+            "First flight": "August 12, 1966",
+            "Introduction": "November 1967",
+            "Status": "Active",
+            "Primary users": "Bolivian Air Force Mexican Navy",
+            "Produced": "1966–1982",
+            "Number built": "369",
+            "Developed from": "Learjet 24",
+            "Developed into": "Learjet 28"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "TAIL",
+            "wing-position": "BELOW",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Learjet_25_der_NASA.jpg",
+                "width": 640,
+                "height": 303
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/C-GBFP_Adlair_Aviation_Learjet_25_%28LJ25%29.JPG/1024px-C-GBFP_Adlair_Aviation_Learjet_25_%28LJ25%29.JPG",
+                "width": 1024,
+                "height": 493
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Lear_Jet_25%2C_Kalitta_Charters_AN0907899.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Learjet_25_1.jpg",
+                "width": 640,
+                "height": 480
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Learjet_25_int.jpg",
+                "width": 640,
+                "height": 480
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Learjet_25_wing.jpg",
+                "width": 640,
+                "height": 480
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Learjet_Panel.jpg",
+                "width": 640,
+                "height": 480
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Lifeguard_Learjet_25D.jpg/1024px-Lifeguard_Learjet_25D.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Lifeguard_Learjet_25D_1.jpg/1024px-Lifeguard_Learjet_25D_1.jpg",
+                "width": 1024,
+                "height": 768
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "ewz7ctZ_iC4"
+            }
+        ]
+    },
+    {
+        "id": "learjet-31",
+        "name": "Learjet 31",
+        "longDescription": "The Learjet 31 is an American built twin-engined, high speed business jet. Manufactured by Learjet, a subsidiary of Bombardier Aerospace, as the successor to the Learjet 29, it has a capacity of eight passengers and two crew.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Learjet_31",
+        "metaData": {
+            "Role": "Business jet",
+            "Manufacturer": "Learjet",
+            "First flight": "May 11, 1987",
+            "Introduction": "October 1990",
+            "Status": "Active",
+            "Primary users": "Private Military NASA",
+            "Produced": "1987-2003",
+            "Number built": "246 "
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "TAIL",
+            "wing-position": "BELOW",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Learjet_31A_N312CC_KBFL_070207.jpg/1024px-Learjet_31A_N312CC_KBFL_070207.jpg",
+                "width": 1024,
+                "height": 645
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Government_of_Balochistan_Learjet_31A_Asuspine-1.jpg/1024px-Government_of_Balochistan_Learjet_31A_Asuspine-1.jpg",
+                "width": 1024,
+                "height": 681
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Winglet_of_Learjet_31.jpg",
+                "width": 139,
+                "height": 104
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "3lLjiMfLoGg"
+            }
+        ]
+    },
+    {
+        "id": "learjet-35",
+        "name": "Learjet 35",
+        "longDescription": "The Learjet Model 35 and Model 36 are a series of American multi-role business jets and military transport aircraft manufactured by Learjet. When used by the United States Air Force they carry the designation C-21A.\nThe aircraft are powered by two Garrett TFE731-2 turbofan engines. Its cabin can be arranged for 6-8 passengers. The longer-range Model 36 has a shortened passenger area to provide more space in the aft fuselage for fuel tanks.\nThe engines are mounted in nacelles on the sides of the aft fuselage. The wings are equipped with single-slotted flaps. The wingtip fuel tanks distinguish the design from other aircraft having similar functions.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Learjet_35",
+        "metaData": {
+            "Role": "Business jet",
+            "Manufacturer": "Learjet",
+            "First flight": "22 August 1973",
+            "Status": "Operational",
+            "Produced": "1973-1994",
+            "Number built": "738",
+            "Developed from": "Learjet 25"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "TAIL",
+            "wing-position": "BELOW",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Learjet_35_%288738280921%29.jpg/1024px-Learjet_35_%288738280921%29.jpg",
+                "width": 1024,
+                "height": 685
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Learjet_35A_taxiing.jpg",
+                "width": 1024,
+                "height": 685
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/NDANG_C-21A_Learjet.JPEG/1024px-NDANG_C-21A_Learjet.JPEG",
+                "width": 1024,
+                "height": 685
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/U-36a_03l.jpg/1024px-U-36a_03l.jpg",
+                "width": 1024,
+                "height": 718
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/LJ-3_LJ35_FinAirForce_%286777135457%29.jpg/1024px-LJ-3_LJ35_FinAirForce_%286777135457%29.jpg",
+                "width": 1024,
+                "height": 683
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "_1BVmm4U8Cg"
+            }
+        ]
+    },
+    {
+        "id": "learjet-40",
+        "name": "Learjet 40",
+        "longDescription": "The Learjet 40 (LJ40) is a light business jet produced by Bombardier Aerospace.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Learjet_40",
+        "metaData": {
+            "Role": "Business jet",
+            "Manufacturer": "Bombardier Aerospace",
+            "First flight": "August 31, 2002",
+            "Introduction": "January 2004",
+            "Produced": "2002–2013",
+            "Unit cost": "40XR : US$ 10,838,000",
+            "Developed from": "Learjet 45",
+            "Developed into": "Learjet 70/75"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "TAIL",
+            "wing-position": "BELOW",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/PR-JEC_Learjet_40_VipJet_Taxi_Aereo_%288141994452%29.jpg/1024px-PR-JEC_Learjet_40_VipJet_Taxi_Aereo_%288141994452%29.jpg",
+                "width": 1024,
+                "height": 678
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Learjet_40_planform.jpg/1024px-Learjet_40_planform.jpg",
+                "width": 1024,
+                "height": 787
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/PR-PVI%40CGH_16AUG14_%2815339361750%29.jpg",
+                "width": 1024,
+                "height": 683
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "u117JZ4g6mQ"
+            }
+        ]
+    },
+    {
+        "id": "learjet-45",
+        "name": "Learjet 45",
+        "longDescription": "The Learjet 45 (LJ45) aircraft is a mid-size business jet aircraft produced by the Learjet Division of Bombardier Aerospace.\nThe Model 45 was the first all-new design since the original Learjet, and significantly altered the Learjet line. Through its four primary variants – the original Model 45, the Model 45XR, Model 40 and Model 40XR – it was the Learjet Division's principal product from the 1990s until the introduction of the Model 75 variant in 2012.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Learjet_45",
+        "metaData": {
+            "Role": "Business Jet",
+            "National origin": "Canada/United States",
+            "Manufacturer": "Bombardier Aerospace",
+            "First flight": "7 October 1995",
+            "Introduction": "mid-1998",
+            "Status": "Active",
+            "Produced": "1995–2012",
+            "Number built": "642",
+            "Unit cost": "$13.209 million (2012)",
+            "Variants": "Learjet 40",
+            "Developed into": "Learjet 70/75"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "TAIL",
+            "wing-position": "BELOW",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Bombardier_Learjet_45_Gama_Aviation_%28GMA%29_G-ZXZX_-_MSN_45-005_%285590120278%29.jpg/1024px-Bombardier_Learjet_45_Gama_Aviation_%28GMA%29_G-ZXZX_-_MSN_45-005_%285590120278%29.jpg",
+                "width": 1024,
+                "height": 682
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Beauty_standing_still_%28426105349%29.jpg/1024px-Beauty_standing_still_%28426105349%29.jpg",
+                "width": 1024,
+                "height": 664
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Bombardier_Learjet_45XR_-_33_-_closeup_portside_door_open.jpg/1024px-Bombardier_Learjet_45XR_-_33_-_closeup_portside_door_open.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bombardier_Learjet_45_XR_interior.JPG/1024px-Bombardier_Learjet_45_XR_interior.JPG",
+                "width": 1024,
+                "height": 1365
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/G-PFCT_%2815040486403%29.jpg/1024px-G-PFCT_%2815040486403%29.jpg",
+                "width": 1024,
+                "height": 684
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Learjet_45_of_the_Irish_Air_Corps_in_flight.jpg/1024px-Learjet_45_of_the_Irish_Air_Corps_in_flight.jpg",
+                "width": 1024,
+                "height": 1524
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/N300JC_Learjet_Inc_45_C-N_340_%285394534073%29.jpg",
+                "width": 1024,
+                "height": 770
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/VH-SQD_Bombardier_Learjet_45_Singapore_Flying_College_%289527311466%29.jpg/1024px-VH-SQD_Bombardier_Learjet_45_Singapore_Flying_College_%289527311466%29.jpg",
+                "width": 1024,
+                "height": 680
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "FoswMlvrv8o"
+            }
+        ]
+    },
+    {
+        "id": "learjet-55",
+        "name": "Learjet 55",
+        "longDescription": "The Learjet 55 \"Longhorn\" is an American business jet manufactured by Learjet.\n\n",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Learjet_55",
+        "metaData": {
+            "Role": "Business jet",
+            "National origin": "United States",
+            "Manufacturer": "Learjet",
+            "First flight": "19 April 1979",
+            "Introduction": "1981",
+            "Status": "Active, not in production",
+            "Produced": "1979–1987",
+            "Number built": "147"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "TAIL",
+            "wing-position": "BELOW",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Learjet_55_%282323440048%29.jpg/1024px-Learjet_55_%282323440048%29.jpg",
+                "width": 1024,
+                "height": 687
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "BByjJLIiyPE"
+            }
+        ]
+    },
+    {
+        "id": "learjet-60",
+        "name": "Learjet 60",
+        "longDescription": "The Learjet 60 is a mid-size cabin, medium-range business jet aircraft manufactured by Bombardier Aerospace in Wichita, Kansas. Powered by two Pratt & Whitney Canada PW305A engines, it has a range (with 4 passengers and 2 crew) of 2,405 nautical miles (4,454 km) with NBAA 100 nmi (190 km) reserves, ISA.  In July 2012 Bombardier Aerospace announced a temporary \"production pause\" of the latest variant Learjet 60XR to begin in the fourth quarter of 2012.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Learjet_60",
+        "metaData": {
+            "Role": "Business jet",
+            "Manufacturer": "Bombardier Aerospace",
+            "First flight": "10 October 1990",
+            "Introduction": "January 1993",
+            "Status": "In Service",
+            "Produced": "1991–2012 (\"production pause\")",
+            "Number built": "400 as of February 2012",
+            "Unit cost": "US$14.674 million",
+            "Developed from": "Learjet 55"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "TAIL",
+            "wing-position": "BELOW",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Balticjet_Aircompany.jpg",
+                "width": 1024,
+                "height": 769
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Bombardier.learjet60.oe-gtf.arp.jpg/1024px-Bombardier.learjet60.oe-gtf.arp.jpg",
+                "width": 1024,
+                "height": 738
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Bombardier.learjet60.vp-crb.arp.jpg/1024px-Bombardier.learjet60.vp-crb.arp.jpg",
+                "width": 1024,
+                "height": 614
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/HB-VNV_%288480105680%29.jpg",
+                "width": 1024,
+                "height": 682
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "zbcmrYfrc18"
+            }
+        ]
+    },
+    {
+        "id": "learjet-70",
+        "name": "Learjet 70/75",
+        "longDescription": "The Learjet 70/75 is a light business jet airplane manufactured by the Learjet division of Canadian aircraft manufacturer Bombardier Aerospace.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Learjet_70",
+        "metaData": {
+            "Role": "Light business jet",
+            "National origin": "Canada/United States",
+            "Manufacturer": "Bombardier Aerospace",
+            "Status": "In production",
+            "Primary user": "Zenith Aviation",
+            "Produced": "2013–present",
+            "Number built": "nearly 130 by January 2019",
+            "Unit cost": "70: US$11.3 million 75: US$13.8 million (2015)",
+            "Developed from": "Learjet 40 and Learjet 45"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "TAIL",
+            "wing-position": "BELOW",
+            "engine-type": "JET"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Global_Flight%2C_N446LJ%2C_Learjet_45XR_%2816454830871%29.jpg/1024px-Global_Flight%2C_N446LJ%2C_Learjet_45XR_%2816454830871%29.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/EBACE_2019%2C_Le_Grand-Saconnex_%28EB190576%29.jpg/1024px-EBACE_2019%2C_Le_Grand-Saconnex_%28EB190576%29.jpg",
+                "width": 1024,
+                "height": 683
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "3QBR-GDLEYs"
+            }
+        ]
+    },
+    {
         "id": "let-l-410-turbolet",
         "name": "Let L-410 Turbolet",
         "longDescription": "The Let L-410 Turbolet is a twin-engine short-range transport aircraft, manufactured by the Czech aircraft manufacturer Let Kunovice (named Aircraft Industries since 2005), often used as an airliner. The aircraft is capable of landing on short and unpaved runways and operating under  extreme conditions from +50 °C (122 °F) to −50 °C (−58 °F). In 2016, 1,200 L-410 have been built and over 350 are in service in more than 50 countries.",
@@ -5416,6 +6112,95 @@
         ]
     },
     {
+        "id": "piaggio-p.180-avanti",
+        "name": "Piaggio P.180 Avanti",
+        "longDescription": "The Piaggio P.180 Avanti is an Italian executive transport aircraft with twin turboprop engines mounted in pusher configuration. It seats up to nine people in a pressurized cabin, and may be flown by one or two pilots. The design is of three-surface configuration, having both a small forward wing and a conventional tailplane as well as its main wing, with the main wing spars passing behind the passenger cabin area.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Piaggio_P.180_Avanti",
+        "metaData": {
+            "Role": "Executive transport",
+            "National origin": "Italy",
+            "Manufacturer": "Piaggio Aero",
+            "Designer": "Alessandro Mazzoni  ",
+            "First flight": "23 September 1986",
+            "Introduction": "30 September 1990",
+            "Status": "In production",
+            "Primary users": "Italian Air Force Italian Army Italian Navy Avantair (ceased 2013)",
+            "Produced": "1986–present",
+            "Number built": "236 (Oct 2018)",
+            "Unit cost": "US$7.695 million (Avanti EVO, 2019)"
+        },
+        "filterOptions": {
+            "engines": "TWO",
+            "decks": "ONE",
+            "engine-position": "WING",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Piaggio_P-180_Avanti_Rennes_2010_%28cropped%29.jpg/1024px-Piaggio_P-180_Avanti_Rennes_2010_%28cropped%29.jpg",
+                "width": 1024,
+                "height": 681
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/LotniczePogotowieGDN.jpg/1024px-LotniczePogotowieGDN.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/OKPIA.jpg/1024px-OKPIA.jpg",
+                "width": 1024,
+                "height": 682
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/2010-04-11_14_28_33_Switzerland_Kloten_Kaserne_%28cropped%29.jpg",
+                "width": 853,
+                "height": 848
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Interior_of_Piaggio_P180_Avanti_cabin_facing_aft.jpg/1024px-Interior_of_Piaggio_P180_Avanti_cabin_facing_aft.jpg",
+                "width": 1024,
+                "height": 682
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/PiaggioAvanti_II_FlightDeck.jpg/1024px-PiaggioAvanti_II_FlightDeck.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Piaggio_P-180_Avanti_AN0368013.jpg",
+                "width": 1024,
+                "height": 698
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Piaggio_P-180_Avanti_II_at_LIMJ.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Piaggio_P.1HH_HammerHead_at_Paris_Air_Show_2013_2.jpg/1024px-Piaggio_P.1HH_HammerHead_at_Paris_Air_Show_2013_2.jpg",
+                "width": 1024,
+                "height": 683
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Piaggio_P180.jpg/1024px-Piaggio_P180.jpg",
+                "width": 1024,
+                "height": 768
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Piaggio_P_180_Avanti_%286742485361%29.jpg/1024px-Piaggio_P_180_Avanti_%286742485361%29.jpg",
+                "width": 1024,
+                "height": 676
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "xdG00AqrT_w"
+            }
+        ]
+    },
+    {
         "id": "piper-j-3-cub",
         "name": "Piper J-3 Cub",
         "longDescription": "The Piper J-3 Cub is an American light aircraft that was built between 1938 and 1947 by Piper Aircraft. The aircraft has a simple, lightweight design which gives it good low-speed handling properties and short-field performance. The Cub is Piper Aircraft's most-produced model, with nearly 20,000 built in the United States. Its simplicity, affordability and popularity invokes comparisons to the Ford Model T automobile.\nThe aircraft is a high-wing, strut-braced monoplane with a large-area rectangular wing. It is most often powered by an air-cooled, flat-4 piston engine driving a fixed-pitch propeller. Its fuselage is a welded steel frame covered in fabric, seating two people in tandem.\nThe Cub was originally intended as a trainer and had great popularity in this role and as a general aviation aircraft. Due to its performance, it was well suited for a variety of military uses such as reconnaissance, liaison and ground control. It was produced in large numbers during World War II as the L-4 Grasshopper. Many Cubs are still flying today. Notably, Cubs are highly prized as bush aircraft.\nThe aircraft's standard chrome yellow paint has come to be known as \"Cub Yellow\" or \"Lock Haven Yellow\".",
@@ -5767,6 +6552,50 @@
         "youtubeVideos": [
             {
                 "videoId": "ExtS9r1pSiY"
+            }
+        ]
+    },
+    {
+        "id": "robin-dr400",
+        "name": "Robin DR400",
+        "longDescription": "The Robin DR400 is a wooden sport monoplane, conceived by Pierre Robin and Jean Délémontez. The Robin DR400 first flew in 1972 and is still in production. The current model is designated 'DR401'. It has a tricycle undercarriage, and can carry four people. The DR400 has a 'cranked wing' configuration, with the dihedral angle of the outer wing much greater than the inboard, a configuration which they share with Jodel aircraft. This model is considered easy to fly by many and quiet during flight due to its wooden frame.",
+        "attribution": "Wikipedia",
+        "attributionUrl": "https://en.wikipedia.org/wiki/Robin_DR400",
+        "metaData": {
+            "Role": "Four-seat light aircraft",
+            "Manufacturer": "Avions Pierre Robin",
+            "First flight": "1972",
+            "Number built": "1292+",
+            "Developed from": "Robin DR.200",
+            "Variants": "Robin DR500"
+        },
+        "filterOptions": {
+            "engines": "ONE",
+            "decks": "ONE",
+            "engine-position": "NOSE",
+            "wing-position": "BELOW",
+            "engine-type": "PROPELLER"
+        },
+        "images": [
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/DR400.jpg",
+                "width": 520,
+                "height": 379
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/CEA_DR-315_Petit_Pr_F-BPRZ_BH_18.05.69_edited-2.jpg",
+                "width": 1024,
+                "height": 695
+            },
+            {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Robin_DR300_D-EOCW_02.jpg/1024px-Robin_DR300_D-EOCW_02.jpg",
+                "width": 1024,
+                "height": 517
+            }
+        ],
+        "youtubeVideos": [
+            {
+                "videoId": "l4_5tIrEvtg"
             }
         ]
     },
