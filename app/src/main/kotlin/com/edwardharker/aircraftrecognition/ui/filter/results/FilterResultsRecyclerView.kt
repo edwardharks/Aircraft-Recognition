@@ -138,6 +138,8 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
 
             holder.aircraftName.text = aircraft.name
             holder.aircraftImage.loadAircraftImage(aircraft)
+
+            holder.background.visibility = View.INVISIBLE
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -167,6 +169,7 @@ class FilterResultsRecyclerView : RecyclerView, FilterResultsView {
 
         init {
             view.setOnClickListener { _ ->
+                background.visibility = View.VISIBLE
                 aircraft?.let {
                     val activity = view.context as? FragmentActivity
                     activity?.navigator?.launchAircraftDetailActivity(

@@ -1,5 +1,6 @@
 package com.edwardharker.aircraftrecognition.ui.filter
 
+import android.graphics.Rect
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
@@ -83,6 +84,12 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
                 resultsHandleContainer.layoutParams.height = handleContainerHeight
                 resultsHandleContainer.requestLayout()
             }
+            filterPicker.clipBounds = Rect(
+                filterPicker.left,
+                filterPicker.top,
+                filterPicker.right,
+                bottomSheetView.top
+            )
             return@addOnPreDrawListener true
         }
 

@@ -39,7 +39,7 @@ fun ImageView.loadImage(
     Glide.with(context)
         .load(image.url)
         .asBitmap()
-        .placeholder(context.getDrawableCompat(R.drawable.fallback_image))
+        .placeholder(context.getDrawableCompat(R.drawable.ic_fallback_image))
         .diskCacheStrategy(DiskCacheStrategy.ALL)
         .dontAnimate()
         .listener(Listener(imageLoadedListener))

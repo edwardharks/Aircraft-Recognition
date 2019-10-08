@@ -11,8 +11,7 @@
     <com.edwardharker.aircraftrecognition.ui.filter.picker.FilterPickerRecyclerView
         android:id="@+id/filter_picker"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimary" />
+        android:layout_height="match_parent"/>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
