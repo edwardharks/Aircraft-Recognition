@@ -41,9 +41,9 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
     private val pickerHeight by lazy {
         resources.getDimensionPixelSize(R.dimen.filter_picker_height).toFloat()
     }
-    private val rootViewBottom by lazy {
-        findViewById<View>(R.id.root_view).bottom.toFloat()
-    }
+    private val rootView by lazy { findViewById<View>(R.id.root_view) }
+    private val rootViewBottom: Float
+        get() = rootView.bottom.toFloat()
     private val resultHandleHeightVisible by lazy {
         resources.getDimensionPixelSize(R.dimen.filter_results_handle_height_visible).toFloat()
     }
@@ -69,27 +69,8 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
         bottomSheetView.hiddenListener = this
 
         bottomSheetView.viewTreeObserver.addOnPreDrawListener {
-            resultsHandleContainer.translationY = bottomSheetView.y - resultsHandleContainer.height
-            val percent = mapToPercent(
-                resultsHandleContainer.translationY,
-                pickerHeight,
-                rootViewBottom
-            )
-            val handleContainerHeight = mapFromPercent(
-                percent,
-                resultHandleHeightVisible,
-                resultHandleHeightHidden
-            ).toInt()
-            if (handleContainerHeight != resultsHandleContainer.height) {
-                resultsHandleContainer.layoutParams.height = handleContainerHeight
-                resultsHandleContainer.requestLayout()
-            }
-            filterPicker.clipBounds = Rect(
-                filterPicker.left,
-                filterPicker.top,
-                filterPicker.right,
-                bottomSheetView.top
-            )
+            updateResultsHandle()
+            updateFilterPickerClipRect()
             return@addOnPreDrawListener true
         }
 
@@ -179,6 +160,35 @@ class FilterActivity : AppCompatActivity(), Toolbar.OnMenuItemClickListener,
             if (resultsHandleView.drawable != arrowToDragHandleAnim) {
                 resultsHandleView.setImageDrawable(arrowToDragHandleAnim)
                 arrowToDragHandleAnim?.start()
+            }
+        }
+    }
+
+    private fun updateFilterPickerClipRect() {
+        filterPicker.clipBounds = Rect(
+            filterPicker.left,
+            filterPicker.top,
+            filterPicker.right,
+            bottomSheetView.top
+        )
+    }
+
+    private fun updateResultsHandle() {
+        resultsHandleContainer.translationY = bottomSheetView.y - resultsHandleContainer.height
+        if (rootViewBottom > 0) {
+            val percent = mapToPercent(
+                resultsHandleContainer.translationY,
+                pickerHeight,
+                rootViewBottom
+            )
+            val handleContainerHeight = mapFromPercent(
+                percent,
+                resultHandleHeightVisible,
+                resultHandleHeightHidden
+            ).toInt()
+            if (handleContainerHeight != resultsHandleContainer.height) {
+                resultsHandleContainer.layoutParams.height = handleContainerHeight
+                resultsHandleContainer.requestLayout()
             }
         }
     }

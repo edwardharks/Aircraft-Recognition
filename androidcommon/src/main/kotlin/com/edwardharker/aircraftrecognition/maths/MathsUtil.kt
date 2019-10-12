@@ -13,8 +13,10 @@ fun mapToPercent(value: Float, lBound: Float, uBound: Float): Float {
 
 fun map(
     value: Float,
-    iStart: Float, iEnd: Float,
-    oStart: Float, oEnd: Float
+    iStart: Float,
+    iEnd: Float,
+    oStart: Float,
+    oEnd: Float
 ): Float {
     require(!(iStart > iEnd || oStart > oEnd)) { "Range is inverted" }
     val unboundedMap = oStart + (oEnd - oStart) * ((value - iStart) / (iEnd - iStart))
